@@ -1,9 +1,55 @@
-import { CharacterInFormation, Formation } from '../types';
+import { CharacterInFormation, Formation, SkillType, BuffTarget } from '../types';
 import { getSkillLevelData } from './damage';
 
 /**
+ * バフの重複ルール:
+ * 1. 異なる系統（攻撃バフ + 防御バフ）→ 重複OK
+ * 2. 同系統 + 異なるスキル種類（EX + パッシブ）→ 重複OK
+ * 3. 同系統 + 同スキル種類（サブ + サブ）→ 重複NG（後から上書き、最大値を採用）
+ * 4. 自己バフ vs 他者バフ → 別枠として重複OK
+ */
+
+interface BuffEntry {
+  type: string;
+  slot: SkillType;
+  target: BuffTarget;
+  value: number;
+  sourceCharacterId: string;
+}
+
+/**
+ * バフの重複を考慮して有効なバフ値を計算
+ * 同じスキルスロット + 同じターゲットタイプのバフは重複しない（最大値を採用）
+ */
+function calculateEffectiveBuffs(buffs: BuffEntry[]): number {
+  // スロット + ターゲットタイプ別にグループ化
+  const buffGroups = new Map<string, BuffEntry[]>();
+
+  for (const buff of buffs) {
+    // 自己バフ(self)と他者バフ(ally/allAllies)を区別
+    const targetType = buff.target === 'self' ? 'self' : 'ally';
+    const key = `${buff.slot}_${targetType}`;
+
+    if (!buffGroups.has(key)) {
+      buffGroups.set(key, []);
+    }
+    buffGroups.get(key)!.push(buff);
+  }
+
+  // 各グループから最大値を取得して合計
+  let totalBonus = 0;
+  for (const [, groupBuffs] of buffGroups) {
+    // 同グループ内では最大値のみ適用
+    const maxBuff = Math.max(...groupBuffs.map(b => b.value));
+    totalBonus += maxBuff;
+  }
+
+  return totalBonus;
+}
+
+/**
  * コスト回復速度を計算
- * コスト回復速度 = (全員のコスト回復力の合計) × (1 + コスト回復%バフ合計) / 10000 [コスト/秒]
+ * コスト回復速度 = (全員のコスト回復力の合計) × (1 + コスト回復%バフ合計/100) / 10000 [コスト/秒]
  */
 export function calculateCostRecoveryRate(formation: Formation): number {
   const allCharacters: CharacterInFormation[] = [
@@ -18,8 +64,9 @@ export function calculateCostRecoveryRate(formation: Formation): number {
     return sum + baseValue + override;
   }, 0);
 
-  // パッシブ・サブスキルからのコスト回復%バフを計算
-  let costRecoveryPercentBonus = 0;
+  // パッシブ・サブスキルからのコスト回復%バフを収集
+  const costRecoveryBuffs: BuffEntry[] = [];
+
   for (const char of allCharacters) {
     // パッシブスキルのコスト回復バフ
     const passiveSkill = char.character.skills.passive;
@@ -29,7 +76,13 @@ export function calculateCostRecoveryRate(formation: Formation): number {
       if (levelData?.buffEffects) {
         for (const effect of levelData.buffEffects) {
           if (effect.type === 'costRecoveryPercent') {
-            costRecoveryPercentBonus += effect.value;
+            costRecoveryBuffs.push({
+              type: 'costRecoveryPercent',
+              slot: 'passive',
+              target: effect.target ?? 'self',
+              value: effect.value,
+              sourceCharacterId: char.character.id,
+            });
           }
         }
       }
@@ -43,12 +96,21 @@ export function calculateCostRecoveryRate(formation: Formation): number {
       if (levelData?.buffEffects) {
         for (const effect of levelData.buffEffects) {
           if (effect.type === 'costRecoveryPercent') {
-            costRecoveryPercentBonus += effect.value;
+            costRecoveryBuffs.push({
+              type: 'costRecoveryPercent',
+              slot: 'sub',
+              target: effect.target ?? 'self',
+              value: effect.value,
+              sourceCharacterId: char.character.id,
+            });
           }
         }
       }
     }
   }
+
+  // バフの重複ルールを適用して有効な%バフを計算
+  const costRecoveryPercentBonus = calculateEffectiveBuffs(costRecoveryBuffs);
 
   // 最終コスト回復速度 = 基本値 × (1 + %バフ/100) / 10000
   const totalCostRecovery = baseCostRecovery * (1 + costRecoveryPercentBonus / 100);
@@ -62,6 +124,7 @@ export function calculateCostRecoveryRate(formation: Formation): number {
 export function getCostRecoveryBreakdown(formation: Formation): {
   baseCostRecovery: number;
   costRecoveryPercentBonus: number;
+  buffDetails: { slot: string; target: string; value: number; source: string }[];
   totalCostRecovery: number;
   costRecoveryRate: number;
 } {
@@ -77,8 +140,9 @@ export function getCostRecoveryBreakdown(formation: Formation): {
     return sum + baseValue + override;
   }, 0);
 
-  // パッシブ・サブスキルからのコスト回復%バフを計算
-  let costRecoveryPercentBonus = 0;
+  // パッシブ・サブスキルからのコスト回復%バフを収集
+  const costRecoveryBuffs: BuffEntry[] = [];
+
   for (const char of allCharacters) {
     // パッシブスキルのコスト回復バフ
     const passiveSkill = char.character.skills.passive;
@@ -88,7 +152,13 @@ export function getCostRecoveryBreakdown(formation: Formation): {
       if (levelData?.buffEffects) {
         for (const effect of levelData.buffEffects) {
           if (effect.type === 'costRecoveryPercent') {
-            costRecoveryPercentBonus += effect.value;
+            costRecoveryBuffs.push({
+              type: 'costRecoveryPercent',
+              slot: 'passive',
+              target: effect.target ?? 'self',
+              value: effect.value,
+              sourceCharacterId: char.character.id,
+            });
           }
         }
       }
@@ -102,12 +172,29 @@ export function getCostRecoveryBreakdown(formation: Formation): {
       if (levelData?.buffEffects) {
         for (const effect of levelData.buffEffects) {
           if (effect.type === 'costRecoveryPercent') {
-            costRecoveryPercentBonus += effect.value;
+            costRecoveryBuffs.push({
+              type: 'costRecoveryPercent',
+              slot: 'sub',
+              target: effect.target ?? 'self',
+              value: effect.value,
+              sourceCharacterId: char.character.id,
+            });
           }
         }
       }
     }
   }
+
+  // バフの重複ルールを適用して有効な%バフを計算
+  const costRecoveryPercentBonus = calculateEffectiveBuffs(costRecoveryBuffs);
+
+  // バフ詳細（どのバフが有効か）
+  const buffDetails = costRecoveryBuffs.map(b => ({
+    slot: b.slot,
+    target: b.target,
+    value: b.value,
+    source: b.sourceCharacterId,
+  }));
 
   const totalCostRecovery = baseCostRecovery * (1 + costRecoveryPercentBonus / 100);
   const costRecoveryRate = totalCostRecovery / 10000;
@@ -115,6 +202,7 @@ export function getCostRecoveryBreakdown(formation: Formation): {
   return {
     baseCostRecovery,
     costRecoveryPercentBonus,
+    buffDetails,
     totalCostRecovery,
     costRecoveryRate,
   };
