@@ -69,6 +69,8 @@ export const ui: Character = {
       name: 'お茶の時間',
       description: '味方の攻撃力増加',
       type: 'normal',
+      activationTiming: 'periodic',
+      activationInterval: 25,
       levels: [
         { level: 1, buffEffects: [{ type: 'attackPercent', value: 16.9, duration: 30 }] },
         { level: 2, buffEffects: [{ type: 'attackPercent', value: 17.8, duration: 30 }] },

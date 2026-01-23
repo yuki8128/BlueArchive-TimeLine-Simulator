@@ -74,6 +74,8 @@ export const himari: Character = {
       name: '一所懸命サポート',
       description: '味方の攻撃力増加',
       type: 'normal',
+      activationTiming: 'periodic',
+      activationInterval: 25,
       levels: [
         { level: 1, buffEffects: [{ type: 'attackPercent', value: 11.2, duration: 30 }] },
         { level: 2, buffEffects: [{ type: 'attackPercent', value: 11.8, duration: 30 }] },

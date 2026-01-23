@@ -36,6 +36,9 @@ interface TimelineProps {
   onInitialCostChange?: (cost: number) => void;
 }
 
+// シミュレーション時間（秒）
+const SIMULATION_DURATION = 180;
+
 export function Timeline({
   actions,
   characters,
@@ -54,6 +57,7 @@ export function Timeline({
   const [time, setTime] = useState<number>(0);
   const [manualInitialCost, setManualInitialCost] = useState<number>(initialCost ?? maxCost);
   const [costOverrides, setCostOverrides] = useState<Record<string, number>>({});
+  const [simulationDuration, setSimulationDuration] = useState<number>(SIMULATION_DURATION);
 
   useEffect(() => {
     if (initialCost !== undefined) {
@@ -80,12 +84,12 @@ export function Timeline({
     return undefined;
   };
 
-  // パッシブ/サブスキルのエントリを生成（戦闘開始時 = 0秒）
+  // 自動発動スキルのエントリを生成
   const autoEntries = useMemo<TimelineEntry[]>(() => {
     const entries: TimelineEntry[] = [];
 
     characters.forEach((char) => {
-      // パッシブスキル
+      // パッシブスキル（戦闘開始時）
       const passiveSkill = char.character.skills.passive;
       if (passiveSkill) {
         const duration = getBuffDuration(char, 'passive');
@@ -105,7 +109,7 @@ export function Timeline({
         });
       }
 
-      // サブスキル
+      // サブスキル（戦闘開始時）
       const subSkill = char.character.skills.sub;
       if (subSkill) {
         const duration = getBuffDuration(char, 'sub');
@@ -124,10 +128,35 @@ export function Timeline({
           buffEndTime: duration ? duration : undefined,
         });
       }
+
+      // ノーマルスキル（周期発動の場合）
+      const normalSkill = char.character.skills.normal;
+      if (normalSkill && normalSkill.activationTiming === 'periodic' && normalSkill.activationInterval) {
+        const interval = normalSkill.activationInterval;
+        const duration = getBuffDuration(char, 'normal');
+
+        // シミュレーション時間内の発動タイミングを生成
+        for (let t = 0; t <= simulationDuration; t += interval) {
+          entries.push({
+            id: `auto_normal_${char.character.id}_${t}`,
+            time: t,
+            characterId: char.character.id,
+            characterName: char.character.name,
+            skillType: 'normal',
+            skillName: normalSkill.name,
+            skillLevel: char.skillLevels.normal,
+            cost: null,
+            currentCost: 0,
+            isAuto: true,
+            buffDuration: duration,
+            buffEndTime: duration ? t + duration : undefined,
+          });
+        }
+      }
     });
 
     return entries;
-  }, [characters]);
+  }, [characters, simulationDuration]);
 
   // タイムラインエントリを構築
   const timelineEntries = useMemo<TimelineEntry[]>(() => {
@@ -259,7 +288,7 @@ export function Timeline({
 
       {/* コスト情報 */}
       <div className="bg-gray-50 rounded-lg p-3 mb-4">
-        <div className="grid grid-cols-3 gap-2 text-sm">
+        <div className="grid grid-cols-4 gap-2 text-sm">
           <div>
             <label className="block text-xs text-gray-500 mb-1">初期コスト</label>
             <input
@@ -283,6 +312,18 @@ export function Timeline({
             <div className="p-1.5 bg-gray-100 rounded text-sm">
               {costRecoveryRate.toFixed(3)}/秒
             </div>
+          </div>
+          <div>
+            <label className="block text-xs text-gray-500 mb-1">シミュ時間(秒)</label>
+            <input
+              type="number"
+              min={30}
+              max={600}
+              step={30}
+              value={simulationDuration}
+              onChange={(e) => setSimulationDuration(parseInt(e.target.value) || SIMULATION_DURATION)}
+              className="w-full p-1.5 border border-gray-300 rounded text-sm"
+            />
           </div>
         </div>
       </div>

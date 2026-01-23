@@ -44,6 +44,8 @@ export const mika: Character = {
       name: '無邪気な祝福',
       description: '攻撃時、一定確率で敵に追加ダメージ',
       type: 'normal',
+      activationTiming: 'periodic',
+      activationInterval: 20,
       levels: [
         { level: 1, damageMultiplier: 2.48 },
         { level: 2, damageMultiplier: 2.6 },

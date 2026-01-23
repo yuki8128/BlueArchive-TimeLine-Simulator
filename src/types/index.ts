@@ -44,6 +44,9 @@ export interface BuffEffect {
   sourceSkillId: string;
 }
 
+// スキル発動タイミング
+export type ActivationTiming = 'battleStart' | 'periodic' | 'manual';
+
 // スキルレベルデータ
 export interface SkillLevel {
   level: number;
@@ -61,6 +64,8 @@ export interface Skill {
   type: SkillType;
   cost?: number; // EXスキルのみ
   cooldown?: number;
+  activationTiming?: ActivationTiming; // 発動タイミング（デフォルト: battleStart）
+  activationInterval?: number; // 周期発動の間隔（秒）
   levels: SkillLevel[];
 }
 

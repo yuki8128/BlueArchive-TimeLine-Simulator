@@ -74,6 +74,8 @@ export const ako: Character = {
       name: '生徒会の矜持',
       description: '味方の会心ダメージ率増加',
       type: 'normal',
+      activationTiming: 'periodic',
+      activationInterval: 25,
       levels: [
         { level: 1, buffEffects: [{ type: 'critDamagePercent', value: 16.9, duration: 30 }] },
         { level: 2, buffEffects: [{ type: 'critDamagePercent', value: 17.8, duration: 30 }] },
