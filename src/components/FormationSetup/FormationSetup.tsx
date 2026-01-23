@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { Character, CharacterInFormation, SkillType } from '../../types';
+import { CharacterEditor } from '../CharacterEditor';
 
 interface FormationSetupProps {
   strikerCharacters: Character[];
@@ -43,6 +45,8 @@ function CharacterSlot({
   onSelect: (char: CharacterInFormation | null) => void;
   label: string;
 }) {
+  const [showEditor, setShowEditor] = useState(false);
+
   const handleChange = (characterId: string) => {
     if (!characterId) {
       onSelect(null);
@@ -53,6 +57,9 @@ function CharacterSlot({
       onSelect({
         character,
         skillLevels: { ...DEFAULT_SKILL_LEVELS },
+        level: 90,
+        starLevel: character.rarity,
+        bond: 50,
       });
     }
   };
@@ -68,9 +75,27 @@ function CharacterSlot({
     });
   };
 
+  // 実効ステータスを取得
+  const getEffectiveStat = (statKey: keyof CharacterInFormation['character']['baseStats']): number => {
+    if (!selected) return 0;
+    const base = selected.character.baseStats[statKey];
+    const override = selected.statOverrides?.[statKey] ?? 0;
+    return base + override;
+  };
+
   return (
     <div className="border border-gray-200 rounded-lg p-3 bg-white">
-      <label className="block text-xs text-gray-500 mb-1">{label}</label>
+      <div className="flex justify-between items-center mb-1">
+        <label className="text-xs text-gray-500">{label}</label>
+        {selected && (
+          <button
+            onClick={() => setShowEditor(true)}
+            className="text-xs text-blue-500 hover:text-blue-700"
+          >
+            編集
+          </button>
+        )}
+      </div>
       <select
         value={selected?.character.id || ''}
         onChange={(e) => handleChange(e.target.value)}
@@ -96,8 +121,11 @@ function CharacterSlot({
               {attackTypeLabels[selected.character.attackType]}
             </span>
             <span className="text-xs text-gray-500">
-              ATK: {selected.character.baseStats.attack.toLocaleString()}
+              ATK: {getEffectiveStat('attack').toLocaleString()}
             </span>
+            {selected.statOverrides && Object.keys(selected.statOverrides).length > 0 && (
+              <span className="text-xs text-blue-500">*補正あり</span>
+            )}
           </div>
 
           {/* スキルレベル設定 */}
@@ -134,6 +162,15 @@ function CharacterSlot({
             </span>
           </div>
         </div>
+      )}
+
+      {/* 編集モーダル */}
+      {showEditor && selected && (
+        <CharacterEditor
+          character={selected}
+          onChange={onSelect}
+          onClose={() => setShowEditor(false)}
+        />
       )}
     </div>
   );

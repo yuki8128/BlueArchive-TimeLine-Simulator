@@ -82,6 +82,7 @@ export function runTimeline(
         const buff = activateBuff(
           {
             ...effect,
+            target: effect.target ?? 'self',
             slot: action.skillType,
             sourceCharacterId: character.id,
             sourceSkillId: skill.id,

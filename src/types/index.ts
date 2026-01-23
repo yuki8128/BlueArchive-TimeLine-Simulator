@@ -19,17 +19,42 @@ export type Position = 'front' | 'middle' | 'back';
 // スキルタイプ
 export type SkillType = 'ex' | 'normal' | 'passive' | 'sub';
 
-// バフタイプ
+// バフタイプ（SchaleDB準拠）
 export type BuffType =
-  | 'attackPercent'
-  | 'attackFlat'
-  | 'defensePercent'
-  | 'defenseFlat'
-  | 'critDamagePercent'
-  | 'critValueFlat'
-  | 'damageDealtPercent'
-  | 'damageTakenPercent'
-  | 'defenseDownPercent';
+  // 攻撃力
+  | 'attackPercent'      // 攻撃力%増加
+  | 'attackFlat'         // 攻撃力固定値増加
+  // 防御力
+  | 'defensePercent'     // 防御力%増加
+  | 'defenseFlat'        // 防御力固定値増加
+  | 'defenseDownPercent' // 防御力%減少（デバフ）
+  | 'defenseDownFlat'    // 防御力固定値減少（デバフ）
+  // 会心
+  | 'critDamagePercent'  // 会心ダメージ率%増加
+  | 'critValueFlat'      // 会心値固定値増加
+  | 'critRateFlat'       // 会心率固定値増加（%）
+  // ダメージ倍率
+  | 'damageDealtPercent' // 与ダメージ%増加
+  | 'damageTakenPercent' // 被ダメージ%増加（敵へのデバフ）
+  // HP関連
+  | 'hpPercent'          // 最大HP%増加
+  | 'hpFlat'             // 最大HP固定値増加
+  // 命中・回避
+  | 'accuracyFlat'       // 命中値増加
+  | 'evasionFlat'        // 回避値増加
+  // 安定値
+  | 'stabilityFlat'      // 安定値増加
+  // コスト回復
+  | 'costRecoveryFlat'   // コスト回復力増加
+  | 'costRecoveryPercent'// コスト回復力%増加
+  // 回復力
+  | 'healPowerPercent'   // 回復力%増加
+  // CC関連
+  | 'ccStrengthFlat'     // CC強化力
+  | 'ccResistFlat';      // CC抵抗力
+
+// バフ対象
+export type BuffTarget = 'self' | 'ally' | 'allAllies' | 'enemy' | 'allEnemies';
 
 // バフ枠（重複判定用）
 export type BuffSlot = 'ex' | 'normal' | 'passive' | 'sub';
@@ -39,9 +64,18 @@ export interface BuffEffect {
   type: BuffType;
   value: number;
   slot: BuffSlot;
-  duration: number; // 秒
+  duration: number; // 秒（999 = 永続）
+  target: BuffTarget; // バフ対象
   sourceCharacterId: string;
   sourceSkillId: string;
+}
+
+// スキル効果（データ定義用）
+export interface SkillBuffEffect {
+  type: BuffType;
+  value: number;
+  duration: number; // 秒（999 = 永続）
+  target?: BuffTarget; // デフォルト: self
 }
 
 // スキル発動タイミング
@@ -50,10 +84,16 @@ export type ActivationTiming = 'battleStart' | 'periodic' | 'manual';
 // スキルレベルデータ
 export interface SkillLevel {
   level: number;
-  damageMultiplier?: number;
-  buffEffects?: Omit<BuffEffect, 'slot' | 'sourceCharacterId' | 'sourceSkillId'>[];
-  duration?: number;
-  hitCount?: number;
+  // ダメージ関連
+  damageMultiplier?: number;  // スキル倍率（%/100）
+  hitCount?: number;          // ヒット数
+  // バフ/デバフ効果
+  buffEffects?: SkillBuffEffect[];
+  // 回復効果
+  healMultiplier?: number;    // 回復倍率（攻撃力比）
+  healFlat?: number;          // 固定回復値
+  // コスト関連
+  costReturn?: number;        // コスト返却量
 }
 
 // スキルデータ
@@ -184,8 +224,21 @@ export interface CharacterInFormation {
     passive: number;
     sub: number;
   };
+  // ステータス補正（装備・絆等の合計）
+  statOverrides?: Partial<BaseStats>;
+  // スキル効果の手動調整
+  skillOverrides?: {
+    ex?: Partial<SkillLevel>;
+    normal?: Partial<SkillLevel>;
+    passive?: Partial<SkillLevel>;
+    sub?: Partial<SkillLevel>;
+  };
   bond?: number; // 絆レベル
   equipment?: Equipment;
+  // キャラクターレベル
+  level?: number;
+  // 星レベル（固有武器）
+  starLevel?: number;
 }
 
 // 装備
