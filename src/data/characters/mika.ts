@@ -44,8 +44,8 @@ export const mika: Character = {
       name: '星の呼び声',
       description: '通常攻撃5回ごとに敵1人にダメージ。発動3回ごとにメテオで追加ダメージ',
       type: 'normal',
-      activationTiming: 'periodic',
-      activationInterval: 15,
+      activationTiming: 'attackCount',
+      activationCount: 5,
       levels: [
         { level: 1, damageMultiplier: 0.894, hitCount: 1 },
         { level: 2, damageMultiplier: 0.94, hitCount: 1 },

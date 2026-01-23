@@ -79,7 +79,11 @@ export interface SkillBuffEffect {
 }
 
 // スキル発動タイミング
-export type ActivationTiming = 'battleStart' | 'periodic' | 'manual';
+export type ActivationTiming =
+  | 'battleStart'  // 戦闘開始時に発動
+  | 'periodic'     // 一定秒数ごとに発動
+  | 'attackCount'  // 通常攻撃回数ごとに発動
+  | 'manual';      // 手動で時間を設定
 
 // スキルレベルデータ
 export interface SkillLevel {
@@ -106,6 +110,7 @@ export interface Skill {
   cooldown?: number;
   activationTiming?: ActivationTiming; // 発動タイミング（デフォルト: battleStart）
   activationInterval?: number; // 周期発動の間隔（秒）
+  activationCount?: number; // 通常攻撃回数ごとに発動（attackCount用）
   levels: SkillLevel[];
 }
 

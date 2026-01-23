@@ -17,9 +17,11 @@ interface TimelineEntry {
   cost: number | null;
   currentCost: number;
   isAuto: boolean;
+  isEditable: boolean; // 時間を編集可能か
   damage?: number;
   buffDuration?: number; // バフの持続時間（秒）
   buffEndTime?: number; // バフの終了時間
+  activationInfo?: string; // 発動条件の説明
 }
 
 interface TimelineProps {
@@ -57,6 +59,7 @@ export function Timeline({
   const [time, setTime] = useState<number>(0);
   const [manualInitialCost, setManualInitialCost] = useState<number>(initialCost ?? maxCost);
   const [costOverrides, setCostOverrides] = useState<Record<string, number>>({});
+  const [timeOverrides, setTimeOverrides] = useState<Record<string, number>>({});
   const [simulationDuration, setSimulationDuration] = useState<number>(SIMULATION_DURATION);
 
   useEffect(() => {
@@ -92,10 +95,13 @@ export function Timeline({
       // パッシブスキル（戦闘開始時）
       const passiveSkill = char.character.skills.passive;
       if (passiveSkill) {
+        const entryId = `auto_passive_${char.character.id}`;
+        const baseTime = 0;
+        const actualTime = timeOverrides[entryId] ?? baseTime;
         const duration = getBuffDuration(char, 'passive');
         entries.push({
-          id: `auto_passive_${char.character.id}`,
-          time: 0,
+          id: entryId,
+          time: actualTime,
           characterId: char.character.id,
           characterName: char.character.name,
           skillType: 'passive',
@@ -104,18 +110,23 @@ export function Timeline({
           cost: null,
           currentCost: 0,
           isAuto: true,
+          isEditable: true,
           buffDuration: duration,
-          buffEndTime: duration ? duration : undefined,
+          buffEndTime: duration ? actualTime + duration : undefined,
+          activationInfo: '戦闘開始時',
         });
       }
 
       // サブスキル（戦闘開始時）
       const subSkill = char.character.skills.sub;
       if (subSkill) {
+        const entryId = `auto_sub_${char.character.id}`;
+        const baseTime = 0;
+        const actualTime = timeOverrides[entryId] ?? baseTime;
         const duration = getBuffDuration(char, 'sub');
         entries.push({
-          id: `auto_sub_${char.character.id}`,
-          time: 0,
+          id: entryId,
+          time: actualTime,
           characterId: char.character.id,
           characterName: char.character.name,
           skillType: 'sub',
@@ -124,22 +135,52 @@ export function Timeline({
           cost: null,
           currentCost: 0,
           isAuto: true,
+          isEditable: true,
           buffDuration: duration,
-          buffEndTime: duration ? duration : undefined,
+          buffEndTime: duration ? actualTime + duration : undefined,
+          activationInfo: '戦闘開始時',
         });
       }
 
-      // ノーマルスキル（周期発動の場合）
+      // ノーマルスキル
       const normalSkill = char.character.skills.normal;
-      if (normalSkill && normalSkill.activationTiming === 'periodic' && normalSkill.activationInterval) {
-        const interval = normalSkill.activationInterval;
+      if (normalSkill) {
+        const timing = normalSkill.activationTiming;
         const duration = getBuffDuration(char, 'normal');
 
-        // シミュレーション時間内の発動タイミングを生成
-        for (let t = 0; t <= simulationDuration; t += interval) {
+        if (timing === 'periodic' && normalSkill.activationInterval) {
+          // 周期発動（秒数ベース）
+          const interval = normalSkill.activationInterval;
+          for (let i = 0; i * interval <= simulationDuration; i++) {
+            const entryId = `auto_normal_${char.character.id}_${i}`;
+            const baseTime = i * interval;
+            const actualTime = timeOverrides[entryId] ?? baseTime;
+            entries.push({
+              id: entryId,
+              time: actualTime,
+              characterId: char.character.id,
+              characterName: char.character.name,
+              skillType: 'normal',
+              skillName: normalSkill.name,
+              skillLevel: char.skillLevels.normal,
+              cost: null,
+              currentCost: 0,
+              isAuto: true,
+              isEditable: true,
+              buffDuration: duration,
+              buffEndTime: duration ? actualTime + duration : undefined,
+              activationInfo: `${interval}秒ごと`,
+            });
+          }
+        } else if (timing === 'attackCount' && normalSkill.activationCount) {
+          // 通常攻撃回数ベース - デフォルトで1回目のみ生成（ユーザーが追加可能）
+          const count = normalSkill.activationCount;
+          const entryId = `auto_normal_${char.character.id}_0`;
+          const baseTime = 0;
+          const actualTime = timeOverrides[entryId] ?? baseTime;
           entries.push({
-            id: `auto_normal_${char.character.id}_${t}`,
-            time: t,
+            id: entryId,
+            time: actualTime,
             characterId: char.character.id,
             characterName: char.character.name,
             skillType: 'normal',
@@ -148,15 +189,17 @@ export function Timeline({
             cost: null,
             currentCost: 0,
             isAuto: true,
+            isEditable: true,
             buffDuration: duration,
-            buffEndTime: duration ? t + duration : undefined,
+            buffEndTime: duration ? actualTime + duration : undefined,
+            activationInfo: `通常攻撃${count}回ごと`,
           });
         }
       }
     });
 
     return entries;
-  }, [characters, simulationDuration]);
+  }, [characters, simulationDuration, timeOverrides]);
 
   // タイムラインエントリを構築
   const timelineEntries = useMemo<TimelineEntry[]>(() => {
@@ -183,6 +226,7 @@ export function Timeline({
         cost: action.skillType === 'ex' ? (skill?.cost || 0) : null,
         currentCost: 0,
         isAuto: false,
+        isEditable: false,
         damage: damageEntry?.damage.expectedDamage,
         buffDuration: buffDuration,
         buffEndTime: buffDuration ? action.time + buffDuration : undefined,
@@ -241,6 +285,13 @@ export function Timeline({
     setCostOverrides((prev) => ({
       ...prev,
       [entryId]: newCost,
+    }));
+  };
+
+  const handleTimeOverride = (entryId: string, newTime: number) => {
+    setTimeOverrides((prev) => ({
+      ...prev,
+      [entryId]: Math.max(0, newTime),
     }));
   };
 
@@ -400,10 +451,24 @@ export function Timeline({
                 }`}
               >
                 <div className="flex items-center gap-2 flex-wrap">
-                  {/* 時間 */}
-                  <span className="text-sm font-mono text-gray-600 w-10">
-                    {formatTime(entry.time)}
-                  </span>
+                  {/* 時間（編集可能な場合は入力フィールド） */}
+                  {entry.isEditable ? (
+                    <input
+                      type="number"
+                      min={0}
+                      step={0.5}
+                      value={entry.time}
+                      onChange={(e) =>
+                        handleTimeOverride(entry.id, parseFloat(e.target.value) || 0)
+                      }
+                      className="w-14 p-0.5 text-sm font-mono text-gray-600 border border-gray-300 rounded text-center"
+                      title="発動時間を手動で変更"
+                    />
+                  ) : (
+                    <span className="text-sm font-mono text-gray-600 w-10">
+                      {formatTime(entry.time)}
+                    </span>
+                  )}
 
                   {/* スキルタイプバッジ */}
                   <span
@@ -462,6 +527,13 @@ export function Timeline({
                   {entry.skillType === 'passive' && !entry.buffDuration && (
                     <span className="text-xs text-purple-400 bg-purple-100 px-1.5 py-0.5 rounded">
                       永続
+                    </span>
+                  )}
+
+                  {/* 発動条件表示 */}
+                  {entry.activationInfo && (
+                    <span className="text-xs text-gray-400 bg-gray-100 px-1.5 py-0.5 rounded">
+                      {entry.activationInfo}
                     </span>
                   )}
                 </div>
