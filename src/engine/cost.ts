@@ -20,15 +20,20 @@ interface BuffEntry {
 /**
  * バフの重複を考慮して有効なバフ値を計算
  * 同じスキルスロット + 同じターゲットタイプのバフは重複しない（最大値を採用）
+ *
+ * バフの重複ルール:
+ * - 同系統 + 同スキル種類 → 重複NG（最大値を採用）
+ * - 同系統 + 異なるスキル種類 → 重複OK
+ * - 自己バフ(self) vs 単体バフ(ally) vs 範囲バフ(allAllies) → 別枠として重複OK
  */
 function calculateEffectiveBuffs(buffs: BuffEntry[]): number {
   // スロット + ターゲットタイプ別にグループ化
   const buffGroups = new Map<string, BuffEntry[]>();
 
   for (const buff of buffs) {
-    // 自己バフ(self)と他者バフ(ally/allAllies)を区別
-    const targetType = buff.target === 'self' ? 'self' : 'ally';
-    const key = `${buff.slot}_${targetType}`;
+    // 自己バフ(self)、単体バフ(ally)、範囲バフ(allAllies)をそれぞれ区別
+    // これにより同じスキルスロットでも与え方が異なれば重複可能
+    const key = `${buff.slot}_${buff.target}`;
 
     if (!buffGroups.has(key)) {
       buffGroups.set(key, []);
