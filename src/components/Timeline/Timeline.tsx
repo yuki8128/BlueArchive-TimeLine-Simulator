@@ -14,10 +14,12 @@ interface TimelineEntry {
   skillType: SkillType;
   skillName: string;
   skillLevel: number;
-  cost: number | null; // EXスキルのコスト、それ以外はnull
-  currentCost: number; // この時点での残りコスト
-  isAuto: boolean; // 自動発動（パッシブ/サブ）かどうか
+  cost: number | null;
+  currentCost: number;
+  isAuto: boolean;
   damage?: number;
+  buffDuration?: number; // バフの持続時間（秒）
+  buffEndTime?: number; // バフの終了時間
 }
 
 interface TimelineProps {
@@ -53,26 +55,40 @@ export function Timeline({
   const [manualInitialCost, setManualInitialCost] = useState<number>(initialCost ?? maxCost);
   const [costOverrides, setCostOverrides] = useState<Record<string, number>>({});
 
-  // 初期コストが変更されたら同期
   useEffect(() => {
     if (initialCost !== undefined) {
       setManualInitialCost(initialCost);
     }
   }, [initialCost]);
 
-  // キャラクター情報を取得するヘルパー
   const getCharacter = (characterId: string) => {
     return characters.find((c) => c.character.id === characterId);
   };
 
-  // パッシブ/サブスキルの自動エントリを生成
+  // バフの持続時間を取得
+  const getBuffDuration = (char: CharacterInFormation, skillType: SkillType): number | undefined => {
+    const skill = char.character.skills[skillType];
+    const skillLevel = char.skillLevels[skillType];
+    const levelData = skill.levels.find(l => l.level === skillLevel);
+
+    if (levelData?.buffEffects && levelData.buffEffects.length > 0) {
+      // 最初のバフ効果の持続時間を返す（通常は全て同じ）
+      const duration = levelData.buffEffects[0].duration;
+      // 999秒以上は永続として扱う
+      return duration >= 999 ? undefined : duration;
+    }
+    return undefined;
+  };
+
+  // パッシブ/サブスキルのエントリを生成（戦闘開始時 = 0秒）
   const autoEntries = useMemo<TimelineEntry[]>(() => {
     const entries: TimelineEntry[] = [];
 
     characters.forEach((char) => {
-      // パッシブスキル（戦闘開始時から有効）
+      // パッシブスキル
       const passiveSkill = char.character.skills.passive;
       if (passiveSkill) {
+        const duration = getBuffDuration(char, 'passive');
         entries.push({
           id: `auto_passive_${char.character.id}`,
           time: 0,
@@ -82,14 +98,17 @@ export function Timeline({
           skillName: passiveSkill.name,
           skillLevel: char.skillLevels.passive,
           cost: null,
-          currentCost: 0, // 後で計算
+          currentCost: 0,
           isAuto: true,
+          buffDuration: duration,
+          buffEndTime: duration ? duration : undefined,
         });
       }
 
-      // サブスキル（戦闘開始時から有効）
+      // サブスキル
       const subSkill = char.character.skills.sub;
       if (subSkill) {
+        const duration = getBuffDuration(char, 'sub');
         entries.push({
           id: `auto_sub_${char.character.id}`,
           time: 0,
@@ -99,8 +118,10 @@ export function Timeline({
           skillName: subSkill.name,
           skillLevel: char.skillLevels.sub,
           cost: null,
-          currentCost: 0, // 後で計算
+          currentCost: 0,
           isAuto: true,
+          buffDuration: duration,
+          buffEndTime: duration ? duration : undefined,
         });
       }
     });
@@ -108,9 +129,8 @@ export function Timeline({
     return entries;
   }, [characters]);
 
-  // タイムラインエントリを構築（コスト計算含む）
+  // タイムラインエントリを構築
   const timelineEntries = useMemo<TimelineEntry[]>(() => {
-    // 手動アクションをエントリに変換
     const manualEntries: TimelineEntry[] = actions.map((action) => {
       const char = getCharacter(action.characterId);
       const skill = char?.character.skills[action.skillType];
@@ -121,6 +141,8 @@ export function Timeline({
           log.skillType === action.skillType
       );
 
+      const buffDuration = char ? getBuffDuration(char, action.skillType) : undefined;
+
       return {
         id: action.id,
         time: action.time,
@@ -130,32 +152,31 @@ export function Timeline({
         skillName: skill?.name || action.skillType,
         skillLevel: action.skillLevel,
         cost: action.skillType === 'ex' ? (skill?.cost || 0) : null,
-        currentCost: 0, // 後で計算
+        currentCost: 0,
         isAuto: false,
         damage: damageEntry?.damage.expectedDamage,
+        buffDuration: buffDuration,
+        buffEndTime: buffDuration ? action.time + buffDuration : undefined,
       };
     });
 
-    // 全エントリを時間順にソート
+    // 全エントリを結合してソート
     const allEntries = [...autoEntries, ...manualEntries].sort(
       (a, b) => a.time - b.time || (a.isAuto ? -1 : 1)
     );
 
-    // コストを順番に計算
+    // コスト計算
     let currentCost = manualInitialCost;
     let lastTime = 0;
 
     return allEntries.map((entry) => {
-      // 時間経過によるコスト回復
       const elapsed = entry.time - lastTime;
       currentCost = Math.min(currentCost + elapsed * costRecoveryRate, maxCost);
 
-      // オーバーライドがあれば適用
       if (costOverrides[entry.id] !== undefined) {
         currentCost = costOverrides[entry.id];
       }
 
-      // EXスキルならコスト消費
       if (entry.skillType === 'ex' && entry.cost) {
         const costBeforeUse = currentCost;
         currentCost = Math.max(0, currentCost - entry.cost);
@@ -167,12 +188,6 @@ export function Timeline({
       return { ...entry, currentCost };
     });
   }, [actions, autoEntries, damageLog, manualInitialCost, costRecoveryRate, maxCost, costOverrides]);
-
-  // EXスキルのみのエントリ（手動追加分）
-  const exSkillEntries = timelineEntries.filter(
-    (e) => e.skillType === 'ex' && !e.isAuto
-  );
-
 
   const handleAddAction = () => {
     if (!selectedCharacter) return;
@@ -207,11 +222,25 @@ export function Timeline({
     return `${mins}:${secsStr.padStart(mins > 0 ? 2 : 1, '0')}`;
   };
 
+  const skillTypeLabels: Record<SkillType, string> = {
+    ex: 'EX',
+    normal: 'NS',
+    passive: 'PS',
+    sub: 'SS',
+  };
+
   const skillTypeColors: Record<SkillType, string> = {
     ex: 'bg-blue-500 text-white',
     normal: 'bg-green-500 text-white',
-    passive: 'bg-purple-200 text-purple-800',
-    sub: 'bg-gray-200 text-gray-700',
+    passive: 'bg-purple-500 text-white',
+    sub: 'bg-orange-500 text-white',
+  };
+
+  const skillTypeBgColors: Record<SkillType, string> = {
+    ex: 'bg-blue-50 border-blue-200',
+    normal: 'bg-green-50 border-green-200',
+    passive: 'bg-purple-50 border-purple-200',
+    sub: 'bg-orange-50 border-orange-200',
   };
 
   return (
@@ -255,9 +284,6 @@ export function Timeline({
               {costRecoveryRate.toFixed(3)}/秒
             </div>
           </div>
-        </div>
-        <div className="mt-2 text-xs text-gray-500">
-          1コスト回復: {(1 / costRecoveryRate).toFixed(2)}秒
         </div>
       </div>
 
@@ -313,45 +339,15 @@ export function Timeline({
 
       {/* タイムライン表示 */}
       <div className="space-y-1 max-h-96 overflow-y-auto">
-        {/* パッシブ/サブスキル（自動） */}
-        {autoEntries.length > 0 && (
-          <div className="mb-2">
-            <div className="text-xs text-gray-500 mb-1 font-medium">
-              常時効果（パッシブ/サブスキル）
-            </div>
-            {autoEntries.map((entry) => (
-              <div
-                key={entry.id}
-                className="flex items-center justify-between bg-gray-50 p-2 rounded text-sm opacity-70"
-              >
-                <div className="flex items-center gap-2">
-                  <span
-                    className={`px-1.5 py-0.5 text-xs rounded ${
-                      skillTypeColors[entry.skillType]
-                    }`}
-                  >
-                    {entry.skillType === 'passive' ? 'PS' : 'SS'}
-                  </span>
-                  <span className="font-medium">{entry.characterName}</span>
-                  <span className="text-gray-500">{entry.skillName}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* EXスキルタイムライン */}
-        <div className="text-xs text-gray-500 mb-1 font-medium">
-          EXスキルタイムライン
-        </div>
-        {exSkillEntries.length === 0 ? (
+        {timelineEntries.length === 0 ? (
           <p className="text-gray-500 text-sm text-center py-4">
-            EXスキルを追加してください
+            キャラクターを編成してください
           </p>
         ) : (
-          exSkillEntries.map((entry) => {
-            const costAfterUse = entry.currentCost - (entry.cost || 0);
-            const isInsufficient = entry.currentCost < (entry.cost || 0);
+          timelineEntries.map((entry) => {
+            const isExSkill = entry.skillType === 'ex';
+            const costAfterUse = isExSkill ? entry.currentCost - (entry.cost || 0) : null;
+            const isInsufficient = isExSkill && entry.currentCost < (entry.cost || 0);
 
             return (
               <div
@@ -359,53 +355,74 @@ export function Timeline({
                 className={`flex items-center justify-between p-2 rounded border ${
                   isInsufficient
                     ? 'bg-red-50 border-red-300'
-                    : 'bg-white border-gray-200'
+                    : skillTypeBgColors[entry.skillType]
                 }`}
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 flex-wrap">
                   {/* 時間 */}
-                  <span className="text-sm font-mono text-gray-600 w-12">
+                  <span className="text-sm font-mono text-gray-600 w-10">
                     {formatTime(entry.time)}
                   </span>
 
-                  {/* コスト表示（編集可能） */}
-                  <div className="flex items-center gap-1">
-                    <input
-                      type="number"
-                      min={0}
-                      max={maxCost}
-                      step={0.5}
-                      value={entry.currentCost.toFixed(1)}
-                      onChange={(e) =>
-                        handleCostOverride(entry.id, parseFloat(e.target.value) || 0)
-                      }
-                      className={`w-12 p-0.5 text-xs border rounded text-center ${
-                        isInsufficient
-                          ? 'border-red-400 bg-red-50'
-                          : 'border-gray-300'
-                      }`}
-                      title="コストを手動で変更"
-                    />
-                    <span className="text-gray-400">→</span>
-                    <span
-                      className={`text-xs font-medium ${
-                        isInsufficient ? 'text-red-600' : 'text-gray-600'
-                      }`}
-                    >
-                      {costAfterUse.toFixed(1)}
-                    </span>
-                  </div>
-
-                  {/* キャラ/スキル */}
+                  {/* スキルタイプバッジ */}
                   <span
-                    className={`px-1.5 py-0.5 text-xs rounded ${
+                    className={`px-1.5 py-0.5 text-xs rounded font-medium ${
                       skillTypeColors[entry.skillType]
                     }`}
                   >
-                    {entry.cost}
+                    {skillTypeLabels[entry.skillType]}
                   </span>
+
+                  {/* EXスキルのコスト表示 */}
+                  {isExSkill && (
+                    <div className="flex items-center gap-1 text-xs">
+                      <input
+                        type="number"
+                        min={0}
+                        max={maxCost}
+                        step={0.5}
+                        value={entry.currentCost.toFixed(1)}
+                        onChange={(e) =>
+                          handleCostOverride(entry.id, parseFloat(e.target.value) || 0)
+                        }
+                        className={`w-10 p-0.5 border rounded text-center ${
+                          isInsufficient
+                            ? 'border-red-400 bg-red-50'
+                            : 'border-gray-300'
+                        }`}
+                        title="コストを手動で変更"
+                      />
+                      <span className="text-gray-400">→</span>
+                      <span
+                        className={`font-medium ${
+                          isInsufficient ? 'text-red-600' : 'text-gray-600'
+                        }`}
+                      >
+                        {costAfterUse?.toFixed(1)}
+                      </span>
+                      <span className="text-gray-400 ml-1">
+                        (Cost:{entry.cost})
+                      </span>
+                    </div>
+                  )}
+
+                  {/* キャラ名・スキル名 */}
                   <span className="text-sm font-medium">{entry.characterName}</span>
                   <span className="text-xs text-gray-500">{entry.skillName}</span>
+
+                  {/* バフ持続時間表示 */}
+                  {entry.buffDuration && (
+                    <span className="text-xs text-gray-400 bg-gray-100 px-1.5 py-0.5 rounded">
+                      ~{formatTime(entry.buffEndTime!)} ({entry.buffDuration}秒)
+                    </span>
+                  )}
+
+                  {/* 永続バフ表示 */}
+                  {entry.skillType === 'passive' && !entry.buffDuration && (
+                    <span className="text-xs text-purple-400 bg-purple-100 px-1.5 py-0.5 rounded">
+                      永続
+                    </span>
+                  )}
                 </div>
 
                 <div className="flex items-center gap-2">
@@ -415,13 +432,15 @@ export function Timeline({
                       {Math.floor(entry.damage).toLocaleString()}
                     </span>
                   )}
-                  {/* 削除 */}
-                  <button
-                    onClick={() => onRemoveAction(entry.id)}
-                    className="text-red-500 hover:text-red-700 text-lg leading-none"
-                  >
-                    ×
-                  </button>
+                  {/* 削除ボタン（手動追加のみ） */}
+                  {!entry.isAuto && (
+                    <button
+                      onClick={() => onRemoveAction(entry.id)}
+                      className="text-red-500 hover:text-red-700 text-lg leading-none"
+                    >
+                      ×
+                    </button>
+                  )}
                 </div>
               </div>
             );
