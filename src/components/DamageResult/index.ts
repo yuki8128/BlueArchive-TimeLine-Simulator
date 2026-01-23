@@ -1,0 +1,1 @@
+export { DamageResult } from './DamageResult';

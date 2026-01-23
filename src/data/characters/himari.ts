@@ -1,0 +1,127 @@
+import { Character } from '../../types';
+
+export const himari: Character = {
+  id: 'himari',
+  name: 'ヒマリ',
+  nameEn: 'Himari',
+  rarity: 3,
+  attackType: 'mystic',
+  role: 'special',
+  position: 'back',
+  baseStats: {
+    attack: 3823,
+    defense: 193,
+    hp: 18429,
+    criticalValue: 203,
+    criticalDamage: 200,
+    stability: 1203,
+    accuracy: 293,
+    evasion: 159,
+    costRecovery: 700,
+  },
+  terrain: {
+    urban: 'A',
+    outdoor: 'S',
+    indoor: 'B',
+  },
+  skills: {
+    ex: {
+      id: 'himari_ex',
+      name: '君に捧げるアンコール',
+      description: '味方1体の会心ダメージ率と攻撃力を増加',
+      type: 'ex',
+      cost: 3,
+      levels: [
+        {
+          level: 1,
+          buffEffects: [
+            { type: 'critDamagePercent', value: 50.4, duration: 20 },
+            { type: 'attackPercent', value: 50.4, duration: 20 },
+          ],
+        },
+        {
+          level: 2,
+          buffEffects: [
+            { type: 'critDamagePercent', value: 54.6, duration: 20 },
+            { type: 'attackPercent', value: 54.6, duration: 20 },
+          ],
+        },
+        {
+          level: 3,
+          buffEffects: [
+            { type: 'critDamagePercent', value: 63.9, duration: 20 },
+            { type: 'attackPercent', value: 63.9, duration: 20 },
+          ],
+        },
+        {
+          level: 4,
+          buffEffects: [
+            { type: 'critDamagePercent', value: 67.2, duration: 20 },
+            { type: 'attackPercent', value: 67.2, duration: 20 },
+          ],
+        },
+        {
+          level: 5,
+          buffEffects: [
+            { type: 'critDamagePercent', value: 73.9, duration: 20 },
+            { type: 'attackPercent', value: 73.9, duration: 20 },
+          ],
+        },
+      ],
+    },
+    normal: {
+      id: 'himari_normal',
+      name: '一所懸命サポート',
+      description: '味方の攻撃力増加',
+      type: 'normal',
+      levels: [
+        { level: 1, buffEffects: [{ type: 'attackPercent', value: 11.2, duration: 30 }] },
+        { level: 2, buffEffects: [{ type: 'attackPercent', value: 11.8, duration: 30 }] },
+        { level: 3, buffEffects: [{ type: 'attackPercent', value: 12.4, duration: 30 }] },
+        { level: 4, buffEffects: [{ type: 'attackPercent', value: 14, duration: 30 }] },
+        { level: 5, buffEffects: [{ type: 'attackPercent', value: 14.6, duration: 30 }] },
+        { level: 6, buffEffects: [{ type: 'attackPercent', value: 15.2, duration: 30 }] },
+        { level: 7, buffEffects: [{ type: 'attackPercent', value: 16.8, duration: 30 }] },
+        { level: 8, buffEffects: [{ type: 'attackPercent', value: 17.4, duration: 30 }] },
+        { level: 9, buffEffects: [{ type: 'attackPercent', value: 18, duration: 30 }] },
+        { level: 10, buffEffects: [{ type: 'attackPercent', value: 19.6, duration: 30 }] },
+      ],
+    },
+    passive: {
+      id: 'himari_passive',
+      name: 'とにかく応援',
+      description: '味方の会心ダメージ率増加',
+      type: 'passive',
+      levels: [
+        { level: 1, buffEffects: [{ type: 'critDamagePercent', value: 14, duration: 999 }] },
+        { level: 2, buffEffects: [{ type: 'critDamagePercent', value: 14.7, duration: 999 }] },
+        { level: 3, buffEffects: [{ type: 'critDamagePercent', value: 15.4, duration: 999 }] },
+        { level: 4, buffEffects: [{ type: 'critDamagePercent', value: 17.5, duration: 999 }] },
+        { level: 5, buffEffects: [{ type: 'critDamagePercent', value: 18.2, duration: 999 }] },
+        { level: 6, buffEffects: [{ type: 'critDamagePercent', value: 18.9, duration: 999 }] },
+        { level: 7, buffEffects: [{ type: 'critDamagePercent', value: 21, duration: 999 }] },
+        { level: 8, buffEffects: [{ type: 'critDamagePercent', value: 21.7, duration: 999 }] },
+        { level: 9, buffEffects: [{ type: 'critDamagePercent', value: 22.4, duration: 999 }] },
+        { level: 10, buffEffects: [{ type: 'critDamagePercent', value: 24.5, duration: 999 }] },
+      ],
+    },
+    sub: {
+      id: 'himari_sub',
+      name: 'コスト回復強化',
+      description: 'コスト回復力増加',
+      type: 'sub',
+      levels: [
+        { level: 1, buffEffects: [] },
+        { level: 2, buffEffects: [] },
+        { level: 3, buffEffects: [] },
+        { level: 4, buffEffects: [] },
+        { level: 5, buffEffects: [] },
+        { level: 6, buffEffects: [] },
+        { level: 7, buffEffects: [] },
+        { level: 8, buffEffects: [] },
+        { level: 9, buffEffects: [] },
+        { level: 10, buffEffects: [] },
+      ],
+    },
+  },
+};
