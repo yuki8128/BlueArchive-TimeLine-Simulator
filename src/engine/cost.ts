@@ -1,8 +1,9 @@
 import { CharacterInFormation, Formation } from '../types';
+import { getSkillLevelData } from './damage';
 
 /**
  * コスト回復速度を計算
- * コスト回復速度 = 全員のコスト回復力の合計 / 10000 [コスト/秒]
+ * コスト回復速度 = (全員のコスト回復力の合計) × (1 + コスト回復%バフ合計) / 10000 [コスト/秒]
  */
 export function calculateCostRecoveryRate(formation: Formation): number {
   const allCharacters: CharacterInFormation[] = [
@@ -10,12 +11,113 @@ export function calculateCostRecoveryRate(formation: Formation): number {
     ...formation.specials.filter((c): c is CharacterInFormation => c !== null),
   ];
 
-  const totalCostRecovery = allCharacters.reduce(
-    (sum, c) => sum + c.character.baseStats.costRecovery,
-    0
-  );
+  // 基本コスト回復力の合計
+  const baseCostRecovery = allCharacters.reduce((sum, c) => {
+    const baseValue = c.character.baseStats.costRecovery;
+    const override = c.statOverrides?.costRecovery ?? 0;
+    return sum + baseValue + override;
+  }, 0);
+
+  // パッシブ・サブスキルからのコスト回復%バフを計算
+  let costRecoveryPercentBonus = 0;
+  for (const char of allCharacters) {
+    // パッシブスキルのコスト回復バフ
+    const passiveSkill = char.character.skills.passive;
+    if (passiveSkill) {
+      const skillLevel = char.skillLevels.passive;
+      const levelData = getSkillLevelData(passiveSkill, skillLevel);
+      if (levelData?.buffEffects) {
+        for (const effect of levelData.buffEffects) {
+          if (effect.type === 'costRecoveryPercent') {
+            costRecoveryPercentBonus += effect.value;
+          }
+        }
+      }
+    }
+
+    // サブスキルのコスト回復バフ
+    const subSkill = char.character.skills.sub;
+    if (subSkill) {
+      const skillLevel = char.skillLevels.sub;
+      const levelData = getSkillLevelData(subSkill, skillLevel);
+      if (levelData?.buffEffects) {
+        for (const effect of levelData.buffEffects) {
+          if (effect.type === 'costRecoveryPercent') {
+            costRecoveryPercentBonus += effect.value;
+          }
+        }
+      }
+    }
+  }
+
+  // 最終コスト回復速度 = 基本値 × (1 + %バフ/100) / 10000
+  const totalCostRecovery = baseCostRecovery * (1 + costRecoveryPercentBonus / 100);
 
   return totalCostRecovery / 10000;
+}
+
+/**
+ * コスト回復の内訳を取得（UI表示用）
+ */
+export function getCostRecoveryBreakdown(formation: Formation): {
+  baseCostRecovery: number;
+  costRecoveryPercentBonus: number;
+  totalCostRecovery: number;
+  costRecoveryRate: number;
+} {
+  const allCharacters: CharacterInFormation[] = [
+    ...formation.strikers.filter((c): c is CharacterInFormation => c !== null),
+    ...formation.specials.filter((c): c is CharacterInFormation => c !== null),
+  ];
+
+  // 基本コスト回復力の合計
+  const baseCostRecovery = allCharacters.reduce((sum, c) => {
+    const baseValue = c.character.baseStats.costRecovery;
+    const override = c.statOverrides?.costRecovery ?? 0;
+    return sum + baseValue + override;
+  }, 0);
+
+  // パッシブ・サブスキルからのコスト回復%バフを計算
+  let costRecoveryPercentBonus = 0;
+  for (const char of allCharacters) {
+    // パッシブスキルのコスト回復バフ
+    const passiveSkill = char.character.skills.passive;
+    if (passiveSkill) {
+      const skillLevel = char.skillLevels.passive;
+      const levelData = getSkillLevelData(passiveSkill, skillLevel);
+      if (levelData?.buffEffects) {
+        for (const effect of levelData.buffEffects) {
+          if (effect.type === 'costRecoveryPercent') {
+            costRecoveryPercentBonus += effect.value;
+          }
+        }
+      }
+    }
+
+    // サブスキルのコスト回復バフ
+    const subSkill = char.character.skills.sub;
+    if (subSkill) {
+      const skillLevel = char.skillLevels.sub;
+      const levelData = getSkillLevelData(subSkill, skillLevel);
+      if (levelData?.buffEffects) {
+        for (const effect of levelData.buffEffects) {
+          if (effect.type === 'costRecoveryPercent') {
+            costRecoveryPercentBonus += effect.value;
+          }
+        }
+      }
+    }
+  }
+
+  const totalCostRecovery = baseCostRecovery * (1 + costRecoveryPercentBonus / 100);
+  const costRecoveryRate = totalCostRecovery / 10000;
+
+  return {
+    baseCostRecovery,
+    costRecoveryPercentBonus,
+    totalCostRecovery,
+    costRecoveryRate,
+  };
 }
 
 /**
