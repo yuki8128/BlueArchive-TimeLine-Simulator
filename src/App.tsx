@@ -1,9 +1,9 @@
 import { useState, useMemo, useCallback } from 'react';
 import {
-  CharacterSelect,
   EnemySelect,
   DamageResult,
   Timeline,
+  FormationSetup,
 } from './components';
 import { characters } from './data/characters';
 import { enemies } from './data/enemies';
@@ -14,7 +14,7 @@ import {
   DamageResult as DamageResultType,
   SkillType,
 } from './types';
-import { calculateDamage, runTimeline } from './engine';
+import { calculateDamage, runTimeline, calculateMaxCost, calculateCostRecoveryRate } from './engine';
 
 function App() {
   // 選択されたキャラクター（最大4ストライカー + 2スペシャル）
@@ -32,6 +32,9 @@ function App() {
   // タイムラインアクション
   const [timelineActions, setTimelineActions] = useState<TimelineAction[]>([]);
 
+  // 初期コスト（手動設定可能）
+  const [initialCost, setInitialCost] = useState<number | undefined>(undefined);
+
   // 単発ダメージ計算用の選択
   const [calcCharacter, setCalcCharacter] =
     useState<CharacterInFormation | null>(null);
@@ -44,6 +47,19 @@ function App() {
       ...selectedSpecials.filter((c): c is CharacterInFormation => c !== null),
     ];
   }, [selectedStrikers, selectedSpecials]);
+
+  // 編成情報
+  const formation = useMemo(() => ({
+    strikers: selectedStrikers,
+    specials: selectedSpecials,
+  }), [selectedStrikers, selectedSpecials]);
+
+  // コスト関連の計算
+  const maxCost = useMemo(() => calculateMaxCost(formation), [formation]);
+  const costRecoveryRate = useMemo(() => {
+    if (allCharacters.length === 0) return 0.42; // デフォルト値
+    return calculateCostRecoveryRate(formation);
+  }, [formation, allCharacters.length]);
 
   // ストライカーの更新
   const handleStrikerChange = (
@@ -118,24 +134,20 @@ function App() {
   const simulationResult = useMemo(() => {
     if (allCharacters.length === 0 || !selectedEnemy) return null;
 
-    const formation = {
-      strikers: selectedStrikers,
-      specials: selectedSpecials,
-    };
-
     return runTimeline(
       formation,
       selectedEnemy,
       selectedPhase,
-      timelineActions
+      timelineActions,
+      initialCost
     );
   }, [
-    allCharacters,
+    allCharacters.length,
     selectedEnemy,
     selectedPhase,
-    selectedStrikers,
-    selectedSpecials,
+    formation,
     timelineActions,
+    initialCost,
   ]);
 
   // フィルタリング用: ストライカー/スペシャルキャラのみ
@@ -157,51 +169,20 @@ function App() {
       </header>
 
       <main className="container mx-auto px-4 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* 左カラム: 編成 */}
-          <div className="space-y-4">
-            <h2 className="text-lg font-medium text-gray-700 border-b pb-2">
-              編成
-            </h2>
+        {/* パーティー編成セクション */}
+        <div className="mb-6">
+          <FormationSetup
+            strikerCharacters={strikerCharacters}
+            specialCharacters={specialCharacters}
+            strikers={selectedStrikers}
+            specials={selectedSpecials}
+            onStrikerChange={handleStrikerChange}
+            onSpecialChange={handleSpecialChange}
+          />
+        </div>
 
-            {/* ストライカー */}
-            <div>
-              <h3 className="text-sm font-medium text-gray-600 mb-2">
-                ストライカー (1-4)
-              </h3>
-              <div className="space-y-2">
-                {[0, 1, 2, 3].map((index) => (
-                  <CharacterSelect
-                    key={`striker_${index}`}
-                    characters={strikerCharacters}
-                    selectedCharacter={selectedStrikers[index]}
-                    onSelect={(char) => handleStrikerChange(index, char)}
-                    label={`ストライカー ${index + 1}`}
-                  />
-                ))}
-              </div>
-            </div>
-
-            {/* スペシャル */}
-            <div>
-              <h3 className="text-sm font-medium text-gray-600 mb-2">
-                スペシャル (1-2)
-              </h3>
-              <div className="space-y-2">
-                {[0, 1].map((index) => (
-                  <CharacterSelect
-                    key={`special_${index}`}
-                    characters={specialCharacters}
-                    selectedCharacter={selectedSpecials[index]}
-                    onSelect={(char) => handleSpecialChange(index, char)}
-                    label={`スペシャル ${index + 1}`}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* 中央カラム: 敵選択 & 単発ダメージ計算 */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {/* 左カラム: 敵選択 & 単発ダメージ計算 */}
           <div className="space-y-4">
             <h2 className="text-lg font-medium text-gray-700 border-b pb-2">
               敵 & ダメージ計算
@@ -284,39 +265,14 @@ function App() {
               characters={allCharacters}
               damageLog={simulationResult?.damageLog || []}
               totalDamage={simulationResult?.totalDamage || 0}
+              maxCost={maxCost}
+              costRecoveryRate={costRecoveryRate}
               onAddAction={handleAddAction}
               onRemoveAction={handleRemoveAction}
               onClearActions={handleClearActions}
+              initialCost={initialCost ?? maxCost}
+              onInitialCostChange={setInitialCost}
             />
-
-            {/* コスト情報 */}
-            {simulationResult && (
-              <div className="bg-white rounded-lg shadow p-4">
-                <h3 className="text-sm font-medium text-gray-700 mb-2">
-                  コスト情報
-                </h3>
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  <div>
-                    <span className="text-gray-500">最大コスト:</span>{' '}
-                    <span className="font-medium">
-                      {simulationResult.maxCost.toFixed(1)}
-                    </span>
-                  </div>
-                  <div>
-                    <span className="text-gray-500">回復速度:</span>{' '}
-                    <span className="font-medium">
-                      {simulationResult.costRecoveryRate.toFixed(3)}/秒
-                    </span>
-                  </div>
-                  <div className="col-span-2">
-                    <span className="text-gray-500">1コスト回復時間:</span>{' '}
-                    <span className="font-medium">
-                      {(1 / simulationResult.costRecoveryRate).toFixed(2)}秒
-                    </span>
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
         </div>
       </main>
