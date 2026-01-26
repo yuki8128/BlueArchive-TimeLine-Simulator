@@ -5,12 +5,14 @@ import { ActiveBuff, BuffEffect, BuffSlot } from '../types';
  */
 export function activateBuff(
   effect: BuffEffect,
-  startTime: number
+  startTime: number,
+  targetCharacterIds?: string[]
 ): ActiveBuff {
   return {
     ...effect,
     startTime,
     endTime: startTime + effect.duration,
+    targetCharacterIds,
   };
 }
 
@@ -22,6 +24,30 @@ export function getActiveBuffsAtTime(
   time: number
 ): ActiveBuff[] {
   return buffs.filter((buff) => buff.startTime <= time && buff.endTime > time);
+}
+
+/**
+ * 特定のキャラクターに適用されるバフをフィルタリング
+ * - targetCharacterIds が undefined: 敵向けデバフ（味方には適用しない）
+ * - targetCharacterIds に characterId が含まれる: 適用
+ */
+export function getBuffsForCharacter(
+  buffs: ActiveBuff[],
+  characterId: string
+): ActiveBuff[] {
+  return buffs.filter((buff) => {
+    // targetCharacterIds が undefined の場合は敵向けデバフなので味方には適用しない
+    // ただし、敵へのデバフ（defenseDown等）は別途処理
+    if (!buff.targetCharacterIds) {
+      // 敵向けバフ（damageTakenPercent, defenseDownPercent等）は全員に適用
+      const enemyDebuffTypes = ['damageTakenPercent', 'defenseDownPercent', 'defenseDownFlat'];
+      if (enemyDebuffTypes.includes(buff.type)) {
+        return true;
+      }
+      return false;
+    }
+    return buff.targetCharacterIds.includes(characterId);
+  });
 }
 
 /**

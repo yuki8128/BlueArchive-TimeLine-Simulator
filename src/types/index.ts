@@ -190,6 +190,8 @@ export interface TimelineAction {
   characterId: string;
   skillType: SkillType;
   skillLevel: number;
+  // 単体バフスキル用：バフを受けるキャラクターID
+  buffTargetCharacterId?: string;
 }
 
 // ダメージ計算結果
@@ -269,6 +271,8 @@ export interface SimulationState {
 export interface ActiveBuff extends BuffEffect {
   startTime: number;
   endTime: number;
+  // バフが適用されるキャラクターIDリスト（空 = 全員, または敵向けデバフ）
+  targetCharacterIds?: string[];
 }
 
 // ダメージログ

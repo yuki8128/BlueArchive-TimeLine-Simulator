@@ -6,6 +6,7 @@ import {
   Formation,
   CharacterInFormation,
   ActiveBuff,
+  BuffTarget,
 } from '../types';
 import { calculateDamage, getSkillLevelData } from './damage';
 import {
@@ -13,7 +14,7 @@ import {
   calculateMaxCost,
   calculateCostAtTime,
 } from './cost';
-import { activateBuff, getActiveBuffsAtTime, removeExpiredBuffs } from './buff';
+import { activateBuff, getActiveBuffsAtTime, removeExpiredBuffs, getBuffsForCharacter } from './buff';
 
 /**
  * タイムラインを実行してダメージを計算
@@ -38,6 +39,36 @@ export function runTimeline(
   for (const c of formation.specials) {
     if (c) characterMap.set(c.character.id, c);
   }
+
+  // 全キャラクターIDのリスト
+  const allCharacterIds = Array.from(characterMap.keys());
+
+  // バフターゲットに基づいてtargetCharacterIdsを決定するヘルパー
+  const resolveBuffTargets = (
+    target: BuffTarget,
+    sourceCharacterId: string,
+    explicitTargetId?: string
+  ): string[] | undefined => {
+    switch (target) {
+      case 'self':
+        return [sourceCharacterId];
+      case 'ally':
+        // 単体バフ：明示的なターゲットがあればそれを使用、なければ全員に適用
+        if (explicitTargetId) {
+          return [explicitTargetId];
+        }
+        // デフォルトは全員に適用（UI改善まで）
+        return allCharacterIds;
+      case 'allAllies':
+        return allCharacterIds;
+      case 'enemy':
+      case 'allEnemies':
+        // 敵へのデバフは別途処理（targetCharacterIdsは設定しない）
+        return undefined;
+      default:
+        return [sourceCharacterId];
+    }
+  };
 
   // アクションを時間順にソート
   const sortedActions = [...actions].sort((a, b) => a.time - b.time);
@@ -79,15 +110,23 @@ export function runTimeline(
     const skillData = getSkillLevelData(skill, skillLevel);
     if (skillData?.buffEffects) {
       for (const effect of skillData.buffEffects) {
+        const buffTarget = effect.target ?? 'self';
+        const targetCharacterIds = resolveBuffTargets(
+          buffTarget,
+          character.id,
+          action.buffTargetCharacterId
+        );
+
         const buff = activateBuff(
           {
             ...effect,
-            target: effect.target ?? 'self',
+            target: buffTarget,
             slot: action.skillType,
             sourceCharacterId: character.id,
             sourceSkillId: skill.id,
           },
-          action.time
+          action.time,
+          targetCharacterIds
         );
         activeBuffs.push(buff);
       }
@@ -95,13 +134,16 @@ export function runTimeline(
 
     // ダメージ計算（ダメージスキルの場合）
     if (skillData?.damageMultiplier && skillData.damageMultiplier > 0) {
+      // このキャラクターに適用されるバフのみをフィルタリング
+      const buffsForCharacter = getBuffsForCharacter(currentBuffs, character.id);
+
       const damageResult = calculateDamage(
         character,
         skill,
         skillLevel,
         enemy,
         phase,
-        currentBuffs,
+        buffsForCharacter,
         90 // 攻撃者レベル
       );
 
@@ -110,7 +152,7 @@ export function runTimeline(
         characterId: character.id,
         skillType: action.skillType,
         damage: damageResult,
-        buffsActive: [...currentBuffs],
+        buffsActive: [...buffsForCharacter],
       });
 
       totalDamage += damageResult.expectedDamage;

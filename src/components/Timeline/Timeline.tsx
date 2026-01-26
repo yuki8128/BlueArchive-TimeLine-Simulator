@@ -80,6 +80,7 @@ export function Timeline({
   const [costOverrides, setCostOverrides] = useState<Record<string, number>>({});
   const [timeOverrides, setTimeOverrides] = useState<Record<string, number>>({});
   const [simulationDuration, setSimulationDuration] = useState<number>(SIMULATION_DURATION);
+  const [buffTargetCharacter, setBuffTargetCharacter] = useState<string>('');
 
   useEffect(() => {
     if (initialCost !== undefined) {
@@ -90,6 +91,25 @@ export function Timeline({
   const getCharacter = (characterId: string) => {
     return characters.find((c) => c.character.id === characterId);
   };
+
+  // スキルが単体味方バフを持つか確認
+  const hasSingleAllyBuff = (characterId: string, skillType: SkillType): boolean => {
+    const char = getCharacter(characterId);
+    if (!char) return false;
+
+    const skill = char.character.skills[skillType];
+    const skillLevel = char.skillLevels[skillType];
+    const levelData = skill.levels.find(l => l.level === skillLevel);
+
+    if (!levelData?.buffEffects) return false;
+
+    return levelData.buffEffects.some(effect => effect.target === 'ally');
+  };
+
+  // 選択中のスキルが単体味方バフかどうか
+  const selectedSkillHasSingleAllyBuff = selectedCharacter
+    ? hasSingleAllyBuff(selectedCharacter, selectedSkillType)
+    : false;
 
   // バフの持続時間を取得
   const getBuffDuration = (char: CharacterInFormation, skillType: SkillType): number | undefined => {
@@ -315,6 +335,8 @@ export function Timeline({
       characterId: selectedCharacter,
       skillType: selectedSkillType,
       skillLevel: char.skillLevels[selectedSkillType],
+      // 単体味方バフの場合、ターゲットを指定
+      buffTargetCharacterId: selectedSkillHasSingleAllyBuff ? buffTargetCharacter || undefined : undefined,
     });
   };
 
@@ -532,6 +554,32 @@ export function Timeline({
           </button>
         </div>
       </div>
+
+      {/* 単体味方バフのターゲット選択 */}
+      {selectedSkillHasSingleAllyBuff && (
+        <div className="bg-purple-50 rounded-lg p-3 mb-4 border border-purple-200">
+          <label className="block text-xs text-gray-600 mb-1">
+            バフ対象キャラクター（単体味方バフ）
+          </label>
+          <select
+            value={buffTargetCharacter}
+            onChange={(e) => setBuffTargetCharacter(e.target.value)}
+            className="w-full p-2 border border-purple-300 rounded text-sm"
+          >
+            <option value="">全員に適用（デフォルト）</option>
+            {characters
+              .filter((c) => c.character.id !== selectedCharacter)
+              .map((char) => (
+                <option key={char.character.id} value={char.character.id}>
+                  {char.character.name}
+                </option>
+              ))}
+          </select>
+          <p className="text-xs text-gray-500 mt-1">
+            アコやキサキのEXスキルなど、味方1人を対象とするバフの対象を指定
+          </p>
+        </div>
+      )}
 
       {/* タイムライン表示 */}
       <div className="space-y-1 max-h-96 overflow-y-auto">

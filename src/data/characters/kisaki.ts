@@ -32,19 +32,59 @@ export const kisaki: Character = {
       "cost": 3,
       "levels": [
         {
-          "level": 1
+          "level": 1,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 55.67,
+              "duration": 15,
+              "target": "ally"
+            }
+          ]
         },
         {
-          "level": 2
+          "level": 2,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 59.87,
+              "duration": 15,
+              "target": "ally"
+            }
+          ]
         },
         {
-          "level": 3
+          "level": 3,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 68.27,
+              "duration": 15,
+              "target": "ally"
+            }
+          ]
         },
         {
-          "level": 4
+          "level": 4,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 72.47,
+              "duration": 15,
+              "target": "ally"
+            }
+          ]
         },
         {
-          "level": 5
+          "level": 5,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 80.71,
+              "duration": 15,
+              "target": "ally"
+            }
+          ]
         }
       ]
     },
