@@ -1,97 +1,297 @@
 import { Character } from '../../types';
 
 export const kayoko: Character = {
-  id: 'kayoko',
-  name: 'カヨコ',
-  nameEn: 'Kayoko',
-  rarity: 3,
-  attackType: 'explosive',
-  role: 'striker',
-  position: 'back',
-  baseStats: {
-    attack: 5689,
-    defense: 372,
-    hp: 26123,
-    criticalValue: 287,
-    criticalDamage: 200,
-    stability: 1456,
-    accuracy: 389,
-    evasion: 198,
-    costRecovery: 700,
+  "id": "kayoko",
+  "name": "カヨコ",
+  "nameEn": "Kayoko",
+  "rarity": 2,
+  "attackType": "explosive",
+  "role": "striker",
+  "position": "middle",
+  "baseStats": {
+    "attack": 1053,
+    "defense": 121,
+    "hp": 26330,
+    "criticalValue": 197,
+    "criticalDamage": 200,
+    "stability": 1008,
+    "accuracy": 98,
+    "evasion": 1088,
+    "costRecovery": 700
   },
-  terrain: {
-    urban: 'SS',
-    outdoor: 'S',
-    indoor: 'B',
+  "terrain": {
+    "urban": "A",
+    "outdoor": "D",
+    "indoor": "A"
   },
-  skills: {
-    ex: {
-      id: 'kayoko_ex',
-      name: '闇夜の鉄槌',
-      description: '敵単体に攻撃力の867%のダメージ',
-      type: 'ex',
-      cost: 5,
-      levels: [
-        { level: 1, damageMultiplier: 6.5, hitCount: 1 },
-        { level: 2, damageMultiplier: 7.04, hitCount: 1 },
-        { level: 3, damageMultiplier: 8.23, hitCount: 1 },
-        { level: 4, damageMultiplier: 8.67, hitCount: 1 },
-        { level: 5, damageMultiplier: 9.54, hitCount: 1 },
-      ],
+  "skills": {
+    "ex": {
+      "id": "kayoko_ex",
+      "name": "パニックブリンガー",
+      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ/ を付与（間）",
+      "type": "ex",
+      "cost": 6,
+      "levels": [
+        {
+          "level": 1,
+          "damageMultiplier": 3.4908,
+          "hitCount": 1
+        },
+        {
+          "level": 2,
+          "damageMultiplier": 4.0144,
+          "hitCount": 1
+        },
+        {
+          "level": 3,
+          "damageMultiplier": 4.538,
+          "hitCount": 1
+        },
+        {
+          "level": 4,
+          "damageMultiplier": 5.0617,
+          "hitCount": 1
+        },
+        {
+          "level": 5,
+          "damageMultiplier": 5.5853,
+          "hitCount": 1
+        }
+      ]
     },
-    normal: {
-      id: 'kayoko_normal',
-      name: '暗殺者の視線',
-      description: '通常攻撃時、追加ダメージ',
-      type: 'normal',
-      levels: [
-        { level: 1, damageMultiplier: 2.71 },
-        { level: 2, damageMultiplier: 2.85 },
-        { level: 3, damageMultiplier: 2.98 },
-        { level: 4, damageMultiplier: 3.39 },
-        { level: 5, damageMultiplier: 3.52 },
-        { level: 6, damageMultiplier: 3.66 },
-        { level: 7, damageMultiplier: 4.07 },
-        { level: 8, damageMultiplier: 4.2 },
-        { level: 9, damageMultiplier: 4.34 },
-        { level: 10, damageMultiplier: 4.75 },
-      ],
+    "normal": {
+      "id": "kayoko_normal",
+      "name": "パニックショット",
+      "description": "20秒毎に、敵1人に対して攻撃力の分のダメージ/ さらに30%の確率でを付与（3.6秒間）",
+      "type": "normal",
+      "levels": [
+        {
+          "level": 1,
+          "damageMultiplier": 1.3283,
+          "hitCount": 1
+        },
+        {
+          "level": 2,
+          "damageMultiplier": 1.3944,
+          "hitCount": 1
+        },
+        {
+          "level": 3,
+          "damageMultiplier": 1.4616,
+          "hitCount": 1
+        },
+        {
+          "level": 4,
+          "damageMultiplier": 1.7272,
+          "hitCount": 1
+        },
+        {
+          "level": 5,
+          "damageMultiplier": 1.7934,
+          "hitCount": 1
+        },
+        {
+          "level": 6,
+          "damageMultiplier": 1.8596,
+          "hitCount": 1
+        },
+        {
+          "level": 7,
+          "damageMultiplier": 2.1252,
+          "hitCount": 1
+        },
+        {
+          "level": 8,
+          "damageMultiplier": 2.1914,
+          "hitCount": 1
+        },
+        {
+          "level": 9,
+          "damageMultiplier": 2.2585,
+          "hitCount": 1
+        },
+        {
+          "level": 10,
+          "damageMultiplier": 2.5232,
+          "hitCount": 1
+        }
+      ]
     },
-    passive: {
-      id: 'kayoko_passive',
-      name: '夜の女王',
-      description: '自身の会心ダメージ率増加',
-      type: 'passive',
-      levels: [
-        { level: 1, buffEffects: [{ type: 'critDamagePercent', value: 14, duration: 999 }] },
-        { level: 2, buffEffects: [{ type: 'critDamagePercent', value: 14.7, duration: 999 }] },
-        { level: 3, buffEffects: [{ type: 'critDamagePercent', value: 15.4, duration: 999 }] },
-        { level: 4, buffEffects: [{ type: 'critDamagePercent', value: 17.5, duration: 999 }] },
-        { level: 5, buffEffects: [{ type: 'critDamagePercent', value: 18.2, duration: 999 }] },
-        { level: 6, buffEffects: [{ type: 'critDamagePercent', value: 18.9, duration: 999 }] },
-        { level: 7, buffEffects: [{ type: 'critDamagePercent', value: 21, duration: 999 }] },
-        { level: 8, buffEffects: [{ type: 'critDamagePercent', value: 21.7, duration: 999 }] },
-        { level: 9, buffEffects: [{ type: 'critDamagePercent', value: 22.4, duration: 999 }] },
-        { level: 10, buffEffects: [{ type: 'critDamagePercent', value: 24.5, duration: 999 }] },
-      ],
+    "passive": {
+      "id": "kayoko_passive",
+      "name": "怖い顔",
+      "description": "を増加",
+      "type": "passive",
+      "levels": [
+        {
+          "level": 1,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 14,
+              "duration": 999,
+              "target": "self"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 14.7,
+              "duration": 999,
+              "target": "self"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 15.4,
+              "duration": 999,
+              "target": "self"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 18.2,
+              "duration": 999,
+              "target": "self"
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 18.9,
+              "duration": 999,
+              "target": "self"
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 19.6,
+              "duration": 999,
+              "target": "self"
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 22.4,
+              "duration": 999,
+              "target": "self"
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 23.1,
+              "duration": 999,
+              "target": "self"
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 23.8,
+              "duration": 999,
+              "target": "self"
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "buffEffects": [
+            {
+              "type": "damageDealtPercent",
+              "value": 26.6,
+              "duration": 999,
+              "target": "self"
+            }
+          ]
+        }
+      ]
     },
-    sub: {
-      id: 'kayoko_sub',
-      name: 'コスト回復強化',
-      description: 'コスト回復力増加',
-      type: 'sub',
-      levels: [
-        { level: 1, buffEffects: [] },
-        { level: 2, buffEffects: [] },
-        { level: 3, buffEffects: [] },
-        { level: 4, buffEffects: [] },
-        { level: 5, buffEffects: [] },
-        { level: 6, buffEffects: [] },
-        { level: 7, buffEffects: [] },
-        { level: 8, buffEffects: [] },
-        { level: 9, buffEffects: [] },
-        { level: 10, buffEffects: [] },
-      ],
-    },
-  },
+    "sub": {
+      "id": "kayoko_sub",
+      "name": "仕方ない",
+      "description": "CC状態の敵を攻撃した時、攻撃力の分の追加ダメージ",
+      "type": "sub",
+      "levels": [
+        {
+          "level": 1,
+          "damageMultiplier": 0.7481,
+          "hitCount": 1
+        },
+        {
+          "level": 2,
+          "damageMultiplier": 0.7855,
+          "hitCount": 1
+        },
+        {
+          "level": 3,
+          "damageMultiplier": 0.8229,
+          "hitCount": 1
+        },
+        {
+          "level": 4,
+          "damageMultiplier": 0.9725,
+          "hitCount": 1
+        },
+        {
+          "level": 5,
+          "damageMultiplier": 1.0099,
+          "hitCount": 1
+        },
+        {
+          "level": 6,
+          "damageMultiplier": 1.0473,
+          "hitCount": 1
+        },
+        {
+          "level": 7,
+          "damageMultiplier": 1.1969,
+          "hitCount": 1
+        },
+        {
+          "level": 8,
+          "damageMultiplier": 1.2343,
+          "hitCount": 1
+        },
+        {
+          "level": 9,
+          "damageMultiplier": 1.2717,
+          "hitCount": 1
+        },
+        {
+          "level": 10,
+          "damageMultiplier": 1.4213,
+          "hitCount": 1
+        }
+      ]
+    }
+  }
 };
