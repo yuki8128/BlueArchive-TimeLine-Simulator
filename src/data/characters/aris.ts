@@ -28,7 +28,7 @@ export const aris: Character = {
     "ex": {
       "id": "aris_ex",
       "name": "世界の 法則が 崩壊します！",
-      "description": "直線範囲内の敵に対して、攻撃力の分のダメージ/ のチャージ段階によってダメージ量が1.5倍、あるいは2倍に増加/ 発射後、のチャージ段階は初期化されます。",
+      "description": "直線範囲内の敵に対して、攻撃力の591%分のダメージ/ のチャージ段階によってダメージ量が1.5倍、あるいは2倍に増加/ 発射後、のチャージ段階は初期化されます。",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -62,7 +62,7 @@ export const aris: Character = {
     "normal": {
       "id": "aris_normal",
       "name": "光よ！",
-      "description": "25秒毎に、を増加（20秒間）/ を1段階チャージ（最大で2段階まで）",
+      "description": "25秒毎に、会心値を32.3%増加（20秒間）/ を1段階チャージ（最大で2段階まで）",
       "type": "normal",
       "levels": [
         {
@@ -180,7 +180,7 @@ export const aris: Character = {
     "passive": {
       "id": "aris_passive",
       "name": "強化魔法です！",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -298,7 +298,7 @@ export const aris: Character = {
     "sub": {
       "id": "aris_sub",
       "name": "覚醒せよ、スーパーノヴァ！",
-      "description": "EXスキルの発動と同時に、を増加（20秒間）/ のチャージ段階によって効果が1.5倍、あるいは2倍に増加",
+      "description": "EXスキルの発動と同時に、会心値を22.9%増加（20秒間）/ のチャージ段階によって効果が1.5倍、あるいは2倍に増加",
       "type": "sub",
       "levels": [
         {

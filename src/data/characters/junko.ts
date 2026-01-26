@@ -28,7 +28,7 @@ export const junko: Character = {
     "ex": {
       "id": "junko_ex",
       "name": "空腹のイライラ",
-      "description": "直線範囲内の敵に対して、攻撃力の分のダメージ/ 自身の現在のHPが25.7%減少",
+      "description": "直線範囲内の敵に対して、攻撃力の1417%分のダメージ/ 自身の現在のHPが25.7%減少",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -62,7 +62,7 @@ export const junko: Character = {
     "normal": {
       "id": "junko_normal",
       "name": "お腹空いてる時は話しかけないで！",
-      "description": "HPが20%以下の時、を付与（間） （戦闘中に1回のみ）",
+      "description": "HPが20%以下の時、を付与（24.3秒間） （戦闘中に1回のみ）",
       "type": "normal",
       "levels": [
         {
@@ -100,7 +100,7 @@ export const junko: Character = {
     "passive": {
       "id": "junko_passive",
       "name": "小柄のメリット",
-      "description": "を増加",
+      "description": "回避値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -218,7 +218,7 @@ export const junko: Character = {
     "sub": {
       "id": "junko_sub",
       "name": "空腹の美食家",
-      "description": "攻撃時、自身の失ったHPに比例して攻撃力の～分の追加ダメージ",
+      "description": "攻撃時、自身の失ったHPに比例して攻撃力の1.7%～9.4%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

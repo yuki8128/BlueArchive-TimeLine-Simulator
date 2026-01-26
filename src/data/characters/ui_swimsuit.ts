@@ -27,7 +27,7 @@ export const uiSwimsuit: Character = {
     "ex": {
       "id": "ui_swimsuit_ex",
       "name": "プライベートカフェ",
-      "description": "自身を中心とした円形範囲内の自身を除く味方4人を自身の位置に移動させた後、を加算（45秒間）",
+      "description": "自身を中心とした円形範囲内の自身を除く味方4人を自身の位置に移動させた後、貫通特効を70.1%加算（45秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -51,7 +51,7 @@ export const uiSwimsuit: Character = {
     "normal": {
       "id": "ui_swimsuit_normal",
       "name": "決定的な手がかり",
-      "description": "を3個獲得時、ストライカーの味方にを加算（30秒間）/ を3個消耗",
+      "description": "を3個獲得時、ストライカーの味方に貫通特効を28.9%加算（30秒間）/ を3個消耗",
       "type": "normal",
       "levels": [
         {
@@ -89,7 +89,7 @@ export const uiSwimsuit: Character = {
     "passive": {
       "id": "ui_swimsuit_passive",
       "name": "探求者の意志",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const uiSwimsuit: Character = {
     "sub": {
       "id": "ui_swimsuit_sub",
       "name": "手がかりの把握",
-      "description": "自身を除く味方のEXスキルを2回使用時、該当スキルの発動と同時にを増加（30秒間）/ を1個獲得",
+      "description": "自身を除く味方のEXスキルを2回使用時、該当スキルの発動と同時に攻撃力を43.1%増加（30秒間）/ を1個獲得",
       "type": "sub",
       "levels": [
         {

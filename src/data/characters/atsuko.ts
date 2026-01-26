@@ -27,7 +27,7 @@ export const atsuko: Character = {
     "ex": {
       "id": "atsuko_ex",
       "name": "これも私の力……？",
-      "description": "自身を中心とした円形範囲内の味方を5秒毎に、治癒力の分の回復（30秒間）",
+      "description": "自身を中心とした円形範囲内の味方を5秒毎に、治癒力の53.9%分の回復（30秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -56,7 +56,7 @@ export const atsuko: Character = {
     "normal": {
       "id": "atsuko_normal",
       "name": "隠れるよ",
-      "description": "30秒毎に、自身の位置に煙幕を張る、範囲内の味方のを増加（20秒間）（範囲内にいる間だけ効果を維持）",
+      "description": "30秒毎に、自身の位置に煙幕を張る、範囲内の味方の回避値を39.1%増加（20秒間）（範囲内にいる間だけ効果を維持）",
       "type": "normal",
       "levels": [
         {
@@ -174,7 +174,7 @@ export const atsuko: Character = {
     "passive": {
       "id": "atsuko_passive",
       "name": "教えられた事",
-      "description": "を増加",
+      "description": "回避値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -292,7 +292,7 @@ export const atsuko: Character = {
     "sub": {
       "id": "atsuko_sub",
       "name": "痛いのは慣れてる",
-      "description": "HPが30%以下の時、を増加",
+      "description": "HPが30%以下の時、回避値を45.9%増加",
       "type": "sub",
       "levels": [
         {

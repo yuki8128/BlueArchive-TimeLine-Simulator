@@ -28,7 +28,7 @@ export const kotori: Character = {
     "ex": {
       "id": "kotori_ex",
       "name": "ブラックボックス",
-      "description": "円形範囲内の味方4人を指定した位置に移動させた後、治癒力の分の効果を発動（13秒間）",
+      "description": "円形範囲内の味方4人を指定した位置に移動させた後、治癒力の334%分のシールド効果を発動（13秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -52,7 +52,7 @@ export const kotori: Character = {
     "normal": {
       "id": "kotori_normal",
       "name": "ごめんなさい！",
-      "description": "35秒毎に、扇形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "35秒毎に、扇形範囲内の敵に対して攻撃力の511%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -110,7 +110,7 @@ export const kotori: Character = {
     "passive": {
       "id": "kotori_passive",
       "name": "論点把握能力",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -228,7 +228,7 @@ export const kotori: Character = {
     "sub": {
       "id": "kotori_sub",
       "name": "理解しました！",
-      "description": "敵を倒した時、率を増加（30秒間）",
+      "description": "敵を倒した時、会心ダメージ率を38.3%増加（30秒間）",
       "type": "sub",
       "levels": [
         {

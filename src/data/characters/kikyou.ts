@@ -27,7 +27,7 @@ export const kikyou: Character = {
     "ex": {
       "id": "kikyou_ex",
       "name": "神機妙算の一手",
-      "description": "十字範囲内の敵に対してを減少（30秒間）/ 攻撃力の分のダメージ",
+      "description": "十字範囲内の敵に対して防御力を28.1%減少（30秒間）/ 攻撃力の480%分のダメージ",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -101,7 +101,7 @@ export const kikyou: Character = {
     "normal": {
       "id": "kikyou_normal",
       "name": "敵を知り己を知れば百戦殆からず",
-      "description": "35秒毎に、自身を除く円形範囲内の味方に対してを加算（25秒間）/範囲内で効果を受けた味方の数によって効果が増加 1人： 2人： 3人以上：",
+      "description": "35秒毎に、自身を除く円形範囲内の味方に対して振動特効を加算（25秒間）/範囲内で効果を受けた味方の数によって効果が増加 1人：27.8% 2人：34.2% 3人以上：40.7%",
       "type": "normal",
       "levels": [
         {
@@ -139,7 +139,7 @@ export const kikyou: Character = {
     "passive": {
       "id": "kikyou_passive",
       "name": "作戦参謀としての素養",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -257,7 +257,7 @@ export const kikyou: Character = {
     "sub": {
       "id": "kikyou_sub",
       "name": "風林火山の計略",
-      "description": "30秒毎に、を増加（20秒間）/ さらにを1個付与（最大3個まで重複）/ が3個になった時、EXスキルの発動と同時に、を全て消耗し自身を除く味方のEXスキルコストを1減少（EXスキル使用1回分）",
+      "description": "30秒毎に、攻撃力を32.8%増加（20秒間）/ さらにを1個付与（最大3個まで重複）/ が3個になった時、EXスキルの発動と同時に、を全て消耗し自身を除く味方のEXスキルコストを1減少（EXスキル使用1回分）",
       "type": "sub",
       "levels": [
         {

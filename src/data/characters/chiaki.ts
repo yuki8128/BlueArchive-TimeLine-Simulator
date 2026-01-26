@@ -27,7 +27,7 @@ export const chiaki: Character = {
     "ex": {
       "id": "chiaki_ex",
       "name": "本当ですか？",
-      "description": "敵1人に対して、攻撃力の分のダメージ（このダメージにおいては、会心が発動しません）",
+      "description": "敵1人に対して、攻撃力の2772%分のダメージ（このダメージにおいては、会心が発動しません）",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const chiaki: Character = {
     "normal": {
       "id": "chiaki_normal",
       "name": "はい、チーズ！",
-      "description": "30秒毎に、を加算（間）",
+      "description": "30秒毎に、振動特効を63.1%加算（25秒間）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const chiaki: Character = {
     "passive": {
       "id": "chiaki_passive",
       "name": "特ダネです！",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const chiaki: Character = {
     "sub": {
       "id": "chiaki_sub",
       "name": "はい！分かりました！",
-      "description": "EXスキルの発動と同時に、を加算（7秒間）",
+      "description": "EXスキルの発動と同時に、EXスキルの与えるダメージ量を46.9%加算（7秒間）",
       "type": "sub",
       "levels": [
         {

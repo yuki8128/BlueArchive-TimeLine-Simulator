@@ -27,7 +27,7 @@ export const mina: Character = {
     "ex": {
       "id": "mina_ex",
       "name": "竜虎相搏",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ さらにを減少（50秒間）",
+      "description": "敵1人に対して、攻撃力の593%分のダメージ/ さらに攻撃力、回避値、命中値を30.2%減少（50秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -161,7 +161,7 @@ export const mina: Character = {
     "normal": {
       "id": "mina_normal",
       "name": "破竹之勢",
-      "description": "通常攻撃8回毎に、発動後すぐにリロード/ 敵1人に対して、攻撃力の分のダメージ/ 対象の弱体状態の個数によって追加ダメージ 3個：攻撃力の分のダメージ 4個：攻撃力の分のダメージ 5個以上：攻撃力の分のダメージ",
+      "description": "通常攻撃8回毎に、発動後すぐにリロード/ 敵1人に対して、攻撃力の423%分のダメージ/ 対象の弱体状態の個数によって追加ダメージ 3個：攻撃力の846%分のダメージ 4個：攻撃力の1269%分のダメージ 5個以上：攻撃力の1693%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -219,7 +219,7 @@ export const mina: Character = {
     "passive": {
       "id": "mina_passive",
       "name": "一志不退",
-      "description": "を増加",
+      "description": "回避値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -337,7 +337,7 @@ export const mina: Character = {
     "sub": {
       "id": "mina_sub",
       "name": "騎虎之勢",
-      "description": "EXスキルの発動と同時に、、を増加（20秒間）",
+      "description": "EXスキルの発動と同時に攻撃力、回避値、命中値を35.8%増加（20秒間）",
       "type": "sub",
       "levels": [
         {

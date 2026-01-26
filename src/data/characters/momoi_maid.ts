@@ -27,7 +27,7 @@ export const momoiMaid: Character = {
     "ex": {
       "id": "momoi_maid_ex",
       "name": "バーチャル・メイドウェポン！",
-      "description": "スキル発動後すぐにリロード/ を攻撃力の分の追加ダメージを与える攻撃に変更、を増加、通常攻撃のディレイを100回無視（リロードを1回行うまで有効）",
+      "description": "スキル発動後すぐにリロード/ を攻撃力の56%分の追加ダメージを与える攻撃に変更、攻撃速度を85.1%増加、通常攻撃のディレイを100回無視（リロードを1回行うまで有効）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -51,7 +51,7 @@ export const momoiMaid: Character = {
     "normal": {
       "id": "momoi_maid_normal",
       "name": "結果よければ全てよし！",
-      "description": "50秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "50秒毎に、敵1人に対して攻撃力の788%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -109,7 +109,7 @@ export const momoiMaid: Character = {
     "passive": {
       "id": "momoi_maid_passive",
       "name": "せっかくだし、赤で！",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -227,7 +227,7 @@ export const momoiMaid: Character = {
     "sub": {
       "id": "momoi_maid_sub",
       "name": "誤射注意！",
-      "description": "EXスキルの使用時間、通常攻撃で消耗した弾薬分の弾薬数を追加",
+      "description": "EXスキルの使用時5.5秒間、通常攻撃で消耗した弾薬分の弾薬数を追加",
       "type": "sub",
       "levels": [
         {

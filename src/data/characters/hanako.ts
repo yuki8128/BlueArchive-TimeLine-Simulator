@@ -27,7 +27,7 @@ export const hanako: Character = {
     "ex": {
       "id": "hanako_ex",
       "name": "禁じられた遊びを始めましょう",
-      "description": "円形範囲内の味方に対して、治癒力の分の持続回復を付与（8秒間）",
+      "description": "円形範囲内の味方に対して、治癒力の51.1%分の持続回復を付与（8秒間）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -56,7 +56,7 @@ export const hanako: Character = {
     "normal": {
       "id": "hanako_normal",
       "name": "固くなあれ♪",
-      "description": "20秒毎に、HPが最も低い味方1人のを増加（13秒間）",
+      "description": "20秒毎に、HPが最も低い味方1人の防御力を46%増加（13秒間）",
       "type": "normal",
       "levels": [
         {
@@ -174,7 +174,7 @@ export const hanako: Character = {
     "passive": {
       "id": "hanako_passive",
       "name": "ヤル気マンマンです",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -292,7 +292,7 @@ export const hanako: Character = {
     "sub": {
       "id": "hanako_sub",
       "name": "一緒なら恥ずかしくありません！",
-      "description": "味方のを増加",
+      "description": "味方の治癒力を17.3%増加",
       "type": "sub",
       "levels": [
         {

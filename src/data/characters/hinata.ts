@@ -27,7 +27,7 @@ export const hinata: Character = {
     "ex": {
       "id": "hinata_ex",
       "name": "最終手段",
-      "description": "5つの円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "5つの円形範囲内の敵に対して、攻撃力の476%分のダメージ",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const hinata: Character = {
     "normal": {
       "id": "hinata_normal",
       "name": "まずはお話を……！",
-      "description": "20秒毎に、HPが最も高い敵1人に対して攻撃力の分のダメージ",
+      "description": "20秒毎に、HPが最も高い敵1人に対して攻撃力の425%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const hinata: Character = {
     "passive": {
       "id": "hinata_passive",
       "name": "思いがけない展開",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const hinata: Character = {
     "sub": {
       "id": "hinata_sub",
       "name": "力仕事はお任せを！",
-      "description": "攻撃時、中型の敵に対して攻撃力の分の追加ダメージ",
+      "description": "攻撃時、中型の敵に対して攻撃力の41.5%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const natsuBand: Character = {
     "ex": {
       "id": "natsu_band_ex",
       "name": "偉大なる響き",
-      "description": "自身を中心とした円形範囲内の味方に対して2秒毎に、治癒力の分の回復（24秒間）/ さらに自身にを2個付与（25秒間）（最大2個まで）",
+      "description": "自身を中心とした円形範囲内の味方に対して2秒毎に、治癒力の25.2%分の回復（24秒間）/ さらに自身にを2個付与（25秒間）（最大2個まで）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -56,7 +56,7 @@ export const natsuBand: Character = {
     "normal": {
       "id": "natsu_band_normal",
       "name": "プランニング＆マネジメント",
-      "description": "通常攻撃15回毎に、を増加（30秒間）",
+      "description": "通常攻撃15回毎に、治癒力を35.3%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -174,7 +174,7 @@ export const natsuBand: Character = {
     "passive": {
       "id": "natsu_band_passive",
       "name": "スイート・ストローク",
-      "description": "を100、を増加",
+      "description": "通常攻撃の射程を100、攻撃速度を21.2%増加",
       "type": "passive",
       "levels": [
         {
@@ -212,7 +212,7 @@ export const natsuBand: Character = {
     "sub": {
       "id": "natsu_band_sub",
       "name": "ロックの導き",
-      "description": "味方がを6個獲得時、を1個獲得（最大4個まで）/ 自身の攻撃時、20%の確率で攻撃を受けた対象のを減少（20秒間）（クールタイム5秒） 自身のの数によって、減少量が変更されます 0個：を減少 1個：を減少 2個：を減少 3個：を減少 4個：を減少",
+      "description": "味方がを6個獲得時、を1個獲得（最大4個まで）/ 自身の攻撃時、20%の確率で攻撃を受けた対象の攻撃力を減少（20秒間）（クールタイム5秒） 自身のの数によって、攻撃力減少量が変更されます 0個：攻撃力を5%減少 1個：攻撃力を7.5%減少 2個：攻撃力を10%減少 3個：攻撃力を12.5%減少 4個：攻撃力を15%減少",
       "type": "sub",
       "levels": [
         {

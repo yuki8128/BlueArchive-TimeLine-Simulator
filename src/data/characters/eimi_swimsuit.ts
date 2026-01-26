@@ -27,7 +27,7 @@ export const eimiSwimsuit: Character = {
     "ex": {
       "id": "eimi_swimsuit_ex",
       "name": "頼もしい支援",
-      "description": "円形範囲内の味方6人を指定した位置に移動した後、治癒力の分の効果を発動（30秒間）",
+      "description": "円形範囲内の味方6人を指定した位置に移動した後、治癒力の197%分のシールド効果を発動。攻撃力を12.6%増加（30秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -91,7 +91,7 @@ export const eimiSwimsuit: Character = {
     "normal": {
       "id": "eimi_swimsuit_normal",
       "name": "エイミの自信作",
-      "description": "45秒毎に、味方4人のを増加（25秒間）",
+      "description": "45秒毎に、味方4人の攻撃速度を21%増加（25秒間）",
       "type": "normal",
       "levels": [
         {
@@ -129,7 +129,7 @@ export const eimiSwimsuit: Character = {
     "passive": {
       "id": "eimi_swimsuit_passive",
       "name": "水を得た魚",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -247,7 +247,7 @@ export const eimiSwimsuit: Character = {
     "sub": {
       "id": "eimi_swimsuit_sub",
       "name": "滑るように",
-      "description": "味方のを増加",
+      "description": "味方の攻撃速度を17.3%増加",
       "type": "sub",
       "levels": [
         {

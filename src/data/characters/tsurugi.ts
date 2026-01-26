@@ -28,7 +28,7 @@ export const tsurugi: Character = {
     "ex": {
       "id": "tsurugi_ex",
       "name": "奇奇怪怪",
-      "description": "スキル発動後すぐにリロード/ を攻撃力の138%分のダメージを与える扇形範囲攻撃に変更/ を増加（リロードを行うまで有効）",
+      "description": "スキル発動後すぐにリロード/ を攻撃力の138%分のダメージを与える扇形範囲攻撃に変更/ 攻撃力を45.2%増加（リロードを2回行うまで有効）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -92,7 +92,7 @@ export const tsurugi: Character = {
     "normal": {
       "id": "tsurugi_normal",
       "name": "激情",
-      "description": "敵を倒した時、治癒力の分の回復（クールタイム10秒）",
+      "description": "敵を倒した時、治癒力の221%分の回復（クールタイム10秒）",
       "type": "normal",
       "levels": [
         {
@@ -140,7 +140,7 @@ export const tsurugi: Character = {
     "passive": {
       "id": "tsurugi_passive",
       "name": "機敏",
-      "description": "を増加",
+      "description": "移動速度を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -178,7 +178,7 @@ export const tsurugi: Character = {
     "sub": {
       "id": "tsurugi_sub",
       "name": "制御不能の力",
-      "description": "敵を倒した時、の確率で弾薬数を1追加",
+      "description": "敵を倒した時、57%の確率で弾薬数を1追加",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const tsurugiSwimsuit: Character = {
     "ex": {
       "id": "tsurugi_swimsuit_ex",
       "name": "止まらない奔流",
-      "description": "を攻撃力の分の追加ダメージを与える攻撃に変更（間）",
+      "description": "を攻撃力の167%分の追加ダメージを与える攻撃に変更（30秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -51,7 +51,7 @@ export const tsurugiSwimsuit: Character = {
     "normal": {
       "id": "tsurugi_swimsuit_normal",
       "name": "燃え盛る一撃",
-      "description": "35秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "35秒毎に、敵1人に対して攻撃力の362%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -109,7 +109,7 @@ export const tsurugiSwimsuit: Character = {
     "passive": {
       "id": "tsurugi_swimsuit_passive",
       "name": "軽やかな気持ち",
-      "description": "を増加",
+      "description": "攻撃速度を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -147,7 +147,7 @@ export const tsurugiSwimsuit: Character = {
     "sub": {
       "id": "tsurugi_swimsuit_sub",
       "name": "火照った身体",
-      "description": "ノーマルスキルの使用時、を増加（30秒間）",
+      "description": "ノーマルスキルの使用時、攻撃速度を31.9%増加（30秒間）",
       "type": "sub",
       "levels": [
         {

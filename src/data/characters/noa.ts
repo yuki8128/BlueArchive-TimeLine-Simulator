@@ -27,7 +27,7 @@ export const noa: Character = {
     "ex": {
       "id": "noa_ex",
       "name": "記録はスピードが命ですから",
-      "description": "指定した敵1人に対して（40秒間）/ を減少（40秒間）",
+      "description": "指定した敵1人に対して集中砲火状態（40秒間）/ 防御力を40.5%減少（40秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -91,7 +91,7 @@ export const noa: Character = {
     "normal": {
       "id": "noa_normal",
       "name": "隙だらけですよ！",
-      "description": "30秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "30秒毎に、敵1人に対して攻撃力の758%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -149,7 +149,7 @@ export const noa: Character = {
     "passive": {
       "id": "noa_passive",
       "name": "書記の余裕",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -267,7 +267,7 @@ export const noa: Character = {
     "sub": {
       "id": "noa_sub",
       "name": "書記のこだわり",
-      "description": "ノーマルスキルの使用時、を増加（13秒間）",
+      "description": "ノーマルスキルの使用時、弱体状態持続力を32.1%増加（13秒間）",
       "type": "sub",
       "levels": [
         {

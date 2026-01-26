@@ -27,7 +27,7 @@ export const hareCamp: Character = {
     "ex": {
       "id": "hare_camp_ex",
       "name": "焚き火の甘味",
-      "description": "自身を除く味方1人に対して、を増加（26秒間）/ さらに自身にを5個付与（最大15個まで重複）",
+      "description": "自身を除く味方1人に対して、攻撃力を80.4%増加（26秒間）/ さらに自身にを5個付与（最大15個まで重複）",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -91,7 +91,7 @@ export const hareCamp: Character = {
     "normal": {
       "id": "hare_camp_normal",
       "name": "広がる温もり",
-      "description": "50秒毎に、円形範囲内の味方のを増加（30秒間）",
+      "description": "50秒毎に、円形範囲内の味方の攻撃力を24.3%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -209,7 +209,7 @@ export const hareCamp: Character = {
     "passive": {
       "id": "hare_camp_passive",
       "name": "デトックス効果",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -327,7 +327,7 @@ export const hareCamp: Character = {
     "sub": {
       "id": "hare_camp_sub",
       "name": "キャンプの醍醐味",
-      "description": "を保有している状態で敵を攻撃した時、攻撃力の分の追加ダメージ/ さらに自身のが1個減少",
+      "description": "を保有している状態で敵を攻撃した時、攻撃力の98%分の追加ダメージ/ さらに自身のが1個減少",
       "type": "sub",
       "levels": [
         {

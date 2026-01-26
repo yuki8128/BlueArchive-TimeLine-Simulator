@@ -28,7 +28,7 @@ export const serika: Character = {
     "ex": {
       "id": "serika_ex",
       "name": "邪魔よ！",
-      "description": "スキル発動後すぐにリロード/ を増加（30秒間）",
+      "description": "スキル発動後すぐにリロード/ 攻撃力を67.7%増加（30秒間）",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -92,7 +92,7 @@ export const serika: Character = {
     "normal": {
       "id": "serika_normal",
       "name": "狙い撃ち",
-      "description": "25秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "25秒毎に、敵1人に対して攻撃力の425%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -150,7 +150,7 @@ export const serika: Character = {
     "passive": {
       "id": "serika_passive",
       "name": "バイト根性",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -268,7 +268,7 @@ export const serika: Character = {
     "sub": {
       "id": "serika_sub",
       "name": "対策委員会の怒り",
-      "description": "EXスキルの使用時、を増加（30秒間）",
+      "description": "EXスキルの使用時、攻撃速度を38.3%増加（30秒間）",
       "type": "sub",
       "levels": [
         {

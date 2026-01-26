@@ -27,7 +27,7 @@ export const makiCamp: Character = {
     "ex": {
       "id": "maki_camp_ex",
       "name": "あとちょっと……！",
-      "description": "敵1人に対して攻撃力の分のダメージ （この攻撃は敵のを貫通）",
+      "description": "敵1人に対して攻撃力の1642%分のダメージ （この攻撃は敵のシールドを貫通）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const makiCamp: Character = {
     "normal": {
       "id": "maki_camp_normal",
       "name": "芸術のきらめき",
-      "description": "45秒毎に、自身のを加算（25秒間）",
+      "description": "45秒毎に、自身の爆発特効を53.2%加算（25秒間）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const makiCamp: Character = {
     "passive": {
       "id": "maki_camp_passive",
       "name": "賑やかな休日",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const makiCamp: Character = {
     "sub": {
       "id": "maki_camp_sub",
       "name": "初陽の輝き",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

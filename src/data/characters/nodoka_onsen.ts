@@ -51,7 +51,7 @@ export const nodokaOnsen: Character = {
     "normal": {
       "id": "nodoka_onsen_normal",
       "name": "女将のおもてなし",
-      "description": "25秒毎に、HPが最も低い味方1人のを増加（20秒間）",
+      "description": "25秒毎に、HPが最も低い味方1人の被回復率を31.6%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -89,7 +89,7 @@ export const nodokaOnsen: Character = {
     "passive": {
       "id": "nodoka_onsen_passive",
       "name": "湯治の効能",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const nodokaOnsen: Character = {
     "sub": {
       "id": "nodoka_onsen_sub",
       "name": "温泉地の空気感",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const rioBattle: Character = {
     "ex": {
       "id": "rio_battle_ex",
       "name": "電脳の力",
-      "description": "敵1人に対して、攻撃力の分のダメージ",
+      "description": "敵1人に対して、攻撃力の2576%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const rioBattle: Character = {
     "normal": {
       "id": "rio_battle_normal",
       "name": "パラメータ調整",
-      "description": "35秒毎に、率を増加（30秒間）",
+      "description": "35秒毎に、会心ダメージ率を41.6%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const rioBattle: Character = {
     "passive": {
       "id": "rio_battle_passive",
       "name": "進化のアルゴリズム",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const rioBattle: Character = {
     "sub": {
       "id": "rio_battle_sub",
       "name": "メタヒューリスティクス",
-      "description": "防御タイプが軽装備の敵を攻撃時、20%の確率で被特効ダメージ量を加算（13秒間）（クールタイム5秒）",
+      "description": "防御タイプが軽装備の敵を攻撃時、20%の確率で被特効ダメージ量を11.6%加算（13秒間）（クールタイム5秒）",
       "type": "sub",
       "levels": [
         {

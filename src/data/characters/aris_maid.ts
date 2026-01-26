@@ -27,7 +27,7 @@ export const arisMaid: Character = {
     "ex": {
       "id": "aris_maid_ex",
       "name": "アリス、お掃除します！",
-      "description": "敵1人に対して、攻撃力の分のダメージ",
+      "description": "敵1人に対して、攻撃力の1128%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const arisMaid: Character = {
     "normal": {
       "id": "aris_maid_normal",
       "name": "丁寧なお手入れ",
-      "description": "通常攻撃15回毎に、を加算、を増加（間）",
+      "description": "通常攻撃15回毎に、神秘特効を38.1%加算、攻撃力を32%増加（40秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const arisMaid: Character = {
     "passive": {
       "id": "aris_maid_passive",
       "name": "ジョブボーナスです！",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const arisMaid: Character = {
     "sub": {
       "id": "aris_maid_sub",
       "name": "ジョブ特性：メイド勇者！",
-      "description": "通常攻撃が敵1人を攻撃するように変更/ 通常攻撃時、攻撃力の分の追加ダメージ",
+      "description": "通常攻撃が敵1人を攻撃するように変更/ 通常攻撃時、攻撃力の30.1%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

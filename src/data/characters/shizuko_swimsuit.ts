@@ -27,7 +27,7 @@ export const shizukoSwimsuit: Character = {
     "ex": {
       "id": "shizuko_swimsuit_ex",
       "name": "出張、夏の百夜堂出店！",
-      "description": "円形範囲内の味方4人を指定した位置に移動させた後、治癒力の分の効果を発動（30秒間）",
+      "description": "円形範囲内の味方4人を指定した位置に移動させた後、治癒力の145%分のシールド効果を発動（30秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -51,7 +51,7 @@ export const shizukoSwimsuit: Character = {
     "normal": {
       "id": "shizuko_swimsuit_normal",
       "name": "暑いですか？",
-      "description": "45秒毎に、会心ダメージ率が最も高い味方1人の率を増加（36秒間）",
+      "description": "45秒毎に、会心ダメージ率が最も高い味方1人の会心ダメージ率を39.5%増加（36秒間）",
       "type": "normal",
       "levels": [
         {
@@ -169,7 +169,7 @@ export const shizukoSwimsuit: Character = {
     "passive": {
       "id": "shizuko_swimsuit_passive",
       "name": "売上高増加中！",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -287,7 +287,7 @@ export const shizukoSwimsuit: Character = {
     "sub": {
       "id": "shizuko_swimsuit_sub",
       "name": "頑張ってください！にゃんにゃん！",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

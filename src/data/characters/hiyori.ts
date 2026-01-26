@@ -27,7 +27,7 @@ export const hiyori: Character = {
     "ex": {
       "id": "hiyori_ex",
       "name": "い、今支援します！",
-      "description": "銃弾を発射。直線上に飛び、最初に命中した敵1体に対して、攻撃力の分のダメージ/ さらに同じ部隊に編成されているアリウススクワッドの生徒が2人以下の場合は、命中した敵のを、3人以上の場合は、命中した敵のを減少（30秒間）",
+      "description": "銃弾を発射。直線上に飛び、最初に命中した敵1体に対して、攻撃力の331%分のダメージ/ さらに同じ部隊に編成されているアリウススクワッドの生徒が2人以下の場合は、命中した敵の防御力を30.1%、3人以上の場合は、命中した敵の防御力を51.6%減少（30秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -101,7 +101,7 @@ export const hiyori: Character = {
     "normal": {
       "id": "hiyori_normal",
       "name": "い、痛くなりますよ！",
-      "description": "40秒毎に、敵1人に対して、攻撃力の分のダメージ さらにを減少（30秒間）",
+      "description": "40秒毎に、敵1人に対して、攻撃力の409%分のダメージ さらに防御力を10%減少（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -239,7 +239,7 @@ export const hiyori: Character = {
     "passive": {
       "id": "hiyori_passive",
       "name": "雑誌に書いてありました",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -357,7 +357,7 @@ export const hiyori: Character = {
     "sub": {
       "id": "hiyori_sub",
       "name": "付録の力です",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

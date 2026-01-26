@@ -27,7 +27,7 @@ export const shigure: Character = {
     "ex": {
       "id": "shigure_ex",
       "name": "シグレ特製ボトルグレネード",
-      "description": "直線範囲内の敵に対して、攻撃力の分のダメージ/ 攻撃力の分の持続ダメージを付与（20秒間）",
+      "description": "直線範囲内の敵に対して、攻撃力の681%分のダメージ/ 攻撃力の83.1%分の火傷持続ダメージを付与（20秒間）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const shigure: Character = {
     "normal": {
       "id": "shigure_normal",
       "name": "一杯、どう？",
-      "description": "60秒毎に、自身を除く攻撃力が最も高い味方1人のを増加、を27.5%減少（30秒間）",
+      "description": "60秒毎に、自身を除く攻撃力が最も高い味方1人の攻撃力を50.2%増加、命中値を27.5%減少（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -239,7 +239,7 @@ export const shigure: Character = {
     "passive": {
       "id": "shigure_passive",
       "name": "甘い発酵",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -357,7 +357,7 @@ export const shigure: Character = {
     "sub": {
       "id": "shigure_sub",
       "name": "野生の勘",
-      "description": "通常攻撃の範囲の半径が倍に増加し、攻撃力の分のダメージを与えるように変更",
+      "description": "通常攻撃の範囲の半径が2倍に増加し、攻撃力の83.8%分のダメージを与えるように変更",
       "type": "sub",
       "levels": [
         {

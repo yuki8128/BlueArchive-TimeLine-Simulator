@@ -27,7 +27,7 @@ export const izumiNewyear: Character = {
     "ex": {
       "id": "izumi_newyear_ex",
       "name": "シェアたこ焼き！",
-      "description": "円形範囲内の味方に対して、治癒力の分の回復",
+      "description": "円形範囲内の味方に対して、治癒力の144%分の回復",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -96,7 +96,7 @@ export const izumiNewyear: Character = {
     "normal": {
       "id": "izumi_newyear_normal",
       "name": "鏡餅だよ！",
-      "description": "30秒毎に、鏡餅を投擲して味方1人のを増加（20秒間）。投擲された鏡餅を中心として周囲にまだ鏡餅を受け取っていない味方がいる場合、鏡餅がその方向にも飛んで再度その効果を与えます（最大6回まで）",
+      "description": "30秒毎に、鏡餅を投擲して味方1人の会心値を37.7%増加（20秒間）。投擲された鏡餅を中心として周囲にまだ鏡餅を受け取っていない味方がいる場合、鏡餅がその方向にも飛んで再度その効果を与えます（最大6回まで）",
       "type": "normal",
       "levels": [
         {
@@ -214,7 +214,7 @@ export const izumiNewyear: Character = {
     "passive": {
       "id": "izumi_newyear_passive",
       "name": "人生は冒険！",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -332,7 +332,7 @@ export const izumiNewyear: Character = {
     "sub": {
       "id": "izumi_newyear_sub",
       "name": "一緒に行こ！",
-      "description": "味方のを増加",
+      "description": "味方の被回復率を17.3%増加",
       "type": "sub",
       "levels": [
         {

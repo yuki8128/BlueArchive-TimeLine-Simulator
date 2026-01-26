@@ -28,7 +28,7 @@ export const hanae: Character = {
     "ex": {
       "id": "hanae_ex",
       "name": "治療の時間ですよ～！",
-      "description": "味方1人に対して、治癒力の分のを付与（20秒間）",
+      "description": "味方1人に対して、治癒力の102%分の持続回復を付与（20秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -52,7 +52,7 @@ export const hanae: Character = {
     "normal": {
       "id": "hanae_normal",
       "name": "倒れちゃダメです！",
-      "description": "25秒毎に、HPが最も低い味方1人のを増加（20秒間）",
+      "description": "25秒毎に、HPが最も低い味方1人の防御力を33.7%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -170,7 +170,7 @@ export const hanae: Character = {
     "passive": {
       "id": "hanae_passive",
       "name": "腕前上達",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -288,7 +288,7 @@ export const hanae: Character = {
     "sub": {
       "id": "hanae_sub",
       "name": "みなさん頑張ってくださ～い！",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

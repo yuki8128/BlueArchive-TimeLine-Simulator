@@ -27,7 +27,7 @@ export const koharu: Character = {
     "ex": {
       "id": "koharu_ex",
       "name": "セイなる手榴弾",
-      "description": "円形範囲内の味方に対して、治癒力の分の回復。敵に対しては攻撃力の分のダメージ",
+      "description": "円形範囲内の味方に対して、治癒力の192%分の回復。敵に対しては攻撃力の431%分のダメージ",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -66,7 +66,7 @@ export const koharu: Character = {
     "normal": {
       "id": "koharu_normal",
       "name": "わ、私が治療するっ！",
-      "description": "自身を除きHPが50%以下の味方に対して、治癒力の分の回復（クールタイム20秒）",
+      "description": "自身を除きHPが50%以下の味方に対して、治癒力の153%分の回復（クールタイム20秒）",
       "type": "normal",
       "levels": [
         {
@@ -114,7 +114,7 @@ export const koharu: Character = {
     "passive": {
       "id": "koharu_passive",
       "name": "これでも頑張ってるの！",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -232,7 +232,7 @@ export const koharu: Character = {
     "sub": {
       "id": "koharu_sub",
       "name": "エリートだから！",
-      "description": "30秒毎に、を増加（20秒間）",
+      "description": "30秒毎に、治癒力を41%増加（20秒間）",
       "type": "sub",
       "levels": [
         {

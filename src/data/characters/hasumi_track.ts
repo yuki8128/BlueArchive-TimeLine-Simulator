@@ -27,7 +27,7 @@ export const hasumiTrack: Character = {
     "ex": {
       "id": "hasumi_track_ex",
       "name": "鋼の意志のピアッシング弾",
-      "description": "敵1人に対して攻撃力の分のダメージ/ 追加で最大2コストを消耗して、1コストあたりのダメージが30%増加します。/ （コスト増減スキルの効果は基本コストを基準として計算します）",
+      "description": "敵1人に対して攻撃力の859%分のダメージ/ 追加で最大2コストを消耗して、1コストあたりのダメージが30%増加します。/ （コスト増減スキルの効果は基本コストを基準として計算します）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const hasumiTrack: Character = {
     "normal": {
       "id": "hasumi_track_normal",
       "name": "スポーツ射撃",
-      "description": "25秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "25秒毎に、敵1人に対して攻撃力の470%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const hasumiTrack: Character = {
     "passive": {
       "id": "hasumi_track_passive",
       "name": "出場への心構え",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const hasumiTrack: Character = {
     "sub": {
       "id": "hasumi_track_sub",
       "name": "大会の高揚感",
-      "description": "攻撃時、大型の敵に対して攻撃力の分の追加ダメージ",
+      "description": "攻撃時、大型の敵に対して攻撃力の41.5%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

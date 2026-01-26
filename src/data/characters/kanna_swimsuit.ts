@@ -27,7 +27,7 @@ export const kannaSwimsuit: Character = {
     "ex": {
       "id": "kanna_swimsuit_ex",
       "name": "水上安全、確保！",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ を減少（20秒間）",
+      "description": "敵1人に対して、攻撃力の927%分のダメージ/ 防御力を47.8%減少（20秒間）",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -101,7 +101,7 @@ export const kannaSwimsuit: Character = {
     "normal": {
       "id": "kanna_swimsuit_normal",
       "name": "入念な準備運動",
-      "description": "40秒毎に、を減少（30秒間）",
+      "description": "40秒毎に、被ダメージ量を19.6%減少（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -139,7 +139,7 @@ export const kannaSwimsuit: Character = {
     "passive": {
       "id": "kanna_swimsuit_passive",
       "name": "ライフセーバーとしての心構え",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -257,7 +257,7 @@ export const kannaSwimsuit: Character = {
     "sub": {
       "id": "kanna_swimsuit_sub",
       "name": "ぎこちない笑顔",
-      "description": "自身とスペシャル生徒のを増加",
+      "description": "自身とスペシャル生徒の攻撃力を30.6%増加",
       "type": "sub",
       "levels": [
         {

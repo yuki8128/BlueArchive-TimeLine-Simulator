@@ -27,7 +27,7 @@ export const hasumiSwimsuit: Character = {
     "ex": {
       "id": "hasumi_swimsuit_ex",
       "name": "必中のピアッシングショット",
-      "description": "扇形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "扇形範囲内の敵に対して、攻撃力の866%分のダメージ",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const hasumiSwimsuit: Character = {
     "normal": {
       "id": "hasumi_swimsuit_normal",
       "name": "これは、ゼロカロリー",
-      "description": "35秒毎に、率を増加、1個につき、を増加（30秒間）",
+      "description": "35秒毎に、会心ダメージ率を24.4%増加、1個につき、会心値を8.9%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -239,7 +239,7 @@ export const hasumiSwimsuit: Character = {
     "passive": {
       "id": "hasumi_swimsuit_passive",
       "name": "終始一貫",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -357,7 +357,7 @@ export const hasumiSwimsuit: Character = {
     "sub": {
       "id": "hasumi_swimsuit_sub",
       "name": "自分へのご褒美",
-      "description": "自身のEXスキルで対象にダメージを4回与える度に、を1個獲得（43秒間）（は最大4個分まで保有が可能で、効果が重複）。1個につき、率を増加",
+      "description": "自身のEXスキルで対象にダメージを4回与える度に、を1個獲得（43秒間）（は最大4個分まで保有が可能で、効果が重複）。1個につき、会心ダメージ率を6.2%増加",
       "type": "sub",
       "levels": [
         {

@@ -28,7 +28,7 @@ export const saya: Character = {
     "ex": {
       "id": "saya_ex",
       "name": "ぼく様の傑作なのだ！",
-      "description": "円形範囲内の敵に対して、攻撃力の分の持続ダメージを付与（8秒間）",
+      "description": "円形範囲内の敵に対して、攻撃力の239%分の持続ダメージを付与（8秒間）",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -62,7 +62,7 @@ export const saya: Character = {
     "normal": {
       "id": "saya_normal",
       "name": "新しい実験なのだ！",
-      "description": "20秒毎に、円形範囲内の敵のを12.1%減少（20秒間）/ さらに攻撃力の分の持続ダメージを付与（20秒間）",
+      "description": "20秒毎に、円形範囲内の敵の会心値を12.1%減少（20秒間）/ さらに攻撃力の69.3%分の中毒持続ダメージを付与（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -180,7 +180,7 @@ export const saya: Character = {
     "passive": {
       "id": "saya_passive",
       "name": "ぼく様はやっぱり偉大なのだ！",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -298,7 +298,7 @@ export const saya: Character = {
     "sub": {
       "id": "saya_sub",
       "name": "ぼく様だけを信じてて！",
-      "description": "味方のを増加",
+      "description": "味方の会心値を17.3%増加",
       "type": "sub",
       "levels": [
         {

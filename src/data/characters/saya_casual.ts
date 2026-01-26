@@ -27,7 +27,7 @@ export const sayaCasual: Character = {
     "ex": {
       "id": "saya_casual_ex",
       "name": "ぼく様からのプレゼントなのだ！",
-      "description": "直線範囲内の敵に対して、攻撃力の分の持続ダメージを付与（20秒間）",
+      "description": "直線範囲内の敵に対して、攻撃力の75.9%分の持続ダメージを付与（20秒間）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const sayaCasual: Character = {
     "normal": {
       "id": "saya_casual_normal",
       "name": "探究に終わりはない！",
-      "description": "30秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "30秒毎に、円形範囲内の敵に対して攻撃力の389%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const sayaCasual: Character = {
     "passive": {
       "id": "saya_casual_passive",
       "name": "専心の秘薬",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const sayaCasual: Character = {
     "sub": {
       "id": "saya_casual_sub",
       "name": "怪しい薬じゃないってば！",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

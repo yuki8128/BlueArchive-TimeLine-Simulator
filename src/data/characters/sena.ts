@@ -27,7 +27,7 @@ export const sena: Character = {
     "ex": {
       "id": "sena_ex",
       "name": "緊急出動",
-      "description": "緊急車両11号に搭乗したセナが登場。緊急車両11号はセナの治癒力の分の値が追加された治癒力を持ちます。（50秒間） （タクティカルサポートの搭乗物は重複して登場することはできません）",
+      "description": "緊急車両11号に搭乗したセナが登場。緊急車両11号はセナの治癒力の25.9%分の値が追加された治癒力を持ちます。（50秒間） （タクティカルサポートの搭乗物は重複して登場することはできません）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -91,7 +91,7 @@ export const sena: Character = {
     "normal": {
       "id": "sena_normal",
       "name": "エネルギー剤注入",
-      "description": "40秒毎に、攻撃力が最も高い味方1人のを増加（30秒間）",
+      "description": "40秒毎に、攻撃力が最も高い味方1人の攻撃力を31.9%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -209,7 +209,7 @@ export const sena: Character = {
     "passive": {
       "id": "sena_passive",
       "name": "救急支援",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -327,7 +327,7 @@ export const sena: Character = {
     "sub": {
       "id": "sena_sub",
       "name": "可及的速やかに",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

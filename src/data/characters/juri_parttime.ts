@@ -27,7 +27,7 @@ export const juriParttime: Character = {
     "ex": {
       "id": "juri_parttime_ex",
       "name": "最後の仕上げです！",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ 攻撃力の分の持続ダメージを付与（16秒間） を付与（間）",
+      "description": "敵1人に対して、攻撃力の703%分のダメージ/ 攻撃力の118%分の悪寒持続ダメージを付与（16秒間） 恐怖状態を付与（3.1秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const juriParttime: Character = {
     "normal": {
       "id": "juri_parttime_normal",
       "name": "アルバイトの本気",
-      "description": "45秒毎に、自身を除きHPが最も低い味方1人と自身のを増加（32秒間）",
+      "description": "45秒毎に、自身を除きHPが最も低い味方1人と自身の被回復率を33.8%増加（32秒間）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const juriParttime: Character = {
     "passive": {
       "id": "juri_parttime_passive",
       "name": "不屈の心",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const juriParttime: Character = {
     "sub": {
       "id": "juri_parttime_sub",
       "name": "ジュリの心得！",
-      "description": "自身がCC状態になった時、治癒力の分の回復",
+      "description": "自身がCC状態になった時、治癒力の185%分の回復",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const fubukiSwimsuit: Character = {
     "ex": {
       "id": "fubuki_swimsuit_ex",
       "name": "頭冷やそっか",
-      "description": "3つの円形範囲内の敵に対して、 小型の円：攻撃力の分のダメージ 中型の円：攻撃力の分のダメージ 大型の円：攻撃力の分のダメージ （これらの攻撃は敵のを貫通）",
+      "description": "3つの円形範囲内の敵に対して、 小型の円：攻撃力の1102%分のダメージ 中型の円：攻撃力の231%分のダメージ 大型の円：攻撃力の189%分のダメージ （これらの攻撃は敵のシールドを貫通）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const fubukiSwimsuit: Character = {
     "normal": {
       "id": "fubuki_swimsuit_normal",
       "name": "やんなきゃダメ～？",
-      "description": "45秒毎に、敵1人に対して攻撃力の分のダメージ/ 円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "45秒毎に、敵1人に対して攻撃力の906%分のダメージ/ 円形範囲内の敵に対して、攻撃力の92.4%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const fubukiSwimsuit: Character = {
     "passive": {
       "id": "fubuki_swimsuit_passive",
       "name": "サボりルール",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const fubukiSwimsuit: Character = {
     "sub": {
       "id": "fubuki_swimsuit_sub",
       "name": "ちょっと頼むね～",
-      "description": "味方のを加算",
+      "description": "味方の爆発特効を30.2%加算",
       "type": "sub",
       "levels": [
         {

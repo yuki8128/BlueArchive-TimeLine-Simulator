@@ -27,7 +27,7 @@ export const fuyu: Character = {
     "ex": {
       "id": "fuyu_ex",
       "name": "弾丸のお届け",
-      "description": "敵1人に対して、を減少（22秒間）/ 攻撃力の分のダメージ",
+      "description": "敵1人に対して、防御力を47.2%減少（22秒間）/ 攻撃力の301%分のダメージ",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -101,7 +101,7 @@ export const fuyu: Character = {
     "normal": {
       "id": "fuyu_normal",
       "name": "お届け完了です！",
-      "description": "40秒毎に、円形範囲内の味方のを増加（34秒間）",
+      "description": "40秒毎に、円形範囲内の味方の攻撃速度を20%増加（34秒間）",
       "type": "normal",
       "levels": [
         {
@@ -139,7 +139,7 @@ export const fuyu: Character = {
     "passive": {
       "id": "fuyu_passive",
       "name": "営業の真髄",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -257,7 +257,7 @@ export const fuyu: Character = {
     "sub": {
       "id": "fuyu_sub",
       "name": "交渉決裂",
-      "description": "弱体状態の敵への攻撃時に、攻撃力の分の追加ダメージ",
+      "description": "弱体状態の敵への攻撃時に、攻撃力の11.9%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

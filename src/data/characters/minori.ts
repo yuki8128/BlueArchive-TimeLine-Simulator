@@ -27,7 +27,7 @@ export const minori: Character = {
     "ex": {
       "id": "minori_ex",
       "name": "奮い立て！",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ/ 追加で最大3コストを消耗して、1コストあたりのダメージが35%増加します。/ （コスト増減スキルの効果は基本コストを基準として計算します）",
+      "description": "円形範囲内の敵に対して、攻撃力の878%分のダメージ/ 追加で最大3コストを消耗して、1コストあたりのダメージが35%増加します。/ （コスト増減スキルの効果は基本コストを基準として計算します）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const minori: Character = {
     "normal": {
       "id": "minori_normal",
       "name": "一つになった意志",
-      "description": "25秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "25秒毎に、円形範囲内の敵に対して攻撃力の147%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const minori: Character = {
     "passive": {
       "id": "minori_passive",
       "name": "手を取り合って",
-      "description": "を増加",
+      "description": "命中値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const minori: Character = {
     "sub": {
       "id": "minori_sub",
       "name": "労働の結実",
-      "description": "味方のを加算",
+      "description": "味方の爆発特効を30.2%加算",
       "type": "sub",
       "levels": [
         {

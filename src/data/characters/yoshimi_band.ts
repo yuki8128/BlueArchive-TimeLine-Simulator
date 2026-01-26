@@ -27,7 +27,7 @@ export const yoshimiBand: Character = {
     "ex": {
       "id": "yoshimi_band_ex",
       "name": "爆発クライマックス",
-      "description": "とを増加（50秒間）/ さらにを5個付与（最大5個まで）/ は10秒毎に1個ずつ解除",
+      "description": "攻撃力と攻撃速度を112%増加（50秒間）/ さらにを5個付与（最大5個まで）/ は10秒毎に1個ずつ解除",
       "type": "ex",
       "cost": 10,
       "levels": [
@@ -91,7 +91,7 @@ export const yoshimiBand: Character = {
     "normal": {
       "id": "yoshimi_band_normal",
       "name": "ビジュアルメーカー",
-      "description": "通常攻撃10回毎に、敵1人に対して攻撃力の分のダメージ/ さらに味方全体の1個毎に、ダメージが5%分増加（最大8個まで）",
+      "description": "通常攻撃10回毎に、敵1人に対して攻撃力の966%分のダメージ/ さらに味方全体の1個毎に、ダメージが5%分増加（最大8個まで）",
       "type": "normal",
       "levels": [
         {
@@ -149,7 +149,7 @@ export const yoshimiBand: Character = {
     "passive": {
       "id": "yoshimi_band_passive",
       "name": "ロックンロール",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -267,7 +267,7 @@ export const yoshimiBand: Character = {
     "sub": {
       "id": "yoshimi_band_sub",
       "name": "スイーツハーモニクス",
-      "description": "ノーマルスキルの発動3回毎に、ノーマルスキルで攻撃した時、攻撃力の分の追加ダメージ",
+      "description": "ノーマルスキルの発動3回毎に、ノーマルスキルで攻撃した時、攻撃力の119%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

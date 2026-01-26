@@ -28,7 +28,7 @@ export const nonomi: Character = {
     "ex": {
       "id": "nonomi_ex",
       "name": "お仕置きの時間です～♣",
-      "description": "扇形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "扇形範囲内の敵に対して、攻撃力の821%分のダメージ",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -62,7 +62,7 @@ export const nonomi: Character = {
     "normal": {
       "id": "nonomi_normal",
       "name": "じゃ～ん☆",
-      "description": "30秒毎に、を増加（20秒間）",
+      "description": "30秒毎に、攻撃力を41.4%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -180,7 +180,7 @@ export const nonomi: Character = {
     "passive": {
       "id": "nonomi_passive",
       "name": "めっ、ですよ！",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -298,7 +298,7 @@ export const nonomi: Character = {
     "sub": {
       "id": "nonomi_sub",
       "name": "綺麗にお掃除します～♧",
-      "description": "攻撃時、大型の敵に対して攻撃力の分の追加ダメージ",
+      "description": "攻撃時、大型の敵に対して攻撃力の12.8%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

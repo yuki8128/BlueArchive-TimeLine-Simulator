@@ -27,7 +27,7 @@ export const kazusa: Character = {
     "ex": {
       "id": "kazusa_ex",
       "name": "スイート・ファイア",
-      "description": "スキル発動後すぐにリロード/ 敵1人に対して攻撃力の分のダメージ",
+      "description": "スキル発動後すぐにリロード/ 敵1人に対して攻撃力の1773%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const kazusa: Character = {
     "normal": {
       "id": "kazusa_normal",
       "name": "しみついたクセ",
-      "description": "30秒毎に、を増加（25秒間）",
+      "description": "30秒毎に、攻撃力を43.8%増加（25秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const kazusa: Character = {
     "passive": {
       "id": "kazusa_passive",
       "name": "シュガー・ハイ",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const kazusa: Character = {
     "sub": {
       "id": "kazusa_sub",
       "name": "つまみ食い",
-      "description": "リロード時、が16.3%減少する代わりにを増加（15秒間）（最大で2回分まで効果が重複）",
+      "description": "リロード時、攻撃速度が16.3%減少する代わりに攻撃力を49.6%増加（15秒間）（最大で2回分まで効果が重複）",
       "type": "sub",
       "levels": [
         {

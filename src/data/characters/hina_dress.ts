@@ -51,7 +51,7 @@ export const hinaDress: Character = {
     "normal": {
       "id": "hina_dress_normal",
       "name": "抜かりない準備",
-      "description": "戦闘開始時、を加算、を増加（戦闘中に1回のみ）",
+      "description": "戦闘開始時、爆発特効を64.91%加算、命中値を451増加（戦闘中に1回のみ）",
       "type": "normal",
       "levels": [
         {
@@ -169,7 +169,7 @@ export const hinaDress: Character = {
     "passive": {
       "id": "hina_dress_passive",
       "name": "演奏に臨む心",
-      "description": "を、を増加",
+      "description": "攻撃力を16.2%、会心値を16.2%増加",
       "type": "passive",
       "levels": [
         {
@@ -347,7 +347,7 @@ export const hinaDress: Character = {
     "sub": {
       "id": "hina_dress_sub",
       "name": "想いをここに",
-      "description": "集中射撃体勢中、を加算、を無効化",
+      "description": "集中射撃体勢中、爆発特効を63.51%加算、挑発状態を無効化",
       "type": "sub",
       "levels": [
         {

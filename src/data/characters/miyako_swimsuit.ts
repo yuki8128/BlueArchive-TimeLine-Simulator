@@ -27,7 +27,7 @@ export const miyakoSwimsuit: Character = {
     "ex": {
       "id": "miyako_swimsuit_ex",
       "name": "飛行ドローン稼働",
-      "description": "敵1人の率を減少（50秒間）/ さらに攻撃力の分のダメージ",
+      "description": "敵1人の会心ダメージ抵抗率を20.3%減少（50秒間）/ さらに攻撃力の487%分のダメージ",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -61,7 +61,7 @@ export const miyakoSwimsuit: Character = {
     "normal": {
       "id": "miyako_swimsuit_normal",
       "name": "紫外線対策",
-      "description": "30秒毎に、を増加（25秒間）",
+      "description": "30秒毎に、回避値を35%増加（25秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const miyakoSwimsuit: Character = {
     "passive": {
       "id": "miyako_swimsuit_passive",
       "name": "地道なトレーニング",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const miyakoSwimsuit: Character = {
     "sub": {
       "id": "miyako_swimsuit_sub",
       "name": "戦術機動",
-      "description": "回避を50回成功した時、を増加（10秒間）",
+      "description": "回避を50回成功した時、コスト回復力を630増加（10秒間）",
       "type": "sub",
       "levels": [
         {

@@ -51,7 +51,7 @@ export const neruUniform: Character = {
     "normal": {
       "id": "neru_uniform_normal",
       "name": "ちょっと遊んでみるか",
-      "description": "35秒毎に、を加算（25秒間）",
+      "description": "35秒毎に、貫通特効を58.8%加算（25秒間）",
       "type": "normal",
       "levels": [
         {
@@ -89,7 +89,7 @@ export const neruUniform: Character = {
     "passive": {
       "id": "neru_uniform_passive",
       "name": "もう終わりか？",
-      "description": "を100、を増加",
+      "description": "通常攻撃の射程を100、攻撃力を21.2%増加",
       "type": "passive",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const neruUniform: Character = {
     "sub": {
       "id": "neru_uniform_sub",
       "name": "狙いは正確ってな",
-      "description": "自身のを増加/ を1個獲得する度に、スキル「怪我しても知らねえからな」の与えるダメージを0.35倍加算",
+      "description": "自身の与えるダメージ量を24.2%増加/ を1個獲得する度に、スキル「怪我しても知らねえからな」の与えるダメージを0.35倍加算",
       "type": "sub",
       "levels": [
         {

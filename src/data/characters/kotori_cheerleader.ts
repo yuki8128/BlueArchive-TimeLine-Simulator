@@ -27,7 +27,7 @@ export const kotoriCheerleader: Character = {
     "ex": {
       "id": "kotori_cheerleader_ex",
       "name": "祝砲の由来は……",
-      "description": "扇形範囲内の敵に対して、攻撃力の分のダメージ/ 1ヒットごとに敵をノックバック",
+      "description": "扇形範囲内の敵に対して、攻撃力の390%分のダメージ/ 1ヒットごとに敵をノックバック",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const kotoriCheerleader: Character = {
     "normal": {
       "id": "kotori_cheerleader_normal",
       "name": "あっ、それはですね！",
-      "description": "自身を除く味方がEXスキルを5回使用する度に、自身を除く円形範囲内の味方に対して、を増加（30秒間）",
+      "description": "自身を除く味方がEXスキルを5回使用する度に、自身を除く円形範囲内の味方に対して、会心値を21.8%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const kotoriCheerleader: Character = {
     "passive": {
       "id": "kotori_cheerleader_passive",
       "name": "なんでも聞いてください！",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const kotoriCheerleader: Character = {
     "sub": {
       "id": "kotori_cheerleader_sub",
       "name": "お役に立てて嬉しいです！",
-      "description": "ノーマルスキルのバフ効果を味方1人に適用する度に、自身のを増加（30秒間）（最大5回分まで重複）",
+      "description": "ノーマルスキルのバフ効果を味方1人に適用する度に、自身の攻撃力を12.6%増加（30秒間）（最大5回分まで重複）",
       "type": "sub",
       "levels": [
         {

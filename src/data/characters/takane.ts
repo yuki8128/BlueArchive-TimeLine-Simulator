@@ -27,7 +27,7 @@ export const takane: Character = {
     "ex": {
       "id": "takane_ex",
       "name": "評論家の一筆",
-      "description": "自身を除く味方1人に対して、治癒力の分の回復/ 自身に治癒力の分の回復/ を付与(30秒間)",
+      "description": "自身を除く味方1人に対して、治癒力の310%分の回復/ 自身に治癒力の124%分の回復/ を付与(30秒間)",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -56,7 +56,7 @@ export const takane: Character = {
     "normal": {
       "id": "takane_normal",
       "name": "少女の身だしなみ",
-      "description": "自身を除くHPが50%以下の味方に対して、治癒力の分の回復（クールタイム25秒）/ （対象の現在のHPに比例して回復量が1～3倍に変更）（対象のHPが少ないほど回復量が大きくなります）",
+      "description": "自身を除くHPが50%以下の味方に対して、治癒力の68.1%分の回復（クールタイム25秒）/ （対象の現在のHPに比例して回復量が1～3倍に変更）（対象のHPが少ないほど回復量が大きくなります）",
       "type": "normal",
       "levels": [
         {
@@ -104,7 +104,7 @@ export const takane: Character = {
     "passive": {
       "id": "takane_passive",
       "name": "100万本の薔薇",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -222,7 +222,7 @@ export const takane: Character = {
     "sub": {
       "id": "takane_sub",
       "name": "舞台上の銃",
-      "description": "を保有した状態での攻撃時、攻撃力の分の追加ダメージ/ 30%の確率でを減少（13秒間）（クールタイム5秒）",
+      "description": "を保有した状態での攻撃時、攻撃力の40.2%分の追加ダメージ/ 30%の確率で会心抵抗値を12.9%減少（13秒間）（クールタイム5秒）",
       "type": "sub",
       "levels": [
         {

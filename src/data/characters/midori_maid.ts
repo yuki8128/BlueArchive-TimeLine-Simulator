@@ -27,7 +27,7 @@ export const midoriMaid: Character = {
     "ex": {
       "id": "midori_maid_ex",
       "name": "バーチャル・メイドショット",
-      "description": "敵1人に対して、攻撃力の分のダメージ",
+      "description": "敵1人に対して、攻撃力の1738%分のダメージ",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const midoriMaid: Character = {
     "normal": {
       "id": "midori_maid_normal",
       "name": "完璧なお掃除",
-      "description": "30秒毎に、を増加（23秒間）",
+      "description": "30秒毎に、攻撃力を49.3%増加（23秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const midoriMaid: Character = {
     "passive": {
       "id": "midori_maid_passive",
       "name": "せっかくですから、緑で",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const midoriMaid: Character = {
     "sub": {
       "id": "midori_maid_sub",
       "name": "スコアチャレンジ",
-      "description": "EXスキルの発動と同時に、を増加（10秒間）",
+      "description": "EXスキルの発動と同時に、会心値を57.4%増加（10秒間）",
       "type": "sub",
       "levels": [
         {

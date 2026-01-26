@@ -28,7 +28,7 @@ export const momoi: Character = {
     "ex": {
       "id": "momoi_ex",
       "name": "生みの苦しみ",
-      "description": "扇形範囲内の敵に対して、攻撃力の分のダメージ/ 同じ部隊にミドリがいる場合はさらに、攻撃力の分の持続ダメージを付与（20秒間）",
+      "description": "扇形範囲内の敵に対して、攻撃力の541%分のダメージ/ 同じ部隊にミドリがいる場合はさらに、攻撃力の93.6%分の火傷持続ダメージを付与（20秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -62,7 +62,7 @@ export const momoi: Character = {
     "normal": {
       "id": "momoi_normal",
       "name": "締切厳守",
-      "description": "30秒毎に、を増加（20秒間）",
+      "description": "30秒毎に、命中値を42.3%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -180,7 +180,7 @@ export const momoi: Character = {
     "passive": {
       "id": "momoi_passive",
       "name": "クリエイティブセンス",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -298,7 +298,7 @@ export const momoi: Character = {
     "sub": {
       "id": "momoi_sub",
       "name": "開発者シナジー：ミドリ",
-      "description": "を増加/ 同じ部隊にミドリがいる場合は、増加",
+      "description": "攻撃力を28.7%増加/ 同じ部隊にミドリがいる場合は、34.4%増加",
       "type": "sub",
       "levels": [
         {

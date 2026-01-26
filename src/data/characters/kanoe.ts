@@ -27,7 +27,7 @@ export const kanoe: Character = {
     "ex": {
       "id": "kanoe_ex",
       "name": "おいしいよぉ……",
-      "description": "治癒力の分のを付与（20秒間） さらに弱体状態を1つ解除",
+      "description": "治癒力の96%分の持続回復を付与（20秒間） さらに弱体状態を1つ解除",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -51,7 +51,7 @@ export const kanoe: Character = {
     "normal": {
       "id": "kanoe_normal",
       "name": "想いを込めた……",
-      "description": "30秒毎に、円形範囲内の敵に対してを減少（20秒間）/ 攻撃力の分のダメージ",
+      "description": "30秒毎に、円形範囲内の敵に対して会心抵抗値を21.1%減少（20秒間）/ 攻撃力の117%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -109,7 +109,7 @@ export const kanoe: Character = {
     "passive": {
       "id": "kanoe_passive",
       "name": "おともだち",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -227,7 +227,7 @@ export const kanoe: Character = {
     "sub": {
       "id": "kanoe_sub",
       "name": "前世の加護",
-      "description": "を増加/ 同じ部隊に編成されている防御タイプが重装甲のストライカーの味方1人毎に、コスト回復力が追加で増加（自身は除外し、最大3人分まで）",
+      "description": "コスト回復力を342増加/ 同じ部隊に編成されている防御タイプが重装甲のストライカーの味方1人毎に、コスト回復力が追加で85増加（自身は除外し、最大3人分まで）",
       "type": "sub",
       "levels": [
         {

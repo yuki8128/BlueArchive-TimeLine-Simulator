@@ -27,7 +27,7 @@ export const misakaMikoto: Character = {
     "ex": {
       "id": "misaka_mikoto_ex",
       "name": "常盤台の超電磁砲",
-      "description": "直線範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "直線範囲内の敵に対して、攻撃力の1034%分のダメージ",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const misakaMikoto: Character = {
     "normal": {
       "id": "misaka_mikoto_normal",
       "name": "ちょっと痺れるわよ！",
-      "description": "50秒毎に、円形範囲内の敵に攻撃力の分のダメージ 攻撃力の分の持続ダメージを付与（間）",
+      "description": "50秒毎に、円形範囲内の敵に攻撃力の228%分のダメージ 攻撃力の157%分の感電持続ダメージを付与（40秒間）",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const misakaMikoto: Character = {
     "passive": {
       "id": "misaka_mikoto_passive",
       "name": "電撃操作能力",
-      "description": "を増加/ 食蜂操祈の効果は適用されません",
+      "description": "命中値を26.6%増加/ 食蜂操祈の混乱効果は適用されません",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const misakaMikoto: Character = {
     "sub": {
       "id": "misaka_mikoto_sub",
       "name": "何度も言わせんじゃないわよ",
-      "description": "ノーマルスキルの発動と同時に、を増加（間）",
+      "description": "ノーマルスキルの発動と同時に、攻撃力を21.4%増加（40秒間）",
       "type": "sub",
       "levels": [
         {

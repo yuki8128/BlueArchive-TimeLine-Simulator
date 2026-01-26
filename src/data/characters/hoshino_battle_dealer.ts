@@ -27,7 +27,7 @@ export const hoshinoBattleDealer: Character = {
     "ex": {
       "id": "hoshino_battle_dealer_ex",
       "name": "集中突破",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ 円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "敵1人に対して、攻撃力の149%分のダメージ/ 円形範囲内の敵に対して、攻撃力の503%分のダメージ",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const hoshinoBattleDealer: Character = {
     "normal": {
       "id": "hoshino_battle_dealer_normal",
       "name": "拳銃速射",
-      "description": "ファストローディング用の残弾数が0になった時、敵1人に対して攻撃力の分のダメージ",
+      "description": "ファストローディング用の残弾数が0になった時、敵1人に対して攻撃力の400%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const hoshinoBattleDealer: Character = {
     "passive": {
       "id": "hoshino_battle_dealer_passive",
       "name": "戦術的視野の拡大",
-      "description": "を300、率を増加",
+      "description": "通常攻撃の射程を300、会心ダメージ率を21.2%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const hoshinoBattleDealer: Character = {
     "sub": {
       "id": "hoshino_battle_dealer_sub",
       "name": "制圧攻撃",
-      "description": "全ての攻撃が敵の防御力を無視/ を増加/ EXスキル、またはノーマルスキルの使用時、すぐにリロードした後、最初の通常攻撃は扇形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "全ての攻撃が敵の防御力を85%無視/ 攻撃力を14%増加/ EXスキル、またはノーマルスキルの使用時、すぐにリロードした後、最初の通常攻撃は扇形範囲内の敵に対して攻撃力の150%分のダメージ",
       "type": "sub",
       "levels": [
         {

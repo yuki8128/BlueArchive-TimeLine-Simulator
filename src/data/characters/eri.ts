@@ -27,7 +27,7 @@ export const eri: Character = {
     "ex": {
       "id": "eri_ex",
       "name": "閃光のアルカナ",
-      "description": "敵1人に対して、攻撃力の分のダメージ を2個保有時、この攻撃を強化してダメージを0.5倍加算。その後、自身のは初期化されます。",
+      "description": "敵1人に対して、攻撃力の1368%分のダメージ を2個保有時、この攻撃を強化してダメージを0.5倍加算。その後、自身のは初期化されます。",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const eri: Character = {
     "normal": {
       "id": "eri_normal",
       "name": "魔導書の導き",
-      "description": "35秒毎に、敵1人の率を減少（28秒間）/ 攻撃力の分のダメージ",
+      "description": "35秒毎に、敵1人の会心ダメージ抵抗率を28%減少（28秒間）/ 攻撃力の327%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const eri: Character = {
     "passive": {
       "id": "eri_passive",
       "name": "吉兆",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const eri: Character = {
     "sub": {
       "id": "eri_sub",
       "name": "巨匠を目指して",
-      "description": "を加算/ 強化されていないEXスキルで敵を倒した時、を1個獲得（は最大2個まで重複）",
+      "description": "振動特効を49.2%加算/ 強化されていないEXスキルで敵を倒した時、を1個獲得（は最大2個まで重複）",
       "type": "sub",
       "levels": [
         {

@@ -28,7 +28,7 @@ export const hoshino: Character = {
     "ex": {
       "id": "hoshino_ex",
       "name": "戦術的鎮圧",
-      "description": "扇形範囲内の敵に対して、攻撃力の分のダメージを与え1ヒットごとに敵をノックバック",
+      "description": "扇形範囲内の敵に対して、攻撃力の697%分のダメージを与え1ヒットごとに敵をノックバック/ さらに気絶状態を付与（1.4秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -62,7 +62,7 @@ export const hoshino: Character = {
     "normal": {
       "id": "hoshino_normal",
       "name": "応急手当",
-      "description": "HPが30%以下の時、治癒力の分のを付与（20秒間） （戦闘中に1回のみ）",
+      "description": "HPが30%以下の時、治癒力の191%分の持続回復を付与（20秒間） （戦闘中に1回のみ）",
       "type": "normal",
       "levels": [
         {
@@ -100,7 +100,7 @@ export const hoshino: Character = {
     "passive": {
       "id": "hoshino_passive",
       "name": "対策委員会の委員長",
-      "description": "を増加",
+      "description": "防御力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -218,7 +218,7 @@ export const hoshino: Character = {
     "sub": {
       "id": "hoshino_sub",
       "name": "鎮圧のベテラン",
-      "description": "EXスキルの使用中、治癒力の分の効果を発動",
+      "description": "EXスキルの使用中、治癒力の205%分のシールド効果を発動",
       "type": "sub",
       "levels": [
         {

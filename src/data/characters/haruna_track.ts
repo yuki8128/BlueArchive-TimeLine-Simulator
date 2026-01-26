@@ -27,7 +27,7 @@ export const harunaTrack: Character = {
     "ex": {
       "id": "haruna_track_ex",
       "name": "美食家のオススメ",
-      "description": "円形範囲内の味方4人を指定した位置に移動させた後、治癒力の分の回復",
+      "description": "円形範囲内の味方4人を指定した位置に移動させた後、治癒力の119%分の回復",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -56,7 +56,7 @@ export const harunaTrack: Character = {
     "normal": {
       "id": "haruna_track_normal",
       "name": "美食家のアプローチ",
-      "description": "40秒毎に、敵6人に対して攻撃力の分のダメージ/ を減少（20秒間）",
+      "description": "40秒毎に、敵6人に対して攻撃力の306%分のダメージ/ 防御力を11%減少（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -194,7 +194,7 @@ export const harunaTrack: Character = {
     "passive": {
       "id": "haruna_track_passive",
       "name": "癒やしのスイーツ",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -312,7 +312,7 @@ export const harunaTrack: Character = {
     "sub": {
       "id": "haruna_track_sub",
       "name": "スポーツ正餐",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

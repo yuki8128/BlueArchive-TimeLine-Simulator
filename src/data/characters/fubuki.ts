@@ -27,7 +27,7 @@ export const fubuki: Character = {
     "ex": {
       "id": "fubuki_ex",
       "name": "まずは甘い休息から",
-      "description": "を増加（46秒間）",
+      "description": "攻撃力を69.4%増加（46秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -91,7 +91,7 @@ export const fubuki: Character = {
     "normal": {
       "id": "fubuki_normal",
       "name": "最後のひと口！",
-      "description": "弾薬が3以下になる毎に、敵1人に対して攻撃力の分のダメージ さらにを付与（間） 弾薬数が3減少",
+      "description": "弾薬が3以下になる毎に、敵1人に対して攻撃力の361%分のダメージ さらに気絶状態を付与（2.5秒間） 弾薬数が3減少",
       "type": "normal",
       "levels": [
         {
@@ -149,7 +149,7 @@ export const fubuki: Character = {
     "passive": {
       "id": "fubuki_passive",
       "name": "交通整理",
-      "description": "を増加",
+      "description": "CC強化力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -267,7 +267,7 @@ export const fubuki: Character = {
     "sub": {
       "id": "fubuki_sub",
       "name": "便乗させてもらおっかな",
-      "description": "自身を除く味方のEXスキルの使用開始時、を増加（10秒間）",
+      "description": "自身を除く味方のEXスキルの使用開始時、攻撃力を33.5%増加（10秒間）",
       "type": "sub",
       "levels": [
         {

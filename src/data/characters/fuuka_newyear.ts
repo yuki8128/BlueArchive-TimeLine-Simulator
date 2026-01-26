@@ -27,7 +27,7 @@ export const fuukaNewyear: Character = {
     "ex": {
       "id": "fuuka_newyear_ex",
       "name": "給食部のおせち",
-      "description": "味方1人のを最大で50%減少（EXスキルの使用1回分）（ただし減少値は小数点以下切り捨て）/ 率を増加（35秒間）",
+      "description": "味方1人のスキルコストを最大で50%減少（EXスキルの使用1回分）（ただし減少値は小数点以下切り捨て）/ 会心ダメージ率を32.1%増加（35秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -91,7 +91,7 @@ export const fuukaNewyear: Character = {
     "normal": {
       "id": "fuuka_newyear_normal",
       "name": "試食タイム！",
-      "description": "60秒毎に、HPが最も低い味方1人に対して治癒力の分の効果を発動（20秒間）",
+      "description": "60秒毎に、HPが最も低い味方1人に対して治癒力の227%分のシールド効果を発動（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -129,7 +129,7 @@ export const fuukaNewyear: Character = {
     "passive": {
       "id": "fuuka_newyear_passive",
       "name": "最高の一口",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -247,7 +247,7 @@ export const fuukaNewyear: Character = {
     "sub": {
       "id": "fuuka_newyear_sub",
       "name": "給食部の差し入れ",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

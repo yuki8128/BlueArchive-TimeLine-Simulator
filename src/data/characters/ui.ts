@@ -27,7 +27,7 @@ export const ui: Character = {
     "ex": {
       "id": "ui_ex",
       "name": "古書の専門家",
-      "description": "自身を除く味方1人のを最大で50%減少（EXスキルの使用2回分）（ただし減少値は小数点以下切り捨て）/ を増加（46秒間）",
+      "description": "自身を除く味方1人のスキルコストを最大で50%減少（EXスキルの使用2回分）（ただし減少値は小数点以下切り捨て）/ 攻撃力を16.1%増加（46秒間）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -91,7 +91,7 @@ export const ui: Character = {
     "normal": {
       "id": "ui_normal",
       "name": "伝授されていく知識",
-      "description": "40秒毎に、円形範囲内の味方のを増加（33秒間）",
+      "description": "40秒毎に、円形範囲内の味方の会心値を25.9%増加（33秒間）",
       "type": "normal",
       "levels": [
         {
@@ -209,7 +209,7 @@ export const ui: Character = {
     "passive": {
       "id": "ui_passive",
       "name": "専門家の知見",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -327,7 +327,7 @@ export const ui: Character = {
     "sub": {
       "id": "ui_sub",
       "name": "神経過敏",
-      "description": "EXスキルの使用時、を増加（20秒間）",
+      "description": "EXスキルの使用時、攻撃速度を45.9%増加（20秒間）",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const reijo: Character = {
     "ex": {
       "id": "reijo_ex",
       "name": "腿法：破蹴手榴弾",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ さらに持続ダメージ（悪寒、中毒）強化効果を付与（15秒間） 持続ダメージ（悪寒、中毒）強化効果状態の敵に持続ダメージ（悪寒、中毒）を付与した時、下記の内容に強化される。 悪寒：持続ダメージが発生する周期を減少 中毒：対象に付与した中毒効果の周期ごとのダメージに対して、2秒毎にの追加ダメージ（最大まで）",
+      "description": "敵1人に対して、攻撃力の116%分のダメージ/ さらに持続ダメージ（悪寒、中毒）強化効果を付与（15秒間） 持続ダメージ（悪寒、中毒）強化効果状態の敵に持続ダメージ（悪寒、中毒）を付与した時、下記の内容に強化される。 悪寒：悪寒持続ダメージが発生する周期を31.8%減少 中毒：対象に付与した中毒効果の周期ごとのダメージに対して、2秒毎に53%の追加ダメージ（最大6回まで）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const reijo: Character = {
     "normal": {
       "id": "reijo_normal",
       "name": "招式：昇龍之形",
-      "description": "30秒毎に、を増加（20秒間）",
+      "description": "30秒毎に、攻撃力を45%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const reijo: Character = {
     "passive": {
       "id": "reijo_passive",
       "name": "気功：プロテインシェイク",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const reijo: Character = {
     "sub": {
       "id": "reijo_sub",
       "name": "心法：ウェイトトレーニング",
-      "description": "EXスキルの使用時、を増加（5秒間）",
+      "description": "EXスキルの使用時、コスト回復力を1861増加（5秒間）",
       "type": "sub",
       "levels": [
         {

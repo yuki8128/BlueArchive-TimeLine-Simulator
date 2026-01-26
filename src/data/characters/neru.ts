@@ -28,7 +28,7 @@ export const neru: Character = {
     "ex": {
       "id": "neru_ex",
       "name": "あぁ？ぶっ殺されてぇか？",
-      "description": "敵1人に攻撃力の分のダメージ/ 自身がの時はダメージが倍になる",
+      "description": "敵1人に攻撃力の762%分のダメージ/ 自身がの時はダメージが1.7倍になる",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -62,7 +62,7 @@ export const neru: Character = {
     "normal": {
       "id": "neru_normal",
       "name": "あぁ？ふざけんな！",
-      "description": "30秒毎に自身に対してを付与。を増加（20秒間）",
+      "description": "30秒毎に自身に対してを付与。回避値を33.9%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -180,7 +180,7 @@ export const neru: Character = {
     "passive": {
       "id": "neru_passive",
       "name": "コールサインダブルオー",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -298,7 +298,7 @@ export const neru: Character = {
     "sub": {
       "id": "neru_sub",
       "name": "激昂",
-      "description": "の時、を増加（30秒間）",
+      "description": "の時、攻撃力を31.9%増加（30秒間）",
       "type": "sub",
       "levels": [
         {

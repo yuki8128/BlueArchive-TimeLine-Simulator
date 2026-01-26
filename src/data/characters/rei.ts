@@ -27,7 +27,7 @@ export const rei: Character = {
     "ex": {
       "id": "rei_ex",
       "name": "ミレニアムの4番バッター！",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に対して、攻撃力の401%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const rei: Character = {
     "normal": {
       "id": "rei_normal",
       "name": "ファインプレー",
-      "description": "敵を4人倒した時、を増加（20秒間）/ を1回獲得（クールタイム10秒）",
+      "description": "敵を4人倒した時、攻撃速度を57.3%増加（20秒間）/ を1回獲得（クールタイム10秒）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const rei: Character = {
     "passive": {
       "id": "rei_passive",
       "name": "明日の強打者",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const rei: Character = {
     "sub": {
       "id": "rei_sub",
       "name": "スリーアウトチェンジ",
-      "description": "を加算/ を3回獲得時、自身のスキルコストを減少（EXスキルの使用1回分） （は初期化されます）",
+      "description": "振動特効を65.6%加算/ を3回獲得時、自身のスキルコストを3減少（EXスキルの使用1回分） （は初期化されます）",
       "type": "sub",
       "levels": [
         {

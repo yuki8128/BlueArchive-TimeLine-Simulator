@@ -28,7 +28,7 @@ export const hina: Character = {
     "ex": {
       "id": "hina_ex",
       "name": "終幕：イシュ・ボシェテ",
-      "description": "扇形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "扇形範囲内の敵に対して、攻撃力の1208%分のダメージ",
       "type": "ex",
       "cost": 7,
       "levels": [
@@ -62,7 +62,7 @@ export const hina: Character = {
     "normal": {
       "id": "hina_normal",
       "name": "リロードアンドデストロイ",
-      "description": "弾薬数が0になった時、すぐにリロード/ を増加（16秒間）",
+      "description": "弾薬数が0になった時、すぐにリロード/ 攻撃力を39.9%増加（16秒間）",
       "type": "normal",
       "levels": [
         {
@@ -180,7 +180,7 @@ export const hina: Character = {
     "passive": {
       "id": "hina_passive",
       "name": "冷徹な風紀委員会",
-      "description": "を増加",
+      "description": "攻撃速度を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -218,7 +218,7 @@ export const hina: Character = {
     "sub": {
       "id": "hina_sub",
       "name": "徹頭徹尾",
-      "description": "攻撃時、隠れていない敵に対して攻撃力の分の追加ダメージ",
+      "description": "攻撃時、隠れていない敵に対して攻撃力の5.2%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

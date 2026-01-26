@@ -27,7 +27,7 @@ export const momiji: Character = {
     "ex": {
       "id": "momiji_ex",
       "name": "図書館ではお静かに",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に対して、攻撃力の356%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const momiji: Character = {
     "normal": {
       "id": "momiji_normal",
       "name": "知識の力",
-      "description": "30秒毎に、を増加（20秒間）",
+      "description": "30秒毎に、攻撃力を22.5%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const momiji: Character = {
     "passive": {
       "id": "momiji_passive",
       "name": "コレクターの熱量",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const momiji: Character = {
     "sub": {
       "id": "momiji_sub",
       "name": "旅の始まり",
-      "description": "戦術入場時、を増加",
+      "description": "戦術入場時、攻撃力を17.8%増加/ 通常攻撃時、円形範囲の半径が1.5倍に増加",
       "type": "sub",
       "levels": [
         {

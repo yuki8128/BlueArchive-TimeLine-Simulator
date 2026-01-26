@@ -27,7 +27,7 @@ export const kisaki: Character = {
     "ex": {
       "id": "kisaki_ex",
       "name": "詔令：格物致知",
-      "description": "味方1人に対して、を加算（15秒間）",
+      "description": "味方1人に対して、EXスキルの与えるダメージ量を80.7%加算（15秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -51,7 +51,7 @@ export const kisaki: Character = {
     "normal": {
       "id": "kisaki_normal",
       "name": "勅令：修身斉家",
-      "description": "35秒毎に、HPが最も低い味方1人に対して治癒力の分の効果を発動（17秒間）",
+      "description": "35秒毎に、HPが最も低い味方1人に対して治癒力の131%分のシールド効果を発動（17秒間）",
       "type": "normal",
       "levels": [
         {
@@ -89,7 +89,7 @@ export const kisaki: Character = {
     "passive": {
       "id": "kisaki_passive",
       "name": "制令：克己復礼",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const kisaki: Character = {
     "sub": {
       "id": "kisaki_sub",
       "name": "布告天下",
-      "description": "味方のを増加",
+      "description": "味方のコスト回復力を20.2%増加",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const junkoNewyear: Character = {
     "ex": {
       "id": "junko_newyear_ex",
       "name": "食べ物の恨み",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に対して、攻撃力の653%分のダメージ",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -61,7 +61,7 @@ export const junkoNewyear: Character = {
     "normal": {
       "id": "junko_newyear_normal",
       "name": "食べたかったのに……",
-      "description": "通常攻撃21回毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "通常攻撃21回毎に、敵1人に対して攻撃力の760%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const junkoNewyear: Character = {
     "passive": {
       "id": "junko_newyear_passive",
       "name": "早く終わらせるわよ！",
-      "description": "を増加",
+      "description": "攻撃速度を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -157,7 +157,7 @@ export const junkoNewyear: Character = {
     "sub": {
       "id": "junko_newyear_sub",
       "name": "一着しかないのに！",
-      "description": "EXスキル並びにノーマルスキルの発動と同時に、を増加（20秒間）",
+      "description": "EXスキル並びにノーマルスキルの発動と同時に、会心値を19.9%増加（20秒間）",
       "type": "sub",
       "levels": [
         {

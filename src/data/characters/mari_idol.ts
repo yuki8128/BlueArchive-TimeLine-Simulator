@@ -27,7 +27,7 @@ export const mariIdol: Character = {
     "ex": {
       "id": "mari_idol_ex",
       "name": "溢れるハート",
-      "description": "自身を除き味方1人に対して治癒力の分を回復し、自身に治癒力の分の回復 HPを超えた超過回復量の100%を追加HPに転換 （追加HPの最大値は回復した対象の最大HP50%まで転換） （追加HPは1秒毎に、超過回復量を含む自身が与えた全体回復量の5%ずつ減少）/ を1個獲得",
+      "description": "自身を除き味方1人に対して治癒力の265%分を回復し、自身に治癒力の121%分の回復 HPを超えた超過回復量の100%を追加HPに転換 （追加HPの最大値は回復した対象の最大HP50%まで転換） （追加HPは1秒毎に、超過回復量を含む自身が与えた全体回復量の5%ずつ減少）/ を1個獲得",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -56,7 +56,7 @@ export const mariIdol: Character = {
     "normal": {
       "id": "mari_idol_normal",
       "name": "慈愛の投げキッス",
-      "description": "30秒毎に、自身を除きHPが最も低い味方1人に対して治癒力の分の回復",
+      "description": "30秒毎に、自身を除きHPが最も低い味方1人に対して治癒力の136%分の回復",
       "type": "normal",
       "levels": [
         {
@@ -104,7 +104,7 @@ export const mariIdol: Character = {
     "passive": {
       "id": "mari_idol_passive",
       "name": "たゆまぬ努力",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -222,7 +222,7 @@ export const mariIdol: Character = {
     "sub": {
       "id": "mari_idol_sub",
       "name": "今だけは楽しんで",
-      "description": "を増加/ を3個獲得時、自身を除く味方のスキルコストを1減少（EXスキルの使用1回分）（は初期化されます）",
+      "description": "HPを25.5%増加/ を3個獲得時、自身を除く味方のスキルコストを1減少（EXスキルの使用1回分）（は初期化されます）",
       "type": "sub",
       "levels": [
         {

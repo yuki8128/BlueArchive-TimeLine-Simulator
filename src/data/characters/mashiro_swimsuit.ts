@@ -27,7 +27,7 @@ export const mashiroSwimsuit: Character = {
     "ex": {
       "id": "mashiro_swimsuit_ex",
       "name": "正義の洗礼",
-      "description": "敵1人のを減少（30秒間） さらに攻撃力の分のダメージ",
+      "description": "敵1人の回避値を39.1%減少（30秒間） さらに攻撃力の1025%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -101,7 +101,7 @@ export const mashiroSwimsuit: Character = {
     "normal": {
       "id": "mashiro_swimsuit_normal",
       "name": "正義の連携",
-      "description": "30秒毎に、攻撃力が最も高い味方1人の率を増加（20秒間）",
+      "description": "30秒毎に、攻撃力が最も高い味方1人の会心ダメージ率を36%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -219,7 +219,7 @@ export const mashiroSwimsuit: Character = {
     "passive": {
       "id": "mashiro_swimsuit_passive",
       "name": "正義の眼差し",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -337,7 +337,7 @@ export const mashiroSwimsuit: Character = {
     "sub": {
       "id": "mashiro_swimsuit_sub",
       "name": "正義の加護",
-      "description": "味方のを増加",
+      "description": "味方の命中値を17.3%増加",
       "type": "sub",
       "levels": [
         {

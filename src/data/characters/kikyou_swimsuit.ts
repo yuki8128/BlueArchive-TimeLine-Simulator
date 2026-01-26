@@ -121,7 +121,7 @@ export const kikyouSwimsuit: Character = {
     "normal": {
       "id": "kikyou_swimsuit_normal",
       "name": "作戦参謀の安眠",
-      "description": "ハンモックが破壊されず24秒間維持した後、EXスキルの範囲内にいる味方の率を増加（36秒間）",
+      "description": "ハンモックが破壊されず24秒間維持した後、EXスキルの範囲内にいる味方の会心ダメージ率を15.1%増加（36秒間）",
       "type": "normal",
       "levels": [
         {
@@ -239,7 +239,7 @@ export const kikyouSwimsuit: Character = {
     "passive": {
       "id": "kikyou_swimsuit_passive",
       "name": "背水の陣",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -357,7 +357,7 @@ export const kikyouSwimsuit: Character = {
     "sub": {
       "id": "kikyou_swimsuit_sub",
       "name": "以逸待労の計",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

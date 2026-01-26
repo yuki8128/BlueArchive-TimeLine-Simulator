@@ -27,7 +27,7 @@ export const seia: Character = {
     "ex": {
       "id": "seia_ex",
       "name": "まどろみの庭",
-      "description": "自身を除く味方1人のを最大で50%減少（EXスキルの使用分）（ただし減少値は小数点以下切り捨て）/ 自身のを増加（15秒間）",
+      "description": "自身を除く味方1人のスキルコストを最大で50%減少（EXスキルの使用2回分）（ただし減少値は小数点以下切り捨て）/ 自身のコスト回復力を718増加（15秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -91,7 +91,7 @@ export const seia: Character = {
     "normal": {
       "id": "seia_normal",
       "name": "智者の助言",
-      "description": "35秒毎に、自身を除く味方1人と自身のを加算（25秒間）",
+      "description": "35秒毎に、自身を除く味方1人と自身の貫通特効を49.8%加算（25秒間）",
       "type": "normal",
       "levels": [
         {
@@ -129,7 +129,7 @@ export const seia: Character = {
     "passive": {
       "id": "seia_passive",
       "name": "静心",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -247,7 +247,7 @@ export const seia: Character = {
     "sub": {
       "id": "seia_sub",
       "name": "智者の勘",
-      "description": "EXスキルを3回使用する度に、自身とEXスキル3回目の対象に治癒力の分の効果を発動（25秒間）",
+      "description": "EXスキルを3回使用する度に、自身とEXスキル3回目の対象に治癒力の195%分のシールド効果を発動（25秒間）",
       "type": "sub",
       "levels": [
         {

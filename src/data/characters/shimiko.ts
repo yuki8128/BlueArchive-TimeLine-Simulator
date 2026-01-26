@@ -28,7 +28,7 @@ export const shimiko: Character = {
     "ex": {
       "id": "shimiko_ex",
       "name": "知識の盾",
-      "description": "遮蔽物を設置/ 円形範囲内の味方のを増加（30秒間）",
+      "description": "遮蔽物を設置/ 円形範囲内の味方の防御力を26.2%増加（30秒間）/ 遮蔽物はシミコの最大HPの38%分の値が追加されたHPを持ちます。",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -92,7 +92,7 @@ export const shimiko: Character = {
     "normal": {
       "id": "shimiko_normal",
       "name": "心の栄養剤",
-      "description": "35秒毎に、HPが最も低い味方1人に対して治癒力の分の効果を発動（16秒間）",
+      "description": "35秒毎に、HPが最も低い味方1人に対して治癒力の226%分のシールド効果を発動（16秒間）",
       "type": "normal",
       "levels": [
         {
@@ -130,7 +130,7 @@ export const shimiko: Character = {
     "passive": {
       "id": "shimiko_passive",
       "name": "知識を蓄えましょう！",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -248,7 +248,7 @@ export const shimiko: Character = {
     "sub": {
       "id": "shimiko_sub",
       "name": "みんなで読書会を開きましょう！",
-      "description": "味方のを増加",
+      "description": "味方の防御力を17.3%増加",
       "type": "sub",
       "levels": [
         {

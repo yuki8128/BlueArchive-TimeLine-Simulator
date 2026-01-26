@@ -28,7 +28,7 @@ export const eimi: Character = {
     "ex": {
       "id": "eimi_ex",
       "name": "不屈の意志",
-      "description": "治癒力の＋失ったHPの3.4%分のを付与（20秒間）",
+      "description": "治癒力の16.4%＋失ったHPの3.4%分の持続回復を付与（20秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -52,7 +52,7 @@ export const eimi: Character = {
     "normal": {
       "id": "eimi_normal",
       "name": "執念の猛撃",
-      "description": "15秒毎に、扇形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "15秒毎に、扇形範囲内の敵に対して攻撃力の564%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -110,7 +110,7 @@ export const eimi: Character = {
     "passive": {
       "id": "eimi_passive",
       "name": "スペシャリストの休憩",
-      "description": "を増加",
+      "description": "被回復率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -148,7 +148,7 @@ export const eimi: Character = {
     "sub": {
       "id": "eimi_sub",
       "name": "強靱な精神力",
-      "description": "HPが50%以下の時、を増加",
+      "description": "HPが50%以下の時、CC抵抗力を38.3%増加",
       "type": "sub",
       "levels": [
         {

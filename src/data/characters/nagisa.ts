@@ -27,7 +27,7 @@ export const nagisa: Character = {
     "ex": {
       "id": "nagisa_ex",
       "name": "Time On Target",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ/ 対象が軽装備の場合、攻撃前にを減少（15秒間）",
+      "description": "円形範囲内の敵に対して、攻撃力の772%分のダメージ/ 対象が軽装備の場合、攻撃前に防御力を40.2%減少（15秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -101,7 +101,7 @@ export const nagisa: Character = {
     "normal": {
       "id": "nagisa_normal",
       "name": "Afternoon Tea",
-      "description": "50秒毎に、HPが最も低い味方1人に対して治癒力の分の回復/ 対象がトリニティ総合学園に所属する生徒の場合、治癒力の分の回復",
+      "description": "50秒毎に、HPが最も低い味方1人に対して治癒力の279%分の回復/ 対象がトリニティ総合学園に所属する生徒の場合、治癒力の393%分の回復",
       "type": "normal",
       "levels": [
         {
@@ -149,7 +149,7 @@ export const nagisa: Character = {
     "passive": {
       "id": "nagisa_passive",
       "name": "Pride of Tea Party",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -267,7 +267,7 @@ export const nagisa: Character = {
     "sub": {
       "id": "nagisa_sub",
       "name": "Noblesse oblige",
-      "description": "爆発タイプの味方の率を増加",
+      "description": "爆発タイプの味方の会心ダメージ率を24.2%増加",
       "type": "sub",
       "levels": [
         {

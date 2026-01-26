@@ -27,7 +27,7 @@ export const harukaNewyear: Character = {
     "ex": {
       "id": "haruka_newyear_ex",
       "name": "誰が許可しましたか……？",
-      "description": "敵1人のと率を減少（50秒間） さらに攻撃力の分のダメージ",
+      "description": "敵1人の会心抵抗値と会心ダメージ抵抗率を41.5%減少（50秒間） さらに攻撃力の345%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const harukaNewyear: Character = {
     "normal": {
       "id": "haruka_newyear_normal",
       "name": "ちゃんとした挨拶",
-      "description": "30秒毎に、敵1人の率を減少（20秒間）",
+      "description": "30秒毎に、敵1人の会心ダメージ抵抗率を30.8%減少（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const harukaNewyear: Character = {
     "passive": {
       "id": "haruka_newyear_passive",
       "name": "許せない許せない",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const harukaNewyear: Character = {
     "sub": {
       "id": "haruka_newyear_sub",
       "name": "真心を込めて",
-      "description": "味方のを増加",
+      "description": "味方のコスト回復力を20.2%増加",
       "type": "sub",
       "levels": [
         {

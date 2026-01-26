@@ -27,7 +27,7 @@ export const tsukuyoDress: Character = {
     "ex": {
       "id": "tsukuyo_dress_ex",
       "name": "忍者は、退かないもの、です！",
-      "description": "指定した位置に移動した後、自身に遮蔽物を生成および遮蔽状態を付与（40秒間）/ 遮蔽物はツクヨ（ドレス）の最大HPの分の値が追加されたHPを持ちます。（遮蔽物の防御タイプはツクヨ（ドレス）と同じです）/ を増加（30秒間）",
+      "description": "指定した位置に移動した後、自身に遮蔽物を生成および遮蔽状態を付与（40秒間）/ 遮蔽物はツクヨ（ドレス）の最大HPの40.2%分の値が追加されたHPを持ちます。（遮蔽物の防御タイプはツクヨ（ドレス）と同じです）/ 攻撃速度を43.3%増加（30秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -51,7 +51,7 @@ export const tsukuyoDress: Character = {
     "normal": {
       "id": "tsukuyo_dress_normal",
       "name": "ラーメンが食べたい、です……。",
-      "description": "HPが40%以下の時、治癒力の分の効果を発動（30秒間） （戦闘中に1回のみ）",
+      "description": "HPが40%以下の時、治癒力の519%分のシールド効果を発動（30秒間） （戦闘中に1回のみ）",
       "type": "normal",
       "levels": [
         {
@@ -89,7 +89,7 @@ export const tsukuyoDress: Character = {
     "passive": {
       "id": "tsukuyo_dress_passive",
       "name": "特訓の成果、です……！",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const tsukuyoDress: Character = {
     "sub": {
       "id": "tsukuyo_dress_sub",
       "name": "緊張を緩めて……心の、準備！",
-      "description": "自身にがある間は、を付与。は、治癒力の分のを付与",
+      "description": "自身にシールドがある間は、「忍者ウォーキング」を付与。「忍者ウォーキング」は、治癒力の36.8%分の持続回復を付与",
       "type": "sub",
       "levels": [
         {

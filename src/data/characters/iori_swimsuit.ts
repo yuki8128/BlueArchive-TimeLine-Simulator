@@ -27,7 +27,7 @@ export const ioriSwimsuit: Character = {
     "ex": {
       "id": "iori_swimsuit_ex",
       "name": "疾風怒濤",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に対して、攻撃力の880%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const ioriSwimsuit: Character = {
     "normal": {
       "id": "iori_swimsuit_normal",
       "name": "快刀乱麻",
-      "description": "25秒毎に敵1人に対して、攻撃力の分のダメージ/ さらに攻撃力の分の持続ダメージを付与（20秒間）",
+      "description": "25秒毎に敵1人に対して、攻撃力の297%分のダメージ/ さらに攻撃力の66.3%分の悪寒持続ダメージを付与（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const ioriSwimsuit: Character = {
     "passive": {
       "id": "iori_swimsuit_passive",
       "name": "精密射撃",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const ioriSwimsuit: Character = {
     "sub": {
       "id": "iori_swimsuit_sub",
       "name": "スペシャリストの威圧",
-      "description": "攻撃時、25%の確率で攻撃力の分の持続ダメージを付与（20秒間）（クールタイム10秒）",
+      "description": "攻撃時、25%の確率で攻撃力の64.8%分の悪寒持続ダメージを付与（20秒間）（クールタイム10秒）",
       "type": "sub",
       "levels": [
         {

@@ -28,7 +28,7 @@ export const utaha: Character = {
     "ex": {
       "id": "utaha_ex",
       "name": "雷ちゃん、召喚",
-      "description": "ターレットを召喚、ターレットはウタハの攻撃力の分の攻撃力を持ちます（30秒間）",
+      "description": "ターレットを召喚、ターレットはウタハの攻撃力の154%分の攻撃力を持ちます（30秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -52,7 +52,7 @@ export const utaha: Character = {
     "normal": {
       "id": "utaha_normal",
       "name": "雷ちゃんMK-II、駆動",
-      "description": "30秒毎にターレットを召喚、ターレットはウタハの攻撃力の分の攻撃力を持ちます（20秒間）",
+      "description": "30秒毎にターレットを召喚、ターレットはウタハの攻撃力の72.6%分の攻撃力を持ちます（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -90,7 +90,7 @@ export const utaha: Character = {
     "passive": {
       "id": "utaha_passive",
       "name": "技術革命",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -208,7 +208,7 @@ export const utaha: Character = {
     "sub": {
       "id": "utaha_sub",
       "name": "マイスターの誓い",
-      "description": "味方のを増加",
+      "description": "味方のHPを17.3%増加",
       "type": "sub",
       "levels": [
         {

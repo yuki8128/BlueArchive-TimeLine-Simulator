@@ -27,7 +27,7 @@ export const yakumo: Character = {
     "ex": {
       "id": "yakumo_ex",
       "name": "出版、重版、流通",
-      "description": "円形範囲内の敵5人を指定した位置に移動させた後、を減少（13秒間）、 効果が適用された敵1人当たり、を1個獲得（最大4個まで）/ さらにの確率でを付与（間）",
+      "description": "円形範囲内の敵5人を指定した位置に移動させた後、移動速度を32.2%減少（13秒間）、 効果が適用された敵1人当たり、を1個獲得（最大4個まで）/ さらに61%の確率で気絶状態を付与（6.1秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -51,7 +51,7 @@ export const yakumo: Character = {
     "normal": {
       "id": "yakumo_normal",
       "name": "売上拡大",
-      "description": "を4個獲得時、を全て消耗して会心ダメージ率が最も高い味方1人の率を増加（20秒間）",
+      "description": "を4個獲得時、を全て消耗して会心ダメージ率が最も高い味方1人の会心ダメージ率を37.9%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -169,7 +169,7 @@ export const yakumo: Character = {
     "passive": {
       "id": "yakumo_passive",
       "name": "経営哲学",
-      "description": "を増加",
+      "description": "CC強化力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -287,7 +287,7 @@ export const yakumo: Character = {
     "sub": {
       "id": "yakumo_sub",
       "name": "契約更新",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

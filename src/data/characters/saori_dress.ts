@@ -27,7 +27,7 @@ export const saoriDress: Character = {
     "ex": {
       "id": "saori_dress_ex",
       "name": "目撃者排除",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に対して、攻撃力の1002%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const saoriDress: Character = {
     "normal": {
       "id": "saori_dress_normal",
       "name": "美しさの裏側",
-      "description": "敵を8人倒した時、スキルコストを、を1個獲得（戦闘中に3回のみ）",
+      "description": "敵を8人倒した時、スキルコストを2.17、を1個獲得（戦闘中に3回のみ）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const saoriDress: Character = {
     "passive": {
       "id": "saori_dress_passive",
       "name": "花茨",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const saoriDress: Character = {
     "sub": {
       "id": "saori_dress_sub",
       "name": "加速する感覚",
-      "description": "獲得したの個数によってを増加/ 1個：を増加 2個：を増加 3個：を増加",
+      "description": "獲得したの個数によって攻撃速度を増加/ 1個：攻撃速度を27.5%増加 2個：攻撃速度を59.7%増加 3個：攻撃速度を101%増加",
       "type": "sub",
       "levels": [
         {

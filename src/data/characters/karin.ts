@@ -28,7 +28,7 @@ export const karin: Character = {
     "ex": {
       "id": "karin_ex",
       "name": "ターゲット、排除する",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ 超大型の敵には分の追加ダメージ",
+      "description": "敵1人に対して、攻撃力の1099%分のダメージ/ 超大型の敵には625%分の追加ダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -62,7 +62,7 @@ export const karin: Character = {
     "normal": {
       "id": "karin_normal",
       "name": "火力支援、開始",
-      "description": "40秒毎に、敵1人に対して攻撃力の分のダメージ/ さらに50%の確率で、を付与（3.1秒間）",
+      "description": "40秒毎に、敵1人に対して攻撃力の424%分のダメージ/ さらに50%の確率で、気絶状態を付与（3.1秒間）",
       "type": "normal",
       "levels": [
         {
@@ -120,7 +120,7 @@ export const karin: Character = {
     "passive": {
       "id": "karin_passive",
       "name": "武装強化、完了",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -238,7 +238,7 @@ export const karin: Character = {
     "sub": {
       "id": "karin_sub",
       "name": "支援活動、開始",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

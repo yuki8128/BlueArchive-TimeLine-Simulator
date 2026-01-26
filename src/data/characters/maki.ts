@@ -28,7 +28,7 @@ export const maki: Character = {
     "ex": {
       "id": "maki_ex",
       "name": "世界をもっと色鮮やかに！",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ を増加（30秒間）",
+      "description": "敵1人に対して、攻撃力の1081%分のダメージ/ 攻撃力を54.5%増加（30秒間）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -102,7 +102,7 @@ export const maki: Character = {
     "normal": {
       "id": "maki_normal",
       "name": "くらえ、ペイントボール！",
-      "description": "25秒毎に、敵1人のを減少、マーク状態を付与（15秒間）",
+      "description": "25秒毎に、敵1人の防御力を34.8%減少、マーク状態を付与（15秒間）",
       "type": "normal",
       "levels": [
         {
@@ -220,7 +220,7 @@ export const maki: Character = {
     "passive": {
       "id": "maki_passive",
       "name": "芸術的な演出",
-      "description": "を増加",
+      "description": "攻撃速度を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -258,7 +258,7 @@ export const maki: Character = {
     "sub": {
       "id": "maki_sub",
       "name": "芸術の苦しみ",
-      "description": "マーク状態の敵を攻撃時、攻撃力の分の追加ダメージ",
+      "description": "マーク状態の敵を攻撃時、攻撃力の28.3%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

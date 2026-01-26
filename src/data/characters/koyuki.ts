@@ -27,7 +27,7 @@ export const koyuki: Character = {
     "ex": {
       "id": "koyuki_ex",
       "name": "トリッキーな変数",
-      "description": "円形範囲内の敵に対して、爆弾1個を投擲しダメージを与えます。 銃弾：攻撃力の分のダメージ 電界：攻撃力の分のダメージ 爆炎：攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に対して、爆弾1個を投擲しダメージを与えます。 銃弾：攻撃力の444%分のダメージ 電界：攻撃力の421%分のダメージ 爆炎：攻撃力の398%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const koyuki: Character = {
     "normal": {
       "id": "koyuki_normal",
       "name": "1人だと思いましたか！？",
-      "description": "30秒毎に、敵1人に対して攻撃力の分のダメージ、対象の付近に敵がいる場合、付近の敵2体に対して同じダメージ/ 発動後すぐにリロード",
+      "description": "30秒毎に、敵1人に対して攻撃力の385%分のダメージ、対象の付近に敵がいる場合、付近の敵2体に対して同じダメージ/ 発動後すぐにリロード",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const koyuki: Character = {
     "passive": {
       "id": "koyuki_passive",
       "name": "ミラクルを信じてますか？",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const koyuki: Character = {
     "sub": {
       "id": "koyuki_sub",
       "name": "カオス理論",
-      "description": "EXスキルの発動と同時に、使用した爆弾の種類によってを増加（40秒間） 銃弾：を増加 電界：を増加 爆炎：を増加",
+      "description": "EXスキルの発動と同時に、使用した爆弾の種類によって攻撃力を増加（40秒間） 銃弾：攻撃力を29.1%増加 電界：攻撃力を27.5%増加 爆炎：攻撃力を26%増加",
       "type": "sub",
       "levels": [
         {

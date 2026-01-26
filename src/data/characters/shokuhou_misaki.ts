@@ -27,7 +27,7 @@ export const shokuhouMisaki: Character = {
     "ex": {
       "id": "shokuhou_misaki_ex",
       "name": "心理掌握",
-      "description": "指定した相手およびその円形範囲内の最も近い敵2人に対して、攻撃力の分のダメージ/ 状態を付与（間）",
+      "description": "指定した相手およびその円形範囲内の最も近い敵2人に対して、攻撃力の1468%分のダメージ/ 混乱状態を付与（7秒間）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const shokuhouMisaki: Character = {
     "normal": {
       "id": "shokuhou_misaki_normal",
       "name": "少し手伝ってくれるかしら？",
-      "description": "30秒毎に、円形範囲内の敵に攻撃力の分のダメージ",
+      "description": "30秒毎に、円形範囲内の敵に攻撃力の604%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const shokuhouMisaki: Character = {
     "passive": {
       "id": "shokuhou_misaki_passive",
       "name": "常盤台の女王",
-      "description": "を増加",
+      "description": "CC強化力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const shokuhouMisaki: Character = {
     "sub": {
       "id": "shokuhou_misaki_sub",
       "name": "私は頭脳派だしぃ",
-      "description": "食蜂操祈のEXスキルで相手に状態を適用する度にとを増加（20秒間）",
+      "description": "食蜂操祈のEXスキルで相手に混乱状態を適用する度に防御力と回避値を36.7%増加（20秒間）",
       "type": "sub",
       "levels": [
         {

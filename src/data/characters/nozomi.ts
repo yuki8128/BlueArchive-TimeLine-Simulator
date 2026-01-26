@@ -27,7 +27,7 @@ export const nozomi: Character = {
     "ex": {
       "id": "nozomi_ex",
       "name": "ブースターオン！",
-      "description": "直線範囲内の指定した敵に対して、攻撃力の分のダメージ、その他の敵に対して、攻撃力の分のダメージ/ 追加で最大2コストを消耗して、1コストあたりのダメージが25%増加します。/ （コスト増減スキルの効果は基本コストを基準として計算します）",
+      "description": "直線範囲内の指定した敵に対して、攻撃力の1045%分のダメージ、その他の敵に対して、攻撃力の147%分のダメージ/ 追加で最大2コストを消耗して、1コストあたりのダメージが25%増加します。/ （コスト増減スキルの効果は基本コストを基準として計算します）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const nozomi: Character = {
     "normal": {
       "id": "nozomi_normal",
       "name": "こっちこっち～！",
-      "description": "通常攻撃12回毎に、を加算（26秒間）",
+      "description": "通常攻撃12回毎に、振動特効を53.9%加算（26秒間）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const nozomi: Character = {
     "passive": {
       "id": "nozomi_passive",
       "name": "急行準備",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const nozomi: Character = {
     "sub": {
       "id": "nozomi_sub",
       "name": "出発進行！",
-      "description": "全ての攻撃を確定会心に変更/ 自身のを増加、率を増加",
+      "description": "全ての攻撃を確定会心に変更/ 自身の攻撃速度を25.5%増加、会心ダメージ率を25.5%増加",
       "type": "sub",
       "levels": [
         {

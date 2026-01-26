@@ -27,7 +27,7 @@ export const kazusaBand: Character = {
     "ex": {
       "id": "kazusa_band_ex",
       "name": "歴史的一小節",
-      "description": "自身を中心とした円形範囲内の味方のを増加/ さらに、自身にを付与（40秒間）（最大2個まで）",
+      "description": "自身を中心とした円形範囲内の味方の攻撃速度を35.9%増加/ さらに、自身にを2個付与（40秒間）（最大2個まで）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -51,7 +51,7 @@ export const kazusaBand: Character = {
     "normal": {
       "id": "kazusa_band_normal",
       "name": "ベースチューニング",
-      "description": "35秒毎に、自身のを増加（26秒間）",
+      "description": "35秒毎に、自身の攻撃力を37.2%増加（26秒間）",
       "type": "normal",
       "levels": [
         {
@@ -169,7 +169,7 @@ export const kazusaBand: Character = {
     "passive": {
       "id": "kazusa_band_passive",
       "name": "慣れ親しんできた舞台",
-      "description": "を増加",
+      "description": "攻撃速度を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const kazusaBand: Character = {
     "sub": {
       "id": "kazusa_band_sub",
       "name": "スイーツボーカル",
-      "description": "自身の1個毎に、攻撃した時、攻撃力の分の追加ダメージ（最大2個まで）",
+      "description": "自身の1個毎に、攻撃した時、攻撃力の10.6%分の追加ダメージ（最大2個まで）",
       "type": "sub",
       "levels": [
         {

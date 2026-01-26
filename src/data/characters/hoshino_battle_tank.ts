@@ -27,7 +27,7 @@ export const hoshinoBattleTank: Character = {
     "ex": {
       "id": "hoshino_battle_tank_ex",
       "name": "防御姿勢強化",
-      "description": "指定した位置に移動した後、遮蔽物の役割をする盾を持ち上げて遮蔽状態を付与、さらにを増加（40秒間）/ 遮蔽物は、ホシノ（臨戦）の最大HPのの分の値が追加されたHPを持ちます。 （遮蔽物の防御タイプはホシノ（臨戦）と同じです）",
+      "description": "指定した位置に移動した後、遮蔽物の役割をする盾を持ち上げて遮蔽状態を付与、さらに攻撃力を156%増加（40秒間）/ 遮蔽物は、ホシノ（臨戦）の最大HPの69.1%の分の値が追加されたHPを持ちます。 （遮蔽物の防御タイプはホシノ（臨戦）と同じです）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -91,7 +91,7 @@ export const hoshinoBattleTank: Character = {
     "normal": {
       "id": "hoshino_battle_tank_normal",
       "name": "プレート交換",
-      "description": "40秒毎に、を装着してを減少/ （は25回攻撃を受けたら解除）",
+      "description": "40秒毎に、を装着して被ダメージ量を24.1%減少/ （は25回攻撃を受けたら解除）",
       "type": "normal",
       "levels": [
         {
@@ -129,7 +129,7 @@ export const hoshinoBattleTank: Character = {
     "passive": {
       "id": "hoshino_battle_tank_passive",
       "name": "近距離戦闘システム",
-      "description": "を、を増加",
+      "description": "攻撃力を16.2%、HPを16.2%増加",
       "type": "passive",
       "levels": [
         {
@@ -307,7 +307,7 @@ export const hoshinoBattleTank: Character = {
     "sub": {
       "id": "hoshino_battle_tank_sub",
       "name": "有効戦術",
-      "description": "攻撃時、20%の確率でを減少（20秒間）（クールタイム5秒）",
+      "description": "攻撃時、20%の確率で防御力を19.3%減少（20秒間）（クールタイム5秒）",
       "type": "sub",
       "levels": [
         {

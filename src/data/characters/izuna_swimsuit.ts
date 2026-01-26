@@ -27,7 +27,7 @@ export const izunaSwimsuit: Character = {
     "ex": {
       "id": "izuna_swimsuit_ex",
       "name": "イズナ流忍法・夏バージョン",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ 指定した敵に対して（30秒間）",
+      "description": "敵1人に対して、攻撃力の804%分のダメージ/ 指定した敵に対して集中砲火状態（30秒間）",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -61,7 +61,7 @@ export const izunaSwimsuit: Character = {
     "normal": {
       "id": "izuna_swimsuit_normal",
       "name": "イズナ流忍法！ぷくぷくの術！",
-      "description": "通常攻撃6回毎に、敵1人に対して攻撃力の分のダメージ/ 率を減少（20秒間）",
+      "description": "通常攻撃6回毎に、敵1人に対して攻撃力の669%分のダメージ/ 会心ダメージ抵抗率を38.9%減少（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const izunaSwimsuit: Character = {
     "passive": {
       "id": "izuna_swimsuit_passive",
       "name": "主殿！夏です！",
-      "description": "を増加",
+      "description": "攻撃速度を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -157,7 +157,7 @@ export const izunaSwimsuit: Character = {
     "sub": {
       "id": "izuna_swimsuit_sub",
       "name": "イズナ流忍法・夏バージョン奥義発動！",
-      "description": "会心を25回成功した時、を増加（23秒間）",
+      "description": "会心を25回成功した時、攻撃速度を30.9%増加（23秒間）",
       "type": "sub",
       "levels": [
         {

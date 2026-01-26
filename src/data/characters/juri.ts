@@ -28,7 +28,7 @@ export const juri: Character = {
     "ex": {
       "id": "juri_ex",
       "name": "ジュリのクッキングタイム！",
-      "description": "円形範囲内の敵4人を指定した位置に移動させた後、攻撃力の分の持続ダメージを付与（20秒間）",
+      "description": "円形範囲内の敵4人を指定した位置に移動させた後、攻撃力の112%分の持続ダメージを付与（20秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -52,7 +52,7 @@ export const juri: Character = {
     "normal": {
       "id": "juri_normal",
       "name": "最高のお料理",
-      "description": "20秒毎に、攻撃力が最も高い敵1人のを減少（16秒間）",
+      "description": "20秒毎に、攻撃力が最も高い敵1人の攻撃速度を34.4%減少（16秒間）",
       "type": "normal",
       "levels": [
         {
@@ -90,7 +90,7 @@ export const juri: Character = {
     "passive": {
       "id": "juri_passive",
       "name": "やる気は十分！",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -208,7 +208,7 @@ export const juri: Character = {
     "sub": {
       "id": "juri_sub",
       "name": "召し上がれ！",
-      "description": "味方のを増加",
+      "description": "味方のHPを17.3%増加",
       "type": "sub",
       "levels": [
         {

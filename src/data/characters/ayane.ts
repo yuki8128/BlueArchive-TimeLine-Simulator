@@ -28,7 +28,7 @@ export const ayane: Character = {
     "ex": {
       "id": "ayane_ex",
       "name": "支援特急便",
-      "description": "円形範囲内の味方に対して、治癒力の分の回復",
+      "description": "円形範囲内の味方に対して、治癒力の224%分の回復",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -57,7 +57,7 @@ export const ayane: Character = {
     "normal": {
       "id": "ayane_normal",
       "name": "学習サポート",
-      "description": "30秒毎に、円形範囲内の味方のを増加（20秒間）",
+      "description": "30秒毎に、円形範囲内の味方の会心抵抗値を29.4%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -95,7 +95,7 @@ export const ayane: Character = {
     "passive": {
       "id": "ayane_passive",
       "name": "向学心",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -213,7 +213,7 @@ export const ayane: Character = {
     "sub": {
       "id": "ayane_sub",
       "name": "士気の向上",
-      "description": "味方のを増加",
+      "description": "味方のHPを17.3%増加",
       "type": "sub",
       "levels": [
         {

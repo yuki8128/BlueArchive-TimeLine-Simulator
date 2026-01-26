@@ -27,7 +27,7 @@ export const sumireParttime: Character = {
     "ex": {
       "id": "sumire_parttime_ex",
       "name": "キャッチ・アンド・ピッチ",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ さらにを付与（20秒間） の敵への攻撃時に、スミレ（アルバイト）の攻撃力の分の追加ダメージ （このダメージにおいては、会心が発動しません） （最大240発分まで適用されます）",
+      "description": "敵1人に対して、攻撃力の402%分のダメージ/ さらに弱点把握状態を付与（20秒間） 弱点把握状態の敵への攻撃時に、スミレ（アルバイト）の攻撃力の13.2%分の追加ダメージ （このダメージにおいては、会心が発動しません） （最大240発分まで適用されます）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const sumireParttime: Character = {
     "normal": {
       "id": "sumire_parttime_normal",
       "name": "特製スポーツドリンク",
-      "description": "味方が会心を100回成功した時、味方4人の率を増加（21秒間）（クールタイム25秒）",
+      "description": "味方が会心を100回成功した時、味方4人の会心ダメージ率を15.1%増加（21秒間）（クールタイム25秒）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const sumireParttime: Character = {
     "passive": {
       "id": "sumire_parttime_passive",
       "name": "アフターバーン効果",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const sumireParttime: Character = {
     "sub": {
       "id": "sumire_parttime_sub",
       "name": "全力のバイトタイム",
-      "description": "貫通タイプの味方の率を増加",
+      "description": "貫通タイプの味方の会心ダメージ率を24.2%増加",
       "type": "sub",
       "levels": [
         {

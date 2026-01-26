@@ -27,7 +27,7 @@ export const kirara: Character = {
     "ex": {
       "id": "kirara_ex",
       "name": "ゲヘナのセレブリティー！",
-      "description": "を攻撃力の分の追加ダメージを与える攻撃に変更、を増加（40秒間）/ 発動後すぐにリロード",
+      "description": "を攻撃力の28.9%分の追加ダメージを与える攻撃に変更、攻撃力を51.4%増加（40秒間）/ 発動後すぐにリロード",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -91,7 +91,7 @@ export const kirara: Character = {
     "normal": {
       "id": "kirara_normal",
       "name": "いつもキラキラ！",
-      "description": "30秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "30秒毎に、敵1人に対して攻撃力の744%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -149,7 +149,7 @@ export const kirara: Character = {
     "passive": {
       "id": "kirara_passive",
       "name": "クレープの甘さ",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -267,7 +267,7 @@ export const kirara: Character = {
     "sub": {
       "id": "kirara_sub",
       "name": "トキメキ☆って感じ？",
-      "description": "が変更された状態の場合、を増加、通常攻撃のディレイ無視",
+      "description": "が変更された状態の場合、命中値を30.6%増加、通常攻撃のディレイ4回無視",
       "type": "sub",
       "levels": [
         {

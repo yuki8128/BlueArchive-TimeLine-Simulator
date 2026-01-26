@@ -27,7 +27,7 @@ export const shirokoTerror: Character = {
     "ex": {
       "id": "shiroko_terror_ex",
       "name": "火力強化",
-      "description": "ドローンを召喚（40秒間） ドローンが維持される間、は攻撃力の120%分のダメージを与えるように変更/ を、率を増加（40秒間）/ 自身に対して最大HPの20%分ダメージ （このスキルでシロコ＊テラーは退却しません）",
+      "description": "ドローンを召喚（40秒間） ドローンが維持される間、は攻撃力の120%分のダメージを与えるように変更/ 会心値を67.3%、会心ダメージ率を134%増加（40秒間）/ 自身に対して最大HPの20%分ダメージ （このスキルでシロコ＊テラーは退却しません）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -121,7 +121,7 @@ export const shirokoTerror: Character = {
     "normal": {
       "id": "shiroko_terror_normal",
       "name": "手榴弾投擲・改",
-      "description": "40秒毎に、敵1人に対して攻撃力の分のダメージ/ EXスキルの使用時、「ドローン召喚：十字砲火」にスキルが変更されます。",
+      "description": "40秒毎に、敵1人に対して攻撃力の704%分のダメージ/ EXスキルの使用時、「ドローン召喚：十字砲火」にスキルが変更されます。",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const shirokoTerror: Character = {
     "passive": {
       "id": "shiroko_terror_passive",
       "name": "精密照準",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const shirokoTerror: Character = {
     "sub": {
       "id": "shiroko_terror_sub",
       "name": "呼吸を整える時間",
-      "description": "を加算/ シロコ＊テラーの現在のHPが1%以下の時、15秒間、を適用（クールタイム90秒） 中にHPを全て回復できなかった場合、即退却",
+      "description": "神秘特効を49.25%加算/ シロコ＊テラーの現在のHPが1%以下の時、15秒間、を適用（クールタイム90秒） 中にHPを全て回復できなかった場合、即退却",
       "type": "sub",
       "levels": [
         {

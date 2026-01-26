@@ -27,7 +27,7 @@ export const moe: Character = {
     "ex": {
       "id": "moe_ex",
       "name": "鋼鉄の雨",
-      "description": "直線範囲内の敵に対して、攻撃力の分のダメージ/ 攻撃力の分の持続ダメージを付与（20秒間）",
+      "description": "直線範囲内の敵に対して、攻撃力の489%分のダメージ/ 攻撃力の66.2%分の火傷持続ダメージを付与（20秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const moe: Character = {
     "normal": {
       "id": "moe_normal",
       "name": "集中砲火",
-      "description": "40秒毎に、敵5人に対し攻撃力の分のダメージ/ さらにを付与（間）",
+      "description": "40秒毎に、敵5人に対し攻撃力の160%分のダメージ/ さらに気絶状態を付与（1.6秒間）",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const moe: Character = {
     "passive": {
       "id": "moe_passive",
       "name": "破滅の快感",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const moe: Character = {
     "sub": {
       "id": "moe_sub",
       "name": "作戦支援",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

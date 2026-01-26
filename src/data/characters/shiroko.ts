@@ -28,7 +28,7 @@ export const shiroko: Character = {
     "ex": {
       "id": "shiroko_ex",
       "name": "ドローン召喚：火力支援",
-      "description": "敵1人に対して、攻撃力の分のダメージ",
+      "description": "敵1人に対して、攻撃力の760%分のダメージ",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -62,7 +62,7 @@ export const shiroko: Character = {
     "normal": {
       "id": "shiroko_normal",
       "name": "手榴弾投擲",
-      "description": "25秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "25秒毎に、円形範囲内の敵に対して攻撃力の368%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -120,7 +120,7 @@ export const shiroko: Character = {
     "passive": {
       "id": "shiroko_passive",
       "name": "ピンポイント",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -238,7 +238,7 @@ export const shiroko: Character = {
     "sub": {
       "id": "shiroko_sub",
       "name": "高速連射",
-      "description": "通常攻撃時、20%の確率でを増加（30秒間）（クールタイム25秒）",
+      "description": "通常攻撃時、20%の確率で攻撃速度を57.4%増加（30秒間）（クールタイム25秒）",
       "type": "sub",
       "levels": [
         {

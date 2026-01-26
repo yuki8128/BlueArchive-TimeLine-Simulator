@@ -28,7 +28,7 @@ export const hifumi: Character = {
     "ex": {
       "id": "hifumi_ex",
       "name": "助けて、ペロロ様！",
-      "description": "ペロロ人形が出現し、円形範囲内の敵に対して攻撃力の分のダメージ/ ペロロ人形は、ヒフミの最大HPの160%分の値が追加されたHPを持ちます",
+      "description": "ペロロ人形が出現し、円形範囲内の敵に対して攻撃力の386%分のダメージ/ ペロロ人形は、ヒフミの最大HPの160%分の値が追加されたHPを持ちます",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -62,7 +62,7 @@ export const hifumi: Character = {
     "normal": {
       "id": "hifumi_normal",
       "name": "ペロロ様の応援",
-      "description": "35秒毎に、敵1人に対して攻撃力の212%分のダメージ/ を減少（30秒間）",
+      "description": "35秒毎に、敵1人に対して攻撃力の212%分のダメージ/ 命中値を32%減少（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -200,7 +200,7 @@ export const hifumi: Character = {
     "passive": {
       "id": "hifumi_passive",
       "name": "コレクター根性",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -318,7 +318,7 @@ export const hifumi: Character = {
     "sub": {
       "id": "hifumi_sub",
       "name": "すばしっこいコレクター",
-      "description": "EXスキルの使用時、を増加（5秒間）",
+      "description": "EXスキルの使用時、コスト回復力を1861増加（5秒間）",
       "type": "sub",
       "levels": [
         {

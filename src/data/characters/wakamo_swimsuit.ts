@@ -27,7 +27,7 @@ export const wakamoSwimsuit: Character = {
     "ex": {
       "id": "wakamo_swimsuit_ex",
       "name": "秘色の花占い",
-      "description": "敵1人に対して攻撃力の分のダメージ 攻撃時にを付与（間） 最後の攻撃はを付与し（間）さらにノックバック",
+      "description": "敵1人に対して攻撃力の1074%分のダメージ 攻撃時に気絶状態を付与（1.1秒間） 最後の攻撃は気絶状態を付与し（4.1秒間）さらにノックバック",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const wakamoSwimsuit: Character = {
     "normal": {
       "id": "wakamo_swimsuit_normal",
       "name": "ただ、あなた様のため",
-      "description": "60秒毎に被ダメージ量が増加する代わりに攻撃力増加(全3段階)/ : :9.6%/19.2%/28.9%",
+      "description": "60秒毎に被ダメージ量が増加する代わりに攻撃力増加(全3段階)/ 攻撃力:31.5%/61.8%/99% 被ダメージ量:9.6%/19.2%/28.9%",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const wakamoSwimsuit: Character = {
     "passive": {
       "id": "wakamo_swimsuit_passive",
       "name": "あふれ出す恋心",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const wakamoSwimsuit: Character = {
     "sub": {
       "id": "wakamo_swimsuit_sub",
       "name": "真夏の情熱",
-      "description": "HPが30%以下の敵を攻撃した時、攻撃力の分の追加ダメージ",
+      "description": "HPが30%以下の敵を攻撃した時、攻撃力の98.1%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

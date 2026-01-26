@@ -27,7 +27,7 @@ export const mari: Character = {
     "ex": {
       "id": "mari_ex",
       "name": "聖なる加護",
-      "description": "味方1人に対して、治癒力の分の効果を発動（20秒間）/ さらに弱体状態を1つ解除",
+      "description": "味方1人に対して、治癒力の328%分のシールド効果を発動（20秒間）/ さらに弱体状態を1つ解除",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -51,7 +51,7 @@ export const mari: Character = {
     "normal": {
       "id": "mari_normal",
       "name": "浄化の洗礼",
-      "description": "25秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "25秒毎に、円形範囲内の敵に対して攻撃力の364%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -109,7 +109,7 @@ export const mari: Character = {
     "passive": {
       "id": "mari_passive",
       "name": "決然たる思い",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -227,7 +227,7 @@ export const mari: Character = {
     "sub": {
       "id": "mari_sub",
       "name": "慈愛の心",
-      "description": "味方のを増加",
+      "description": "味方のHPを17.3%増加",
       "type": "sub",
       "levels": [
         {

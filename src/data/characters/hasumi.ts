@@ -28,7 +28,7 @@ export const hasumi: Character = {
     "ex": {
       "id": "hasumi_ex",
       "name": "アーマーピアッシング弾",
-      "description": "敵1人に対して、攻撃力の分のダメージ",
+      "description": "敵1人に対して、攻撃力の1091%分のダメージ",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -62,7 +62,7 @@ export const hasumi: Character = {
     "normal": {
       "id": "hasumi_normal",
       "name": "冷徹な心",
-      "description": "敵を倒した時すぐにリロード/ 率を増加（13秒間）",
+      "description": "敵を倒した時すぐにリロード/ 会心ダメージ率を57%増加（13秒間）",
       "type": "normal",
       "levels": [
         {
@@ -180,7 +180,7 @@ export const hasumi: Character = {
     "passive": {
       "id": "hasumi_passive",
       "name": "照準よし",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -298,7 +298,7 @@ export const hasumi: Character = {
     "sub": {
       "id": "hasumi_sub",
       "name": "目標探索",
-      "description": "リロード時、を増加（通常攻撃1回分のみ）",
+      "description": "リロード時、会心値を95%増加（通常攻撃1回分のみ）",
       "type": "sub",
       "levels": [
         {

@@ -28,7 +28,7 @@ export const aru: Character = {
     "ex": {
       "id": "aru_ex",
       "name": "ハードボイルドショット",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ さらに、円形範囲内の敵に攻撃力の分のダメージ",
+      "description": "敵1人に対して、攻撃力の521%分のダメージ/ さらに、円形範囲内の敵に攻撃力の554%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -62,7 +62,7 @@ export const aru: Character = {
     "normal": {
       "id": "aru_normal",
       "name": "ノワールシュート",
-      "description": "25秒毎に、敵1人に対して攻撃力の分のダメージ/ 50%の確率で、さらに円形範囲内の敵に攻撃力の分のダメージ",
+      "description": "25秒毎に、敵1人に対して攻撃力の290%分のダメージ/ 50%の確率で、さらに円形範囲内の敵に攻撃力の476%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -120,7 +120,7 @@ export const aru: Character = {
     "passive": {
       "id": "aru_passive",
       "name": "社長の威厳",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -238,7 +238,7 @@ export const aru: Character = {
     "sub": {
       "id": "aru_sub",
       "name": "アウトローの流儀",
-      "description": "EXスキルの使用中、を増加",
+      "description": "EXスキルの使用中、会心値を38.3%増加",
       "type": "sub",
       "levels": [
         {

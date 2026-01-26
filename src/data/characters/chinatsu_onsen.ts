@@ -27,7 +27,7 @@ export const chinatsuOnsen: Character = {
     "ex": {
       "id": "chinatsu_onsen_ex",
       "name": "戦闘用A型エネルギー剤",
-      "description": "自身を除き、味方1人のを増加（30秒間）",
+      "description": "自身を除き、味方1人の攻撃速度を60%増加（30秒間）",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -51,7 +51,7 @@ export const chinatsuOnsen: Character = {
     "normal": {
       "id": "chinatsu_onsen_normal",
       "name": "戦闘支援を強化",
-      "description": "25秒毎に、自身を除く味方1人のを増加（20秒間）",
+      "description": "25秒毎に、自身を除く味方1人の攻撃速度を35%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -89,7 +89,7 @@ export const chinatsuOnsen: Character = {
     "passive": {
       "id": "chinatsu_onsen_passive",
       "name": "つかの間の休養",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const chinatsuOnsen: Character = {
     "sub": {
       "id": "chinatsu_onsen_sub",
       "name": "救護担当の用心深さ",
-      "description": "EXスキルの使用時、治癒力の分の効果を発動（30秒間）",
+      "description": "EXスキルの使用時、治癒力の205%分のシールド効果を発動（30秒間）",
       "type": "sub",
       "levels": [
         {

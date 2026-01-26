@@ -27,7 +27,7 @@ export const umika: Character = {
     "ex": {
       "id": "umika_ex",
       "name": "お祭り開始です！",
-      "description": "花火発射台を召喚（50秒間）（最大5個まで）/ 花火発射台はウミカの最大HPの分の値が追加されたHPを持ちます。",
+      "description": "花火発射台を召喚（50秒間）（最大5個まで）/ 花火発射台はウミカの最大HPの42.5%分の値が追加されたHPを持ちます。",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -51,7 +51,7 @@ export const umika: Character = {
     "normal": {
       "id": "umika_normal",
       "name": "た～まや～！です！",
-      "description": "通常攻撃10回毎に、を増加（30秒間）/ さらに味方の花火発射台全体にを増加（7秒間）。発射命令を送信",
+      "description": "通常攻撃10回毎に、攻撃力を22.6%増加（30秒間）/ さらに味方の花火発射台全体に攻撃力を122%増加（7秒間）。発射命令を送信",
       "type": "normal",
       "levels": [
         {
@@ -229,7 +229,7 @@ export const umika: Character = {
     "passive": {
       "id": "umika_passive",
       "name": "現地の熱気",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -347,7 +347,7 @@ export const umika: Character = {
     "sub": {
       "id": "umika_sub",
       "name": "お祭りのときめき",
-      "description": "通常攻撃55回毎に、を増加（40秒間）/ さらに自身のスキルコストを3減少（EXスキルの使用1回分）",
+      "description": "通常攻撃55回毎に、攻撃力を61.3%増加（40秒間）/ さらに自身のスキルコストを3減少（EXスキルの使用1回分）",
       "type": "sub",
       "levels": [
         {

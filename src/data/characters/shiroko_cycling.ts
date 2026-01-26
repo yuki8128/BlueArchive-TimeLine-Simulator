@@ -27,7 +27,7 @@ export const shirokoCycling: Character = {
     "ex": {
       "id": "shiroko_cycling_ex",
       "name": "ライド＆グレネード",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ/ さらにを減少（10秒間）",
+      "description": "円形範囲内の敵に対して、攻撃力の690%分のダメージ/ さらに攻撃力を50%減少（10秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -101,7 +101,7 @@ export const shirokoCycling: Character = {
     "normal": {
       "id": "shiroko_cycling_normal",
       "name": "一点突破",
-      "description": "40秒毎に直線範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "40秒毎に直線範囲内の敵に対して、攻撃力の369%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -159,7 +159,7 @@ export const shirokoCycling: Character = {
     "passive": {
       "id": "shiroko_cycling_passive",
       "name": "ラピッドファイヤー",
-      "description": "を増加",
+      "description": "攻撃速度を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -197,7 +197,7 @@ export const shirokoCycling: Character = {
     "sub": {
       "id": "shiroko_cycling_sub",
       "name": "炯眼",
-      "description": "弱体状態の敵への攻撃時に、攻撃力の分の追加ダメージ",
+      "description": "弱体状態の敵への攻撃時に、攻撃力の7.3%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

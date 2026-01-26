@@ -28,7 +28,7 @@ export const yoshimi: Character = {
     "ex": {
       "id": "yoshimi_ex",
       "name": "だ、誰が慌ててるって！？",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージを与えノックバック/ さらにを付与（間）",
+      "description": "円形範囲内の敵に対して、攻撃力の353%分のダメージを与えノックバック/ さらに気絶状態を付与（2.9秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -62,7 +62,7 @@ export const yoshimi: Character = {
     "normal": {
       "id": "yoshimi_normal",
       "name": "痛い目に遭ってみる？！",
-      "description": "25秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "25秒毎に、円形範囲内の敵に対して攻撃力の364%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -120,7 +120,7 @@ export const yoshimi: Character = {
     "passive": {
       "id": "yoshimi_passive",
       "name": "な、舐めないで！",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -238,7 +238,7 @@ export const yoshimi: Character = {
     "sub": {
       "id": "yoshimi_sub",
       "name": "私の話を聞きなさいよおっ！",
-      "description": "味方のを増加",
+      "description": "味方のCC強化力を17.3%増加",
       "type": "sub",
       "levels": [
         {

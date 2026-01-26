@@ -27,7 +27,7 @@ export const michiruDress: Character = {
     "ex": {
       "id": "michiru_dress_ex",
       "name": "少女忍法帖、ミチうにゃああっ！",
-      "description": "味方1人に対して、治癒力の分の回復",
+      "description": "味方1人に対して、治癒力の290%分の回復",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -56,7 +56,7 @@ export const michiruDress: Character = {
     "normal": {
       "id": "michiru_dress_normal",
       "name": "秘儀を伝授しよう！",
-      "description": "戦闘開始時、自身を除く味方のを増加（60秒間）、スキルコストを1減少（EXスキルの使用1回分） （戦闘中に1回のみ）",
+      "description": "戦闘開始時、自身を除く味方の攻撃力を21.5%増加（60秒間）、スキルコストを1減少（EXスキルの使用1回分） （戦闘中に1回のみ）",
       "type": "normal",
       "levels": [
         {
@@ -174,7 +174,7 @@ export const michiruDress: Character = {
     "passive": {
       "id": "michiru_dress_passive",
       "name": "これもまた忍者装束也！",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -292,7 +292,7 @@ export const michiruDress: Character = {
     "sub": {
       "id": "michiru_dress_sub",
       "name": "アンダーカバー流奥儀！",
-      "description": "味方のを増加",
+      "description": "味方のコスト回復力を20.2%増加",
       "type": "sub",
       "levels": [
         {

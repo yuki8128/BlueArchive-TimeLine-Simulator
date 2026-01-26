@@ -27,7 +27,7 @@ export const akariNewyear: Character = {
     "ex": {
       "id": "akari_newyear_ex",
       "name": "少しお借りしました！",
-      "description": "アカリ（正月）が給食推進車両に乗って登場。給食推進車両はアカリ（正月）の最大HPの分の値が追加されたHPを持ちます。（30秒間） （給食推進車両は通常攻撃をしません） （タクティカルサポートの搭乗物は重複して登場することはできません）",
+      "description": "アカリ（正月）が給食推進車両に乗って登場。給食推進車両はアカリ（正月）の最大HPの52.5%分の値が追加されたHPを持ちます。（30秒間） （給食推進車両は通常攻撃をしません） （タクティカルサポートの搭乗物は重複して登場することはできません）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -51,7 +51,7 @@ export const akariNewyear: Character = {
     "normal": {
       "id": "akari_newyear_normal",
       "name": "こんなのはどうですか？",
-      "description": "40秒毎に、HPが最も低い味方を中心に円形範囲内の味方に対してを増加（30秒間）（範囲内にいる間だけ効果を維持）",
+      "description": "40秒毎に、HPが最も低い味方を中心に円形範囲内の味方に対して防御力を24.4%増加（30秒間）（範囲内にいる間だけ効果を維持）",
       "type": "normal",
       "levels": [
         {
@@ -169,7 +169,7 @@ export const akariNewyear: Character = {
     "passive": {
       "id": "akari_newyear_passive",
       "name": "いただきます！",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -287,7 +287,7 @@ export const akariNewyear: Character = {
     "sub": {
       "id": "akari_newyear_sub",
       "name": "もっとほしい方？",
-      "description": "味方のを加算",
+      "description": "味方の神秘特効を30.2%加算",
       "type": "sub",
       "levels": [
         {

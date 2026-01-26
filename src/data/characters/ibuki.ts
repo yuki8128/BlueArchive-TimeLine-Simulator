@@ -27,7 +27,7 @@ export const ibuki: Character = {
     "ex": {
       "id": "ibuki_ex",
       "name": "イブキのお絵描きタイム！",
-      "description": "自身を除く円形範囲内の味方のを増加（35秒間）",
+      "description": "自身を除く円形範囲内の味方の攻撃力を50.2%増加（35秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -91,7 +91,7 @@ export const ibuki: Character = {
     "normal": {
       "id": "ibuki_normal",
       "name": "悪い子はメッだよ！",
-      "description": "30秒毎に、敵1人に対して攻撃力の分のダメージ/ さらにを減少（20秒間）",
+      "description": "30秒毎に、敵1人に対して攻撃力の388%分のダメージ/ さらに攻撃力を24.1%減少（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -229,7 +229,7 @@ export const ibuki: Character = {
     "passive": {
       "id": "ibuki_passive",
       "name": "品行方正な女の子",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -347,7 +347,7 @@ export const ibuki: Character = {
     "sub": {
       "id": "ibuki_sub",
       "name": "万魔殿のマスコット",
-      "description": "EXスキル使用開始時、自身に対して治癒力の分の回復",
+      "description": "EXスキル使用開始時、自身に対して治癒力の171%分の回復",
       "type": "sub",
       "levels": [
         {

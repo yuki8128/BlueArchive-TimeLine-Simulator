@@ -27,7 +27,7 @@ export const niya: Character = {
     "ex": {
       "id": "niya_ex",
       "name": "なぁんにも、してませんよ？",
-      "description": "円形範囲内の敵に対して、を減少（26秒間）/ 円形範囲内の敵の数によって、範囲内の敵に対して、 3人以下：攻撃力の分のダメージ 4～6人：攻撃力の分のダメージ 7人以上：攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に対して、防御力を33.3%減少（26秒間）/ 円形範囲内の敵の数によって、範囲内の敵に対して、 3人以下：攻撃力の349%分のダメージ 4～6人：攻撃力の495%分のダメージ 7人以上：攻撃力の699%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -101,7 +101,7 @@ export const niya: Character = {
     "normal": {
       "id": "niya_normal",
       "name": "悪霊退散",
-      "description": "30秒毎に、円形範囲内の敵に対して率を減少（20秒間）/ 攻撃力の分のダメージ",
+      "description": "30秒毎に、円形範囲内の敵に対して会心ダメージ抵抗率を22.5%減少（20秒間）/ 攻撃力の280%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -159,7 +159,7 @@ export const niya: Character = {
     "passive": {
       "id": "niya_passive",
       "name": "ドーマン・セーマン",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -277,7 +277,7 @@ export const niya: Character = {
     "sub": {
       "id": "niya_sub",
       "name": "急急如律令",
-      "description": "味方のを増加",
+      "description": "味方のコスト回復力を20.2%増加",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const reisa: Character = {
     "ex": {
       "id": "reisa_ex",
       "name": "挑戦状を受け取ってください！",
-      "description": "扇形範囲内の敵に対して、攻撃力の分のダメージ 自身の弱体状態を1つ解除",
+      "description": "扇形範囲内の敵に対して、攻撃力の707%分のダメージ 自身の弱体状態を1つ解除",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const reisa: Character = {
     "normal": {
       "id": "reisa_normal",
       "name": "勝利のポーズ！",
-      "description": "50秒毎に、治癒力の分のを付与（30秒間）",
+      "description": "50秒毎に、治癒力の43.1%分の持続回復を付与（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const reisa: Character = {
     "passive": {
       "id": "reisa_passive",
       "name": "一日中でも！",
-      "description": "を、を増加",
+      "description": "攻撃力を16.2%、HPを16.2%増加",
       "type": "passive",
       "levels": [
         {
@@ -277,7 +277,7 @@ export const reisa: Character = {
     "sub": {
       "id": "reisa_sub",
       "name": "宇沢レイサの存在感",
-      "description": "EXスキルで敵を命中した時、対象のを減少（25秒間） さらにを付与（1秒間）",
+      "description": "EXスキルで敵を命中した時、対象の防御力を11.4%減少（25秒間） さらに挑発状態を付与（1秒間）",
       "type": "sub",
       "levels": [
         {

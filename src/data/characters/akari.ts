@@ -28,7 +28,7 @@ export const akari: Character = {
     "ex": {
       "id": "akari_ex",
       "name": "グレネード、大盛りで！",
-      "description": "円形範囲内の敵に攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に攻撃力の744%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -62,7 +62,7 @@ export const akari: Character = {
     "normal": {
       "id": "akari_normal",
       "name": "おかわり、ちょっと辛めで！",
-      "description": "通常攻撃時、10%の確率でを増加（20秒間）（クールタイム15秒）",
+      "description": "通常攻撃時、10%の確率で攻撃力を73.6%増加（20秒間）（クールタイム15秒）",
       "type": "normal",
       "levels": [
         {
@@ -180,7 +180,7 @@ export const akari: Character = {
     "passive": {
       "id": "akari_passive",
       "name": "ごちそうさまです！",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -298,7 +298,7 @@ export const akari: Character = {
     "sub": {
       "id": "akari_sub",
       "name": "まだまだ食べられますよ！",
-      "description": "通常攻撃時、10%の確率でを増加（26秒間）（クールタイム18秒）",
+      "description": "通常攻撃時、10%の確率で攻撃力を65.5%増加（26秒間）（クールタイム18秒）",
       "type": "sub",
       "levels": [
         {

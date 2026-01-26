@@ -28,7 +28,7 @@ export const chise: Character = {
     "ex": {
       "id": "chise_ex",
       "name": "これは痛いかもよ～",
-      "description": "円形範囲内の敵に対して、攻撃力の分の持続ダメージを付与（10秒間）",
+      "description": "円形範囲内の敵に対して、攻撃力の106%分の持続ダメージを付与（10秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -62,7 +62,7 @@ export const chise: Character = {
     "normal": {
       "id": "chise_normal",
       "name": "撃つよ～",
-      "description": "25秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "25秒毎に、円形範囲内の敵に対して攻撃力の416%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -120,7 +120,7 @@ export const chise: Character = {
     "passive": {
       "id": "chise_passive",
       "name": "よーし、頑張ろ～",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -238,7 +238,7 @@ export const chise: Character = {
     "sub": {
       "id": "chise_sub",
       "name": "ちょっと痛むよ～",
-      "description": "通常攻撃時、10%の確率で攻撃力の分の持続ダメージを付与（20秒間）（クールタイム5秒）",
+      "description": "通常攻撃時、10%の確率で攻撃力の102%分の火傷持続ダメージを付与（20秒間）（クールタイム5秒）",
       "type": "sub",
       "levels": [
         {

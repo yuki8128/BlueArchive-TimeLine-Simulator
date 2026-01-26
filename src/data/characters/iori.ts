@@ -28,7 +28,7 @@ export const iori: Character = {
     "ex": {
       "id": "iori_ex",
       "name": "一網打尽",
-      "description": "銃弾を3回発射。攻撃した敵と、その後ろ扇形範囲内の敵に対して、それぞれ攻撃力の分のダメージ",
+      "description": "銃弾を3回発射。攻撃した敵と、その後ろ扇形範囲内の敵に対して、それぞれ攻撃力の666%分のダメージ",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -62,7 +62,7 @@ export const iori: Character = {
     "normal": {
       "id": "iori_normal",
       "name": "指名手配",
-      "description": "25秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "25秒毎に、敵1人に対して攻撃力の436%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -120,7 +120,7 @@ export const iori: Character = {
     "passive": {
       "id": "iori_passive",
       "name": "一撃必中",
-      "description": "を増加",
+      "description": "命中値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -238,7 +238,7 @@ export const iori: Character = {
     "sub": {
       "id": "iori_sub",
       "name": "風紀委員の度胸",
-      "description": "自身が隠れていない状態での攻撃時、攻撃力の分の追加ダメージ",
+      "description": "自身が隠れていない状態での攻撃時、攻撃力の43.1%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

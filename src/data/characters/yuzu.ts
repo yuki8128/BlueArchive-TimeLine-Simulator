@@ -28,7 +28,7 @@ export const yuzu: Character = {
     "ex": {
       "id": "yuzu_ex",
       "name": "ゲームスタート！",
-      "description": "指定した相手を中心とした円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "指定した相手を中心とした円形範囲内の敵に対して、攻撃力の594%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -62,7 +62,7 @@ export const yuzu: Character = {
     "normal": {
       "id": "yuzu_normal",
       "name": "連続コンボ！",
-      "description": "25秒毎に、攻撃力が最も高い敵を中心とした円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "25秒毎に、攻撃力が最も高い敵を中心とした円形範囲内の敵に対して、攻撃力の266%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -120,7 +120,7 @@ export const yuzu: Character = {
     "passive": {
       "id": "yuzu_passive",
       "name": "デバッグ中……",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -238,7 +238,7 @@ export const yuzu: Character = {
     "sub": {
       "id": "yuzu_sub",
       "name": "ふりしぼる勇気",
-      "description": "EXスキル並びにノーマルスキルの発動と同時に、率を増加（6秒間）",
+      "description": "EXスキル並びにノーマルスキルの発動と同時に、会心ダメージ率を42.4%増加（6秒間）",
       "type": "sub",
       "levels": [
         {

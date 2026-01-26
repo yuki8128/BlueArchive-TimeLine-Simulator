@@ -28,7 +28,7 @@ export const yuuka: Character = {
     "ex": {
       "id": "yuuka_ex",
       "name": "Q.E.D",
-      "description": "治癒力の分の効果を発動（間）",
+      "description": "治癒力の248%分のシールド効果を発動（25秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -52,7 +52,7 @@ export const yuuka: Character = {
     "normal": {
       "id": "yuuka_normal",
       "name": "I.F.F",
-      "description": "15秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "15秒毎に、敵1人に対して攻撃力の573%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -110,7 +110,7 @@ export const yuuka: Character = {
     "passive": {
       "id": "yuuka_passive",
       "name": "最適解の導出",
-      "description": "を増加",
+      "description": "防御力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -228,7 +228,7 @@ export const yuuka: Character = {
     "sub": {
       "id": "yuuka_sub",
       "name": "高速暗算",
-      "description": "隠れている時、治癒力の分の回復（クールタイム10秒）",
+      "description": "隠れている時、治癒力の142%分の回復（クールタイム10秒）",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const kaho: Character = {
     "ex": {
       "id": "kaho_ex",
       "name": "ファンたるもの",
-      "description": "敵1人に対して攻撃力の分のダメージ",
+      "description": "敵1人に対して攻撃力の1415%分のダメージ",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const kaho: Character = {
     "normal": {
       "id": "kaho_normal",
       "name": "精神統一",
-      "description": "50秒毎に、状態を付与、を増加（間）",
+      "description": "50秒毎に、状態を付与、攻撃力を39.7%増加（40秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const kaho: Character = {
     "passive": {
       "id": "kaho_passive",
       "name": "ひたむきな情熱",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const kaho: Character = {
     "sub": {
       "id": "kaho_sub",
       "name": "静かなる余裕",
-      "description": "状態での攻撃時、攻撃力の分の追加ダメージ",
+      "description": "状態での攻撃時、攻撃力の10.4%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

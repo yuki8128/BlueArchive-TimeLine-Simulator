@@ -27,7 +27,7 @@ export const hibikiCheerleader: Character = {
     "ex": {
       "id": "hibiki_cheerleader_ex",
       "name": "少し暑いかもしれない",
-      "description": "円形範囲内の敵に攻撃力の分のダメージ/ 攻撃力の分の持続ダメージを付与（120秒間）",
+      "description": "円形範囲内の敵に攻撃力の140%分のダメージ/ 攻撃力の47.9%分の応援の熱気持続ダメージを付与（120秒間）",
       "type": "ex",
       "cost": 7,
       "levels": [
@@ -61,7 +61,7 @@ export const hibikiCheerleader: Character = {
     "normal": {
       "id": "hibiki_cheerleader_normal",
       "name": "この声が届いたなら",
-      "description": "40秒毎に、攻撃力が最も高い味方と自身のを増加（30秒間）",
+      "description": "40秒毎に、攻撃力が最も高い味方と自身の攻撃力を22.5%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -239,7 +239,7 @@ export const hibikiCheerleader: Character = {
     "passive": {
       "id": "hibiki_cheerleader_passive",
       "name": "情熱は十分",
-      "description": "を増加、率を11.2%減少",
+      "description": "攻撃力を34%増加、会心ダメージ率を11.2%減少",
       "type": "passive",
       "levels": [
         {
@@ -417,7 +417,7 @@ export const hibikiCheerleader: Character = {
     "sub": {
       "id": "hibiki_cheerleader_sub",
       "name": "何だか少し恥ずかしい…",
-      "description": "敵を攻撃した時、攻撃力の分の追加ダメージ/ 敵との距離が遠くなるほどダメージ量が増加し、近くなるほど弱くなります（最大で2倍、最少で0.5倍）",
+      "description": "敵を攻撃した時、攻撃力の6.4%分の追加ダメージ/ 敵との距離が遠くなるほどダメージ量が増加し、近くなるほど弱くなります（最大で2倍、最少で0.5倍）",
       "type": "sub",
       "levels": [
         {

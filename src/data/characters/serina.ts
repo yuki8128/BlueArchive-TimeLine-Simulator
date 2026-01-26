@@ -28,7 +28,7 @@ export const serina: Character = {
     "ex": {
       "id": "serina_ex",
       "name": "集中治療セットA",
-      "description": "味方1人を指定した位置に移動させた後、治癒力の分の回復",
+      "description": "味方1人を指定した位置に移動させた後、治癒力の228%分の回復",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -57,7 +57,7 @@ export const serina: Character = {
     "normal": {
       "id": "serina_normal",
       "name": "緊急治療セットB",
-      "description": "35秒毎に、HPが最も低い味方1人に対して治癒力の分の回復",
+      "description": "35秒毎に、HPが最も低い味方1人に対して治癒力の178%分の回復",
       "type": "normal",
       "levels": [
         {
@@ -105,7 +105,7 @@ export const serina: Character = {
     "passive": {
       "id": "serina_passive",
       "name": "白衣の天使",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -223,7 +223,7 @@ export const serina: Character = {
     "sub": {
       "id": "serina_sub",
       "name": "天使のほほ笑み",
-      "description": "味方のを増加",
+      "description": "味方のCC抵抗力を17.3%増加",
       "type": "sub",
       "levels": [
         {

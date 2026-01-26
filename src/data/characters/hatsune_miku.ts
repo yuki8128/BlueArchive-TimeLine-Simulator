@@ -27,7 +27,7 @@ export const hatsuneMiku: Character = {
     "ex": {
       "id": "hatsune_miku_ex",
       "name": "この一瞬一瞬に、心を込めて！",
-      "description": "円形範囲内の味方に対して、治癒力の分の回復",
+      "description": "円形範囲内の味方に対して、治癒力の144%分の回復",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -96,7 +96,7 @@ export const hatsuneMiku: Character = {
     "normal": {
       "id": "hatsune_miku_normal",
       "name": "初音ミクの情熱",
-      "description": "30秒毎に、円形範囲内の味方のを増加（20秒間）",
+      "description": "30秒毎に、円形範囲内の味方の会心値を37.7%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -214,7 +214,7 @@ export const hatsuneMiku: Character = {
     "passive": {
       "id": "hatsune_miku_passive",
       "name": "初音ミクの声援",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -332,7 +332,7 @@ export const hatsuneMiku: Character = {
     "sub": {
       "id": "hatsune_miku_sub",
       "name": "初音ミクの祝福",
-      "description": "味方のを増加",
+      "description": "味方の被回復率を17.3%増加",
       "type": "sub",
       "levels": [
         {

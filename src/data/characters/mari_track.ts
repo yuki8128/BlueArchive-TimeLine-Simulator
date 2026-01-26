@@ -27,7 +27,7 @@ export const mariTrack: Character = {
     "ex": {
       "id": "mari_track_ex",
       "name": "お水をどうぞ",
-      "description": "自身を除く円形範囲内の味方に対して治癒力の分の回復",
+      "description": "自身を除く円形範囲内の味方に対して治癒力の318%分の回復",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -56,7 +56,7 @@ export const mariTrack: Character = {
     "normal": {
       "id": "mari_track_normal",
       "name": "シスターの応援",
-      "description": "45秒毎に、自身を除く防御力が最も高い味方1人と自身に治癒力の分の回復、を増加（40秒間）",
+      "description": "45秒毎に、自身を除く防御力が最も高い味方1人と自身に治癒力の132%分の回復、防御力を24.1%増加（40秒間）",
       "type": "normal",
       "levels": [
         {
@@ -184,7 +184,7 @@ export const mariTrack: Character = {
     "passive": {
       "id": "mari_track_passive",
       "name": "応援の心構え",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -302,7 +302,7 @@ export const mariTrack: Character = {
     "sub": {
       "id": "mari_track_sub",
       "name": "献身的な励まし",
-      "description": "EXスキル並びにノーマルスキル使用時、対象の残りHPが30%以下の場合は、治癒力の分の回復",
+      "description": "EXスキル並びにノーマルスキル使用時、対象の残りHPが30%以下の場合は、治癒力の171%分の回復",
       "type": "sub",
       "levels": [
         {

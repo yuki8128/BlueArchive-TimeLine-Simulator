@@ -27,7 +27,7 @@ export const wakamo: Character = {
     "ex": {
       "id": "wakamo_ex",
       "name": "深紅の花占い",
-      "description": "敵1人に対して、攻撃力の分のダメージ その後、味方がその敵に与えたダメージは10秒間されていき、その後蓄積した分の神秘タイプのダメージを与えます。 （ダメージの蓄積は最大でワカモの攻撃力のまで） （10秒後に発動する神秘タイプのダメージにおいては、会心が発動しません）",
+      "description": "敵1人に対して、攻撃力の325%分のダメージ その後、味方がその敵に与えたダメージは10秒間されていき、その後蓄積した分の神秘タイプのダメージを与えます。 （ダメージの蓄積は最大でワカモの攻撃力の1322%まで） （10秒後に発動する神秘タイプのダメージにおいては、会心が発動しません）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const wakamo: Character = {
     "normal": {
       "id": "wakamo_normal",
       "name": "乱れ散る花吹雪",
-      "description": "25秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "25秒毎に、敵1人に対して攻撃力の369%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const wakamo: Character = {
     "passive": {
       "id": "wakamo_passive",
       "name": "花開く破壊衝動",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const wakamo: Character = {
     "sub": {
       "id": "wakamo_sub",
       "name": "狂い咲く闘争本能",
-      "description": "BOSSへの攻撃時に、攻撃力の分の追加ダメージ",
+      "description": "BOSSへの攻撃時に、攻撃力の29.7%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const yukari: Character = {
     "ex": {
       "id": "yukari_ex",
       "name": "まっすぐに芽生えた決意",
-      "description": "円形範囲内の敵に攻撃力の分のダメージ/ さらに自身が所有するを10個単位で可能な限り消耗し、消耗した10個毎に攻撃力の分の確定会心ダメージ",
+      "description": "円形範囲内の敵に攻撃力の302%分のダメージ/ さらに自身が所有するを10個単位で可能な限り消耗し、消耗した10個毎に攻撃力の223%分の確定会心ダメージ",
       "type": "ex",
       "cost": 7,
       "levels": [
@@ -61,7 +61,7 @@ export const yukari: Character = {
     "normal": {
       "id": "yukari_normal",
       "name": "待ち侘びた再会",
-      "description": "40秒毎に、を獲得（は最大50個まで重複）/ を増加（30秒間）",
+      "description": "40秒毎に、を20個獲得（は最大50個まで重複）/ 攻撃力を19.7%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const yukari: Character = {
     "passive": {
       "id": "yukari_passive",
       "name": "百花繚乱のえり～と",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const yukari: Character = {
     "sub": {
       "id": "yukari_sub",
       "name": "面を上げて向き合う責務",
-      "description": "自身を除く味方が消耗したコスト分、を獲得（は最大50個まで重複）/ を10個獲得時、率を増加（15秒間）（効果は重複しない）",
+      "description": "自身を除く味方が消耗したコスト分、を獲得（は最大50個まで重複）/ を10個獲得時、会心ダメージ率を15.5%増加（15秒間）（効果は重複しない）",
       "type": "sub",
       "levels": [
         {

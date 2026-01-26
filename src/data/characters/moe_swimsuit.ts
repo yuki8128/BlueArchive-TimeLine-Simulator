@@ -27,7 +27,7 @@ export const moeSwimsuit: Character = {
     "ex": {
       "id": "moe_swimsuit_ex",
       "name": "弾道ミサイル砲撃",
-      "description": "円形範囲内の指定した敵に対して攻撃力の分のダメージ、その他の敵に対して攻撃力の分のダメージ",
+      "description": "円形範囲内の指定した敵に対して攻撃力の1892%分のダメージ、その他の敵に対して攻撃力の378%分のダメージ",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const moeSwimsuit: Character = {
     "normal": {
       "id": "moe_swimsuit_normal",
       "name": "ハイドロストライク",
-      "description": "35秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "35秒毎に、敵1人に対して攻撃力の593%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const moeSwimsuit: Character = {
     "passive": {
       "id": "moe_swimsuit_passive",
       "name": "破滅の美学",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const moeSwimsuit: Character = {
     "sub": {
       "id": "moe_swimsuit_sub",
       "name": "爆破のスペシャリスト",
-      "description": "攻撃時、大型と超大型の敵に対して攻撃力の分の追加ダメージ",
+      "description": "攻撃時、大型と超大型の敵に対して攻撃力の17.7%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

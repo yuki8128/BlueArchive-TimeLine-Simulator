@@ -27,7 +27,7 @@ export const pinaGuide: Character = {
     "ex": {
       "id": "pina_guide_ex",
       "name": "お仕事モードデス！",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ 保有時、ダメージを0.15倍加算/ （対象の現在のHPに比例してダメージが1～1.5倍に変更）（対象のHPが少ないほどダメージが大きくなります）",
+      "description": "敵1人に対して、攻撃力の2280%分のダメージ/ 保有時、ダメージを0.15倍加算/ （対象の現在のHPに比例してダメージが1～1.5倍に変更）（対象のHPが少ないほどダメージが大きくなります）",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const pinaGuide: Character = {
     "normal": {
       "id": "pina_guide_normal",
       "name": "引率シマス！",
-      "description": "自身を除く味方がEXスキルを7回使用する度に、を付与（40秒間）/ HPが最も低い味方1人に対して、を増加（40秒間）",
+      "description": "自身を除く味方がEXスキルを7回使用する度に、を付与（40秒間）/ HPが最も低い味方1人に対して、被回復率を23.6%増加（40秒間）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const pinaGuide: Character = {
     "passive": {
       "id": "pina_guide_passive",
       "name": "エー、アチラをご覧クダサイ！",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const pinaGuide: Character = {
     "sub": {
       "id": "pina_guide_sub",
       "name": "発破の準備完了デス！",
-      "description": "味方のを加算",
+      "description": "味方の爆発特効を30.2%加算",
       "type": "sub",
       "levels": [
         {

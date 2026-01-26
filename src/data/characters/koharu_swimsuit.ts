@@ -27,7 +27,7 @@ export const koharuSwimsuit: Character = {
     "ex": {
       "id": "koharu_swimsuit_ex",
       "name": "そんな事ないんだから！",
-      "description": "円形範囲内の敵に攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に攻撃力の834%分のダメージ",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const koharuSwimsuit: Character = {
     "normal": {
       "id": "koharu_swimsuit_normal",
       "name": "見ちゃダメなんだから！",
-      "description": "30秒毎に、を増加（25秒間）",
+      "description": "30秒毎に、会心値を39.6%増加（25秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const koharuSwimsuit: Character = {
     "passive": {
       "id": "koharu_swimsuit_passive",
       "name": "エリートの使命感",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const koharuSwimsuit: Character = {
     "sub": {
       "id": "koharu_swimsuit_sub",
       "name": "エッチなのはダメ！死刑！",
-      "description": "攻撃時、中型の敵に対して攻撃力の分の追加ダメージ",
+      "description": "攻撃時、中型の敵に対して攻撃力の19.8%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

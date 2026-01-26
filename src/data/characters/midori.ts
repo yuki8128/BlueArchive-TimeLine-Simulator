@@ -28,7 +28,7 @@ export const midori: Character = {
     "ex": {
       "id": "midori_ex",
       "name": "ドローイングアート",
-      "description": "最大で敵5人に対して、順番にそれぞれ攻撃力の分のダメージ/ 同じ部隊にモモイがいる場合はさらに、攻撃力の分の持続ダメージを付与（20秒間）",
+      "description": "最大で敵5人に対して、順番にそれぞれ攻撃力の191%分のダメージ/ 同じ部隊にモモイがいる場合はさらに、攻撃力の51.8%分の持続ダメージを付与（20秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -62,7 +62,7 @@ export const midori: Character = {
     "normal": {
       "id": "midori_normal",
       "name": "磨き上げるセンス",
-      "description": "25秒毎に、自身を除きHPが最も低い味方1人に対して治癒力の分の回復",
+      "description": "25秒毎に、自身を除きHPが最も低い味方1人に対して治癒力の147%分の回復",
       "type": "normal",
       "levels": [
         {
@@ -110,7 +110,7 @@ export const midori: Character = {
     "passive": {
       "id": "midori_passive",
       "name": "アーティストインスピレーション",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -228,7 +228,7 @@ export const midori: Character = {
     "sub": {
       "id": "midori_sub",
       "name": "開発者シナジー：モモイ",
-      "description": "を増加/ 同じ部隊にモモイがいる場合は、増加",
+      "description": "攻撃速度を28.7%増加/ 同じ部隊にモモイがいる場合は、34.4%増加",
       "type": "sub",
       "levels": [
         {

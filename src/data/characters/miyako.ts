@@ -27,7 +27,7 @@ export const miyako: Character = {
     "ex": {
       "id": "miyako_ex",
       "name": "自走式閃光ドローン",
-      "description": "敵1人に対して、攻撃力の分のダメージ さらにを付与（間）",
+      "description": "敵1人に対して、攻撃力の545%分のダメージ さらに気絶状態を付与（5.5秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const miyako: Character = {
     "normal": {
       "id": "miyako_normal",
       "name": "クレイモア",
-      "description": "40秒毎に小型クレイモアから5つの破片が飛散し、それぞれ攻撃力の分のダメージ",
+      "description": "40秒毎に小型クレイモアから5つの破片が飛散し、それぞれ攻撃力の160%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const miyako: Character = {
     "passive": {
       "id": "miyako_passive",
       "name": "特殊防弾プレート",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const miyako: Character = {
     "sub": {
       "id": "miyako_sub",
       "name": "攪乱作戦",
-      "description": "EXスキルの使用時、を減少（16秒間）",
+      "description": "EXスキルの使用時、被ダメージ量を36.1%減少（16秒間）",
       "type": "sub",
       "levels": [
         {

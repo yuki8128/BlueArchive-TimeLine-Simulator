@@ -27,7 +27,7 @@ export const atsukoSwimsuit: Character = {
     "ex": {
       "id": "atsuko_swimsuit_ex",
       "name": "夏の思い出",
-      "description": "味方1人に対して、治癒力の分の回復",
+      "description": "味方1人に対して、治癒力の290%分の回復",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -56,7 +56,7 @@ export const atsukoSwimsuit: Character = {
     "normal": {
       "id": "atsuko_swimsuit_normal",
       "name": "この花をあなたに",
-      "description": "30秒毎に、HPが最も低い味方1人のを増加（20秒間）",
+      "description": "30秒毎に、HPが最も低い味方1人の被回復率を36%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -94,7 +94,7 @@ export const atsukoSwimsuit: Character = {
     "passive": {
       "id": "atsuko_swimsuit_passive",
       "name": "爽やかな海風",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -212,7 +212,7 @@ export const atsukoSwimsuit: Character = {
     "sub": {
       "id": "atsuko_swimsuit_sub",
       "name": "ビーチのお姫様",
-      "description": "味方のを増加",
+      "description": "味方の攻撃速度を17.3%増加",
       "type": "sub",
       "levels": [
         {

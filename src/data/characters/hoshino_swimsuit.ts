@@ -27,7 +27,7 @@ export const hoshinoSwimsuit: Character = {
     "ex": {
       "id": "hoshino_swimsuit_ex",
       "name": "水上支援",
-      "description": "自身を中心とした円形範囲内の味方のを増加、を加算（50秒間）（範囲内にいる間だけ効果を維持）",
+      "description": "自身を中心とした円形範囲内の味方の攻撃力を38.5%増加、爆発特効を99%加算（50秒間）（範囲内にいる間だけ効果を維持）",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -91,7 +91,7 @@ export const hoshinoSwimsuit: Character = {
     "normal": {
       "id": "hoshino_swimsuit_normal",
       "name": "水上襲撃",
-      "description": "40秒毎に、敵1人に対して攻撃力の分のダメージ/ さらに自身に治癒力の分の回復",
+      "description": "40秒毎に、敵1人に対して攻撃力の454%分のダメージ/ さらに自身に治癒力の97.6%分の回復",
       "type": "normal",
       "levels": [
         {
@@ -159,7 +159,7 @@ export const hoshinoSwimsuit: Character = {
     "passive": {
       "id": "hoshino_swimsuit_passive",
       "name": "猛暑耐久",
-      "description": "を、を増加",
+      "description": "防御力を16.2%、攻撃力を16.2%増加",
       "type": "passive",
       "levels": [
         {
@@ -337,7 +337,7 @@ export const hoshinoSwimsuit: Character = {
     "sub": {
       "id": "hoshino_swimsuit_sub",
       "name": "浜辺の楽しさ",
-      "description": "EXスキルが持続される間、を増加",
+      "description": "EXスキルが持続される間、コスト回復力を684増加",
       "type": "sub",
       "levels": [
         {

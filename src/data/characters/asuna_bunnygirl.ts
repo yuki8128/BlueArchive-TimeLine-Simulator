@@ -27,7 +27,7 @@ export const asunaBunnygirl: Character = {
     "ex": {
       "id": "asuna_bunnygirl_ex",
       "name": "ねぇねぇこれ見て！",
-      "description": "円形範囲内の敵に対して、を減少（40秒間）/ さらに、攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に対して、防御力を24.6%減少（40秒間）/ さらに、攻撃力の438%分のダメージ",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -101,7 +101,7 @@ export const asunaBunnygirl: Character = {
     "normal": {
       "id": "asuna_bunnygirl_normal",
       "name": "楽しくやろう！",
-      "description": "35秒毎に、を増加（23秒間）",
+      "description": "35秒毎に、攻撃力を29.5%増加（23秒間）",
       "type": "normal",
       "levels": [
         {
@@ -219,7 +219,7 @@ export const asunaBunnygirl: Character = {
     "passive": {
       "id": "asuna_bunnygirl_passive",
       "name": "もっともっと楽しもう！",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -337,7 +337,7 @@ export const asunaBunnygirl: Character = {
     "sub": {
       "id": "asuna_bunnygirl_sub",
       "name": "これはおまけだよ！",
-      "description": "EXスキルの使用時、を増加（30秒間）",
+      "description": "EXスキルの使用時、攻撃速度を38.3%増加（30秒間）",
       "type": "sub",
       "levels": [
         {

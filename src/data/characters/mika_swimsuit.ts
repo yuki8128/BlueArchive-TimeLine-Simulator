@@ -51,7 +51,7 @@ export const mikaSwimsuit: Character = {
     "normal": {
       "id": "mika_swimsuit_normal",
       "name": "かわいい子発見☆",
-      "description": "40秒毎に、を加算（33秒間）",
+      "description": "40秒毎に、振動特効を59.8%加算（33秒間）",
       "type": "normal",
       "levels": [
         {
@@ -89,7 +89,7 @@ export const mikaSwimsuit: Character = {
     "passive": {
       "id": "mika_swimsuit_passive",
       "name": "Pax Vobiscum",
-      "description": "を100、を増加",
+      "description": "通常攻撃の射程を100、攻撃力を21.2%増加",
       "type": "passive",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const mikaSwimsuit: Character = {
     "sub": {
       "id": "mika_swimsuit_sub",
       "name": "Sursum Corda",
-      "description": "全ての攻撃を確定会心に変更/ を加算",
+      "description": "全ての攻撃を確定会心に変更/ 振動特効を49.25%加算",
       "type": "sub",
       "levels": [
         {

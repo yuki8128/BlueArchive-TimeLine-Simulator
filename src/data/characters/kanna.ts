@@ -27,7 +27,7 @@ export const kanna: Character = {
     "ex": {
       "id": "kanna_ex",
       "name": "公安局長の手腕",
-      "description": "敵1人に対して攻撃力の分のダメージ その後、味方がその敵に与えたダメージのを15秒間されていき、その後蓄積した分の貫通タイプのダメージを与えます。（ダメージの蓄積は最大でカンナの攻撃力のまで） （15秒後に発動する貫通タイプのダメージにおいては、会心が発動しません）",
+      "description": "敵1人に対して攻撃力の84.7%分のダメージ その後、味方がその敵に与えたダメージの50%を15秒間されていき、その後蓄積した分の貫通タイプのダメージを与えます。（ダメージの蓄積は最大でカンナの攻撃力の2691%まで） （15秒後に発動する貫通タイプのダメージにおいては、会心が発動しません）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const kanna: Character = {
     "normal": {
       "id": "kanna_normal",
       "name": "苛烈な尋問",
-      "description": "30秒毎に、敵1人に対して攻撃力の分のダメージ/ を減少（20秒間）",
+      "description": "30秒毎に、敵1人に対して攻撃力の375%分のダメージ/ 防御力を14.4%減少（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -199,7 +199,7 @@ export const kanna: Character = {
     "passive": {
       "id": "kanna_passive",
       "name": "狂犬の執念",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -317,7 +317,7 @@ export const kanna: Character = {
     "sub": {
       "id": "kanna_sub",
       "name": "公安局特製弾",
-      "description": "貫通タイプの味方のを増加",
+      "description": "貫通タイプの味方の攻撃力を24.2%増加",
       "type": "sub",
       "levels": [
         {

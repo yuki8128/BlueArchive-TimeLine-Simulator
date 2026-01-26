@@ -27,7 +27,7 @@ export const sakurakoIdol: Character = {
     "ex": {
       "id": "sakurako_idol_ex",
       "name": "ギャップ萌え",
-      "description": "自身とスペシャル生徒のを増加、率を増加（17秒間）",
+      "description": "自身とスペシャル生徒の会心値を24.2%増加、会心ダメージ率を45%増加（17秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -181,7 +181,7 @@ export const sakurakoIdol: Character = {
     "normal": {
       "id": "sakurako_idol_normal",
       "name": "あなたが一番",
-      "description": "35秒毎に、を増加、を増加（25秒間）",
+      "description": "35秒毎に、攻撃力を30.1%増加、攻撃速度を30.1%増加（25秒間）",
       "type": "normal",
       "levels": [
         {
@@ -299,7 +299,7 @@ export const sakurakoIdol: Character = {
     "passive": {
       "id": "sakurako_idol_passive",
       "name": "いつも見守っております",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -417,7 +417,7 @@ export const sakurakoIdol: Character = {
     "sub": {
       "id": "sakurako_idol_sub",
       "name": "皆に声援を",
-      "description": "自身とスペシャル生徒の率を増加",
+      "description": "自身とスペシャル生徒の会心ダメージ率を30.6%増加",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const chiseSwimsuit: Character = {
     "ex": {
       "id": "chise_swimsuit_ex",
       "name": "夏の海辺、ふぃ～ば～",
-      "description": "最大で敵3人に対して、順番にそれぞれ榴弾発射。さらに対象を中心とした円形範囲内の敵に対して、それぞれ攻撃力の分のダメージを与え、を付与（間）/ 対象がすでにCC状態の場合、攻撃力の分のダメージを与え、を付与（間）",
+      "description": "最大で敵3人に対して、順番にそれぞれ榴弾発射。さらに対象を中心とした円形範囲内の敵に対して、それぞれ攻撃力の372%分のダメージを与え、気絶状態を付与（2.7秒間）/ 対象がすでにCC状態の場合、攻撃力の744%分のダメージを与え、気絶状態を付与（5.3秒間）",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const chiseSwimsuit: Character = {
     "normal": {
       "id": "chise_swimsuit_normal",
       "name": "びーちぼーる、しゅ～と～",
-      "description": "50秒毎に、敵1人に対して、攻撃力の分のダメージ/ さらにを付与（間）",
+      "description": "50秒毎に、敵1人に対して、攻撃力の451%分のダメージ/ さらに気絶状態を付与（3.1秒間）",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const chiseSwimsuit: Character = {
     "passive": {
       "id": "chise_swimsuit_passive",
       "name": "散歩、準備OK～",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const chiseSwimsuit: Character = {
     "sub": {
       "id": "chise_swimsuit_sub",
       "name": "ブルブル～寒いかも～？",
-      "description": "EXスキルで敵を命中した時、攻撃力の分の持続ダメージを付与（20秒間）",
+      "description": "EXスキルで敵を命中した時、攻撃力の57%分の悪寒持続ダメージを付与（20秒間）",
       "type": "sub",
       "levels": [
         {

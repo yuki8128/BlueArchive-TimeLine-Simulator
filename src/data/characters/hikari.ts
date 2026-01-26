@@ -27,7 +27,7 @@ export const hikari: Character = {
     "ex": {
       "id": "hikari_ex",
       "name": "にゅ～きょ～の時間",
-      "description": "自身を除く味方1人に対して、を加算（32秒間）/ 対象がEXスキルのコストを追加で消耗可能な場合、EXスキルの追加消耗コストを減少（EXスキルの使用1回分）",
+      "description": "自身を除く味方1人に対して、振動特効を92.7%加算（32秒間）/ 対象がEXスキルのコストを追加で消耗可能な場合、EXスキルの追加消耗コストを2減少（EXスキルの使用1回分）",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -51,7 +51,7 @@ export const hikari: Character = {
     "normal": {
       "id": "hikari_normal",
       "name": "れっつどっきんぐ～",
-      "description": "を3つ獲得時、を全て消耗してストライカーの味方にを加算（間）（クールタイム20秒）",
+      "description": "を3つ獲得時、を全て消耗してストライカーの味方に振動特効を29%加算（25秒間）（クールタイム20秒）",
       "type": "normal",
       "levels": [
         {
@@ -89,7 +89,7 @@ export const hikari: Character = {
     "passive": {
       "id": "hikari_passive",
       "name": "運行じゅんび～",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const hikari: Character = {
     "sub": {
       "id": "hikari_sub",
       "name": "大活躍のよて～",
-      "description": "自身を除く味方がEXスキルを使用時、該当スキルの発動と同時にを増加（20秒間）/ を1つ獲得（は最大3つまで重複）",
+      "description": "自身を除く味方がEXスキルを2回使用時、該当スキルの発動と同時に攻撃速度を30.6%増加（20秒間）/ を1つ獲得（は最大3つまで重複）",
       "type": "sub",
       "levels": [
         {

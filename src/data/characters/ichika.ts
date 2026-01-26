@@ -27,7 +27,7 @@ export const ichika: Character = {
     "ex": {
       "id": "ichika_ex",
       "name": "ちょっと失礼するっす",
-      "description": "扇形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "扇形範囲内の敵に対して、攻撃力の1380%分のダメージ",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const ichika: Character = {
     "normal": {
       "id": "ichika_normal",
       "name": "正義実現委員会の連絡網",
-      "description": "30秒毎に、を加算（間）",
+      "description": "30秒毎に、振動特効を63.1%加算（25秒間）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const ichika: Character = {
     "passive": {
       "id": "ichika_passive",
       "name": "鋭い本能",
-      "description": "を増加",
+      "description": "命中値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const ichika: Character = {
     "sub": {
       "id": "ichika_sub",
       "name": "そういう時もあるっすよね",
-      "description": "攻撃時、隠れていない敵に対して攻撃力の分の追加ダメージ",
+      "description": "攻撃時、隠れていない敵に対して攻撃力の4.4%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

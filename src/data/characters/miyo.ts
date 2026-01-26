@@ -27,7 +27,7 @@ export const miyo: Character = {
     "ex": {
       "id": "miyo_ex",
       "name": "これで終わり……！",
-      "description": "自身を除く最も近い味方3人のを増加（18秒間）/ 自身のを増加（18秒間）/ を2個保有時、を全て消耗して、このスキルを強化して、与える増加効果を0.3倍加算",
+      "description": "自身を除く最も近い味方3人の攻撃速度を45%増加（18秒間）/ 自身の攻撃速度を22.7%増加（18秒間）/ を2個保有時、を全て消耗して、このスキルを強化して、与える攻撃速度増加効果を0.3倍加算",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -51,7 +51,7 @@ export const miyo: Character = {
     "normal": {
       "id": "miyo_normal",
       "name": "読んだこと、ありますか……？",
-      "description": "30秒毎に、を増加（22秒間）",
+      "description": "30秒毎に、攻撃速度を28.7%増加（22秒間）",
       "type": "normal",
       "levels": [
         {
@@ -89,7 +89,7 @@ export const miyo: Character = {
     "passive": {
       "id": "miyo_passive",
       "name": "文学的筆致",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const miyo: Character = {
     "sub": {
       "id": "miyo_sub",
       "name": "クリミナルテキスト",
-      "description": "EXスキルの使用時、を増加（25秒間）/ 強化されていないEXスキルの場合、を1個獲得（最大2個まで重複）",
+      "description": "EXスキルの使用時、攻撃力を21%増加（25秒間）/ 強化されていないEXスキルの場合、を1個獲得（最大2個まで重複）",
       "type": "sub",
       "levels": [
         {

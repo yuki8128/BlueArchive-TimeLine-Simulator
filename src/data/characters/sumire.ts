@@ -28,7 +28,7 @@ export const sumire: Character = {
     "ex": {
       "id": "sumire_ex",
       "name": "スパートをかけます！",
-      "description": "扇形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "扇形範囲内の敵に対して、攻撃力の1410%分のダメージ",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -62,7 +62,7 @@ export const sumire: Character = {
     "normal": {
       "id": "sumire_normal",
       "name": "ウォーミングアップ",
-      "description": "40秒毎に、を増加（20秒間）",
+      "description": "40秒毎に、攻撃力を47.9%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -180,7 +180,7 @@ export const sumire: Character = {
     "passive": {
       "id": "sumire_passive",
       "name": "ピンポイントアタック",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -298,7 +298,7 @@ export const sumire: Character = {
     "sub": {
       "id": "sumire_sub",
       "name": "テンションアップ",
-      "description": "自身がCC状態ではない時、を増加",
+      "description": "自身がCC状態ではない時、防御力を25.5%増加",
       "type": "sub",
       "levels": [
         {

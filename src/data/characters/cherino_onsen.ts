@@ -27,7 +27,7 @@ export const cherinoOnsen: Character = {
     "ex": {
       "id": "cherino_onsen_ex",
       "name": "粛清君1号、出撃！",
-      "description": "チェリノ（温泉）が粛清君1号に乗って登場。粛清君1号はチェリノ（温泉）の攻撃力の分の値が追加された攻撃力を持ちます。（50秒間） （タクティカルサポートの搭乗物は重複して登場することはできません）",
+      "description": "チェリノ（温泉）が粛清君1号に乗って登場。粛清君1号はチェリノ（温泉）の攻撃力の17.1%分の値が追加された攻撃力を持ちます。（50秒間） （タクティカルサポートの搭乗物は重複して登場することはできません）",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -51,7 +51,7 @@ export const cherinoOnsen: Character = {
     "normal": {
       "id": "cherino_onsen_normal",
       "name": "照準よし、粛清だぁ！",
-      "description": "15秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "15秒毎に、円形範囲内の敵に対して攻撃力の259%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -109,7 +109,7 @@ export const cherinoOnsen: Character = {
     "passive": {
       "id": "cherino_onsen_passive",
       "name": "髭の怒りに触れたな！？",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -227,7 +227,7 @@ export const cherinoOnsen: Character = {
     "sub": {
       "id": "cherino_onsen_sub",
       "name": "これが髭の威光だ！",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

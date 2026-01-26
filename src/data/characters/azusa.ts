@@ -27,7 +27,7 @@ export const azusa: Character = {
     "ex": {
       "id": "azusa_ex",
       "name": "intulit mortem",
-      "description": "敵1人に対して、攻撃力の分のダメージ",
+      "description": "敵1人に対して、攻撃力の2023%分のダメージ",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const azusa: Character = {
     "normal": {
       "id": "azusa_normal",
       "name": "sagitta mortis",
-      "description": "30秒毎に、敵1人に対して攻撃力の分のダメージ/ を減少（20秒間）",
+      "description": "30秒毎に、敵1人に対して攻撃力の468%分のダメージ/ 防御力を24.6%減少（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -199,7 +199,7 @@ export const azusa: Character = {
     "passive": {
       "id": "azusa_passive",
       "name": "過酷な訓練",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -317,7 +317,7 @@ export const azusa: Character = {
     "sub": {
       "id": "azusa_sub",
       "name": "弱点を狙う",
-      "description": "弱体状態の敵への攻撃時に、攻撃力の分の追加ダメージ",
+      "description": "弱体状態の敵への攻撃時に、攻撃力の88.5%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

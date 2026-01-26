@@ -27,7 +27,7 @@ export const himari: Character = {
     "ex": {
       "id": "himari_ex",
       "name": "実力をお見せしましょう",
-      "description": "味方1人に対して、を増加（13秒間）",
+      "description": "味方1人に対して、攻撃力を105%増加（13秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -91,7 +91,7 @@ export const himari: Character = {
     "normal": {
       "id": "himari_normal",
       "name": "少し驚くかもしれませんね",
-      "description": "30秒毎に、HPが最も低い敵1人に対して攻撃力の分のダメージ/ を減少（23秒間）",
+      "description": "30秒毎に、HPが最も低い敵1人に対して攻撃力の241%分のダメージ/ 回避値を27.1%減少（23秒間）",
       "type": "normal",
       "levels": [
         {
@@ -229,7 +229,7 @@ export const himari: Character = {
     "passive": {
       "id": "himari_passive",
       "name": "清楚な高嶺の花",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -347,7 +347,7 @@ export const himari: Character = {
     "sub": {
       "id": "himari_sub",
       "name": "超天才清楚系病弱美少女の真骨頂",
-      "description": "味方のを増加",
+      "description": "味方のコスト回復力を20.2%増加",
       "type": "sub",
       "levels": [
         {

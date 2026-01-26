@@ -27,7 +27,7 @@ export const sakiSwimsuit: Character = {
     "ex": {
       "id": "saki_swimsuit_ex",
       "name": "シグナルフレア、投擲！",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ さらに、、を減少（50秒間）",
+      "description": "敵1人に対して、攻撃力の552%分のダメージ/ さらに防御力、攻撃力、会心抵抗値を20.8%減少（50秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -131,7 +131,7 @@ export const sakiSwimsuit: Character = {
     "normal": {
       "id": "saki_swimsuit_normal",
       "name": "援護射撃",
-      "description": "通常攻撃15回毎に、扇形範囲内の敵に対して、攻撃力の分のダメージ/ 中型の敵に対して攻撃力の分の追加ダメージ ",
+      "description": "通常攻撃15回毎に、扇形範囲内の敵に対して、攻撃力の371%分のダメージ/ 中型の敵に対して攻撃力の185%分の追加ダメージ ",
       "type": "normal",
       "levels": [
         {
@@ -189,7 +189,7 @@ export const sakiSwimsuit: Character = {
     "passive": {
       "id": "saki_swimsuit_passive",
       "name": "丁寧な整備",
-      "description": "を増加",
+      "description": "命中値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -307,7 +307,7 @@ export const sakiSwimsuit: Character = {
     "sub": {
       "id": "saki_swimsuit_sub",
       "name": "戦友への愛",
-      "description": "自身とスペシャル生徒のを増加",
+      "description": "自身とスペシャル生徒の攻撃力を30.6%増加",
       "type": "sub",
       "levels": [
         {

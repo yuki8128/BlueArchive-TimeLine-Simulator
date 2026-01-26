@@ -27,7 +27,7 @@ export const yuzuMaid: Character = {
     "ex": {
       "id": "yuzu_maid_ex",
       "name": "潜入スタート！",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ、周囲の円環範囲に同じダメージ/ ただし重複して受けたダメージは攻撃力の分のダメージだけ適用",
+      "description": "円形範囲内の敵に対して、攻撃力の1296%分のダメージ、周囲の円環範囲に同じダメージ/ ただし重複して受けたダメージは攻撃力の259%分のダメージだけ適用",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const yuzuMaid: Character = {
     "normal": {
       "id": "yuzu_maid_normal",
       "name": "ハイスコアアタック",
-      "description": "30秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "30秒毎に、円形範囲内の敵に対して攻撃力の223%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const yuzuMaid: Character = {
     "passive": {
       "id": "yuzu_maid_passive",
       "name": "正確なコーディング",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const yuzuMaid: Character = {
     "sub": {
       "id": "yuzu_maid_sub",
       "name": "ゲーム開発部の絆",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

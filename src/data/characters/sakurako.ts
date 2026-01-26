@@ -27,7 +27,7 @@ export const sakurako: Character = {
     "ex": {
       "id": "sakurako_ex",
       "name": "洗礼の印",
-      "description": "敵1人に対して攻撃力の分のダメージ/ 指定した敵に対して（30秒間）/ 時、攻撃力の分の追加ダメージ効果を与えます（30秒間）",
+      "description": "敵1人に対して攻撃力の625%分のダメージ/ 指定した敵に対して集中砲火状態（30秒間）/ 時、攻撃力の17.9%分の追加ダメージ効果を与えます（30秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const sakurako: Character = {
     "normal": {
       "id": "sakurako_normal",
       "name": "シスターの身支度",
-      "description": "40秒毎に、を増加（30秒間）",
+      "description": "40秒毎に、攻撃速度を23.4%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const sakurako: Character = {
     "passive": {
       "id": "sakurako_passive",
       "name": "罪悪を裁く者",
-      "description": "を増加",
+      "description": "攻撃速度を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -137,7 +137,7 @@ export const sakurako: Character = {
     "sub": {
       "id": "sakurako_sub",
       "name": "光と共にあらんことを",
-      "description": "防御タイプが特殊装甲の敵を攻撃時、攻撃力の分の追加ダメージ",
+      "description": "防御タイプが特殊装甲の敵を攻撃時、攻撃力の9.1%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

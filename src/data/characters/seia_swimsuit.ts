@@ -27,7 +27,7 @@ export const seiaSwimsuit: Character = {
     "ex": {
       "id": "seia_swimsuit_ex",
       "name": "浪漫きらめく浜辺",
-      "description": "自身を除く味方1人に対して、を加算（25秒間）",
+      "description": "自身を除く味方1人に対して、EXスキルの与えるダメージ量を74.1%加算（25秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -51,7 +51,7 @@ export const seiaSwimsuit: Character = {
     "normal": {
       "id": "seia_swimsuit_normal",
       "name": "刹那の記録",
-      "description": "通常攻撃12回毎に、自身を除くHPが最も低い味方1人に対して治癒力の分の回復/ 自身は治癒力の分の回復",
+      "description": "通常攻撃12回毎に、自身を除くHPが最も低い味方1人に対して治癒力の103%分の回復/ 自身は治癒力の103%分の回復",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const seiaSwimsuit: Character = {
     "passive": {
       "id": "seia_swimsuit_passive",
       "name": "リフレッシュ",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const seiaSwimsuit: Character = {
     "sub": {
       "id": "seia_swimsuit_sub",
       "name": "シティ・ポップ・スター",
-      "description": "EXスキルの発動と同時に、を増加（26秒間）",
+      "description": "EXスキルの発動と同時に、攻撃速度を31%増加（26秒間）",
       "type": "sub",
       "levels": [
         {

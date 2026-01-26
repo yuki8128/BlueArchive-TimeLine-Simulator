@@ -27,7 +27,7 @@ export const ako: Character = {
     "ex": {
       "id": "ako_ex",
       "name": "偵察データを共有します",
-      "description": "味方1人に対して、を増加。さらに率を増加（16秒間）",
+      "description": "味方1人に対して、会心値を39.5%増加。さらに会心ダメージ率を73.3%増加（16秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -121,7 +121,7 @@ export const ako: Character = {
     "normal": {
       "id": "ako_normal",
       "name": "補給プランB",
-      "description": "45秒毎に、HPが最も低い味方1人に対して治癒力の分の回復",
+      "description": "45秒毎に、HPが最も低い味方1人に対して治癒力の245%分の回復",
       "type": "normal",
       "levels": [
         {
@@ -169,7 +169,7 @@ export const ako: Character = {
     "passive": {
       "id": "ako_passive",
       "name": "支援を開始します",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -287,7 +287,7 @@ export const ako: Character = {
     "sub": {
       "id": "ako_sub",
       "name": "サポートはお任せください",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

@@ -28,7 +28,7 @@ export const izuna: Character = {
     "ex": {
       "id": "izuna_ex",
       "name": "これぞイズナ流忍法！",
-      "description": "指定した位置に移動した後、を増加（30秒間）",
+      "description": "指定した位置に移動した後、攻撃速度を52.1%増加（30秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -52,7 +52,7 @@ export const izuna: Character = {
     "normal": {
       "id": "izuna_normal",
       "name": "秘技！爆裂手裏剣！",
-      "description": "通常攻撃6回毎に、円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "通常攻撃6回毎に、円形範囲内の敵に対して、攻撃力の845%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -110,7 +110,7 @@ export const izuna: Character = {
     "passive": {
       "id": "izuna_passive",
       "name": "イズナ流、奇襲の術！",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -228,7 +228,7 @@ export const izuna: Character = {
     "sub": {
       "id": "izuna_sub",
       "name": "イズナ流、興起の術！",
-      "description": "EXスキル使用時、を増加（30秒間）",
+      "description": "EXスキル使用時、攻撃力を38.3%増加（30秒間）",
       "type": "sub",
       "levels": [
         {

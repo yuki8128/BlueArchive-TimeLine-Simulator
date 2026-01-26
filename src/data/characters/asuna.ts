@@ -28,7 +28,7 @@ export const asuna: Character = {
     "ex": {
       "id": "asuna_ex",
       "name": "行っくよー！",
-      "description": "EXスキル使用中、を43.4%増加/ を増加（30秒間）",
+      "description": "EXスキル使用中、回避値を43.4%増加/ 攻撃速度を57.3%増加（30秒間）",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -92,7 +92,7 @@ export const asuna: Character = {
     "normal": {
       "id": "asuna_normal",
       "name": "撃つよーっ！",
-      "description": "20秒毎に敵1人に対して攻撃力の分のダメージ",
+      "description": "20秒毎に敵1人に対して攻撃力の416%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -150,7 +150,7 @@ export const asuna: Character = {
     "passive": {
       "id": "asuna_passive",
       "name": "これは痛いよ？",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -268,7 +268,7 @@ export const asuna: Character = {
     "sub": {
       "id": "asuna_sub",
       "name": "スピード上げるね？",
-      "description": "EXスキルの使用時、を増加（30秒間）",
+      "description": "EXスキルの使用時、攻撃速度を38.3%増加（30秒間）",
       "type": "sub",
       "levels": [
         {

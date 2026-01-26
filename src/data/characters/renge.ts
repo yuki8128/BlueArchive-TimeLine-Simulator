@@ -27,7 +27,7 @@ export const renge: Character = {
     "ex": {
       "id": "renge_ex",
       "name": "百花繚乱式射撃術",
-      "description": "扇形範囲内の敵に対して攻撃力の分の持続ダメージを付与（20秒間）/ 攻撃力の分のダメージ",
+      "description": "扇形範囲内の敵に対して攻撃力の27.6%分の火傷持続ダメージを付与（20秒間）/ 攻撃力の501.5%分のダメージ",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const renge: Character = {
     "normal": {
       "id": "renge_normal",
       "name": "燃え上がる情熱",
-      "description": "30秒毎に、状態を付与。を増加（22秒間）",
+      "description": "30秒毎に、状態を付与。攻撃力を37.6%増加（22秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const renge: Character = {
     "passive": {
       "id": "renge_passive",
       "name": "百花繚乱の鬼教官",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const renge: Character = {
     "sub": {
       "id": "renge_sub",
       "name": "切り込み隊長としての本分",
-      "description": "状態での攻撃時、攻撃力の分の追加ダメージ",
+      "description": "状態での攻撃時、攻撃力の8.6%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

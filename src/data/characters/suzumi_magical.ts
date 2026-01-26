@@ -27,7 +27,7 @@ export const suzumiMagical: Character = {
     "ex": {
       "id": "suzumi_magical_ex",
       "name": "基礎魔法、です！",
-      "description": "編成したストライカーの味方および、編成した味方の召喚物のを増加、を加算（41秒間）/ （：与える通常攻撃、ノーマルスキル、サブスキルのダメージ増加）",
+      "description": "編成したストライカーの味方および、編成した味方の召喚物の攻撃力を51.4%増加、基礎熟練度を25.9%加算（41秒間）/ （基礎熟練度：与える通常攻撃、ノーマルスキル、サブスキルのダメージ増加）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -91,7 +91,7 @@ export const suzumiMagical: Character = {
     "normal": {
       "id": "suzumi_magical_normal",
       "name": "マジカル閃光弾",
-      "description": "35秒毎に、敵1人のを減少（27秒間）/ 攻撃力の分のダメージ",
+      "description": "35秒毎に、敵1人の回避値を27.4%減少（27秒間）/ 攻撃力の341%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -229,7 +229,7 @@ export const suzumiMagical: Character = {
     "passive": {
       "id": "suzumi_magical_passive",
       "name": "マジカル制圧射撃",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -347,7 +347,7 @@ export const suzumiMagical: Character = {
     "sub": {
       "id": "suzumi_magical_sub",
       "name": "誰かを助けるための",
-      "description": "EXスキルの使用時、を増加（35秒間）",
+      "description": "EXスキルの使用時、コスト回復力を690増加（35秒間）",
       "type": "sub",
       "levels": [
         {

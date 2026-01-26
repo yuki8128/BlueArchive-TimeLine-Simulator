@@ -28,7 +28,7 @@ export const mashiro: Character = {
     "ex": {
       "id": "mashiro_ex",
       "name": "正義の一撃",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ の確率で、分の追加ダメージ",
+      "description": "敵1人に対して、攻撃力の664%分のダメージ/ 75%の確率で、716%分の追加ダメージ",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -62,7 +62,7 @@ export const mashiro: Character = {
     "normal": {
       "id": "mashiro_normal",
       "name": "正義の決断",
-      "description": "20秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "20秒毎に、円形範囲内の敵に対して攻撃力の286%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -120,7 +120,7 @@ export const mashiro: Character = {
     "passive": {
       "id": "mashiro_passive",
       "name": "正義の気概",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -238,7 +238,7 @@ export const mashiro: Character = {
     "sub": {
       "id": "mashiro_sub",
       "name": "正義の結束",
-      "description": "味方のを増加",
+      "description": "味方の命中値を17.3%増加",
       "type": "sub",
       "levels": [
         {

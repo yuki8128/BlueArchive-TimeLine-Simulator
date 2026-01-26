@@ -27,7 +27,7 @@ export const satenRuiko: Character = {
     "ex": {
       "id": "saten_ruiko_ex",
       "name": "フルスイング",
-      "description": "円形範囲内の敵に攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に攻撃力の847%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const satenRuiko: Character = {
     "normal": {
       "id": "saten_ruiko_normal",
       "name": "秘伝のサバカレー",
-      "description": "45秒毎に、味方1人に対してを増加（20秒間） ノーマルスキルを使用する度に効果適用の対象が1人ずつ増加（最大3人分まで）",
+      "description": "45秒毎に、味方1人に対して攻撃力を20.6%増加（20秒間） ノーマルスキルを使用する度に効果適用の対象が1人ずつ増加（最大3人分まで）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const satenRuiko: Character = {
     "passive": {
       "id": "saten_ruiko_passive",
       "name": "思いっきり！",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const satenRuiko: Character = {
     "sub": {
       "id": "saten_ruiko_sub",
       "name": "私だって！",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

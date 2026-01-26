@@ -51,7 +51,7 @@ export const rabu: Character = {
     "normal": {
       "id": "rabu_normal",
       "name": "みんな、いくわよ！！",
-      "description": "40秒毎に、ストライカーの味方のを増加（30秒間）/ さらに自身が召喚したヘルメット団が2人以上存在する場合、自身が召喚したヘルメット団のを増加（30秒間）",
+      "description": "40秒毎に、ストライカーの味方の攻撃力を15.8%増加（30秒間）/ さらに自身が召喚したヘルメット団が2人以上存在する場合、自身が召喚したヘルメット団の攻撃速度を31.9%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -169,7 +169,7 @@ export const rabu: Character = {
     "passive": {
       "id": "rabu_passive",
       "name": "もう！腹立つわね！！",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -287,7 +287,7 @@ export const rabu: Character = {
     "sub": {
       "id": "rabu_sub",
       "name": "今日は焼肉よ！",
-      "description": "EXスキルの使用時、現在召喚されたヘルメット団の数によって自身と自身が召喚したヘルメット団の率を増加（20秒間） 1人以下：増加 2人：増加 3人：増加",
+      "description": "EXスキルの使用時、現在召喚されたヘルメット団の数によって自身と自身が召喚したヘルメット団の会心ダメージ率を増加（20秒間） 1人以下：18%増加 2人：24%増加 3人：36%増加",
       "type": "sub",
       "levels": [
         {

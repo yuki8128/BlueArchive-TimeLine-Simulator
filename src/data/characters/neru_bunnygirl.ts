@@ -27,7 +27,7 @@ export const neruBunnygirl: Character = {
     "ex": {
       "id": "neru_bunnygirl_ex",
       "name": "そこ、動くなっ！",
-      "description": "指定した位置に移動した後、治癒力の分の効果を発動（20秒間）/ 円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "指定した位置に移動した後、治癒力の401%分のシールド効果を発動（20秒間）/ 円形範囲内の敵に対して、攻撃力の531%分のダメージ。さらに挑発状態を付与（3秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const neruBunnygirl: Character = {
     "normal": {
       "id": "neru_bunnygirl_normal",
       "name": "見せもんじゃねぇっての！",
-      "description": "30秒毎に、を増加（23秒間）",
+      "description": "30秒毎に、回避値を41.9%増加（23秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const neruBunnygirl: Character = {
     "passive": {
       "id": "neru_bunnygirl_passive",
       "name": "苛辣",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const neruBunnygirl: Character = {
     "sub": {
       "id": "neru_bunnygirl_sub",
       "name": "もっと痛いのが好きか？",
-      "description": "攻撃時、中型の敵に対して攻撃力の分の追加ダメージ",
+      "description": "攻撃時、中型の敵に対して攻撃力の6.2%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const satsuki: Character = {
     "ex": {
       "id": "satsuki_ex",
       "name": "つよくな～るつよくな～る",
-      "description": "EXスキルの使用時、を増加（7秒間）/ 敵1人に対して、攻撃力の分のダメージ/ 追加で最大3コストを消耗して、1コストあたりのダメージが35%増加します。/ （コスト増減スキルの効果は基本コストを基準として計算します）",
+      "description": "EXスキルの使用時、防御貫通値を696増加（7秒間）/ 敵1人に対して、攻撃力の1653%分のダメージ/ 追加で最大3コストを消耗して、1コストあたりのダメージが35%増加します。/ （コスト増減スキルの効果は基本コストを基準として計算します）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const satsuki: Character = {
     "normal": {
       "id": "satsuki_normal",
       "name": "情報収集",
-      "description": "35秒毎に、敵1人の率を減少（25秒間）",
+      "description": "35秒毎に、敵1人の会心ダメージ抵抗率を27.2%減少（25秒間）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const satsuki: Character = {
     "passive": {
       "id": "satsuki_passive",
       "name": "NKウルトラ計画",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const satsuki: Character = {
     "sub": {
       "id": "satsuki_sub",
       "name": "万魔殿に忠誠を誓いなさい",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

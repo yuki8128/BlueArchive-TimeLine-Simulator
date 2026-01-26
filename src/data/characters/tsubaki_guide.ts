@@ -27,7 +27,7 @@ export const tsubakiGuide: Character = {
     "ex": {
       "id": "tsubaki_guide_ex",
       "name": "修行部長のガイド",
-      "description": "円形範囲内の味方のを増加（45秒間）（範囲内にいる間だけ効果を維持）",
+      "description": "円形範囲内の味方の攻撃力を70.7%増加（45秒間）（範囲内にいる間だけ効果を維持）",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -91,7 +91,7 @@ export const tsubakiGuide: Character = {
     "normal": {
       "id": "tsubaki_guide_normal",
       "name": "安眠のご案内",
-      "description": "45秒毎に、HPが最も低い味方1人に対して治癒力の分の回復/ さらにを増加（30秒間）",
+      "description": "45秒毎に、HPが最も低い味方1人に対して治癒力の104%分の回復/ さらに会心抵抗値を56.1%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -139,7 +139,7 @@ export const tsubakiGuide: Character = {
     "passive": {
       "id": "tsubaki_guide_passive",
       "name": "ガイドの自負",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -257,7 +257,7 @@ export const tsubakiGuide: Character = {
     "sub": {
       "id": "tsubaki_guide_sub",
       "name": "サービス、サービス",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

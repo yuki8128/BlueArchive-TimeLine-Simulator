@@ -27,7 +27,7 @@ export const asunaUniform: Character = {
     "ex": {
       "id": "asuna_uniform_ex",
       "name": "こっち、こっち！",
-      "description": "自身とスペシャル生徒のを増加（19秒間）",
+      "description": "自身とスペシャル生徒の攻撃力を63.5%増加（19秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -121,7 +121,7 @@ export const asunaUniform: Character = {
     "normal": {
       "id": "asuna_uniform_normal",
       "name": "はい、チーズ！",
-      "description": "40秒毎に、自身を除く円形範囲内の味方に対して治癒力の分の回復",
+      "description": "40秒毎に、自身を除く円形範囲内の味方に対して治癒力の98.2%分の回復",
       "type": "normal",
       "levels": [
         {
@@ -169,7 +169,7 @@ export const asunaUniform: Character = {
     "passive": {
       "id": "asuna_uniform_passive",
       "name": "頑張ってこー！",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -287,7 +287,7 @@ export const asunaUniform: Character = {
     "sub": {
       "id": "asuna_uniform_sub",
       "name": "こっち行くよ！",
-      "description": "自身とスペシャル生徒のを増加",
+      "description": "自身とスペシャル生徒の攻撃力を30.6%増加",
       "type": "sub",
       "levels": [
         {

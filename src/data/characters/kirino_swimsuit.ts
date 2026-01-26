@@ -27,7 +27,7 @@ export const kirinoSwimsuit: Character = {
     "ex": {
       "id": "kirino_swimsuit_ex",
       "name": "本官が見守っています！",
-      "description": "遮蔽物を設置/ 円形範囲内の味方のを増加（45秒間）（範囲内にいる間だけ効果を維持）/ 遮蔽物はキリノ（水着）の最大HPの分の値が追加されたHPを持ちます。",
+      "description": "遮蔽物を設置/ 円形範囲内の味方の攻撃力を26.7%増加（45秒間）（範囲内にいる間だけ効果を維持）/ 遮蔽物はキリノ（水着）の最大HPの56.4%分の値が追加されたHPを持ちます。",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -91,7 +91,7 @@ export const kirinoSwimsuit: Character = {
     "normal": {
       "id": "kirino_swimsuit_normal",
       "name": "非常事態です！",
-      "description": "50秒毎に、スペシャル生徒を除く味方6人のを増加（40秒間）",
+      "description": "50秒毎に、スペシャル生徒を除く味方6人の攻撃力を12.3%増加（40秒間）",
       "type": "normal",
       "levels": [
         {
@@ -209,7 +209,7 @@ export const kirinoSwimsuit: Character = {
     "passive": {
       "id": "kirino_swimsuit_passive",
       "name": "練習は本番のように",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -327,7 +327,7 @@ export const kirinoSwimsuit: Character = {
     "sub": {
       "id": "kirino_swimsuit_sub",
       "name": "本官が応援しています！",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

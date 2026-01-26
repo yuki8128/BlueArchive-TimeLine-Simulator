@@ -27,7 +27,7 @@ export const utahaCheerleader: Character = {
     "ex": {
       "id": "utaha_cheerleader_ex",
       "name": "雷ちゃんMK-III、強化",
-      "description": "ターレットを強化します（90秒間）ターレットは強化状態が維持される間、が攻撃力の分のダメージを与えるように変更され、ノーマルスキルの発動条件が変更されます。",
+      "description": "ターレットを強化します（90秒間）ターレットは強化状態が維持される間、が攻撃力の146%分のダメージを与えるように変更され、ノーマルスキルの発動条件が変更されます。",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -51,7 +51,7 @@ export const utahaCheerleader: Character = {
     "normal": {
       "id": "utaha_cheerleader_normal",
       "name": "情熱砲",
-      "description": "30秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "30秒毎に、敵1人に対して攻撃力の315%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -109,7 +109,7 @@ export const utahaCheerleader: Character = {
     "passive": {
       "id": "utaha_cheerleader_passive",
       "name": "応援団長の情熱",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -227,7 +227,7 @@ export const utahaCheerleader: Character = {
     "sub": {
       "id": "utaha_cheerleader_sub",
       "name": "応援団長の闘志",
-      "description": "弱体状態の敵への攻撃時に、攻撃力の分の追加ダメージ",
+      "description": "弱体状態の敵への攻撃時に、攻撃力の9.7%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

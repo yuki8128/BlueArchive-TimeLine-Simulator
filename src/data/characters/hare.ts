@@ -28,7 +28,7 @@ export const hare: Character = {
     "ex": {
       "id": "hare_ex",
       "name": "EMPドローン展開",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ/ さらにを付与（間）",
+      "description": "円形範囲内の敵に対して、攻撃力の435%分のダメージ/ さらに気絶状態を付与（3.5秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -62,7 +62,7 @@ export const hare: Character = {
     "normal": {
       "id": "hare_normal",
       "name": "破壊工作：プランA",
-      "description": "30秒毎に、敵1人のを減少（15秒間）",
+      "description": "30秒毎に、敵1人の被回復率を50.7%減少（15秒間）",
       "type": "normal",
       "levels": [
         {
@@ -100,7 +100,7 @@ export const hare: Character = {
     "passive": {
       "id": "hare_passive",
       "name": "武装強化：プランＢ",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -218,7 +218,7 @@ export const hare: Character = {
     "sub": {
       "id": "hare_sub",
       "name": "迎撃システム作動",
-      "description": "味方のを増加",
+      "description": "味方の回避値を17.3%増加",
       "type": "sub",
       "levels": [
         {

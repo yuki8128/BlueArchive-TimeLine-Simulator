@@ -27,7 +27,7 @@ export const izumiSwimsuit: Character = {
     "ex": {
       "id": "izumi_swimsuit_ex",
       "name": "つめた～いココナッツジュース！",
-      "description": "敵1人に対して、ココナッツを投擲して攻撃力の分のダメージ。投擲されたココナッツを中心として周囲にまだ攻撃が当たっていない敵がいる場合、ココナッツがその方向へ跳ねて再度ダメージを与えます（2回目以降ダメージ量は初撃の値の10％ずつ減少）（最大5回まで） さらにを付与（間）",
+      "description": "敵1人に対して、ココナッツを投擲して攻撃力の532%分のダメージ。投擲されたココナッツを中心として周囲にまだ攻撃が当たっていない敵がいる場合、ココナッツがその方向へ跳ねて再度ダメージを与えます（2回目以降ダメージ量は初撃の値の10％ずつ減少）（最大5回まで） さらに気絶状態を付与（3.1秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const izumiSwimsuit: Character = {
     "normal": {
       "id": "izumi_swimsuit_normal",
       "name": "甘酸っぱくて美味しい！",
-      "description": "35秒毎に、を増加（30秒間）",
+      "description": "35秒毎に、攻撃力を38.4%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const izumiSwimsuit: Character = {
     "passive": {
       "id": "izumi_swimsuit_passive",
       "name": "さぁ、ご飯食べたし頑張ろ～！",
-      "description": "を増加",
+      "description": "攻撃速度を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const izumiSwimsuit: Character = {
     "sub": {
       "id": "izumi_swimsuit_sub",
       "name": "美味しいけどキーンってなるね～",
-      "description": "攻撃時、10%の確率でを付与（間）（クールタイム20秒）",
+      "description": "攻撃時、10%の確率で気絶状態を付与（2.34秒間）（クールタイム20秒）",
       "type": "sub",
       "levels": [
         {

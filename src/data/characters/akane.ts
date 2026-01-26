@@ -28,7 +28,7 @@ export const akane: Character = {
     "ex": {
       "id": "akane_ex",
       "name": "優雅に排除します",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ さらにを減少（30秒間）",
+      "description": "敵1人に対して、攻撃力の876%分のダメージ/ さらに防御力を37.7%減少（30秒間）",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -102,7 +102,7 @@ export const akane: Character = {
     "normal": {
       "id": "akane_normal",
       "name": "上品に貫きます",
-      "description": "40秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "40秒毎に、敵1人に対して攻撃力の753%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -160,7 +160,7 @@ export const akane: Character = {
     "passive": {
       "id": "akane_passive",
       "name": "速やかに前進します",
-      "description": "を増加",
+      "description": "移動速度を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -198,7 +198,7 @@ export const akane: Character = {
     "sub": {
       "id": "akane_sub",
       "name": "的確に制圧します",
-      "description": "攻撃時、10%の確率で敵のを減少（30秒間）（クールタイム5秒）",
+      "description": "攻撃時、10%の確率で敵の回避値を12.7%減少（30秒間）（クールタイム5秒）",
       "type": "sub",
       "levels": [
         {

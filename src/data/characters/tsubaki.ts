@@ -28,7 +28,7 @@ export const tsubaki: Character = {
     "ex": {
       "id": "tsubaki_ex",
       "name": "戦闘用シールド、装着",
-      "description": "を増加（30秒間）/ 円形範囲内の敵にを付与（間）",
+      "description": "防御力を44.9%増加（30秒間）/ 円形範囲内の敵に挑発状態を付与（6.2秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -92,7 +92,7 @@ export const tsubaki: Character = {
     "normal": {
       "id": "tsubaki_normal",
       "name": "疲れたら寝るのが一番",
-      "description": "HPが30%以下の時、治癒力の分の回復 （戦闘中に1回のみ）",
+      "description": "HPが30%以下の時、治癒力の663%分の回復 （戦闘中に1回のみ）",
       "type": "normal",
       "levels": [
         {
@@ -140,7 +140,7 @@ export const tsubaki: Character = {
     "passive": {
       "id": "tsubaki_passive",
       "name": "胆力",
-      "description": "を増加",
+      "description": "防御力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -258,7 +258,7 @@ export const tsubaki: Character = {
     "sub": {
       "id": "tsubaki_sub",
       "name": "手慣れたリロード",
-      "description": "リロード中のを減少",
+      "description": "リロード中の被ダメージ量を45.6%減少",
       "type": "sub",
       "levels": [
         {

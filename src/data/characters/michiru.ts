@@ -27,7 +27,7 @@ export const michiru: Character = {
     "ex": {
       "id": "michiru_ex",
       "name": "ミチル流忍法っ！！",
-      "description": "花火を発射。直線上に飛び、最初に命中した敵1体に対して、攻撃力の分のダメージ/ さらに攻撃力の分の持続ダメージを付与（20秒間）",
+      "description": "花火を発射。直線上に飛び、最初に命中した敵1体に対して、攻撃力の803%分のダメージ/ さらに攻撃力の194%分の火傷持続ダメージを付与（20秒間）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const michiru: Character = {
     "normal": {
       "id": "michiru_normal",
       "name": "捌け、地獄忍魔刀！",
-      "description": "30秒毎に、を増加（20秒間）",
+      "description": "30秒毎に、攻撃力を40.6%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const michiru: Character = {
     "passive": {
       "id": "michiru_passive",
       "name": "見て見て、自作の忍術！",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const michiru: Character = {
     "sub": {
       "id": "michiru_sub",
       "name": "ミチル流忍術、奥義！",
-      "description": "率を増加/ 同じ部隊に編成されている忍術研究部の生徒1人毎に、会心ダメージ率が追加で増加（自身は除外し、最大3人分まで）",
+      "description": "会心ダメージ率を15.9%増加/ 同じ部隊に編成されている忍術研究部の生徒1人毎に、会心ダメージ率が追加で15.9%増加（自身は除外し、最大3人分まで）",
       "type": "sub",
       "levels": [
         {

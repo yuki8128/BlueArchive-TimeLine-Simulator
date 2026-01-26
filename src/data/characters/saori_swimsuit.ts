@@ -27,7 +27,7 @@ export const saoriSwimsuit: Character = {
     "ex": {
       "id": "saori_swimsuit_ex",
       "name": "ミュージック、スタート！",
-      "description": "扇形範囲内の指定した敵に対して、攻撃力の分のダメージ 攻撃力の分の持続ダメージを付与（40秒間）、その他の敵に対して攻撃力の分のダメージ",
+      "description": "扇形範囲内の指定した敵に対して、攻撃力の1083%分のダメージ 攻撃力の577%分の悪寒持続ダメージを付与（40秒間）、その他の敵に対して攻撃力の159%分のダメージ",
       "type": "ex",
       "cost": 7,
       "levels": [
@@ -61,7 +61,7 @@ export const saoriSwimsuit: Character = {
     "normal": {
       "id": "saori_swimsuit_normal",
       "name": "束の間の休息",
-      "description": "30秒毎に、を増加（20秒間）",
+      "description": "30秒毎に、攻撃力を37.5%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const saoriSwimsuit: Character = {
     "passive": {
       "id": "saori_swimsuit_passive",
       "name": "完璧な任務遂行",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const saoriSwimsuit: Character = {
     "sub": {
       "id": "saori_swimsuit_sub",
       "name": "誠実な学生バイト",
-      "description": "通常攻撃時、30%の確率でを 増加（20秒間）（クールタイム5秒）",
+      "description": "通常攻撃時、30%の確率でを 19.16%増加（20秒間）（クールタイム5秒）",
       "type": "sub",
       "levels": [
         {

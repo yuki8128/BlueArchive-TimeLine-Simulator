@@ -27,7 +27,7 @@ export const ichikaSwimsuit: Character = {
     "ex": {
       "id": "ichika_swimsuit_ex",
       "name": "隠されし爪",
-      "description": "敵1人の率を減少（30秒間）/ さらに攻撃力の分のダメージ/ 指定した敵に対して（30秒間）",
+      "description": "敵1人の会心ダメージ抵抗率を35.3%減少（30秒間）/ さらに攻撃力の242%分のダメージ/ 指定した敵に対して集中砲火状態（30秒間）",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -61,7 +61,7 @@ export const ichikaSwimsuit: Character = {
     "normal": {
       "id": "ichika_swimsuit_normal",
       "name": "支援射撃",
-      "description": "35秒毎に、敵1人に対してを減少、率を減少（20秒間）/ さらに攻撃力の分のダメージ",
+      "description": "35秒毎に、敵1人に対して会心抵抗値を15.2%減少、会心ダメージ抵抗率を20.5%減少（20秒間）/ さらに攻撃力の103%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const ichikaSwimsuit: Character = {
     "passive": {
       "id": "ichika_swimsuit_passive",
       "name": "模範的な射撃の姿勢",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const ichikaSwimsuit: Character = {
     "sub": {
       "id": "ichika_swimsuit_sub",
       "name": "正義実現委員会の仲裁者",
-      "description": "味方のを増加",
+      "description": "味方の攻撃速度を17.3%増加",
       "type": "sub",
       "levels": [
         {

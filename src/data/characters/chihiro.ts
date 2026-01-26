@@ -27,7 +27,7 @@ export const chihiro: Character = {
     "ex": {
       "id": "chihiro_ex",
       "name": "オーバーライド",
-      "description": "敵1人に対して、攻撃力の分のダメージ その敵の防御タイプが重装甲の場合、さらにを付与（間）",
+      "description": "敵1人に対して、攻撃力の412%分のダメージ その敵の防御タイプが重装甲の場合、さらに気絶状態を付与（7.5秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const chihiro: Character = {
     "normal": {
       "id": "chihiro_normal",
       "name": "イントゥ・ザ・バックドア",
-      "description": "30秒毎に、攻撃力が最も高い敵1人のを減少（23秒間）",
+      "description": "30秒毎に、攻撃力が最も高い敵1人の攻撃力を32.2%減少（23秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const chihiro: Character = {
     "passive": {
       "id": "chihiro_passive",
       "name": "エクスプロイト",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const chihiro: Character = {
     "sub": {
       "id": "chihiro_sub",
       "name": "ファイアウォール構築",
-      "description": "味方のを増加",
+      "description": "味方のCC強化力を17.3%増加",
       "type": "sub",
       "levels": [
         {

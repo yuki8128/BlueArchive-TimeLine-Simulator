@@ -28,7 +28,7 @@ export const fuuka: Character = {
     "ex": {
       "id": "fuuka_ex",
       "name": "給食の時間です！",
-      "description": "円形範囲内の味方4人を指定した位置に移動させた後、治癒力の分の回復",
+      "description": "円形範囲内の味方4人を指定した位置に移動させた後、治癒力の207%分の回復",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -57,7 +57,7 @@ export const fuuka: Character = {
     "normal": {
       "id": "fuuka_normal",
       "name": "給食部の優しさ",
-      "description": "20秒毎に、最大HPが最も高い味方1人のを増加（16秒間）",
+      "description": "20秒毎に、最大HPが最も高い味方1人の防御力を34.4%増加（16秒間）",
       "type": "normal",
       "levels": [
         {
@@ -175,7 +175,7 @@ export const fuuka: Character = {
     "passive": {
       "id": "fuuka_passive",
       "name": "新鮮な材料を集めましょう！",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -293,7 +293,7 @@ export const fuuka: Character = {
     "sub": {
       "id": "fuuka_sub",
       "name": "給食部としての誇り",
-      "description": "味方のを増加",
+      "description": "味方の会心抵抗値を17.3%増加",
       "type": "sub",
       "levels": [
         {

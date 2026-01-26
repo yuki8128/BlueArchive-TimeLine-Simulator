@@ -27,7 +27,7 @@ export const ayaneSwimsuit: Character = {
     "ex": {
       "id": "ayane_swimsuit_ex",
       "name": "雨雲号、出撃します！",
-      "description": "アヤネ（水着）が雨雲号に乗って登場。雨雲号はアヤネ（水着）の攻撃力の、会心値の分の値が追加された攻撃力及び会心値を持ちます。（30秒間）/ （タクティカルサポートの搭乗物は重複して登場することはできません）",
+      "description": "アヤネ（水着）が雨雲号に乗って登場。雨雲号はアヤネ（水着）の攻撃力の47.5%、会心値の32.6%分の値が追加された攻撃力及び会心値を持ちます。（30秒間）/ （タクティカルサポートの搭乗物は重複して登場することはできません）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -51,7 +51,7 @@ export const ayaneSwimsuit: Character = {
     "normal": {
       "id": "ayane_swimsuit_normal",
       "name": "空からの支援",
-      "description": "30秒毎に敵1人に攻撃力の分のダメージ（この攻撃は敵の防御力を無視します）",
+      "description": "30秒毎に敵1人に攻撃力の215%分のダメージ（この攻撃は敵の防御力を84%無視します）",
       "type": "normal",
       "levels": [
         {
@@ -109,7 +109,7 @@ export const ayaneSwimsuit: Character = {
     "passive": {
       "id": "ayane_swimsuit_passive",
       "name": "自動照準",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -227,7 +227,7 @@ export const ayaneSwimsuit: Character = {
     "sub": {
       "id": "ayane_swimsuit_sub",
       "name": "戦況把握",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

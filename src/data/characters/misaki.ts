@@ -27,7 +27,7 @@ export const misaki: Character = {
     "ex": {
       "id": "misaki_ex",
       "name": "虚しい世界",
-      "description": "7つの円形範囲内の敵に4秒毎に攻撃力分のダメージ（48秒間） （EXスキル使用時、以前に使用したEXスキル効果の範囲が消えます）",
+      "description": "7つの円形範囲内の敵に4秒毎に攻撃力14.3%分のダメージ（48秒間） （EXスキル使用時、以前に使用したEXスキル効果の範囲が消えます）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const misaki: Character = {
     "normal": {
       "id": "misaki_normal",
       "name": "早く終わらせたい",
-      "description": "50秒毎に、を増加（40秒間）",
+      "description": "50秒毎に、攻撃力を37.1%増加（40秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const misaki: Character = {
     "passive": {
       "id": "misaki_passive",
       "name": "無意味な技術",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const misaki: Character = {
     "sub": {
       "id": "misaki_sub",
       "name": "等価交換",
-      "description": "弱体状態の敵への攻撃時に、弱体状態の個数によって攻撃力の分の追加ダメージ （最大5つ）",
+      "description": "弱体状態の敵への攻撃時に、弱体状態の個数によって攻撃力の2.1%/4.1%/6.2%/8.3%/10.3%分の追加ダメージ （最大5つ）",
       "type": "sub",
       "levels": [
         {

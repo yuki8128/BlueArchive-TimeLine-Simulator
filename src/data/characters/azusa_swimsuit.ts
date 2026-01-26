@@ -27,7 +27,7 @@ export const azusaSwimsuit: Character = {
     "ex": {
       "id": "azusa_swimsuit_ex",
       "name": "spicea aqua",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ 攻撃力の分の持続ダメージを付与（20秒間）",
+      "description": "敵1人に対して、攻撃力の847%分のダメージ/ 攻撃力の650%分の悪寒持続ダメージを付与（20秒間）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const azusaSwimsuit: Character = {
     "normal": {
       "id": "azusa_swimsuit_normal",
       "name": "ira litore",
-      "description": "35秒毎に、率を増加（30秒間）",
+      "description": "35秒毎に、会心ダメージ率を40%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const azusaSwimsuit: Character = {
     "passive": {
       "id": "azusa_swimsuit_passive",
       "name": "奪われる温度",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const azusaSwimsuit: Character = {
     "sub": {
       "id": "azusa_swimsuit_sub",
       "name": "傷口に塩水を",
-      "description": "攻撃時、30%の確率でを減少（13秒間）（クールタイム5秒）",
+      "description": "攻撃時、30%の確率で防御力を15.3%減少（13秒間）（クールタイム5秒）",
       "type": "sub",
       "levels": [
         {

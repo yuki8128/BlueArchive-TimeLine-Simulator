@@ -27,7 +27,7 @@ export const reisaMagical: Character = {
     "ex": {
       "id": "reisa_magical_ex",
       "name": "テルミットピンク、参上！",
-      "description": "レイサ（マジカル）がテルミットピンクに変身して登場。テルミットピンクはレイサ（マジカル）の最大HPの、攻撃力の、治癒力の分の値が追加されたHP、攻撃力、治癒力を持ちます。（22秒間）",
+      "description": "レイサ（マジカル）がテルミットピンクに変身して登場。テルミットピンクはレイサ（マジカル）の最大HPの55.7%、攻撃力の42.6%、治癒力の51.1%分の値が追加されたHP、攻撃力、治癒力を持ちます。（22秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -91,7 +91,7 @@ export const reisaMagical: Character = {
     "normal": {
       "id": "reisa_magical_normal",
       "name": "シュガーマジカルクラッシュ！",
-      "description": "を5個保有した状態でのEXスキルを使用時、を全て消耗して、該当EXスキルを強化してスキル「皆さん、いきますよ！」の対象に率を増加する効果を追加（範囲内にいる間だけ効果を維持）",
+      "description": "を5個保有した状態でのEXスキルを使用時、を全て消耗して、該当EXスキルを強化してスキル「皆さん、いきますよ！」の対象に会心ダメージ率を16.3%増加する効果を追加（範囲内にいる間だけ効果を維持）",
       "type": "normal",
       "levels": [
         {
@@ -209,7 +209,7 @@ export const reisaMagical: Character = {
     "passive": {
       "id": "reisa_magical_passive",
       "name": "マジカルヒールTCCC！",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -327,7 +327,7 @@ export const reisaMagical: Character = {
     "sub": {
       "id": "reisa_magical_sub",
       "name": "火力isマジカル、です！",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const hanakoSwimsuit: Character = {
     "ex": {
       "id": "hanako_swimsuit_ex",
       "name": "たっぷりかけちゃいますね♡",
-      "description": "扇形範囲内の敵に対して、攻撃力の分のダメージ/ 水ゲージが1つ以上の場合、EXスキルをすぐにドローした後、水ゲージを1つ差し引きます。",
+      "description": "扇形範囲内の敵に対して、攻撃力の642%分のダメージ/ 水ゲージが1つ以上の場合、EXスキルをすぐにドローした後、水ゲージを1つ差し引きます。",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -61,7 +61,7 @@ export const hanakoSwimsuit: Character = {
     "normal": {
       "id": "hanako_swimsuit_normal",
       "name": "上手に受け取ってください♡",
-      "description": "30秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ/ さらにを減少（20秒間）（範囲内にいる間だけ効果を維持）",
+      "description": "30秒毎に、円形範囲内の敵に対して攻撃力の225%分のダメージ/ さらに防御力を20.7%減少（20秒間）（範囲内にいる間だけ効果を維持）",
       "type": "normal",
       "levels": [
         {
@@ -199,7 +199,7 @@ export const hanakoSwimsuit: Character = {
     "passive": {
       "id": "hanako_swimsuit_passive",
       "name": "真夏に隠された本音",
-      "description": "を、率を増加",
+      "description": "攻撃力を16.2%、会心ダメージ率を16.2%増加",
       "type": "passive",
       "levels": [
         {
@@ -377,7 +377,7 @@ export const hanakoSwimsuit: Character = {
     "sub": {
       "id": "hanako_swimsuit_sub",
       "name": "準備は万端です♡",
-      "description": "自身を除く味方がEXスキルを使用時、水ゲージを40%チャージ 100%チャージされる毎に、を増加（20秒間） （水ゲージのチャージ数は最大2ゲージまで）",
+      "description": "自身を除く味方がEXスキルを使用時、水ゲージを40%チャージ 100%チャージされる毎に、攻撃力を38.3%増加（20秒間） （水ゲージのチャージ数は最大2ゲージまで）",
       "type": "sub",
       "levels": [
         {

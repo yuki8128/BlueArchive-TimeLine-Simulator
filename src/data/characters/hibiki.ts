@@ -28,7 +28,7 @@ export const hibiki: Character = {
     "ex": {
       "id": "hibiki_ex",
       "name": "これは高確率で痛いよ",
-      "description": "5つの円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "5つの円形範囲内の敵に対して、攻撃力の591%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -62,7 +62,7 @@ export const hibiki: Character = {
     "normal": {
       "id": "hibiki_normal",
       "name": "火力は十分",
-      "description": "20秒毎に、HPが最も低い敵を中心にした円形範囲内の敵に攻撃力の分のダメージ",
+      "description": "20秒毎に、HPが最も低い敵を中心にした円形範囲内の敵に攻撃力の275%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -120,7 +120,7 @@ export const hibiki: Character = {
     "passive": {
       "id": "hibiki_passive",
       "name": "これは危険だよ",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -238,7 +238,7 @@ export const hibiki: Character = {
     "sub": {
       "id": "hibiki_sub",
       "name": "役に立つといいけど",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

@@ -28,7 +28,7 @@ export const haruka: Character = {
     "ex": {
       "id": "haruka_ex",
       "name": "乱れ撃ち",
-      "description": "扇形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "扇形範囲内の敵に対して、攻撃力の1560%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -62,7 +62,7 @@ export const haruka: Character = {
     "normal": {
       "id": "haruka_normal",
       "name": "トリガーオーバー",
-      "description": "20秒毎にを増加（20秒間）",
+      "description": "20秒毎に防御力を36%増加（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -180,7 +180,7 @@ export const haruka: Character = {
     "passive": {
       "id": "haruka_passive",
       "name": "が、頑張ります！",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -298,7 +298,7 @@ export const haruka: Character = {
     "sub": {
       "id": "haruka_sub",
       "name": "うわああああっ！？",
-      "description": "攻撃を受けた時、5%の確率でを増加（15秒間）（クールタイム10秒）",
+      "description": "攻撃を受けた時、5%の確率で防御力を34.4%増加（15秒間）（クールタイム10秒）",
       "type": "sub",
       "levels": [
         {

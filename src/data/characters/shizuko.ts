@@ -28,7 +28,7 @@ export const shizuko: Character = {
     "ex": {
       "id": "shizuko_ex",
       "name": "百夜堂出張サービス！",
-      "description": "遮蔽物を設置/ 円形範囲内の味方のを増加（30秒間）/ 遮蔽物はシズコの最大HPの分の値が追加されたHPを持ちます。",
+      "description": "遮蔽物を設置/ 円形範囲内の味方の命中値を21.3%増加（30秒間）/ 遮蔽物はシズコの最大HPの46.8%分の値が追加されたHPを持ちます。",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -92,7 +92,7 @@ export const shizuko: Character = {
     "normal": {
       "id": "shizuko_normal",
       "name": "営業妨害しないで！",
-      "description": "25秒毎に、敵1人に対して攻撃力の分のダメージ/ さらにを減少（21秒間）",
+      "description": "25秒毎に、敵1人に対して攻撃力の341%分のダメージ/ さらに攻撃力を18.3%減少（21秒間）",
       "type": "normal",
       "levels": [
         {
@@ -230,7 +230,7 @@ export const shizuko: Character = {
     "passive": {
       "id": "shizuko_passive",
       "name": "て、てへぺろっ？",
-      "description": "を増加",
+      "description": "命中値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -348,7 +348,7 @@ export const shizuko: Character = {
     "sub": {
       "id": "shizuko_sub",
       "name": "にゃんにゃんっ！",
-      "description": "味方のを増加",
+      "description": "味方の会心値を17.3%増加",
       "type": "sub",
       "levels": [
         {

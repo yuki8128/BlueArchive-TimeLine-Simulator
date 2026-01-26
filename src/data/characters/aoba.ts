@@ -27,7 +27,7 @@ export const aoba: Character = {
     "ex": {
       "id": "aoba_ex",
       "name": "しゅ、修理に行かなきゃ……！",
-      "description": "指定した位置に移動しながらぶつかった敵に攻撃力の分のダメージを与えノックバック/ 移動後、自身のを増加、を増加（22秒間）",
+      "description": "指定した位置に移動しながらぶつかった敵に攻撃力の127%分のダメージを与えノックバック/ 移動後、自身の攻撃力を28%増加、攻撃速度を67.3%増加（22秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -101,7 +101,7 @@ export const aoba: Character = {
     "normal": {
       "id": "aoba_normal",
       "name": "じゅ、準備完了……",
-      "description": "40秒毎に、を増加（32秒間）",
+      "description": "40秒毎に、防御力を38.9%増加（32秒間）",
       "type": "normal",
       "levels": [
         {
@@ -219,7 +219,7 @@ export const aoba: Character = {
     "passive": {
       "id": "aoba_passive",
       "name": "絶望的な激務",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -337,7 +337,7 @@ export const aoba: Character = {
     "sub": {
       "id": "aoba_sub",
       "name": "期待なんて、してません",
-      "description": "通常攻撃12回毎に、を増加（20秒間）",
+      "description": "通常攻撃12回毎に、防御力を34.4%増加（20秒間）",
       "type": "sub",
       "levels": [
         {

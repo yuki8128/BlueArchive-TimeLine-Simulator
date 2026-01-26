@@ -27,7 +27,7 @@ export const miyu: Character = {
     "ex": {
       "id": "miyu_ex",
       "name": "小心者の観測",
-      "description": "敵1人に対してを付与（10秒間） の敵への攻撃時に、ミユの攻撃力の分の追加ダメージ （このダメージにおいては、会心が発動しません） （最大120発分まで適用されます）",
+      "description": "敵1人に対して弱点把握状態を付与（10秒間） 弱点把握状態の敵への攻撃時に、ミユの攻撃力の30%分の追加ダメージ （このダメージにおいては、会心が発動しません） （最大120発分まで適用されます）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -51,7 +51,7 @@ export const miyu: Character = {
     "normal": {
       "id": "miyu_normal",
       "name": "予期せぬ角度からの一撃",
-      "description": "通常攻撃5回毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "通常攻撃5回毎に、敵1人に対して攻撃力の283%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -109,7 +109,7 @@ export const miyu: Character = {
     "passive": {
       "id": "miyu_passive",
       "name": "深呼吸",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -227,7 +227,7 @@ export const miyu: Character = {
     "sub": {
       "id": "miyu_sub",
       "name": "狙撃用の特殊弾",
-      "description": "リロード時、率を増加（13秒間）",
+      "description": "リロード時、会心ダメージ率を36%増加（13秒間）",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const subaru: Character = {
     "ex": {
       "id": "subaru_ex",
       "name": "残業手当",
-      "description": "すぐにリロードした後、セレクターをフルオート射撃に切り替えて射撃間隔が大幅に短くなり、を攻撃力の分のダメージを4回与える攻撃に変更、さらにを増加（10秒間）/ を3個保有時、を全て消耗して、今回のフルオート射撃をさらに強化して通常攻撃を確定会心に変更",
+      "description": "すぐにリロードした後、セレクターをフルオート射撃に切り替えて射撃間隔が大幅に短くなり、を攻撃力の25.2%分のダメージを4回与える攻撃に変更、さらに攻撃力を17.9%増加（10秒間）/ を3個保有時、を全て消耗して、今回のフルオート射撃をさらに強化して通常攻撃を確定会心に変更",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -91,7 +91,7 @@ export const subaru: Character = {
     "normal": {
       "id": "subaru_normal",
       "name": "薬莢回収",
-      "description": "強化されていないフルオート射撃の終了時、を1個獲得/ を3個消耗すると、すぐに自身の率を増加（10秒間）",
+      "description": "強化されていないフルオート射撃の終了時、を1個獲得/ を3個消耗すると、すぐに自身の会心ダメージ率を23.9%増加（10秒間）",
       "type": "normal",
       "levels": [
         {
@@ -209,7 +209,7 @@ export const subaru: Character = {
     "passive": {
       "id": "subaru_passive",
       "name": "みんなの先輩",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -327,7 +327,7 @@ export const subaru: Character = {
     "sub": {
       "id": "subaru_sub",
       "name": "ハーモニカ",
-      "description": "フルオート射撃の場合、を増加、通常攻撃のディレイを100回無視、通常攻撃で消耗した弾薬分の弾薬数を追加",
+      "description": "フルオート射撃の場合、攻撃力を31.9%増加、通常攻撃のディレイを100回無視、通常攻撃で消耗した弾薬分の弾薬数を追加",
       "type": "sub",
       "levels": [
         {

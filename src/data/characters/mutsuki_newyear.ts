@@ -27,7 +27,7 @@ export const mutsukiNewyear: Character = {
     "ex": {
       "id": "mutsuki_newyear_ex",
       "name": "迎春のシンフォニー",
-      "description": "アーチ型範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "アーチ型範囲内の敵に対して、攻撃力の302%分のダメージ",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -61,7 +61,7 @@ export const mutsukiNewyear: Character = {
     "normal": {
       "id": "mutsuki_newyear_normal",
       "name": "小悪魔のコーラス",
-      "description": "50秒毎に、直線範囲内の敵に対して攻撃力の分のダメージ。保有しているが6個の場合、分の追加ダメージ",
+      "description": "50秒毎に、直線範囲内の敵に対して攻撃力の315%分のダメージ。保有しているが6個の場合、169%分の追加ダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const mutsukiNewyear: Character = {
     "passive": {
       "id": "mutsuki_newyear_passive",
       "name": "もっと楽しい遊び方！",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const mutsukiNewyear: Character = {
     "sub": {
       "id": "mutsuki_newyear_sub",
       "name": "小悪魔のキュートな企み",
-      "description": "自身のEXスキルで対象にダメージを3回与える度に、を1個獲得（56秒間）（は最大6個分まで保有が可能で、効果が重複）。1個につき、率を増加",
+      "description": "自身のEXスキルで対象にダメージを3回与える度に、を1個獲得（56秒間）（は最大6個分まで保有が可能で、効果が重複）。1個につき、会心ダメージ率を4.1%増加",
       "type": "sub",
       "levels": [
         {

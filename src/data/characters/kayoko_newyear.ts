@@ -27,7 +27,7 @@ export const kayokoNewyear: Character = {
     "ex": {
       "id": "kayoko_newyear_ex",
       "name": "新年のお守り",
-      "description": "自身を除く味方1人に対してを加算（40秒間）/ 状態を付与",
+      "description": "自身を除く味方1人に対して神秘特効を92.8%加算（40秒間）/ 状態を付与",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -51,7 +51,7 @@ export const kayokoNewyear: Character = {
     "normal": {
       "id": "kayoko_newyear_normal",
       "name": "猫の加護",
-      "description": "40秒毎に、自身を除く味方1人のを増加（25秒間）",
+      "description": "40秒毎に、自身を除く味方1人の会心値を39.5%増加（25秒間）",
       "type": "normal",
       "levels": [
         {
@@ -169,7 +169,7 @@ export const kayokoNewyear: Character = {
     "passive": {
       "id": "kayoko_newyear_passive",
       "name": "増える誤解",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -287,7 +287,7 @@ export const kayokoNewyear: Character = {
     "sub": {
       "id": "kayoko_newyear_sub",
       "name": "お守りの絆",
-      "description": "味方が会心を200回成功した時、自身のを増加。状態の味方に対して、を加算（50秒間） その後、味方の状態を全て除去",
+      "description": "味方が会心を200回成功した時、自身の攻撃力を24.9%増加。状態の味方に対して、神秘特効を41.8%加算（50秒間） その後、味方の状態を全て除去",
       "type": "sub",
       "levels": [
         {

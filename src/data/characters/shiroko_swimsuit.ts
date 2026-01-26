@@ -27,7 +27,7 @@ export const shirokoSwimsuit: Character = {
     "ex": {
       "id": "shiroko_swimsuit_ex",
       "name": "大物だ",
-      "description": "敵1人のを減少（30秒間）/ さらに攻撃力の分のダメージ",
+      "description": "敵1人の防御力を34.2%減少（30秒間）/ さらに攻撃力の1117%分のダメージ",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -101,7 +101,7 @@ export const shirokoSwimsuit: Character = {
     "normal": {
       "id": "shiroko_swimsuit_normal",
       "name": "「ちょうどここに」",
-      "description": "戦闘開始時、自身を除く味方のを増加（60秒間）、スキルコストを1減少（EXスキルの使用1回分） （戦闘中に1回のみ）",
+      "description": "戦闘開始時、自身を除く味方の会心値を21.9%増加（60秒間）、スキルコストを1減少（EXスキルの使用1回分） （戦闘中に1回のみ）",
       "type": "normal",
       "levels": [
         {
@@ -219,7 +219,7 @@ export const shirokoSwimsuit: Character = {
     "passive": {
       "id": "shiroko_swimsuit_passive",
       "name": "少し浮かれて",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -337,7 +337,7 @@ export const shirokoSwimsuit: Character = {
     "sub": {
       "id": "shiroko_swimsuit_sub",
       "name": "鍛えられた肉体",
-      "description": "味方のを増加",
+      "description": "味方のコスト回復力を20.2%増加",
       "type": "sub",
       "levels": [
         {

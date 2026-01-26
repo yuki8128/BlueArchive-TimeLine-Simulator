@@ -28,7 +28,7 @@ export const kayoko: Character = {
     "ex": {
       "id": "kayoko_ex",
       "name": "パニックブリンガー",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ/ を付与（間）",
+      "description": "円形範囲内の敵に対して、攻撃力の558%分のダメージ/ 恐怖状態を付与（5.1秒間）",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -62,7 +62,7 @@ export const kayoko: Character = {
     "normal": {
       "id": "kayoko_normal",
       "name": "パニックショット",
-      "description": "20秒毎に、敵1人に対して攻撃力の分のダメージ/ さらに30%の確率でを付与（3.6秒間）",
+      "description": "20秒毎に、敵1人に対して攻撃力の252%分のダメージ/ さらに30%の確率で恐怖状態を付与（3.6秒間）",
       "type": "normal",
       "levels": [
         {
@@ -120,7 +120,7 @@ export const kayoko: Character = {
     "passive": {
       "id": "kayoko_passive",
       "name": "怖い顔",
-      "description": "を増加",
+      "description": "CC強化力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -238,7 +238,7 @@ export const kayoko: Character = {
     "sub": {
       "id": "kayoko_sub",
       "name": "仕方ない",
-      "description": "CC状態の敵を攻撃した時、攻撃力の分の追加ダメージ",
+      "description": "CC状態の敵を攻撃した時、攻撃力の142%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

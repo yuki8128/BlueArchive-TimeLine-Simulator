@@ -27,7 +27,7 @@ export const kokona: Character = {
     "ex": {
       "id": "kokona_ex",
       "name": "たいへんよくできました！",
-      "description": "自身を除き味方1人に対して治癒力の分の回復/ 自身に治癒力の101%分の回復/ を1個獲得",
+      "description": "自身を除き味方1人に対して治癒力の290%分の回復/ 自身に治癒力の101%分の回復/ を1個獲得",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -56,7 +56,7 @@ export const kokona: Character = {
     "normal": {
       "id": "kokona_normal",
       "name": "次も楽しみにしてますよ！",
-      "description": "味方が会心を100回成功した時、自身を除きHPが最も低い味方1人に対して治癒力の分の回復/ を1個獲得",
+      "description": "味方が会心を100回成功した時、自身を除きHPが最も低い味方1人に対して治癒力の107%分の回復/ を1個獲得",
       "type": "normal",
       "levels": [
         {
@@ -104,7 +104,7 @@ export const kokona: Character = {
     "passive": {
       "id": "kokona_passive",
       "name": "教官としての責任",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -222,7 +222,7 @@ export const kokona: Character = {
     "sub": {
       "id": "kokona_sub",
       "name": "梅花園の指導法",
-      "description": "を5個獲得時、自身を除く味方のスキルコストを1減少（EXスキルの使用1回分）（は初期化されます）/ 自身に治癒力の分の回復",
+      "description": "を5個獲得時、自身を除く味方のスキルコストを1減少（EXスキルの使用1回分）（は初期化されます）/ 自身に治癒力の108%分の回復",
       "type": "sub",
       "levels": [
         {

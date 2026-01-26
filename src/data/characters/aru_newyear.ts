@@ -27,7 +27,7 @@ export const aruNewyear: Character = {
     "ex": {
       "id": "aru_newyear_ex",
       "name": "ハードボイルド・羽根つきショット",
-      "description": "保有していた1個につき、スキルコストを獲得（の数は初期化されます） 敵1人に対して、攻撃力の分のダメージ。打った羽根を中心として周囲にまだ攻撃が当たっていない敵がいる場合、羽根が飛んで再度攻撃力の分のダメージを与えます（最大11回まで）",
+      "description": "保有していた1個につき、スキルコストを0.7獲得（の数は初期化されます） 敵1人に対して、攻撃力の340%分のダメージ。打った羽根を中心として周囲にまだ攻撃が当たっていない敵がいる場合、羽根が飛んで再度攻撃力の340%分のダメージを与えます（最大11回まで）",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const aruNewyear: Character = {
     "normal": {
       "id": "aru_newyear_normal",
       "name": "ノワール・羽根つきシュート",
-      "description": "30秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "30秒毎に、円形範囲内の敵に対して攻撃力の321%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const aruNewyear: Character = {
     "passive": {
       "id": "aru_newyear_passive",
       "name": "ゴージャスな社長の気品",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const aruNewyear: Character = {
     "sub": {
       "id": "aru_newyear_sub",
       "name": "パーフェクトな社長の流儀",
-      "description": "味方が敵を6体倒す毎に、自身に対してを1個獲得（は最大分まで保有が可能で、効果が重複）。悪行1個につき、を減少",
+      "description": "味方が敵を6体倒す毎に、自身に対してを1個獲得（は最大6個分まで保有が可能で、効果が重複）。悪行1個につき、防御力を5.3%減少",
       "type": "sub",
       "levels": [
         {

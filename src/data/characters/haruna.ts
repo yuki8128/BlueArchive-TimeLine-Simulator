@@ -28,7 +28,7 @@ export const haruna: Character = {
     "ex": {
       "id": "haruna_ex",
       "name": "貫くエレガンス",
-      "description": "直線範囲内の敵に対して、攻撃力の分のダメージ/ 敵を貫通する度にダメージが10%減少（最少で30%ダメージまで）",
+      "description": "直線範囲内の敵に対して、攻撃力の887%分のダメージ/ 敵を貫通する度にダメージが10%減少（最少で30%ダメージまで）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -62,7 +62,7 @@ export const haruna: Character = {
     "normal": {
       "id": "haruna_normal",
       "name": "爆発するエキゾチック",
-      "description": "30秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "30秒毎に、敵1人に対して攻撃力の380%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -120,7 +120,7 @@ export const haruna: Character = {
     "passive": {
       "id": "haruna_passive",
       "name": "美食家の気品",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -238,7 +238,7 @@ export const haruna: Character = {
     "sub": {
       "id": "haruna_sub",
       "name": "美食家の冷静さ",
-      "description": "移動していない時、を増加",
+      "description": "移動していない時、攻撃力を19.1%増加",
       "type": "sub",
       "levels": [
         {

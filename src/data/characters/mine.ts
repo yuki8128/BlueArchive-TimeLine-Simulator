@@ -27,7 +27,7 @@ export const mine: Character = {
     "ex": {
       "id": "mine_ex",
       "name": "誇りと信念",
-      "description": "指定した位置に移動し、円形範囲内の敵に対して、攻撃力の分のダメージを与えミネに向かって引き寄せる/ とを減少（40秒間）/ 対象が中型の敵の場合は、と防御力の減少値が元の2.5倍に強化される。",
+      "description": "指定した位置に移動し、円形範囲内の敵に対して、攻撃力の196%分のダメージを与えミネに向かって引き寄せる/ 回避値と防御力を13%減少（40秒間）/ 対象が中型の敵の場合は、回避値と防御力の減少値が元の2.5倍に強化される。",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -191,7 +191,7 @@ export const mine: Character = {
     "normal": {
       "id": "mine_normal",
       "name": "峻厳な宣告",
-      "description": "状態の解除後に発動/ 発動時、円形範囲内の敵に対して、防御力の分のダメージ、とを減少（30秒間）",
+      "description": "「救護の心構え」状態の解除後に発動/ 発動時、円形範囲内の敵に対して、防御力の902%分のダメージ、回避値と防御力を15.2%減少（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -389,7 +389,7 @@ export const mine: Character = {
     "passive": {
       "id": "mine_passive",
       "name": "騎士団の意志",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -507,7 +507,7 @@ export const mine: Character = {
     "sub": {
       "id": "mine_sub",
       "name": "不屈の勇気",
-      "description": "EXスキルの発動と同時に、状態を付与。は、治癒力の分のを付与（10秒間）/ すでに状態の場合、代わりにを増加（20秒間）",
+      "description": "EXスキルの発動と同時に、「救護の心構え」状態を付与。「救護の心構え」は、治癒力の123%分の持続回復を付与（10秒間）/ すでに「救護の心構え」状態の場合、代わりに会心抵抗値を36.7%増加（20秒間）",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const marina: Character = {
     "ex": {
       "id": "marina_ex",
       "name": "革命的突撃！",
-      "description": "アーチ型範囲内の敵に対して、攻撃力の分のダメージを与え1ヒットごとにノックバック/ さらに率を減少（30秒間）",
+      "description": "アーチ型範囲内の敵に対して、攻撃力の636%分のダメージを与え1ヒットごとにノックバック/ さらに被回復率率を45.5%減少（30秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const marina: Character = {
     "normal": {
       "id": "marina_normal",
       "name": "退いてなるものか！",
-      "description": "HPが20%以下の時、を付与（間） （戦闘中に1回のみ）",
+      "description": "HPが20%以下の時、を付与（22.8秒間） （戦闘中に1回のみ）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const marina: Character = {
     "passive": {
       "id": "marina_passive",
       "name": "これは後退ではない！",
-      "description": "を増加",
+      "description": "回避値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const marina: Character = {
     "sub": {
       "id": "marina_sub",
       "name": "決断力",
-      "description": "EXスキルの使用中、を増加",
+      "description": "EXスキルの使用中、回避値を38.3%増加",
       "type": "sub",
       "levels": [
         {

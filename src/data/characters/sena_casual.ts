@@ -27,7 +27,7 @@ export const senaCasual: Character = {
     "ex": {
       "id": "sena_casual_ex",
       "name": "救急対応",
-      "description": "円形範囲内の味方に対して、治癒力の分のを付与（32秒間）",
+      "description": "円形範囲内の味方に対して、治癒力の53%分の持続回復を付与（32秒間）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -51,7 +51,7 @@ export const senaCasual: Character = {
     "normal": {
       "id": "sena_casual_normal",
       "name": "救急医学部長の務め",
-      "description": "40秒毎に、を増加、を増加（30秒間）",
+      "description": "40秒毎に、治癒力を35.3%増加、攻撃速度を35.3%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -169,7 +169,7 @@ export const senaCasual: Character = {
     "passive": {
       "id": "sena_casual_passive",
       "name": "休日対応",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -287,7 +287,7 @@ export const senaCasual: Character = {
     "sub": {
       "id": "sena_casual_sub",
       "name": "あふれる好奇心",
-      "description": "通常攻撃の範囲の半径が倍に増加し、攻撃力の分のダメージを与えるように変更",
+      "description": "通常攻撃の範囲の半径が2倍に増加し、攻撃力の83.8%分のダメージを与えるように変更",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const megu: Character = {
     "ex": {
       "id": "megu_ex",
       "name": "熱いの好きだよね～！",
-      "description": "扇形範囲内の敵に対して攻撃力の分のダメージ/ 自身のを増加、通常攻撃のディレイ無視（30秒間）",
+      "description": "扇形範囲内の敵に対して攻撃力の619%分のダメージ/ 自身の攻撃力を19.2%増加、通常攻撃のディレイ無視（30秒間）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -101,7 +101,7 @@ export const megu: Character = {
     "normal": {
       "id": "megu_normal",
       "name": "あっためてあげる！",
-      "description": "40秒毎に、円形範囲内の敵に対して、攻撃力の分の持続ダメージを付与（10秒間）",
+      "description": "40秒毎に、円形範囲内の敵に対して、攻撃力の34.1%分の持続ダメージを付与（10秒間）",
       "type": "normal",
       "levels": [
         {
@@ -159,7 +159,7 @@ export const megu: Character = {
     "passive": {
       "id": "megu_passive",
       "name": "よゆ～よゆ～！",
-      "description": "を、を増加",
+      "description": "防御力を16.2%、攻撃力を16.2%増加",
       "type": "passive",
       "levels": [
         {
@@ -337,7 +337,7 @@ export const megu: Character = {
     "sub": {
       "id": "megu_sub",
       "name": "あ～すっきりした！",
-      "description": "50回敵を命中した時、治癒力の分の回復",
+      "description": "50回敵を命中した時、治癒力の57%分の回復",
       "type": "sub",
       "levels": [
         {

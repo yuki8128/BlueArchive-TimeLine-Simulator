@@ -27,7 +27,7 @@ export const nagisaSwimsuit: Character = {
     "ex": {
       "id": "nagisa_swimsuit_ex",
       "name": "Teatime in Wartime",
-      "description": "味方1人に対して、状態を付与（26秒間）/ 率を増加（26秒間）/ （：生徒が編成可能な最大数まで編成され、誰も退却していない場合、保有コストを最大5コストまで超過して消費可能、超過した分はマイナスのコストとして差し引かれます）",
+      "description": "味方1人に対して、コストオーバー状態を付与（26秒間）/ 会心ダメージ率を78.6%増加（26秒間）/ （コストオーバー：生徒が編成可能な最大数まで編成され、誰も退却していない場合、保有コストを最大5コストまで超過して消費可能、超過した分はマイナスのコストとして差し引かれます）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -91,7 +91,7 @@ export const nagisaSwimsuit: Character = {
     "normal": {
       "id": "nagisa_swimsuit_normal",
       "name": "Crush, Tear, Curl",
-      "description": "35秒毎に、敵1人の率を減少（27秒間）/ 攻撃力の分のダメージ",
+      "description": "35秒毎に、敵1人の会心ダメージ抵抗率を38.2%減少（27秒間）/ 攻撃力の376%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -149,7 +149,7 @@ export const nagisaSwimsuit: Character = {
     "passive": {
       "id": "nagisa_swimsuit_passive",
       "name": "Work & Seaside Balance",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -267,7 +267,7 @@ export const nagisaSwimsuit: Character = {
     "sub": {
       "id": "nagisa_swimsuit_sub",
       "name": "Lazy Ladies",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

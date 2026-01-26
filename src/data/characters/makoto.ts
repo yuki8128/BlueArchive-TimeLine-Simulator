@@ -27,7 +27,7 @@ export const makoto: Character = {
     "ex": {
       "id": "makoto_ex",
       "name": "ま、間違えたあ！",
-      "description": "円形範囲内の敵の数によって、範囲内の敵に対して、 4人以下：攻撃力の分のダメージ 5人～9人：攻撃力の分のダメージ 10人以上：攻撃力の分のダメージ",
+      "description": "円形範囲内の敵の数によって、範囲内の敵に対して、 4人以下：攻撃力の296%分のダメージ 5人～9人：攻撃力の592%分のダメージ 10人以上：攻撃力の987%分のダメージ",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const makoto: Character = {
     "normal": {
       "id": "makoto_normal",
       "name": "聞くが良い！",
-      "description": "55秒毎に、円形範囲内の敵のを減少（35秒間）",
+      "description": "55秒毎に、円形範囲内の敵の防御力を15.8%減少（35秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const makoto: Character = {
     "passive": {
       "id": "makoto_passive",
       "name": "万魔殿の偉大な議長",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const makoto: Character = {
     "sub": {
       "id": "makoto_sub",
       "name": "天下無敵！ゲヘナの真のリーダー！",
-      "description": "味方のを加算",
+      "description": "味方の貫通特効を30.2%加算",
       "type": "sub",
       "levels": [
         {

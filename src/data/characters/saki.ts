@@ -27,7 +27,7 @@ export const saki: Character = {
     "ex": {
       "id": "saki_ex",
       "name": "支援射撃、開始！",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ さらにを付与（間）",
+      "description": "円形範囲内の敵に対して、攻撃力の666%分のダメージ さらに気絶状態を付与（5.1秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const saki: Character = {
     "normal": {
       "id": "saki_normal",
       "name": "制圧射撃",
-      "description": "35秒毎にHPが最も低い敵1人に対して、攻撃力の分のダメージ さらに攻撃力の分の持続ダメージを付与（20秒間）",
+      "description": "35秒毎にHPが最も低い敵1人に対して、攻撃力の343%分のダメージ さらに攻撃力の56%分の火傷持続ダメージを付与（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const saki: Character = {
     "passive": {
       "id": "saki_passive",
       "name": "準備万端",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const saki: Character = {
     "sub": {
       "id": "saki_sub",
       "name": "ポイントマンの先導",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

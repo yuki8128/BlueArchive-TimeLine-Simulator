@@ -27,7 +27,7 @@ export const marinaQipao: Character = {
     "ex": {
       "id": "marina_qipao_ex",
       "name": "う、うわああっ！？",
-      "description": "敵1人に対して攻撃力の分のダメージ/ 攻撃力の分の持続ダメージを付与（32秒間）",
+      "description": "敵1人に対して攻撃力の414%分のダメージ/ 攻撃力の561%分の持続ダメージを付与（32秒間）",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const marinaQipao: Character = {
     "normal": {
       "id": "marina_qipao_normal",
       "name": "戦術的保温対策！",
-      "description": "35秒毎に、敵1人に対して攻撃力の分のダメージ/ 攻撃した敵が中毒効果状態の場合、自身のを増加（25秒間）",
+      "description": "35秒毎に、敵1人に対して攻撃力の452%分のダメージ/ 攻撃した敵が中毒効果状態の場合、自身の攻撃速度を28.8%増加（25秒間）",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const marinaQipao: Character = {
     "passive": {
       "id": "marina_qipao_passive",
       "name": "最後の瞬間まで！",
-      "description": "を200、を増加",
+      "description": "通常攻撃の射程を200、攻撃力を21.2%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const marinaQipao: Character = {
     "sub": {
       "id": "marina_qipao_sub",
       "name": "縦深突破！",
-      "description": "通常攻撃時、中毒効果状態の対象に攻撃力の分の追加ダメージ",
+      "description": "通常攻撃時、中毒効果状態の対象に攻撃力の10.1%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

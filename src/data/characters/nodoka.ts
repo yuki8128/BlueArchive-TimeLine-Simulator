@@ -28,7 +28,7 @@ export const nodoka: Character = {
     "ex": {
       "id": "nodoka_ex",
       "name": "観測支援",
-      "description": "円形範囲内の味方に対して、を増加（30秒間）",
+      "description": "円形範囲内の味方に対して、命中値を47.9%増加（30秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -92,7 +92,7 @@ export const nodoka: Character = {
     "normal": {
       "id": "nodoka_normal",
       "name": "頑なな視線",
-      "description": "25秒毎に、敵1人に対して攻撃力の分のダメージ/ を減少（20秒間）",
+      "description": "25秒毎に、敵1人に対して攻撃力の421%分のダメージ/ 回避値を33.7%減少（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -230,7 +230,7 @@ export const nodoka: Character = {
     "passive": {
       "id": "nodoka_passive",
       "name": "美学に基づいた観測",
-      "description": "を増加",
+      "description": "命中値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -348,7 +348,7 @@ export const nodoka: Character = {
     "sub": {
       "id": "nodoka_sub",
       "name": "特別クラスの絆",
-      "description": "味方のを増加",
+      "description": "味方の命中値を17.3%増加",
       "type": "sub",
       "levels": [
         {

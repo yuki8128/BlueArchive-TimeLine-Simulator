@@ -27,7 +27,7 @@ export const rio: Character = {
     "ex": {
       "id": "rio_ex",
       "name": "ビッグシスター",
-      "description": "EXスキルをすぐにドロー後、味方1人のEXスキルカードを複製（複製したカードの使用は1回まで）/ 対象のを増加（20秒間）/ （複製したカードは、対象のEXスキルのカード状態に従います） （複製したカードのコストは、対象のEXスキルの基本コストから1減少した値を持ちます）（最小0）",
+      "description": "EXスキルをすぐにドロー後、味方1人のEXスキルカードを複製（複製したカードの使用は1回まで）/ 対象の攻撃力を51.4%増加（20秒間）/ （複製したカードは、対象のEXスキルのカード状態に従います） （複製したカードのコストは、対象のEXスキルの基本コストから1減少した値を持ちます）（最小0）",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -91,7 +91,7 @@ export const rio: Character = {
     "normal": {
       "id": "rio_normal",
       "name": "ただ一つの解",
-      "description": "30秒毎に、敵1人に対してを減少（19秒間）/ 攻撃力の分のダメージ",
+      "description": "30秒毎に、敵1人に対して防御力を25.5%減少（19秒間）/ 攻撃力の297%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -229,7 +229,7 @@ export const rio: Character = {
     "passive": {
       "id": "rio_passive",
       "name": "星を追う者",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -347,7 +347,7 @@ export const rio: Character = {
     "sub": {
       "id": "rio_sub",
       "name": "アバンギャルド",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

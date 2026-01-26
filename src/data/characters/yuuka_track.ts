@@ -27,7 +27,7 @@ export const yuukaTrack: Character = {
     "ex": {
       "id": "yuuka_track_ex",
       "name": "R.S.G！",
-      "description": "指定した位置に移動した後、治癒力の分の効果を発動（25秒間）/ 旗を召喚し自身を除く味方3人を旗の位置に移動させ、旗に到着した対象に対して、治癒力の分の効果を発動（25秒間）",
+      "description": "指定した位置に移動した後、治癒力の320%分のシールド効果を発動（25秒間）/ 旗を召喚し自身を除く味方3人を旗の位置に移動させ、旗に到着した対象に対して、治癒力の320%分のシールド効果を発動（25秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -51,7 +51,7 @@ export const yuukaTrack: Character = {
     "normal": {
       "id": "yuuka_track_normal",
       "name": "水分補給",
-      "description": "30秒毎に、自身に効果がない場合、治癒力の分の効果を発動（23秒間）/ 効果がある場合を増加（90秒間）（増加効果は最大で3回分まで効果が重複）",
+      "description": "30秒毎に、自身にシールド効果がない場合、治癒力の220%分のシールド効果を発動（23秒間）/ シールド効果がある場合治癒力を23.4%増加（90秒間）（治癒力増加効果は最大で3回分まで効果が重複）",
       "type": "normal",
       "levels": [
         {
@@ -169,7 +169,7 @@ export const yuukaTrack: Character = {
     "passive": {
       "id": "yuuka_track_passive",
       "name": "数学的競技戦略",
-      "description": "を増加",
+      "description": "攻撃速度を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const yuukaTrack: Character = {
     "sub": {
       "id": "yuuka_track_sub",
       "name": "最適動線算出",
-      "description": "移動して止まった時、を加算（20秒間）",
+      "description": "移動して止まった時、神秘特効を59.1%加算（20秒間）",
       "type": "sub",
       "levels": [
         {

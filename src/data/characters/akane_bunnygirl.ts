@@ -27,7 +27,7 @@ export const akaneBunnygirl: Character = {
     "ex": {
       "id": "akane_bunnygirl_ex",
       "name": "丁寧に準備します",
-      "description": "範囲内に入ったら自動で爆発し、攻撃力の分のダメージを与える地雷を設置（90秒間）",
+      "description": "範囲内に入ったら自動で爆発し、攻撃力の667%分のダメージを与える地雷を設置（90秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const akaneBunnygirl: Character = {
     "normal": {
       "id": "akane_bunnygirl_normal",
       "name": "優雅に掃除します",
-      "description": "30秒毎に、円形範囲内の敵に攻撃力の分のダメージ",
+      "description": "30秒毎に、円形範囲内の敵に攻撃力の411%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const akaneBunnygirl: Character = {
     "passive": {
       "id": "akane_bunnygirl_passive",
       "name": "的確に捉えます",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const akaneBunnygirl: Character = {
     "sub": {
       "id": "akane_bunnygirl_sub",
       "name": "迅速に支援します",
-      "description": "神秘タイプの味方のを増加",
+      "description": "神秘タイプの味方の攻撃力を24.2%増加",
       "type": "sub",
       "levels": [
         {

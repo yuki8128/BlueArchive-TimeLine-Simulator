@@ -27,7 +27,7 @@ export const yuukaPajama: Character = {
     "ex": {
       "id": "yuuka_pajama_ex",
       "name": "ペロロ様危機一髪！",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ を減少（25秒間）/ 対象が軽装備の場合、を減少（25秒間）",
+      "description": "敵1人に対して、攻撃力の887%分のダメージ/ 防御力を23.3%減少（25秒間）/ 対象が軽装備の場合、防御力を46.7%減少（25秒間）",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -131,7 +131,7 @@ export const yuukaPajama: Character = {
     "normal": {
       "id": "yuuka_pajama_normal",
       "name": "ナイトケア",
-      "description": "30秒毎に、治癒力の分の回復",
+      "description": "30秒毎に、治癒力の115%分の回復",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const yuukaPajama: Character = {
     "passive": {
       "id": "yuuka_pajama_passive",
       "name": "甘やかな夢",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const yuukaPajama: Character = {
     "sub": {
       "id": "yuuka_pajama_sub",
       "name": "気だるい目覚め",
-      "description": "回復効果を受ける度に、を増加（30秒間）（最大で7回分まで効果が重複）",
+      "description": "回復効果を受ける度に、防御力を6.7%増加（30秒間）（最大で7回分まで効果が重複）",
       "type": "sub",
       "levels": [
         {

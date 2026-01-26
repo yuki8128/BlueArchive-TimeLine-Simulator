@@ -27,7 +27,7 @@ export const iroha: Character = {
     "ex": {
       "id": "iroha_ex",
       "name": "行きますよ、虎丸",
-      "description": "虎丸に搭乗したイロハが登場。虎丸はイロハの攻撃力の分の値が追加された攻撃力を持ちます。（55秒間）/ （タクティカルサポートの搭乗物は重複して登場することはできません）",
+      "description": "虎丸に搭乗したイロハが登場。虎丸はイロハの攻撃力の38.5%分の値が追加された攻撃力を持ちます。（55秒間）/ （タクティカルサポートの搭乗物は重複して登場することはできません）",
       "type": "ex",
       "cost": 8,
       "levels": [
@@ -51,7 +51,7 @@ export const iroha: Character = {
     "normal": {
       "id": "iroha_normal",
       "name": "めんどくさいですね……",
-      "description": "40秒毎に、最大で敵4人に対して順番に砲弾を発射。さらにその敵を中心とした円形範囲内の敵に対して、それぞれ攻撃力の分のダメージ",
+      "description": "40秒毎に、最大で敵4人に対して順番に砲弾を発射。さらにその敵を中心とした円形範囲内の敵に対して、それぞれ攻撃力の83.3%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -109,7 +109,7 @@ export const iroha: Character = {
     "passive": {
       "id": "iroha_passive",
       "name": "仕方ありません",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -227,7 +227,7 @@ export const iroha: Character = {
     "sub": {
       "id": "iroha_sub",
       "name": "しっかりしてください",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

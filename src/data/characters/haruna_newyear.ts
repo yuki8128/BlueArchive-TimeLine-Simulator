@@ -27,7 +27,7 @@ export const harunaNewyear: Character = {
     "ex": {
       "id": "haruna_newyear_ex",
       "name": "美食家の怒り",
-      "description": "最大で敵5人に対して、順番にそれぞれ攻撃力の分のダメージを与え、周囲の円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "最大で敵5人に対して、順番にそれぞれ攻撃力の202%分のダメージを与え、周囲の円形範囲内の敵に対して、攻撃力の98.7%分のダメージ",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const harunaNewyear: Character = {
     "normal": {
       "id": "haruna_newyear_normal",
       "name": "美食家の信念",
-      "description": "40秒毎に、を増加（30秒間）",
+      "description": "40秒毎に、攻撃力を30.3%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const harunaNewyear: Character = {
     "passive": {
       "id": "haruna_newyear_passive",
       "name": "新年のヴィアンド",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const harunaNewyear: Character = {
     "sub": {
       "id": "haruna_newyear_sub",
       "name": "送別のデセール",
-      "description": "攻撃時、20%の確率でを減少（17秒間）（クールタイム5秒）",
+      "description": "攻撃時、20%の確率で防御力を14.8%減少（17秒間）（クールタイム5秒）",
       "type": "sub",
       "levels": [
         {

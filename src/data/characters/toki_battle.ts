@@ -27,7 +27,7 @@ export const tokiBattle: Character = {
     "ex": {
       "id": "toki_battle_ex",
       "name": "スペシャルウェポン：デュアルエネルギーピストル",
-      "description": "指定した対象が敵の場合は攻撃力の分のダメージおよびを付与（間）、味方の場合は治癒力の分の回復および弱体状態を1つ解除/ のチャージ段階によってを増加、弱体状態の解除個数が1つ増加/ 発射後、のチャージ段階は初期化されます。",
+      "description": "指定した対象が敵の場合は攻撃力の1071%分のダメージおよび気絶状態を付与（3秒間）、味方の場合は治癒力の218%分の回復および弱体状態を1つ解除/ のチャージ段階によって気絶状態を1.3秒増加、弱体状態の解除個数が1つ増加/ 発射後、のチャージ段階は初期化されます。",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -66,7 +66,7 @@ export const tokiBattle: Character = {
     "normal": {
       "id": "toki_battle_normal",
       "name": "パーフェクトメイド、パーフェクトリコン",
-      "description": "40秒毎に、を増加（30秒間）/ を1段階チャージ（最大で2段階まで）",
+      "description": "40秒毎に、攻撃力を47.5%増加（30秒間）/ を1段階チャージ（最大で2段階まで）",
       "type": "normal",
       "levels": [
         {
@@ -184,7 +184,7 @@ export const tokiBattle: Character = {
     "passive": {
       "id": "toki_battle_passive",
       "name": "新たな趣味？",
-      "description": "を、を増加",
+      "description": "攻撃力を16.2%、治癒力を16.2%増加",
       "type": "passive",
       "levels": [
         {
@@ -362,7 +362,7 @@ export const tokiBattle: Character = {
     "sub": {
       "id": "toki_battle_sub",
       "name": "迅速行動、報告は後ほど",
-      "description": "防御タイプが重装甲の敵を攻撃時、攻撃力の分の追加ダメージ",
+      "description": "防御タイプが重装甲の敵を攻撃時、攻撃力の11.8%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const shigureOnsen: Character = {
     "ex": {
       "id": "shigure_onsen_ex",
       "name": "シグレ特製フルーツ牛乳",
-      "description": "円形範囲内の味方に対して4秒毎に、治癒力の分の回復（30秒間）",
+      "description": "円形範囲内の味方に対して4秒毎に、治癒力の40.4%分の回復（30秒間）",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -56,7 +56,7 @@ export const shigureOnsen: Character = {
     "normal": {
       "id": "shigure_onsen_normal",
       "name": "一口、どう？",
-      "description": "50秒毎に、HPが最も低い味方4人に対して治癒力の分の回復",
+      "description": "50秒毎に、HPが最も低い味方4人に対して治癒力の128%分の回復",
       "type": "normal",
       "levels": [
         {
@@ -104,7 +104,7 @@ export const shigureOnsen: Character = {
     "passive": {
       "id": "shigure_onsen_passive",
       "name": "四畳半の温もり",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -222,7 +222,7 @@ export const shigureOnsen: Character = {
     "sub": {
       "id": "shigure_onsen_sub",
       "name": "ピリッとした風味",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

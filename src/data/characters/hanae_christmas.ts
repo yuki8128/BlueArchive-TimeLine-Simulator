@@ -27,7 +27,7 @@ export const hanaeChristmas: Character = {
     "ex": {
       "id": "hanae_christmas_ex",
       "name": "プレゼントの時間ですよ～",
-      "description": "円形範囲内の味方に対して、を1個獲得（は最大15個まで重複）/ 治癒力の分のを付与（60秒間）/ 獲得された数x治癒力の分でを強化",
+      "description": "円形範囲内の味方に対して、を1個獲得（は最大15個まで重複）/ 治癒力の13.4%分の持続回復を付与（60秒間）/ 獲得された数x治癒力の0.7%分で持続回復を強化",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -51,7 +51,7 @@ export const hanaeChristmas: Character = {
     "normal": {
       "id": "hanae_christmas_normal",
       "name": "元気出してください！",
-      "description": "35秒毎に、HPが最も低い味方1人のを増加（15秒間）",
+      "description": "35秒毎に、HPが最も低い味方1人の被回復率を43.2%増加（15秒間）",
       "type": "normal",
       "levels": [
         {
@@ -89,7 +89,7 @@ export const hanaeChristmas: Character = {
     "passive": {
       "id": "hanae_christmas_passive",
       "name": "祝福の救護",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const hanaeChristmas: Character = {
     "sub": {
       "id": "hanae_christmas_sub",
       "name": "応援しています！",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

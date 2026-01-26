@@ -27,7 +27,7 @@ export const saori: Character = {
     "ex": {
       "id": "saori_ex",
       "name": "et omnia vanitas！",
-      "description": "敵1人に対して、攻撃力の分の確定会心ダメージ",
+      "description": "敵1人に対して、攻撃力の1275%分の確定会心ダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const saori: Character = {
     "normal": {
       "id": "saori_normal",
       "name": "即時射撃",
-      "description": "25秒毎に、率を増加（16秒間）/ 敵1人に対して、攻撃力の分の確定会心ダメージ",
+      "description": "25秒毎に、会心ダメージ率を24.8%増加（16秒間）/ 敵1人に対して、攻撃力の334%分の確定会心ダメージ",
       "type": "normal",
       "levels": [
         {
@@ -199,7 +199,7 @@ export const saori: Character = {
     "passive": {
       "id": "saori_passive",
       "name": "訓練の成果",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -317,7 +317,7 @@ export const saori: Character = {
     "sub": {
       "id": "saori_sub",
       "name": "リーダーの責任感",
-      "description": "同じ部隊に自身を含めて編成されているアリウススクワッド出身の生徒が2人/3人/4人以上の場合、それぞれを増加",
+      "description": "同じ部隊に自身を含めて編成されているアリウススクワッド出身の生徒が2人/3人/4人以上の場合、それぞれ攻撃力を36.7%/55%/73.4%増加",
       "type": "sub",
       "levels": [
         {

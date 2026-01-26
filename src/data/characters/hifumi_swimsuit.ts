@@ -27,7 +27,7 @@ export const hifumiSwimsuit: Character = {
     "ex": {
       "id": "hifumi_swimsuit_ex",
       "name": "クルセイダーちゃん、お願いします！",
-      "description": "ヒフミ（水着）がクルセイダーちゃんに乗って登場。クルセイダーちゃんはヒフミ（水着）の攻撃力の分の値が追加された攻撃力を持ちます。（50秒間） （タクティカルサポートの搭乗物は重複して登場することはできません）",
+      "description": "ヒフミ（水着）がクルセイダーちゃんに乗って登場。クルセイダーちゃんはヒフミ（水着）の攻撃力の36.8%分の値が追加された攻撃力を持ちます。（50秒間） （タクティカルサポートの搭乗物は重複して登場することはできません）",
       "type": "ex",
       "cost": 10,
       "levels": [
@@ -51,7 +51,7 @@ export const hifumiSwimsuit: Character = {
     "normal": {
       "id": "hifumi_swimsuit_normal",
       "name": "ペロロ様の一撃",
-      "description": "25秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "25秒毎に、円形範囲内の敵に対して攻撃力の302%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -109,7 +109,7 @@ export const hifumiSwimsuit: Character = {
     "passive": {
       "id": "hifumi_swimsuit_passive",
       "name": "コレクターの闘志",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -227,7 +227,7 @@ export const hifumiSwimsuit: Character = {
     "sub": {
       "id": "hifumi_swimsuit_sub",
       "name": "アングリーアデリーさんの加護",
-      "description": "味方のを増加",
+      "description": "味方の攻撃速度を17.3%増加",
       "type": "sub",
       "levels": [
         {

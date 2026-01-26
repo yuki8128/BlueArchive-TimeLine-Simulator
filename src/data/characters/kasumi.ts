@@ -27,7 +27,7 @@ export const kasumi: Character = {
     "ex": {
       "id": "kasumi_ex",
       "name": "ジャイアントヒール・クラッシュ",
-      "description": "円形範囲内の敵に対して、を減少（25秒間）/ 攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に対して、防御力を33.5%減少（25秒間）/ 攻撃力の432.5%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -101,7 +101,7 @@ export const kasumi: Character = {
     "normal": {
       "id": "kasumi_normal",
       "name": "大切なメッセージだよ",
-      "description": "35秒毎に、円形範囲内の敵に攻撃力の分のダメージ",
+      "description": "35秒毎に、円形範囲内の敵に攻撃力の432%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -159,7 +159,7 @@ export const kasumi: Character = {
     "passive": {
       "id": "kasumi_passive",
       "name": "狂人の戦略",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -277,7 +277,7 @@ export const kasumi: Character = {
     "sub": {
       "id": "kasumi_sub",
       "name": "ドリルの音は止まったのか？",
-      "description": "EXスキル使用3回毎に、EXスキルと同じ円形範囲内に対して、攻撃力の分のダメージ",
+      "description": "EXスキル使用3回毎に、EXスキルと同じ円形範囲内に対して、攻撃力の1204%分のダメージ",
       "type": "sub",
       "levels": [
         {

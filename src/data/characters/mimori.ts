@@ -27,7 +27,7 @@ export const mimori: Character = {
     "ex": {
       "id": "mimori_ex",
       "name": "お花見日和ですね",
-      "description": "円形範囲内の味方5人を指定した位置に移動させた後、を増加（40秒間）",
+      "description": "円形範囲内の味方5人を指定した位置に移動させた後、攻撃速度を28%増加（40秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -51,7 +51,7 @@ export const mimori: Character = {
     "normal": {
       "id": "mimori_normal",
       "name": "お弁当を作ってきたんです",
-      "description": "45秒毎に、自身を除きHPが最も低い味方1人に対して治癒力の分のを付与（20秒間）",
+      "description": "45秒毎に、自身を除きHPが最も低い味方1人に対して治癒力の43.4%分の持続回復を付与（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -89,7 +89,7 @@ export const mimori: Character = {
     "passive": {
       "id": "mimori_passive",
       "name": "まだたくさんありますよ",
-      "description": "を増加",
+      "description": "防御力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const mimori: Character = {
     "sub": {
       "id": "mimori_sub",
       "name": "味見してみませんか？",
-      "description": "35秒毎に、円形範囲内の味方のを増加（23秒間）",
+      "description": "35秒毎に、円形範囲内の味方の防御力を27.1%増加（23秒間）",
       "type": "sub",
       "levels": [
         {

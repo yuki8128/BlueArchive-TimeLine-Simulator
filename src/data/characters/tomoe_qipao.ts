@@ -27,7 +27,7 @@ export const tomoeQipao: Character = {
     "ex": {
       "id": "tomoe_qipao_ex",
       "name": "コロブチカ",
-      "description": "円形範囲内の味方、および敵を最大5人まで指定した位置に移動させた後、対象によって効果を与えます。/ 味方：治癒力の分の効果を発動（25秒間）、を1個付与（35秒間）（最大1個まで）/ 敵：を減少（25秒間）",
+      "description": "円形範囲内の味方、および敵を最大5人まで指定した位置に移動させた後、対象によって効果を与えます。/ 味方：治癒力の165%分のシールド効果を発動（25秒間）、を1個付与（35秒間）（最大1個まで）/ 敵：防御力を24.7%減少（25秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -91,7 +91,7 @@ export const tomoeQipao: Character = {
     "normal": {
       "id": "tomoe_qipao_normal",
       "name": "カチューシャ",
-      "description": "30秒毎に、味方全体が保有していたの個数によって攻撃力が最も高い味方1人のを増加（20秒間）/ 0個：を増加 1個：を増加 2個：を増加 3個：を増加 4個以上：を増加",
+      "description": "30秒毎に、味方全体が保有していたの個数によって攻撃力が最も高い味方1人の攻撃力を増加（20秒間）/ 0個：攻撃力を28.8%増加 1個：攻撃力を33.1%増加 2個：攻撃力を37.5%増加 3個：攻撃力を41.8%増加 4個以上：攻撃力を46.1%増加",
       "type": "normal",
       "levels": [
         {
@@ -209,7 +209,7 @@ export const tomoeQipao: Character = {
     "passive": {
       "id": "tomoe_qipao_passive",
       "name": "カリンカ",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -327,7 +327,7 @@ export const tomoeQipao: Character = {
     "sub": {
       "id": "tomoe_qipao_sub",
       "name": "トロイカ",
-      "description": "神秘タイプの味方のを増加",
+      "description": "神秘タイプの味方の攻撃力を24.2%増加",
       "type": "sub",
       "levels": [
         {

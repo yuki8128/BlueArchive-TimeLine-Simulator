@@ -27,7 +27,7 @@ export const serikaSwimsuit: Character = {
     "ex": {
       "id": "serika_swimsuit_ex",
       "name": "怒りの波",
-      "description": "円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に対して攻撃力の1210%分のダメージ",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const serikaSwimsuit: Character = {
     "normal": {
       "id": "serika_swimsuit_normal",
       "name": "ちゃぽん、ちゃぽん！",
-      "description": "35秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "35秒毎に、円形範囲内の敵に対して攻撃力の187%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const serikaSwimsuit: Character = {
     "passive": {
       "id": "serika_swimsuit_passive",
       "name": "やる気満々",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const serikaSwimsuit: Character = {
     "sub": {
       "id": "serika_swimsuit_sub",
       "name": "あっ、冷たい！",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

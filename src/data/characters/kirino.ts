@@ -27,7 +27,7 @@ export const kirino: Character = {
     "ex": {
       "id": "kirino_ex",
       "name": "交渉はここまでですね……！",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ/ 煙幕（20秒間）が出現し、その範囲内の敵のを減少（範囲内にいる間だけ効果を維持）",
+      "description": "円形範囲内の敵に対して、攻撃力の540%分のダメージ/ 煙幕（20秒間）が出現し、その範囲内の敵の命中値を30%減少（範囲内にいる間だけ効果を維持）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -101,7 +101,7 @@ export const kirino: Character = {
     "normal": {
       "id": "kirino_normal",
       "name": "制圧します！",
-      "description": "20秒毎に、距離が最も遠い敵1人に対して、攻撃力の分のダメージ/ さらにを減少（13秒間）",
+      "description": "20秒毎に、距離が最も遠い敵1人に対して、攻撃力の289%分のダメージ/ さらに命中値を28.1%減少（13秒間）",
       "type": "normal",
       "levels": [
         {
@@ -239,7 +239,7 @@ export const kirino: Character = {
     "passive": {
       "id": "kirino_passive",
       "name": "速やかに処置を！",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -357,7 +357,7 @@ export const kirino: Character = {
     "sub": {
       "id": "kirino_sub",
       "name": "休んでなんていられません！",
-      "description": "通常攻撃時、30%の確率で敵のを減少（13秒間）（クールタイム5秒）",
+      "description": "通常攻撃時、30%の確率で敵の被回復率を43.2%減少（13秒間）（クールタイム5秒）",
       "type": "sub",
       "levels": [
         {

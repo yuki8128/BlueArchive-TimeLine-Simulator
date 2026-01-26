@@ -27,7 +27,7 @@ export const tsukuyo: Character = {
     "ex": {
       "id": "tsukuyo_ex",
       "name": "ツクヨ流、忍法……！",
-      "description": "攻撃を受ける度に、治癒力の分のを付与（30秒間） （最大で100回分まで適用されます）/ さらにを減少（30秒間）",
+      "description": "攻撃を受ける度に、治癒力の11.2%分の回復をする効果を付与（30秒間） （最大で100回分まで適用されます）/ さらに攻撃力を20.2%減少（30秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -96,7 +96,7 @@ export const tsukuyo: Character = {
     "normal": {
       "id": "tsukuyo_normal",
       "name": "たくさん、練習しましたので……！",
-      "description": "通常攻撃7回毎に、敵1人に対して攻撃力の分のダメージ /その敵が中型の場合、さらにを減少（20秒間）",
+      "description": "通常攻撃7回毎に、敵1人に対して攻撃力の659%分のダメージ /その敵が中型の場合、さらに防御力を51.6%減少（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -234,7 +234,7 @@ export const tsukuyo: Character = {
     "passive": {
       "id": "tsukuyo_passive",
       "name": "生まれ持った素質",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -352,7 +352,7 @@ export const tsukuyo: Character = {
     "sub": {
       "id": "tsukuyo_sub",
       "name": "まだ、倒れる、わけには……！",
-      "description": "自身がCC状態になった時、治癒力の分の回復",
+      "description": "自身がCC状態になった時、治癒力の185%分の回復",
       "type": "sub",
       "levels": [
         {

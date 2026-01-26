@@ -27,7 +27,7 @@ export const shunSmall: Character = {
     "ex": {
       "id": "shun_small_ex",
       "name": "そういうのはダメなんですよ？",
-      "description": "敵1人に対して、攻撃力の分のダメージ（この攻撃は敵の防御力を無視します）",
+      "description": "敵1人に対して、攻撃力の803%分のダメージ（この攻撃は敵の防御力を44%無視します）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const shunSmall: Character = {
     "normal": {
       "id": "shun_small_normal",
       "name": "危ないのはめっ、です！",
-      "description": "25秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "25秒毎に、敵1人に対して攻撃力の317%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const shunSmall: Character = {
     "passive": {
       "id": "shun_small_passive",
       "name": "意気軒昂",
-      "description": "を増加",
+      "description": "攻撃速度を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -157,7 +157,7 @@ export const shunSmall: Character = {
     "sub": {
       "id": "shun_small_sub",
       "name": "アンバランス",
-      "description": "EXスキルの使用時、を21.7%減少（20秒間）/ 20秒後に、を増加（20秒間）",
+      "description": "EXスキルの使用時、攻撃力を21.7%減少（20秒間）/ 20秒後に、攻撃力を65.7%増加（20秒間）",
       "type": "sub",
       "levels": [
         {

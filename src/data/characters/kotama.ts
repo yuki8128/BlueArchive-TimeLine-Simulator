@@ -28,7 +28,7 @@ export const kotama: Character = {
     "ex": {
       "id": "kotama_ex",
       "name": "傍受開始",
-      "description": "円形範囲内の味方のを増加（30秒間）",
+      "description": "円形範囲内の味方の攻撃力を47.4%増加（30秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -92,7 +92,7 @@ export const kotama: Character = {
     "normal": {
       "id": "kotama_normal",
       "name": "弱点を盗聴",
-      "description": "30秒毎に、敵1人に対して攻撃力の分のダメージ/ さらにを18.9%減少（20秒間）",
+      "description": "30秒毎に、敵1人に対して攻撃力の450%分のダメージ/ さらに攻撃力を18.9%減少（20秒間）",
       "type": "normal",
       "levels": [
         {
@@ -230,7 +230,7 @@ export const kotama: Character = {
     "passive": {
       "id": "kotama_passive",
       "name": "集中解析",
-      "description": "を増加",
+      "description": "命中値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -348,7 +348,7 @@ export const kotama: Character = {
     "sub": {
       "id": "kotama_sub",
       "name": "電波拡散",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

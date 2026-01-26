@@ -27,7 +27,7 @@ export const serikaNewyear: Character = {
     "ex": {
       "id": "serika_newyear_ex",
       "name": "バイトの邪魔よ！",
-      "description": "アーチ型範囲内の敵に対して、攻撃力の分のダメージ/ さらに率減少（30秒間）",
+      "description": "アーチ型範囲内の敵に対して、攻撃力の395%分のダメージ/ さらに会心ダメージ率27.7%減少（30秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -101,7 +101,7 @@ export const serikaNewyear: Character = {
     "normal": {
       "id": "serika_newyear_normal",
       "name": "巫女さんとして、祈ってあげる！",
-      "description": "40秒毎に、円形範囲内の味方のを増加（30秒間）",
+      "description": "40秒毎に、円形範囲内の味方の攻撃力を16.4%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -219,7 +219,7 @@ export const serikaNewyear: Character = {
     "passive": {
       "id": "serika_newyear_passive",
       "name": "巫女さんバイトの拘り",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -337,7 +337,7 @@ export const serikaNewyear: Character = {
     "sub": {
       "id": "serika_newyear_sub",
       "name": "巫女さんバイトの執念",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ抵抗率を17.3%増加",
       "type": "sub",
       "levels": [
         {

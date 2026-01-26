@@ -27,7 +27,7 @@ export const serinaChristmas: Character = {
     "ex": {
       "id": "serina_christmas_ex",
       "name": "祝福の響き",
-      "description": "自身を除く円形範囲内の味方に対して、率を増加（50秒間）、を1個獲得（は最大15個まで重複）/ 獲得された数xのを加算(50秒間)",
+      "description": "自身を除く円形範囲内の味方に対して、会心ダメージ率を43.5%増加（50秒間）、を1個獲得（は最大15個まで重複）/ 獲得された数x3.7%の貫通特効を加算(50秒間)",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -91,7 +91,7 @@ export const serinaChristmas: Character = {
     "normal": {
       "id": "serina_christmas_normal",
       "name": "プレゼントセットC",
-      "description": "通常攻撃21回毎に、自身を除く円形範囲内の味方に対して、プレゼントを投擲（30秒間） 緑の箱：率増加 赤い箱：率増加 くまのぬいぐるみ：率増加",
+      "description": "通常攻撃21回毎に、自身を除く円形範囲内の味方に対して、プレゼントを投擲（30秒間） 緑の箱：会心ダメージ率21%増加 赤い箱：会心ダメージ率24%増加 くまのぬいぐるみ：会心ダメージ率27%増加",
       "type": "normal",
       "levels": [
         {
@@ -209,7 +209,7 @@ export const serinaChristmas: Character = {
     "passive": {
       "id": "serina_christmas_passive",
       "name": "守護天使の意志",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -327,7 +327,7 @@ export const serinaChristmas: Character = {
     "sub": {
       "id": "serina_christmas_sub",
       "name": "聖なる加護",
-      "description": "リロード時、を増加（15秒間）",
+      "description": "リロード時、回避値を34.4%増加（15秒間）",
       "type": "sub",
       "levels": [
         {

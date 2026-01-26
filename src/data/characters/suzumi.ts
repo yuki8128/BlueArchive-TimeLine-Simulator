@@ -28,7 +28,7 @@ export const suzumi: Character = {
     "ex": {
       "id": "suzumi_ex",
       "name": "オーダーメイド閃光弾",
-      "description": "円形範囲内の敵に攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に攻撃力の518%分のダメージ/ さらに気絶状態を付与（4.1秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -62,7 +62,7 @@ export const suzumi: Character = {
     "normal": {
       "id": "suzumi_normal",
       "name": "自警団の底力",
-      "description": "25秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "25秒毎に、敵1人に対して攻撃力の443%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -120,7 +120,7 @@ export const suzumi: Character = {
     "passive": {
       "id": "suzumi_passive",
       "name": "緊急回避",
-      "description": "を増加",
+      "description": "回避値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -238,7 +238,7 @@ export const suzumi: Character = {
     "sub": {
       "id": "suzumi_sub",
       "name": "自警団の猛襲",
-      "description": "CC状態の敵を攻撃した時、攻撃力の分の追加ダメージ",
+      "description": "CC状態の敵を攻撃した時、攻撃力の52.3%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

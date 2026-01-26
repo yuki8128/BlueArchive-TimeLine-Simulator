@@ -27,7 +27,7 @@ export const tokiBunnygirl: Character = {
     "ex": {
       "id": "toki_bunnygirl_ex",
       "name": "特殊武装：アームギア",
-      "description": "敵1人に対して、攻撃力の分のダメージ",
+      "description": "敵1人に対して、攻撃力の1045%分のダメージ",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -61,7 +61,7 @@ export const tokiBunnygirl: Character = {
     "normal": {
       "id": "toki_bunnygirl_normal",
       "name": "エージェントの秘密道具",
-      "description": "40秒毎に、敵1人に対して、攻撃力の分のダメージ 率を減少（30秒間）",
+      "description": "40秒毎に、敵1人に対して、攻撃力の591%分のダメージ 会心ダメージ抵抗率を25.9%減少（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const tokiBunnygirl: Character = {
     "passive": {
       "id": "toki_bunnygirl_passive",
       "name": "熟練の技量",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const tokiBunnygirl: Character = {
     "sub": {
       "id": "toki_bunnygirl_sub",
       "name": "武装の取り扱い",
-      "description": "EXスキルの発動と同時に、を加算（20秒間）",
+      "description": "EXスキルの発動と同時に、爆発特効を35.4%加算（20秒間）",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const kayokoDress: Character = {
     "ex": {
       "id": "kayoko_dress_ex",
       "name": "シャドウショット",
-      "description": "敵1人に対して、攻撃力の分のダメージ（この攻撃は敵の防御力を無視します）/ 自身が状態の場合、この攻撃は確定会心に変更。以後、自身の状態を解除",
+      "description": "敵1人に対して、攻撃力の1219%分のダメージ（この攻撃は敵の防御力を64%無視します）/ 自身が状態の場合、この攻撃は確定会心に変更。以後、自身の状態を解除",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const kayokoDress: Character = {
     "normal": {
       "id": "kayoko_dress_normal",
       "name": "取り戻した感覚",
-      "description": "25秒毎に、率を増加（16秒間）",
+      "description": "25秒毎に、会心ダメージ率を25.8%増加（16秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const kayokoDress: Character = {
     "passive": {
       "id": "kayoko_dress_passive",
       "name": "暗殺者の目",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const kayokoDress: Character = {
     "sub": {
       "id": "kayoko_dress_sub",
       "name": "潜入行動",
-      "description": "戦術入場時、直ちに状態になり、攻撃を受けたら状態を解除/ が解除された後、10秒間攻撃を受けなかったら、再び状態に変更/ 状態の場合、自身の率を増加",
+      "description": "戦術入場時、直ちに状態になり、攻撃を受けたら状態を解除/ が解除された後、10秒間攻撃を受けなかったら、再び状態に変更/ 状態の場合、自身の会心ダメージ率を63.8%増加",
       "type": "sub",
       "levels": [
         {

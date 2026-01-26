@@ -28,7 +28,7 @@ export const chinatsu: Character = {
     "ex": {
       "id": "chinatsu_ex",
       "name": "戦傷治療",
-      "description": "味方1人に対して、治癒力の分の回復",
+      "description": "味方1人に対して、治癒力の342%分の回復 さらに弱体状態を1つ解除",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -57,7 +57,7 @@ export const chinatsu: Character = {
     "normal": {
       "id": "chinatsu_normal",
       "name": "戦況の立て直し",
-      "description": "40秒毎に、HPが最も低い味方1人のを増加（30秒間）",
+      "description": "40秒毎に、HPが最も低い味方1人の回避値を67%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -175,7 +175,7 @@ export const chinatsu: Character = {
     "passive": {
       "id": "chinatsu_passive",
       "name": "医療支援を強化",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -293,7 +293,7 @@ export const chinatsu: Character = {
     "sub": {
       "id": "chinatsu_sub",
       "name": "防御支援を強化",
-      "description": "味方のを増加",
+      "description": "味方の防御力を17.3%増加",
       "type": "sub",
       "levels": [
         {

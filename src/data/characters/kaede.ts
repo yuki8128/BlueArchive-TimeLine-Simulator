@@ -27,7 +27,7 @@ export const kaede: Character = {
     "ex": {
       "id": "kaede_ex",
       "name": "信号弾、発射！！",
-      "description": "円形範囲内の味方に対して、治癒力の分の効果を発動（16秒間）",
+      "description": "円形範囲内の味方に対して、治癒力の275%分のシールド効果を発動（16秒間）",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -51,7 +51,7 @@ export const kaede: Character = {
     "normal": {
       "id": "kaede_normal",
       "name": "カブトムシシールド！",
-      "description": "40秒毎に、防御力が最も高い味方1人のを増加（33秒間）",
+      "description": "40秒毎に、防御力が最も高い味方1人の防御力を30%増加（33秒間）",
       "type": "normal",
       "levels": [
         {
@@ -169,7 +169,7 @@ export const kaede: Character = {
     "passive": {
       "id": "kaede_passive",
       "name": "癒しの波動、とりゃぁっ！",
-      "description": "を増加",
+      "description": "治癒力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -287,7 +287,7 @@ export const kaede: Character = {
     "sub": {
       "id": "kaede_sub",
       "name": "まだまだ頑張れるよ！",
-      "description": "味方のを増加",
+      "description": "味方のHPを17.3%増加",
       "type": "sub",
       "levels": [
         {

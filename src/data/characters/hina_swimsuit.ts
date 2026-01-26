@@ -27,7 +27,7 @@ export const hinaSwimsuit: Character = {
     "ex": {
       "id": "hina_swimsuit_ex",
       "name": "絶海：イシュ・ボシェテ",
-      "description": "扇形範囲内の敵最大5人に対して、攻撃力の分のダメージ",
+      "description": "扇形範囲内の敵最大5人に対して、攻撃力の441%分のダメージ",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const hinaSwimsuit: Character = {
     "normal": {
       "id": "hina_swimsuit_normal",
       "name": "スローアンドノックアウト",
-      "description": "20秒毎に敵1人に対して、攻撃力の分のダメージ/ さらにを付与（間）",
+      "description": "20秒毎に敵1人に対して、攻撃力の226%分のダメージ/ さらに気絶状態を付与（2秒間）",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const hinaSwimsuit: Character = {
     "passive": {
       "id": "hina_swimsuit_passive",
       "name": "無慈悲な風紀委員会",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const hinaSwimsuit: Character = {
     "sub": {
       "id": "hina_swimsuit_sub",
       "name": "実力行使",
-      "description": "EXスキルの使用時、を増加（最大で5回分まで効果が重複）",
+      "description": "EXスキルの使用時、攻撃力を16.5%増加（最大で5回分まで効果が重複）",
       "type": "sub",
       "levels": [
         {

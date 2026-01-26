@@ -27,7 +27,7 @@ export const kotamaCamp: Character = {
     "ex": {
       "id": "kotama_camp_ex",
       "name": "熊よけ鈴投げ",
-      "description": "敵1人に対して、攻撃力の分のダメージ。状態を付与（間）",
+      "description": "敵1人に対して、攻撃力の906%分のダメージ。混乱状態を付与（11.5秒間）",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const kotamaCamp: Character = {
     "normal": {
       "id": "kotama_camp_normal",
       "name": "共鳴効果",
-      "description": "45秒毎に、自身を除く味方1人と自身のを増加（35秒間）",
+      "description": "45秒毎に、自身を除く味方1人と自身の攻撃力を11.3%増加（35秒間）",
       "type": "normal",
       "levels": [
         {
@@ -239,7 +239,7 @@ export const kotamaCamp: Character = {
     "passive": {
       "id": "kotama_camp_passive",
       "name": "ノイズ増幅",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -357,7 +357,7 @@ export const kotamaCamp: Character = {
     "sub": {
       "id": "kotama_camp_sub",
       "name": "電波干渉",
-      "description": "敵を攻撃した時、攻撃力の分の追加ダメージ",
+      "description": "敵を攻撃した時、攻撃力の45.8%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

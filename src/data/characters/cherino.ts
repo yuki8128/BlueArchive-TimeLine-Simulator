@@ -28,7 +28,7 @@ export const cherino: Character = {
     "ex": {
       "id": "cherino_ex",
       "name": "親衛隊、集合！",
-      "description": "円形範囲内の敵に攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に攻撃力の605%分のダメージ",
       "type": "ex",
       "cost": 7,
       "levels": [
@@ -62,7 +62,7 @@ export const cherino: Character = {
     "normal": {
       "id": "cherino_normal",
       "name": "あいつを粛清しろ！",
-      "description": "40秒毎に、攻撃力が最も高い敵にを付与。さらに率を減少（15秒間）",
+      "description": "40秒毎に、攻撃力が最も高い敵に集中砲火状態を付与。さらに会心ダメージ抵抗率を35.6%減少（15秒間）",
       "type": "normal",
       "levels": [
         {
@@ -100,7 +100,7 @@ export const cherino: Character = {
     "passive": {
       "id": "cherino_passive",
       "name": "これが髭の力だ！",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -218,7 +218,7 @@ export const cherino: Character = {
     "sub": {
       "id": "cherino_sub",
       "name": "髭の権威にひれ伏せ！",
-      "description": "を増加/ 同じ部隊に編成されているレッドウィンター連邦学園の生徒1人毎に、コスト回復力が追加で増加（自身は除外し、最大3人分まで）",
+      "description": "コスト回復力を511増加/ 同じ部隊に編成されているレッドウィンター連邦学園の生徒1人毎に、コスト回復力が追加で146増加（自身は除外し、最大3人分まで）",
       "type": "sub",
       "levels": [
         {

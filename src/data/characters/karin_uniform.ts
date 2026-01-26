@@ -27,7 +27,7 @@ export const karinUniform: Character = {
     "ex": {
       "id": "karin_uniform_ex",
       "name": "緊急対応",
-      "description": "敵1人に対して攻撃力の分のダメージ（対象の現在のHPに比例してダメージが1～3倍に変更）（対象のHPが少ないほどダメージが大きくなります）/ EXスキルの使用時、対象のHPが20%以下の場合、自身の率を増加、を増加、を増加（30秒間）",
+      "description": "敵1人に対して攻撃力の991%分のダメージ（対象の現在のHPに比例してダメージが1～3倍に変更）（対象のHPが少ないほどダメージが大きくなります）/ EXスキルの使用時、対象のHPが20%以下の場合、自身の会心ダメージ率を40.2%増加、攻撃力を21.1%増加、防御貫通値を751増加（30秒間）",
       "type": "ex",
       "cost": 7,
       "levels": [
@@ -131,7 +131,7 @@ export const karinUniform: Character = {
     "normal": {
       "id": "karin_uniform_normal",
       "name": "後方支援",
-      "description": "40秒毎に、敵1人に対して攻撃力の分のダメージ/ （対象の現在のHPに比例してダメージが1～3倍に変更） （対象のHPが少ないほどダメージが大きくなります）",
+      "description": "40秒毎に、敵1人に対して攻撃力の224%分のダメージ/ （対象の現在のHPに比例してダメージが1～3倍に変更） （対象のHPが少ないほどダメージが大きくなります）",
       "type": "normal",
       "levels": [
         {
@@ -189,7 +189,7 @@ export const karinUniform: Character = {
     "passive": {
       "id": "karin_uniform_passive",
       "name": "細やかな気配り",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -307,7 +307,7 @@ export const karinUniform: Character = {
     "sub": {
       "id": "karin_uniform_sub",
       "name": "人気のガイドさん",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

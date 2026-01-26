@@ -28,7 +28,7 @@ export const shun: Character = {
     "ex": {
       "id": "shun_ex",
       "name": "悪い子はどこですか？",
-      "description": "を攻撃力が最も高い敵1人を優先対象とし153%ダメージを与えるものに強化し、通常攻撃のを24.4%増加、を増加、を18.8%減少（30秒間）",
+      "description": "を攻撃力が最も高い敵1人を優先対象とし153%ダメージを与えるものに強化し、通常攻撃の通常攻撃の射程を24.4%増加、会心値を50%増加、攻撃速度を18.8%減少（30秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -92,7 +92,7 @@ export const shun: Character = {
     "normal": {
       "id": "shun_normal",
       "name": "みなさん、集中してください！",
-      "description": "戦闘開始時、スキルコストを獲得（戦闘中に1回のみ）",
+      "description": "戦闘開始時、スキルコストを3.8獲得（戦闘中に1回のみ）",
       "type": "normal",
       "levels": [
         {
@@ -130,7 +130,7 @@ export const shun: Character = {
     "passive": {
       "id": "shun_passive",
       "name": "教官としての品格",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -248,7 +248,7 @@ export const shun: Character = {
     "sub": {
       "id": "shun_sub",
       "name": "梅花園の教育",
-      "description": "攻撃時、中型の敵に対して攻撃力の分の追加ダメージ",
+      "description": "攻撃時、中型の敵に対して攻撃力の96.4%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

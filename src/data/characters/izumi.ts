@@ -28,7 +28,7 @@ export const izumi: Character = {
     "ex": {
       "id": "izumi_ex",
       "name": "チーズチョコレートバーガー！",
-      "description": "治癒力の分の回復",
+      "description": "治癒力の254%分の回復/ 攻撃速度を38.4%増加（21秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -57,7 +57,7 @@ export const izumi: Character = {
     "normal": {
       "id": "izumi_normal",
       "name": "よーーい、BANG！",
-      "description": "通常攻撃時、20%の確率で敵1人に攻撃力の分のダメージ（クールタイム10秒）",
+      "description": "通常攻撃時、20%の確率で敵1人に攻撃力の523%分のダメージ（クールタイム10秒）",
       "type": "normal",
       "levels": [
         {
@@ -115,7 +115,7 @@ export const izumi: Character = {
     "passive": {
       "id": "izumi_passive",
       "name": "次は何を食べよっか？",
-      "description": "を増加",
+      "description": "被回復率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -153,7 +153,7 @@ export const izumi: Character = {
     "sub": {
       "id": "izumi_sub",
       "name": "美味しいのが一番だよね～",
-      "description": "攻撃時、自身の現在のHPに比例して攻撃力の～分の追加ダメージ",
+      "description": "攻撃時、自身の現在のHPに比例して攻撃力の0.7%～4.1%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

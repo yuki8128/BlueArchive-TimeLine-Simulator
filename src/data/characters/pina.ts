@@ -28,7 +28,7 @@ export const pina: Character = {
     "ex": {
       "id": "pina_ex",
       "name": "連射モード、デス！",
-      "description": "を増加、通常攻撃のディレイ無視（30秒間）/ 発動後すぐにリロード",
+      "description": "攻撃力を46.6%増加、通常攻撃のディレイ5回無視（30秒間）/ 発動後すぐにリロード",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -92,7 +92,7 @@ export const pina: Character = {
     "normal": {
       "id": "pina_normal",
       "name": "もう一度燃やすのデス！",
-      "description": "HPが20%以下の時、治癒力の分の回復 （戦闘中に1回のみ）",
+      "description": "HPが20%以下の時、治癒力の674%分の回復 （戦闘中に1回のみ）",
       "type": "normal",
       "levels": [
         {
@@ -140,7 +140,7 @@ export const pina: Character = {
     "passive": {
       "id": "pina_passive",
       "name": "鋭い直感",
-      "description": "を増加",
+      "description": "会心値を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -258,7 +258,7 @@ export const pina: Character = {
     "sub": {
       "id": "pina_sub",
       "name": "射撃準備、OK！",
-      "description": "10秒間移動していない時、を増加",
+      "description": "10秒間移動していない時、攻撃速度を38.3%増加",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const misakiSwimsuit: Character = {
     "ex": {
       "id": "misaki_swimsuit_ex",
       "name": "虚しくないもの",
-      "description": "円形範囲内の敵に対して、対象の弱体状態の個数によって攻撃力分のダメージ 1個以下：攻撃力の分のダメージ 2個～3個：攻撃力の分のダメージ 4個以上：攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に対して、対象の弱体状態の個数によって攻撃力分のダメージ 1個以下：攻撃力の553%分のダメージ 2個～3個：攻撃力の1106%分のダメージ 4個以上：攻撃力の1653%分のダメージ",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const misakiSwimsuit: Character = {
     "normal": {
       "id": "misaki_swimsuit_normal",
       "name": "見ててあげる、少しだけ",
-      "description": "35秒毎に、円形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "35秒毎に、円形範囲内の敵に対して攻撃力の174%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const misakiSwimsuit: Character = {
     "passive": {
       "id": "misaki_swimsuit_passive",
       "name": "慣れない習慣",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const misakiSwimsuit: Character = {
     "sub": {
       "id": "misaki_swimsuit_sub",
       "name": "Interest",
-      "description": "味方のを加算",
+      "description": "味方の爆発特効を30.2%加算",
       "type": "sub",
       "levels": [
         {

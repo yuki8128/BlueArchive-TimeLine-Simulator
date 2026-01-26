@@ -27,7 +27,7 @@ export const aruDress: Character = {
     "ex": {
       "id": "aru_dress_ex",
       "name": "興味深い提案",
-      "description": "自身を除く味方1人に対して、率を増加（30秒間）",
+      "description": "自身を除く味方1人に対して、会心ダメージ率を83.4%増加（30秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -91,7 +91,7 @@ export const aruDress: Character = {
     "normal": {
       "id": "aru_dress_normal",
       "name": "有意義な取引",
-      "description": "50秒毎に、自身を除くHPが最も低い味方1人に対して治癒力の分の回復",
+      "description": "50秒毎に、自身を除くHPが最も低い味方1人に対して治癒力の151%分の回復",
       "type": "normal",
       "levels": [
         {
@@ -139,7 +139,7 @@ export const aruDress: Character = {
     "passive": {
       "id": "aru_dress_passive",
       "name": "ドレスアップ",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -257,7 +257,7 @@ export const aruDress: Character = {
     "sub": {
       "id": "aru_dress_sub",
       "name": "有利な取引",
-      "description": "攻撃時、30%の確率でを減少（13秒間）（クールタイム5秒）",
+      "description": "攻撃時、30%の確率で会心抵抗値を15.3%減少（13秒間）（クールタイム5秒）",
       "type": "sub",
       "levels": [
         {

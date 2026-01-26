@@ -27,7 +27,7 @@ export const noaPajama: Character = {
     "ex": {
       "id": "noa_pajama_ex",
       "name": "消灯後はお静かに",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ さらにを付与（20秒間） の敵への攻撃時に、ノア（パジャマ）の攻撃力の分の追加ダメージ （このダメージにおいては、会心が発動しません） （最大240発分まで適用されます）",
+      "description": "敵1人に対して、攻撃力の1442%分のダメージ/ さらに弱点把握状態を付与（20秒間） 弱点把握状態の敵への攻撃時に、ノア（パジャマ）の攻撃力の33.4%分の追加ダメージ （このダメージにおいては、会心が発動しません） （最大240発分まで適用されます）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const noaPajama: Character = {
     "normal": {
       "id": "noa_pajama_normal",
       "name": "お気に入りの枕",
-      "description": "「消灯後はお静かに」を2回使用時、を増加（30秒間）/ 「消灯後はお静かに」を「しっ、消灯します」に変更（EXスキルの使用1回分）",
+      "description": "「消灯後はお静かに」を2回使用時、コスト回復力を803増加（30秒間）/ 「消灯後はお静かに」を「しっ、消灯します」に変更（EXスキルの使用1回分）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const noaPajama: Character = {
     "passive": {
       "id": "noa_pajama_passive",
       "name": "冷徹なる書記",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const noaPajama: Character = {
     "sub": {
       "id": "noa_pajama_sub",
       "name": "書記の勘",
-      "description": "通常攻撃10回毎に、を加算（10秒間）",
+      "description": "通常攻撃10回毎に、貫通特効を88.9%加算（10秒間）",
       "type": "sub",
       "levels": [
         {

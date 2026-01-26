@@ -27,7 +27,7 @@ export const karinBunnygirl: Character = {
     "ex": {
       "id": "karin_bunnygirl_ex",
       "name": "迅速に、正確に",
-      "description": "扇形範囲内の敵に対して、攻撃力の分のダメージ（この攻撃は敵の防御力を無視します）",
+      "description": "扇形範囲内の敵に対して、攻撃力の521%分のダメージ（この攻撃は敵の防御力を48%無視します）",
       "type": "ex",
       "cost": 7,
       "levels": [
@@ -61,7 +61,7 @@ export const karinBunnygirl: Character = {
     "normal": {
       "id": "karin_bunnygirl_normal",
       "name": "広域射撃、開始",
-      "description": "25秒毎に、円形範囲内の敵に対して、攻撃力の分のダメージ（この攻撃は敵の防御力を無視します）",
+      "description": "25秒毎に、円形範囲内の敵に対して、攻撃力の192%分のダメージ（この攻撃は敵の防御力を32%無視します）",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const karinBunnygirl: Character = {
     "passive": {
       "id": "karin_bunnygirl_passive",
       "name": "火力強化、完了",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const karinBunnygirl: Character = {
     "sub": {
       "id": "karin_bunnygirl_sub",
       "name": "精密に、慎重に",
-      "description": "EXスキルの発動と同時に、を増加（40秒間）",
+      "description": "EXスキルの発動と同時に、会心値を24.5%増加（40秒間）",
       "type": "sub",
       "levels": [
         {

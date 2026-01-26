@@ -27,7 +27,7 @@ export const himariBattle: Character = {
     "ex": {
       "id": "himari_battle_ex",
       "name": "屋外用の車椅子ですから",
-      "description": "ヒマリ（臨戦）が屋外用車椅子に乗って登場。屋外用車椅子はヒマリ（臨戦）の最大HPの分の値が追加されたHPを持ちます。（30秒間）/ 指定した対象を中心とした円形範囲内の味方に対して、一定時間毎に治癒力の分の回復（最大5回）（3秒間） （タクティカルサポートの搭乗物は重複して登場することはできません）",
+      "description": "ヒマリ（臨戦）が屋外用車椅子に乗って登場。屋外用車椅子はヒマリ（臨戦）の最大HPの20.4%分の値が追加されたHPを持ちます。（30秒間）/ 指定した対象を中心とした円形範囲内の味方に対して、一定時間毎に治癒力の8.8%分の回復（最大5回）（3秒間） （タクティカルサポートの搭乗物は重複して登場することはできません）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -56,7 +56,7 @@ export const himariBattle: Character = {
     "normal": {
       "id": "himari_battle_normal",
       "name": "私は全知で万能です",
-      "description": "EXスキル使用時、味方1人の率を増加（30秒間）（EXスキルの使用時に指定した味方を優先とします）",
+      "description": "EXスキル使用時、味方1人の会心ダメージ率を15.1%増加（30秒間）（EXスキルの使用時に指定した味方を優先とします）",
       "type": "normal",
       "levels": [
         {
@@ -174,7 +174,7 @@ export const himariBattle: Character = {
     "passive": {
       "id": "himari_battle_passive",
       "name": "氷雪に咲く気高き一輪の花",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -292,7 +292,7 @@ export const himariBattle: Character = {
     "sub": {
       "id": "himari_battle_sub",
       "name": "超天才病弱美少女ハッカーの知恵袋",
-      "description": "味方のを増加",
+      "description": "味方のコスト回復力を20.2%増加",
       "type": "sub",
       "levels": [
         {

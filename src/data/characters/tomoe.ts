@@ -27,7 +27,7 @@ export const tomoe: Character = {
     "ex": {
       "id": "tomoe_ex",
       "name": "みなさん、こちらに耳を傾けてください！",
-      "description": "円形範囲内の味方に対して、率を、を、を30.8%増加させ、通常攻撃のを38.5%減少（30秒間）",
+      "description": "円形範囲内の味方に対して、会心ダメージ率を20.1%、会心値を20.1%、移動速度を30.8%増加させ、通常攻撃の通常攻撃の射程を38.5%減少（30秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -121,7 +121,7 @@ export const tomoe: Character = {
     "normal": {
       "id": "tomoe_normal",
       "name": "巧妙なアジテーション",
-      "description": "30秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "30秒毎に、敵1人に対して攻撃力の447%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const tomoe: Character = {
     "passive": {
       "id": "tomoe_passive",
       "name": "一瀉千里",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const tomoe: Character = {
     "sub": {
       "id": "tomoe_sub",
       "name": "反駁不能な言い回し",
-      "description": "攻撃時、効果を持っている敵に対して攻撃力の分の追加ダメージ",
+      "description": "攻撃時、シールド効果を持っている敵に対して攻撃力の108%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

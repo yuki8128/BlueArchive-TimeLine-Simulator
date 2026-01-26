@@ -27,7 +27,7 @@ export const nagusa: Character = {
     "ex": {
       "id": "nagusa_ex",
       "name": "桜花爛漫",
-      "description": "敵1人に対して、攻撃力の分のダメージ（対象の現在のHPに比例してダメージが1～3倍に変更） （対象の敵HPが多ければ多いほどダメージが大きくなります） ",
+      "description": "敵1人に対して、攻撃力の540%分のダメージ（対象の現在のHPに比例してダメージが1～3倍に変更） （対象の敵HPが多ければ多いほどダメージが大きくなります） ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const nagusa: Character = {
     "normal": {
       "id": "nagusa_normal",
       "name": "錦上添花",
-      "description": "通常攻撃12回毎に、を加算（21秒間）",
+      "description": "通常攻撃12回毎に、振動特効を57.8%加算（21秒間）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const nagusa: Character = {
     "passive": {
       "id": "nagusa_passive",
       "name": "黄昏を射抜く言霊",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const nagusa: Character = {
     "sub": {
       "id": "nagusa_sub",
       "name": "雪原に咲く花",
-      "description": "EXスキルの使用中、を増加",
+      "description": "EXスキルの使用中、会心値を57.4%増加",
       "type": "sub",
       "levels": [
         {

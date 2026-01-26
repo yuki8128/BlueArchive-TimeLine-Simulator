@@ -27,7 +27,7 @@ export const rumi: Character = {
     "ex": {
       "id": "rumi_ex",
       "name": "天下一味！",
-      "description": "自身を除く味方1人に対してチャーハンを渡して回復、対象の付近にまだ回復を受けていない味方がいる場合、チャーハンがその方向に跳ねて回復（最大4回まで） 1番目、4番目の対象：治癒力の分の回復 2番目、3番目の対象：治癒力の分の回復",
+      "description": "自身を除く味方1人に対してチャーハンを渡して回復、対象の付近にまだ回復を受けていない味方がいる場合、チャーハンがその方向に跳ねて回復（最大4回まで） 1番目、4番目の対象：治癒力の223%分の回復、弱体状態を1つ解除 2番目、3番目の対象：治癒力の156%分の回復",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -56,7 +56,7 @@ export const rumi: Character = {
     "normal": {
       "id": "rumi_normal",
       "name": "クレーマーお断り！",
-      "description": "30秒毎に、扇形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "30秒毎に、扇形範囲内の敵に対して攻撃力の430%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -114,7 +114,7 @@ export const rumi: Character = {
     "passive": {
       "id": "rumi_passive",
       "name": "商会長の矜持",
-      "description": "を100、を増加",
+      "description": "通常攻撃の射程を100、治癒力を21.2%増加",
       "type": "passive",
       "levels": [
         {
@@ -232,7 +232,7 @@ export const rumi: Character = {
     "sub": {
       "id": "rumi_sub",
       "name": "記憶に残る味",
-      "description": "EXスキルで回復した味方に対して、治癒力の分のを付与（60秒間）",
+      "description": "EXスキルで回復した味方に対して、治癒力の3.3%分の持続回復を付与（60秒間）",
       "type": "sub",
       "levels": [
         {

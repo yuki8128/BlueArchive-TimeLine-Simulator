@@ -63,6 +63,70 @@ interface SchaleDBEffect {
   Channel?: number;
 }
 
+interface LocalizationData {
+  BuffName: Record<string, string>;
+}
+
+// ローカライゼーションデータ（グローバルに保持）
+let localizationData: LocalizationData | null = null;
+
+async function fetchLocalization(): Promise<LocalizationData> {
+  if (localizationData) return localizationData;
+
+  const response = await fetch('https://schaledb.com/data/jp/localization.json');
+  localizationData = await response.json();
+  return localizationData!;
+}
+
+function formatSkillDescription(
+  desc: string | undefined,
+  parameters: string[][] | undefined,
+  skillType: 'ex' | 'normal' | 'passive' | 'sub'
+): string {
+  if (!desc) return '';
+
+  let result = desc;
+
+  // パラメータの最大レベルを取得（EXは5レベル、それ以外は10レベル）
+  const maxLevelIndex = skillType === 'ex' ? 4 : 9;
+
+  // <?N> をパラメータ値に置換
+  if (parameters) {
+    result = result.replace(/<\?(\d+)>/g, (_, num) => {
+      const paramIndex = parseInt(num) - 1;
+      if (parameters[paramIndex] && parameters[paramIndex][maxLevelIndex] !== undefined) {
+        return parameters[paramIndex][maxLevelIndex];
+      }
+      return '';
+    });
+  }
+
+  // <b:XXX> をバフ名に置換
+  if (localizationData) {
+    result = result.replace(/<b:(\w+)>/g, (_, key) => {
+      return localizationData!.BuffName[`Buff_${key}`] || key;
+    });
+
+    // <d:XXX> をデバフ名に置換
+    result = result.replace(/<d:(\w+)>/g, (_, key) => {
+      return localizationData!.BuffName[`Debuff_${key}`] || key;
+    });
+
+    // <c:XXX> をCC名に置換
+    result = result.replace(/<c:(\w+)>/g, (_, key) => {
+      return localizationData!.BuffName[`CC_${key}`] || key;
+    });
+  }
+
+  // 残りの未知のタグを削除
+  result = result.replace(/<[^>]+>/g, '');
+
+  // 改行を空白に
+  result = result.replace(/\n/g, ' ');
+
+  return result;
+}
+
 // =============================================================================
 // プロジェクト型定義（変換先）
 // =============================================================================
@@ -281,7 +345,7 @@ function convertSkill(
   return {
     id: `${characterId}_${skillType}`,
     name: skill.Name || defaultSkill.name,
-    description: skill.Desc?.replace(/<[^>]+>/g, '').replace(/\n/g, ' ') || '',
+    description: formatSkillDescription(skill.Desc, skill.Parameters, skillType),
     type: skillType,
     ...(skillType === 'ex' && skill.Cost ? { cost: skill.Cost[0] } : {}),
     levels,
@@ -387,6 +451,10 @@ export {
 
 async function main() {
   console.log('SchaleDBからキャラクターデータを取得中...');
+
+  // ローカライゼーションデータを先に取得
+  console.log('ローカライゼーションデータを取得中...');
+  await fetchLocalization();
 
   const response = await fetch('https://schaledb.com/data/jp/students.json');
   const data: Record<string, SchaleDBStudent> = await response.json();

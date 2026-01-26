@@ -27,7 +27,7 @@ export const akoDress: Character = {
     "ex": {
       "id": "ako_dress_ex",
       "name": "完璧なエージェント",
-      "description": "円形範囲内の味方のを増加、率を増加（30秒間）/ さらに味方1人当たり、自身のを1個追加（最大15個まで）",
+      "description": "円形範囲内の味方の会心値を19.8%増加、会心ダメージ率を57.5%増加（30秒間）/ さらに味方1人当たり、自身のを1個追加（最大15個まで）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -121,7 +121,7 @@ export const akoDress: Character = {
     "normal": {
       "id": "ako_dress_normal",
       "name": "ターゲットは逃しません！",
-      "description": "35秒毎に、敵1人のを減少（22秒間）/ さらに自身の数によって与えるダメージが変更 3個以下：攻撃力の分のダメージ 4個～7個：攻撃力の分のダメージ 8個～11個：攻撃力の分のダメージ 12個以上：攻撃力の分のダメージ",
+      "description": "35秒毎に、敵1人の防御力を24%減少（22秒間）/ さらに自身の数によって与えるダメージが変更 3個以下：攻撃力の942%分のダメージ 4個～7個：攻撃力の1010%分のダメージ 8個～11個：攻撃力の1111%分のダメージ 12個以上：攻撃力の1212%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -259,7 +259,7 @@ export const akoDress: Character = {
     "passive": {
       "id": "ako_dress_passive",
       "name": "エージェントの自信",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -377,7 +377,7 @@ export const akoDress: Character = {
     "sub": {
       "id": "ako_dress_sub",
       "name": "作戦の成果",
-      "description": "1個毎に、を増加",
+      "description": "1個毎に、攻撃力を5.7%増加",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const natsu: Character = {
     "ex": {
       "id": "natsu_ex",
       "name": "こういう時のとっておき",
-      "description": "治癒力の分の回復 さらに弱体状態を1つ解除",
+      "description": "治癒力の338%分の回復 さらに弱体状態を1つ解除",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -56,7 +56,7 @@ export const natsu: Character = {
     "normal": {
       "id": "natsu_normal",
       "name": "これ食べて元気出してー",
-      "description": "30秒毎に、パイを投擲して味方1人のを増加（20秒間）。投擲されたパイを中心として周囲にまだパイを受け取っていない自身を除く味方がいる場合、パイがその方向にも飛んで再度その効果を与えます（最大3回まで）",
+      "description": "30秒毎に、パイを投擲して味方1人の攻撃力を16.1%増加（20秒間）。投擲されたパイを中心として周囲にまだパイを受け取っていない自身を除く味方がいる場合、パイがその方向にも飛んで再度その効果を与えます（最大3回まで）",
       "type": "normal",
       "levels": [
         {
@@ -174,7 +174,7 @@ export const natsu: Character = {
     "passive": {
       "id": "natsu_passive",
       "name": "腹が減っては……！",
-      "description": "を増加",
+      "description": "HPを26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -292,7 +292,7 @@ export const natsu: Character = {
     "sub": {
       "id": "natsu_sub",
       "name": "お口いっぱいの幸せ",
-      "description": "EXスキルの使用時、を増加（最大で3回分まで効果が重複）",
+      "description": "EXスキルの使用時、被回復率を13.8%増加（最大で3回分まで効果が重複）",
       "type": "sub",
       "levels": [
         {

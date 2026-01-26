@@ -27,7 +27,7 @@ export const hiyoriSwimsuit: Character = {
     "ex": {
       "id": "hiyori_swimsuit_ex",
       "name": "狙うは1等賞！",
-      "description": "銃弾を5発発射。銃弾は直線上に飛び、命中した敵1人に対して、攻撃力の分のダメージ（合計5発分）/ 5発の銃弾を同じ敵に全て命中した時、攻撃力の分の追加ダメージ/ EX充電ゲージが1つ以上の場合、EXスキルをすぐにドローした後、EX充電ゲージを1つ差し引きます。",
+      "description": "銃弾を5発発射。銃弾は直線上に飛び、命中した敵1人に対して、攻撃力の1115%分のダメージ（合計5発分）/ 5発の銃弾を同じ敵に全て命中した時、攻撃力の308%分の追加ダメージ/ EX充電ゲージが1つ以上の場合、EXスキルをすぐにドローした後、EX充電ゲージを1つ差し引きます。",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -61,7 +61,7 @@ export const hiyoriSwimsuit: Character = {
     "normal": {
       "id": "hiyori_swimsuit_normal",
       "name": "特製ハンディファン",
-      "description": "通常攻撃12回毎に、率を増加（30秒間）",
+      "description": "通常攻撃12回毎に、会心ダメージ率を55.3%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -179,7 +179,7 @@ export const hiyoriSwimsuit: Character = {
     "passive": {
       "id": "hiyori_swimsuit_passive",
       "name": "夏を満喫します！",
-      "description": "率を増加",
+      "description": "会心ダメージ率を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const hiyoriSwimsuit: Character = {
     "sub": {
       "id": "hiyori_swimsuit_sub",
       "name": "バカンス計画",
-      "description": "4.5秒毎に、EX充電ゲージを10%チャージ/ EX充電ゲージが100%チャージされる毎に、を増加（30秒間） （EX充電ゲージのチャージ数は最大1ゲージまで）",
+      "description": "4.5秒毎に、EX充電ゲージを10%チャージ/ EX充電ゲージが100%チャージされる毎に、会心値を14.3%増加（30秒間） （EX充電ゲージのチャージ数は最大1ゲージまで）",
       "type": "sub",
       "levels": [
         {

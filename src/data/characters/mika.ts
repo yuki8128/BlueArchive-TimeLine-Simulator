@@ -27,7 +27,7 @@ export const mika: Character = {
     "ex": {
       "id": "mika_ex",
       "name": "Kyrie Eleison",
-      "description": "敵1人に対して攻撃力の分のダメージ （対象の現在のHPに比例してダメージが1～2倍に変更） （対象の敵HPが多ければ多いほどダメージが大きくなります） ",
+      "description": "敵1人に対して攻撃力の1540%分のダメージ （対象の現在のHPに比例してダメージが1～2倍に変更） （対象の敵HPが多ければ多いほどダメージが大きくなります） ",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const mika: Character = {
     "normal": {
       "id": "mika_normal",
       "name": "星の呼び声",
-      "description": "通常攻撃5回毎に、敵1人に対して攻撃力の分のダメージ/ ノーマルスキルの発動3回毎に、隕石が落ちて攻撃力の分の追加ダメージ",
+      "description": "通常攻撃5回毎に、敵1人に対して攻撃力の169%分のダメージ/ ノーマルスキルの発動3回毎に、隕石が落ちて攻撃力の339%分の追加ダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const mika: Character = {
     "passive": {
       "id": "mika_passive",
       "name": "Gloria Patri",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const mika: Character = {
     "sub": {
       "id": "mika_sub",
       "name": "Benedictio",
-      "description": "全ての攻撃を確定会心に変更/ 自身のが増加、が減少",
+      "description": "全ての攻撃を確定会心に変更/ 自身の与えるダメージ量が24.2%増加、被ダメージ量が12.2%減少",
       "type": "sub",
       "levels": [
         {

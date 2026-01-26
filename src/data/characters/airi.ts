@@ -28,7 +28,7 @@ export const airi: Character = {
     "ex": {
       "id": "airi_ex",
       "name": "勿体ないけど……えぇいっ！",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ/ さらにを22.8%減少（20秒間）",
+      "description": "円形範囲内の敵に対して、攻撃力の464%分のダメージ/ さらに移動速度を22.8%減少、攻撃速度を26.2%減少（20秒間）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -62,7 +62,7 @@ export const airi: Character = {
     "normal": {
       "id": "airi_normal",
       "name": "頭がキーンってするかも……",
-      "description": "25秒毎に、敵1人に対してを減少（30秒間）",
+      "description": "25秒毎に、敵1人に対して攻撃速度を35.1%減少（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -100,7 +100,7 @@ export const airi: Character = {
     "passive": {
       "id": "airi_passive",
       "name": "デザートの力",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -218,7 +218,7 @@ export const airi: Character = {
     "sub": {
       "id": "airi_sub",
       "name": "アイリの声援",
-      "description": "味方のを増加",
+      "description": "味方の攻撃速度を17.3%増加",
       "type": "sub",
       "levels": [
         {

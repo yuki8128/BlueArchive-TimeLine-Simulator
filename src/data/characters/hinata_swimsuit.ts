@@ -27,7 +27,7 @@ export const hinataSwimsuit: Character = {
     "ex": {
       "id": "hinata_swimsuit_ex",
       "name": "楽しい水遊び",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ（この攻撃は敵の防御力を無視します）",
+      "description": "円形範囲内の敵に対して、攻撃力の911%分のダメージ（この攻撃は敵の防御力を80%無視します）",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const hinataSwimsuit: Character = {
     "normal": {
       "id": "hinata_swimsuit_normal",
       "name": "涼しい水浴び",
-      "description": "40秒毎に、敵1人に対して、水風船を投擲して攻撃力の分のダメージ。投擲された水風船を中心として周囲にまだ攻撃が当たっていない敵がいる場合、水風船がその方向へ跳ねて同じダメージ（最大6回まで） （この攻撃は敵の防御力を無視します）",
+      "description": "40秒毎に、敵1人に対して、水風船を投擲して攻撃力の164%分のダメージ。投擲された水風船を中心として周囲にまだ攻撃が当たっていない敵がいる場合、水風船がその方向へ跳ねて同じダメージ（最大6回まで） （この攻撃は敵の防御力を80%無視します）",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const hinataSwimsuit: Character = {
     "passive": {
       "id": "hinata_swimsuit_passive",
       "name": "遠征隊の情熱",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const hinataSwimsuit: Character = {
     "sub": {
       "id": "hinata_swimsuit_sub",
       "name": "慈愛の手",
-      "description": "味方のを増加",
+      "description": "味方の攻撃力を17.3%増加",
       "type": "sub",
       "levels": [
         {

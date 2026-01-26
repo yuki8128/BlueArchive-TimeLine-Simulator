@@ -27,7 +27,7 @@ export const toki: Character = {
     "ex": {
       "id": "toki_ex",
       "name": "システム：アビ・エシュフ",
-      "description": "に転換、を、を、を12.2%増加/ （でEXスキル3回使用時にモード解除)",
+      "description": "に転換、攻撃力を41.8%、命中値を18.1%、回避値を12.2%増加/ （でEXスキル3回使用時にモード解除)",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -151,7 +151,7 @@ export const toki: Character = {
     "normal": {
       "id": "toki_normal",
       "name": "戦術的判断",
-      "description": "35秒毎に、敵1人に対して攻撃力の分のダメージ",
+      "description": "35秒毎に、敵1人に対して攻撃力の778%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -209,7 +209,7 @@ export const toki: Character = {
     "passive": {
       "id": "toki_passive",
       "name": "コールサインゼロフォー",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -327,7 +327,7 @@ export const toki: Character = {
     "sub": {
       "id": "toki_sub",
       "name": "目には目を",
-      "description": "の転換後、EXスキルの使用時、使用回数によって追加ダメージ EXスキル1回使用時：攻撃力の分のダメージ EXスキル2回使用時：攻撃力の分のダメージ EXスキル3回使用時：攻撃力の分のダメージ （この攻撃は敵の防御力を無視します）",
+      "description": "の転換後、EXスキルの使用時、使用回数によって追加ダメージ EXスキル1回使用時：攻撃力の25.6%分のダメージ EXスキル2回使用時：攻撃力の51.1%分のダメージ EXスキル3回使用時：攻撃力の76.7%分のダメージ （この攻撃は敵の防御力を60%無視します）",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const miyuSwimsuit: Character = {
     "ex": {
       "id": "miyu_swimsuit_ex",
       "name": "カモメの襲撃",
-      "description": "直線範囲内の敵に対して、攻撃力の分の確定会心ダメージ",
+      "description": "直線範囲内の敵に対して、攻撃力の737%分の確定会心ダメージ",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const miyuSwimsuit: Character = {
     "normal": {
       "id": "miyu_swimsuit_normal",
       "name": "密やかな一撃",
-      "description": "70秒毎に、扇形範囲内の敵に対して攻撃力の分のダメージ",
+      "description": "70秒毎に、扇形範囲内の敵に対して攻撃力の702%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const miyuSwimsuit: Character = {
     "passive": {
       "id": "miyu_swimsuit_passive",
       "name": "水中用複合弾",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const miyuSwimsuit: Character = {
     "sub": {
       "id": "miyu_swimsuit_sub",
       "name": "観測状況報告",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

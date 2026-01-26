@@ -27,7 +27,7 @@ export const ritsu: Character = {
     "ex": {
       "id": "ritsu_ex",
       "name": "一緒に食べよっ！",
-      "description": "味方1人のを増加（24秒間）",
+      "description": "味方1人の攻撃速度を100%増加（24秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -51,7 +51,7 @@ export const ritsu: Character = {
     "normal": {
       "id": "ritsu_normal",
       "name": "えーっと、これじゃない！",
-      "description": "味方が会心を200回成功した時、敵1人に対してを減少（21秒間）/ 攻撃力の分のダメージ",
+      "description": "味方が会心を200回成功した時、敵1人に対して防御力を24.9%減少（21秒間）/ 攻撃力の361%分のダメージ",
       "type": "normal",
       "levels": [
         {
@@ -189,7 +189,7 @@ export const ritsu: Character = {
     "passive": {
       "id": "ritsu_passive",
       "name": "彫ってみよっかな？",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -307,7 +307,7 @@ export const ritsu: Character = {
     "sub": {
       "id": "ritsu_sub",
       "name": "形象の解放",
-      "description": "味方の率を増加",
+      "description": "味方の会心ダメージ率を17.3%増加",
       "type": "sub",
       "levels": [
         {

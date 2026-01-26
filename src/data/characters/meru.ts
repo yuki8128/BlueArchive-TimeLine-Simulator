@@ -27,7 +27,7 @@ export const meru: Character = {
     "ex": {
       "id": "meru_ex",
       "name": "最強のアイデア",
-      "description": "敵1人に対して、攻撃力の分のダメージ/ 攻撃力分の持続ダメージを付与（30秒間）/ さらにを適用（30秒間） の敵への攻撃時に、メルの攻撃力の分の追加ダメージ （このダメージにおいては、会心が発動しません） （最大480発分まで適用されます）",
+      "description": "敵1人に対して、攻撃力の173%分のダメージ/ 攻撃力329%分の火傷持続ダメージを付与（30秒間）/ さらに弱点把握状態を適用（30秒間） 弱点把握状態の敵への攻撃時に、メルの攻撃力の2.5%分の追加ダメージ （このダメージにおいては、会心が発動しません） （最大480発分まで適用されます）",
       "type": "ex",
       "cost": 5,
       "levels": [
@@ -61,7 +61,7 @@ export const meru: Character = {
     "normal": {
       "id": "meru_normal",
       "name": "妄想は無限大",
-      "description": "50秒毎に、敵1人に対して攻撃力の分のダメージ/ さらに攻撃力の分の持続ダメージを付与（30秒間）",
+      "description": "50秒毎に、敵1人に対して攻撃力の135.6%分のダメージ/ さらに攻撃力の91.1%分の火傷持続ダメージを付与（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -119,7 +119,7 @@ export const meru: Character = {
     "passive": {
       "id": "meru_passive",
       "name": "インプット",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const meru: Character = {
     "sub": {
       "id": "meru_sub",
       "name": "設定崩壊！",
-      "description": "通常攻撃3回毎に強化弾を発射し、攻撃力の分のダメージ",
+      "description": "通常攻撃3回毎に強化弾を発射し、攻撃力の264%分のダメージ",
       "type": "sub",
       "levels": [
         {

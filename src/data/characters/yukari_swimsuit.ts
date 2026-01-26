@@ -27,7 +27,7 @@ export const yukariSwimsuit: Character = {
     "ex": {
       "id": "yukari_swimsuit_ex",
       "name": "夏の海はでんじゃらす！ですの！",
-      "description": "円形範囲内の敵に対して、攻撃力の分のダメージ",
+      "description": "円形範囲内の敵に対して、攻撃力の1060%分のダメージ",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -61,7 +61,7 @@ export const yukariSwimsuit: Character = {
     "normal": {
       "id": "yukari_swimsuit_normal",
       "name": "これが夏のすいーつ！ですの！",
-      "description": "35秒毎に、を加算（30秒間）",
+      "description": "35秒毎に、貫通特効を55.5%加算（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -99,7 +99,7 @@ export const yukariSwimsuit: Character = {
     "passive": {
       "id": "yukari_swimsuit_passive",
       "name": "勘解由小路流水泳術",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const yukariSwimsuit: Character = {
     "sub": {
       "id": "yukari_swimsuit_sub",
       "name": "将来有望な後輩",
-      "description": "を増加/ EXスキルを2回使用する度に、を増加（10秒間）",
+      "description": "攻撃力を25.5%増加/ EXスキルを2回使用する度に、コスト回復力を1259増加（10秒間）",
       "type": "sub",
       "levels": [
         {

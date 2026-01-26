@@ -28,7 +28,7 @@ export const mutsuki: Character = {
     "ex": {
       "id": "mutsuki_ex",
       "name": "灼熱のセレナーデ",
-      "description": "3つの円形範囲内の敵に攻撃力の分のダメージ",
+      "description": "3つの円形範囲内の敵に攻撃力の778%分のダメージ",
       "type": "ex",
       "cost": 4,
       "levels": [
@@ -62,7 +62,7 @@ export const mutsuki: Character = {
     "normal": {
       "id": "mutsuki_normal",
       "name": "爆裂のアリア",
-      "description": "攻撃力の分のダメージを与える地雷を、20秒毎に3つ設置（それぞれ15秒で消失）",
+      "description": "攻撃力の635%分のダメージを与える地雷を、20秒毎に3つ設置（それぞれ15秒で消失）",
       "type": "normal",
       "levels": [
         {
@@ -120,7 +120,7 @@ export const mutsuki: Character = {
     "passive": {
       "id": "mutsuki_passive",
       "name": "楽しく遊ぼう！",
-      "description": "を増加",
+      "description": "攻撃力を26.6%増加",
       "type": "passive",
       "levels": [
         {
@@ -238,7 +238,7 @@ export const mutsuki: Character = {
     "sub": {
       "id": "mutsuki_sub",
       "name": "楽しくいこっか？",
-      "description": "通常攻撃時、25%の確率でを増加（30秒間）（クールタイム25秒）",
+      "description": "通常攻撃時、25%の確率で命中値を57.4%増加（30秒間）（クールタイム25秒）",
       "type": "sub",
       "levels": [
         {
