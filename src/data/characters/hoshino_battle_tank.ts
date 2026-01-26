@@ -91,7 +91,7 @@ export const hoshinoBattleTank: Character = {
     "normal": {
       "id": "hoshino_battle_tank_normal",
       "name": "プレート交換",
-      "description": "40秒毎に、を装着して被ダメージ量を24.1%減少/ （は25回攻撃を受けたら解除）",
+      "description": "40秒毎に、防弾プレートを装着して被ダメージ量を24.1%減少/ （防弾プレートは25回攻撃を受けたら解除）",
       "type": "normal",
       "levels": [
         {

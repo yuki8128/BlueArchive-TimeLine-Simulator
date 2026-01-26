@@ -51,7 +51,7 @@ export const hikari: Character = {
     "normal": {
       "id": "hikari_normal",
       "name": "れっつどっきんぐ～",
-      "description": "を3つ獲得時、を全て消耗してストライカーの味方に振動特効を29%加算（25秒間）（クールタイム20秒）",
+      "description": "「発車信号」を3つ獲得時、「発車信号」を全て消耗してストライカーの味方に振動特効を29%加算（25秒間）（クールタイム20秒）",
       "type": "normal",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const hikari: Character = {
     "sub": {
       "id": "hikari_sub",
       "name": "大活躍のよて～",
-      "description": "自身を除く味方がEXスキルを2回使用時、該当スキルの発動と同時に攻撃速度を30.6%増加（20秒間）/ を1つ獲得（は最大3つまで重複）",
+      "description": "自身を除く味方がEXスキルを2回使用時、該当スキルの発動と同時に攻撃速度を30.6%増加（20秒間）/ 「発車信号」を1つ獲得（「発車信号」は最大3つまで重複）",
       "type": "sub",
       "levels": [
         {

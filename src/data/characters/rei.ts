@@ -61,7 +61,7 @@ export const rei: Character = {
     "normal": {
       "id": "rei_normal",
       "name": "ファインプレー",
-      "description": "敵を4人倒した時、攻撃速度を57.3%増加（20秒間）/ を1回獲得（クールタイム10秒）",
+      "description": "敵を4人倒した時、攻撃速度を57.3%増加（20秒間）/ 「アウト」を1回獲得（クールタイム10秒）",
       "type": "normal",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const rei: Character = {
     "sub": {
       "id": "rei_sub",
       "name": "スリーアウトチェンジ",
-      "description": "振動特効を65.6%加算/ を3回獲得時、自身のスキルコストを3減少（EXスキルの使用1回分） （は初期化されます）",
+      "description": "振動特効を65.6%加算/ 「アウト」を3回獲得時、自身のスキルコストを3減少（EXスキルの使用1回分） （「アウト」は初期化されます）",
       "type": "sub",
       "levels": [
         {

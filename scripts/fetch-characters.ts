@@ -101,8 +101,11 @@ function formatSkillDescription(
     });
   }
 
-  // <b:XXX> をバフ名に置換
+  // 明示的な値を持つタグを先に処理: <X:YYY='VALUE'> → VALUE
+  result = result.replace(/<[a-z]+:\w+='([^']+)'>/g, (_, value) => value);
+
   if (localizationData) {
+    // <b:XXX> をバフ名に置換
     result = result.replace(/<b:(\w+)>/g, (_, key) => {
       return localizationData!.BuffName[`Buff_${key}`] || key;
     });
@@ -116,7 +119,15 @@ function formatSkillDescription(
     result = result.replace(/<c:(\w+)>/g, (_, key) => {
       return localizationData!.BuffName[`CC_${key}`] || key;
     });
+
+    // <s:XXX> をSpecial名に置換
+    result = result.replace(/<s:(\w+)>/g, (_, key) => {
+      return localizationData!.BuffName[`Special_${key}`] || key;
+    });
   }
+
+  // <kb:N> を空文字に置換（テキストはタグの後ろに既に存在する）
+  result = result.replace(/<kb:\d+>/g, '');
 
   // 残りの未知のタグを削除
   result = result.replace(/<[^>]+>/g, '');

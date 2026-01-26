@@ -61,7 +61,7 @@ export const mutsukiNewyear: Character = {
     "normal": {
       "id": "mutsuki_newyear_normal",
       "name": "小悪魔のコーラス",
-      "description": "50秒毎に、直線範囲内の敵に対して攻撃力の315%分のダメージ。保有しているが6個の場合、169%分の追加ダメージ",
+      "description": "50秒毎に、直線範囲内の敵に対して攻撃力の315%分のダメージ。保有している「小悪魔」が6個の場合、169%分の追加ダメージ",
       "type": "normal",
       "levels": [
         {
@@ -237,7 +237,7 @@ export const mutsukiNewyear: Character = {
     "sub": {
       "id": "mutsuki_newyear_sub",
       "name": "小悪魔のキュートな企み",
-      "description": "自身のEXスキルで対象にダメージを3回与える度に、を1個獲得（56秒間）（は最大6個分まで保有が可能で、効果が重複）。1個につき、会心ダメージ率を4.1%増加",
+      "description": "自身のEXスキルで対象にダメージを3回与える度に、「小悪魔」を1個獲得（56秒間）（「小悪魔」は最大6個分まで保有が可能で、効果が重複）。「小悪魔」1個につき、会心ダメージ率を4.1%増加",
       "type": "sub",
       "levels": [
         {

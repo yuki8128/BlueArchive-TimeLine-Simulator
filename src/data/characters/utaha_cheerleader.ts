@@ -27,7 +27,7 @@ export const utahaCheerleader: Character = {
     "ex": {
       "id": "utaha_cheerleader_ex",
       "name": "雷ちゃんMK-III、強化",
-      "description": "ターレットを強化します（90秒間）ターレットは強化状態が維持される間、が攻撃力の146%分のダメージを与えるように変更され、ノーマルスキルの発動条件が変更されます。",
+      "description": "ターレットを強化します（90秒間）ターレットは強化状態が維持される間、通常攻撃が攻撃力の146%分のダメージを与えるように変更され、ノーマルスキルの発動条件が変更されます。",
       "type": "ex",
       "cost": 5,
       "levels": [

@@ -51,7 +51,7 @@ export const uiSwimsuit: Character = {
     "normal": {
       "id": "ui_swimsuit_normal",
       "name": "決定的な手がかり",
-      "description": "を3個獲得時、ストライカーの味方に貫通特効を28.9%加算（30秒間）/ を3個消耗",
+      "description": "手がかりを3個獲得時、ストライカーの味方に貫通特効を28.9%加算（30秒間）/ 手がかりを3個消耗",
       "type": "normal",
       "levels": [
         {
@@ -207,7 +207,7 @@ export const uiSwimsuit: Character = {
     "sub": {
       "id": "ui_swimsuit_sub",
       "name": "手がかりの把握",
-      "description": "自身を除く味方のEXスキルを2回使用時、該当スキルの発動と同時に攻撃力を43.1%増加（30秒間）/ を1個獲得",
+      "description": "自身を除く味方のEXスキルを2回使用時、該当スキルの発動と同時に攻撃力を43.1%増加（30秒間）/ 手がかりを1個獲得",
       "type": "sub",
       "levels": [
         {

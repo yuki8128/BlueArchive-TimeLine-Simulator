@@ -27,7 +27,7 @@ export const yoshimiBand: Character = {
     "ex": {
       "id": "yoshimi_band_ex",
       "name": "爆発クライマックス",
-      "description": "攻撃力と攻撃速度を112%増加（50秒間）/ さらにを5個付与（最大5個まで）/ は10秒毎に1個ずつ解除",
+      "description": "攻撃力と攻撃速度を112%増加（50秒間）/ さらに「シュガーラッシュ」を5個付与（最大5個まで）/ 「シュガーラッシュ」は10秒毎に1個ずつ解除",
       "type": "ex",
       "cost": 10,
       "levels": [
@@ -91,7 +91,7 @@ export const yoshimiBand: Character = {
     "normal": {
       "id": "yoshimi_band_normal",
       "name": "ビジュアルメーカー",
-      "description": "通常攻撃10回毎に、敵1人に対して攻撃力の966%分のダメージ/ さらに味方全体の1個毎に、ダメージが5%分増加（最大8個まで）",
+      "description": "通常攻撃10回毎に、敵1人に対して攻撃力の966%分のダメージ/ さらに味方全体の「シュガーラッシュ」1個毎に、ダメージが5%分増加（最大8個まで）",
       "type": "normal",
       "levels": [
         {

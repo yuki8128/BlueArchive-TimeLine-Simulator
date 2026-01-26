@@ -27,7 +27,7 @@ export const hareCamp: Character = {
     "ex": {
       "id": "hare_camp_ex",
       "name": "焚き火の甘味",
-      "description": "自身を除く味方1人に対して、攻撃力を80.4%増加（26秒間）/ さらに自身にを5個付与（最大15個まで重複）",
+      "description": "自身を除く味方1人に対して、攻撃力を80.4%増加（26秒間）/ さらに自身にホクホクの焼き芋を5個付与（最大15個まで重複）",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -327,7 +327,7 @@ export const hareCamp: Character = {
     "sub": {
       "id": "hare_camp_sub",
       "name": "キャンプの醍醐味",
-      "description": "を保有している状態で敵を攻撃した時、攻撃力の98%分の追加ダメージ/ さらに自身のが1個減少",
+      "description": "ホクホクの焼き芋を保有している状態で敵を攻撃した時、攻撃力の98%分の追加ダメージ/ さらに自身のホクホクの焼き芋が1個減少",
       "type": "sub",
       "levels": [
         {

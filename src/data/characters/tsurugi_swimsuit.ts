@@ -27,7 +27,7 @@ export const tsurugiSwimsuit: Character = {
     "ex": {
       "id": "tsurugi_swimsuit_ex",
       "name": "止まらない奔流",
-      "description": "を攻撃力の167%分の追加ダメージを与える攻撃に変更（30秒間）",
+      "description": "通常攻撃を攻撃力の167%分の追加ダメージを与える攻撃に変更（30秒間）",
       "type": "ex",
       "cost": 3,
       "levels": [

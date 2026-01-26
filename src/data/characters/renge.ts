@@ -61,7 +61,7 @@ export const renge: Character = {
     "normal": {
       "id": "renge_normal",
       "name": "燃え上がる情熱",
-      "description": "30秒毎に、状態を付与。攻撃力を37.6%増加（22秒間）",
+      "description": "30秒毎に、「情熱」状態を付与。攻撃力を37.6%増加（22秒間）",
       "type": "normal",
       "levels": [
         {
@@ -297,7 +297,7 @@ export const renge: Character = {
     "sub": {
       "id": "renge_sub",
       "name": "切り込み隊長としての本分",
-      "description": "状態での攻撃時、攻撃力の8.6%分の追加ダメージ",
+      "description": "「情熱」状態での攻撃時、攻撃力の8.6%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {

@@ -27,7 +27,7 @@ export const rengeSwimsuit: Character = {
     "ex": {
       "id": "renge_swimsuit_ex",
       "name": "夏の海の射撃術",
-      "description": "敵1人に対して、攻撃力の540%分のダメージ/ を1個以上保有している場合、を1個消耗し攻撃力の108%分の追加ダメージ",
+      "description": "敵1人に対して、攻撃力の540%分のダメージ/ 「水圧」を1個以上保有している場合、「水圧」を1個消耗し攻撃力の108%分の追加ダメージ",
       "type": "ex",
       "cost": 3,
       "levels": [
@@ -61,7 +61,7 @@ export const rengeSwimsuit: Character = {
     "normal": {
       "id": "renge_swimsuit_normal",
       "name": "夏の情熱水流",
-      "description": "戦闘開始時とその以降、40秒毎にEXスキルの与えるダメージ量を23.7%加算、会心ダメージ率を31.3%増加（33秒間）/ を2個獲得（は最大3個まで重複）",
+      "description": "戦闘開始時とその以降、40秒毎にEXスキルの与えるダメージ量を23.7%加算、会心ダメージ率を31.3%増加（33秒間）/ 「水圧」を2個獲得（「水圧」は最大3個まで重複）",
       "type": "normal",
       "levels": [
         {

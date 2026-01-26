@@ -27,7 +27,7 @@ export const airiBand: Character = {
     "ex": {
       "id": "airi_band_ex",
       "name": "幸せのメロディ",
-      "description": "爆発特効を182%加算、を付与（30秒間）",
+      "description": "爆発特効を182%加算、「シュガーラッシュ」を付与（30秒間）",
       "type": "ex",
       "cost": 2,
       "levels": [
@@ -147,7 +147,7 @@ export const airiBand: Character = {
     "sub": {
       "id": "airi_band_sub",
       "name": "染み込む感情",
-      "description": "を保有した状態での攻撃時、10%の確率で会心ダメージ抵抗率を24.4%減少（16秒間）（クールタイム5秒）",
+      "description": "「シュガーラッシュ」を保有した状態での攻撃時、10%の確率で会心ダメージ抵抗率を24.4%減少（16秒間）（クールタイム5秒）",
       "type": "sub",
       "levels": [
         {

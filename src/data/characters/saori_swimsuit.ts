@@ -297,7 +297,7 @@ export const saoriSwimsuit: Character = {
     "sub": {
       "id": "saori_swimsuit_sub",
       "name": "誠実な学生バイト",
-      "description": "通常攻撃時、30%の確率でを 19.16%増加（20秒間）（クールタイム5秒）",
+      "description": "通常攻撃時、30%の確率で持続ダメージ（悪寒）を 19.16%増加（20秒間）（クールタイム5秒）",
       "type": "sub",
       "levels": [
         {

@@ -61,7 +61,7 @@ export const hasumiSwimsuit: Character = {
     "normal": {
       "id": "hasumi_swimsuit_normal",
       "name": "これは、ゼロカロリー",
-      "description": "35秒毎に、会心ダメージ率を24.4%増加、1個につき、会心値を8.9%増加（30秒間）",
+      "description": "35秒毎に、会心ダメージ率を24.4%増加、「カットスイカ」1個につき、会心値を8.9%増加（30秒間）",
       "type": "normal",
       "levels": [
         {
@@ -357,7 +357,7 @@ export const hasumiSwimsuit: Character = {
     "sub": {
       "id": "hasumi_swimsuit_sub",
       "name": "自分へのご褒美",
-      "description": "自身のEXスキルで対象にダメージを4回与える度に、を1個獲得（43秒間）（は最大4個分まで保有が可能で、効果が重複）。1個につき、会心ダメージ率を6.2%増加",
+      "description": "自身のEXスキルで対象にダメージを4回与える度に、「カットスイカ」を1個獲得（43秒間）（「カットスイカ」は最大4個分まで保有が可能で、効果が重複）。「カットスイカ」1個につき、会心ダメージ率を6.2%増加",
       "type": "sub",
       "levels": [
         {

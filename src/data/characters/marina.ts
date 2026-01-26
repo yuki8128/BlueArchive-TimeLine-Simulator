@@ -61,7 +61,7 @@ export const marina: Character = {
     "normal": {
       "id": "marina_normal",
       "name": "退いてなるものか！",
-      "description": "HPが20%以下の時、を付与（22.8秒間） （戦闘中に1回のみ）",
+      "description": "HPが20%以下の時、不死身状態を付与（22.8秒間） （戦闘中に1回のみ）",
       "type": "normal",
       "levels": [
         {

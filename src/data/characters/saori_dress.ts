@@ -61,7 +61,7 @@ export const saoriDress: Character = {
     "normal": {
       "id": "saori_dress_normal",
       "name": "美しさの裏側",
-      "description": "敵を8人倒した時、スキルコストを2.17、を1個獲得（戦闘中に3回のみ）",
+      "description": "敵を8人倒した時、スキルコストを2.17、「戦場の感覚」を1個獲得（戦闘中に3回のみ）",
       "type": "normal",
       "levels": [
         {
@@ -217,7 +217,7 @@ export const saoriDress: Character = {
     "sub": {
       "id": "saori_dress_sub",
       "name": "加速する感覚",
-      "description": "獲得したの個数によって攻撃速度を増加/ 1個：攻撃速度を27.5%増加 2個：攻撃速度を59.7%増加 3個：攻撃速度を101%増加",
+      "description": "獲得した「戦場の感覚」の個数によって攻撃速度を増加/ 1個：攻撃速度を27.5%増加 2個：攻撃速度を59.7%増加 3個：攻撃速度を101%増加",
       "type": "sub",
       "levels": [
         {

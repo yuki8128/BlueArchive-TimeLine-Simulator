@@ -27,7 +27,7 @@ export const marinaQipao: Character = {
     "ex": {
       "id": "marina_qipao_ex",
       "name": "う、うわああっ！？",
-      "description": "敵1人に対して攻撃力の414%分のダメージ/ 攻撃力の561%分の持続ダメージを付与（32秒間）",
+      "description": "敵1人に対して攻撃力の414%分のダメージ/ 攻撃力の561%分の中毒系持続ダメージを付与（32秒間）",
       "type": "ex",
       "cost": 6,
       "levels": [

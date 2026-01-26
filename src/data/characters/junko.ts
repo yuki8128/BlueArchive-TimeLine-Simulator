@@ -62,7 +62,7 @@ export const junko: Character = {
     "normal": {
       "id": "junko_normal",
       "name": "お腹空いてる時は話しかけないで！",
-      "description": "HPが20%以下の時、を付与（24.3秒間） （戦闘中に1回のみ）",
+      "description": "HPが20%以下の時、不死身状態を付与（24.3秒間） （戦闘中に1回のみ）",
       "type": "normal",
       "levels": [
         {

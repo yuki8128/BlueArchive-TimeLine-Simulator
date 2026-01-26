@@ -27,7 +27,7 @@ export const nonomiSwimsuit: Character = {
     "ex": {
       "id": "nonomi_swimsuit_ex",
       "name": "涼しくな～れ♧",
-      "description": "敵1人に対して、攻撃力の1113%分のダメージ 装弾数を100消耗する時まで通常攻撃のディレイを4回無視するに変更 発動後すぐにリロード",
+      "description": "敵1人に対して、攻撃力の1113%分のダメージ 装弾数を100消耗する時まで通常攻撃のディレイを4回無視する通常攻撃に変更 発動後すぐにリロード",
       "type": "ex",
       "cost": 6,
       "levels": [
@@ -137,7 +137,7 @@ export const nonomiSwimsuit: Character = {
     "sub": {
       "id": "nonomi_swimsuit_sub",
       "name": "冷たいですよ～！",
-      "description": "EXスキルによってが変更された状態において、通常攻撃で敵を攻撃する時、攻撃力の20.9%分の追加ダメージ",
+      "description": "EXスキルによって通常攻撃が変更された状態において、通常攻撃で敵を攻撃する時、攻撃力の20.9%分の追加ダメージ",
       "type": "sub",
       "levels": [
         {
