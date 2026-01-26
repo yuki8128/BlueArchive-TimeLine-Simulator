@@ -14,7 +14,7 @@ import {
   DamageResult as DamageResultType,
   SkillType,
 } from './types';
-import { calculateDamage, runTimeline, calculateMaxCost, calculateCostRecoveryRate } from './engine';
+import { calculateDamage, calculateMaxCost, calculateCostRecoveryRate } from './engine';
 
 function App() {
   // 選択されたキャラクター（最大4ストライカー + 2スペシャル）
@@ -25,9 +25,14 @@ function App() {
     (CharacterInFormation | null)[]
   >([null, null]);
 
-  // 選択された敵
+  // 選択された敵（単発ダメージ計算用）
   const [selectedEnemy, setSelectedEnemy] = useState<Enemy | null>(null);
   const [selectedPhase, setSelectedPhase] = useState(0);
+
+  // タイムライン用の敵（別途設定可能）
+  const [timelineEnemy, setTimelineEnemy] = useState<Enemy | null>(null);
+  const [timelinePhase, setTimelinePhase] = useState(0);
+  const [useSharedEnemy, setUseSharedEnemy] = useState(true); // 共有設定
 
   // タイムラインアクション
   const [timelineActions, setTimelineActions] = useState<TimelineAction[]>([]);
@@ -60,6 +65,15 @@ function App() {
     if (allCharacters.length === 0) return 0.42; // デフォルト値
     return calculateCostRecoveryRate(formation);
   }, [formation, allCharacters.length]);
+
+  // タイムライン用の有効な敵を取得
+  const effectiveTimelineEnemy = useMemo(() => {
+    return useSharedEnemy ? selectedEnemy : timelineEnemy;
+  }, [useSharedEnemy, selectedEnemy, timelineEnemy]);
+
+  const effectiveTimelinePhase = useMemo(() => {
+    return useSharedEnemy ? selectedPhase : timelinePhase;
+  }, [useSharedEnemy, selectedPhase, timelinePhase]);
 
   // ストライカーの更新
   const handleStrikerChange = (
@@ -130,25 +144,6 @@ function App() {
     }
   }, [calcCharacter, calcSkillType, selectedEnemy, selectedPhase]);
 
-  // タイムラインシミュレーション結果
-  const simulationResult = useMemo(() => {
-    if (allCharacters.length === 0 || !selectedEnemy) return null;
-
-    return runTimeline(
-      formation,
-      selectedEnemy,
-      selectedPhase,
-      timelineActions,
-      initialCost
-    );
-  }, [
-    allCharacters.length,
-    selectedEnemy,
-    selectedPhase,
-    formation,
-    timelineActions,
-    initialCost,
-  ]);
 
   // フィルタリング用: ストライカー/スペシャルキャラのみ
   const strikerCharacters = characters.filter((c) => c.role === 'striker');
@@ -263,8 +258,6 @@ function App() {
             <Timeline
               actions={timelineActions}
               characters={allCharacters}
-              damageLog={simulationResult?.damageLog || []}
-              totalDamage={simulationResult?.totalDamage || 0}
               maxCost={maxCost}
               costRecoveryRate={costRecoveryRate}
               onAddAction={handleAddAction}
@@ -272,6 +265,16 @@ function App() {
               onClearActions={handleClearActions}
               initialCost={initialCost ?? maxCost}
               onInitialCostChange={setInitialCost}
+              enemy={effectiveTimelineEnemy}
+              phaseIndex={effectiveTimelinePhase}
+              enemies={enemies}
+              useSharedEnemy={useSharedEnemy}
+              onUseSharedEnemyChange={setUseSharedEnemy}
+              timelineEnemy={timelineEnemy}
+              timelinePhase={timelinePhase}
+              onTimelineEnemyChange={setTimelineEnemy}
+              onTimelinePhaseChange={setTimelinePhase}
+              formation={formation}
             />
           </div>
         </div>

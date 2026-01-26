@@ -3,8 +3,10 @@ import {
   TimelineAction,
   CharacterInFormation,
   SkillType,
-  DamageLogEntry,
+  Enemy,
+  Formation,
 } from '../../types';
+import { runTimeline } from '../../engine/timeline';
 
 interface TimelineEntry {
   id: string;
@@ -27,8 +29,6 @@ interface TimelineEntry {
 interface TimelineProps {
   actions: TimelineAction[];
   characters: CharacterInFormation[];
-  damageLog: DamageLogEntry[];
-  totalDamage: number;
   maxCost: number;
   costRecoveryRate: number;
   onAddAction: (action: Omit<TimelineAction, 'id'>) => void;
@@ -36,6 +36,17 @@ interface TimelineProps {
   onClearActions: () => void;
   initialCost?: number;
   onInitialCostChange?: (cost: number) => void;
+  // タイムライン用敵選択
+  enemy: Enemy | null;
+  phaseIndex: number;
+  enemies: Enemy[];
+  useSharedEnemy: boolean;
+  onUseSharedEnemyChange: (value: boolean) => void;
+  timelineEnemy: Enemy | null;
+  timelinePhase: number;
+  onTimelineEnemyChange: (enemy: Enemy | null) => void;
+  onTimelinePhaseChange: (phase: number) => void;
+  formation: Formation;
 }
 
 // シミュレーション時間（秒）
@@ -44,8 +55,6 @@ const SIMULATION_DURATION = 180;
 export function Timeline({
   actions,
   characters,
-  damageLog,
-  totalDamage,
   maxCost,
   costRecoveryRate,
   onAddAction,
@@ -53,6 +62,16 @@ export function Timeline({
   onClearActions,
   initialCost,
   onInitialCostChange,
+  enemy,
+  phaseIndex,
+  enemies,
+  useSharedEnemy,
+  onUseSharedEnemyChange,
+  timelineEnemy,
+  timelinePhase,
+  onTimelineEnemyChange,
+  onTimelinePhaseChange,
+  formation,
 }: TimelineProps) {
   const [selectedCharacter, setSelectedCharacter] = useState<string>('');
   const [selectedSkillType, setSelectedSkillType] = useState<SkillType>('ex');
@@ -87,32 +106,23 @@ export function Timeline({
     return undefined;
   };
 
-  // 自動発動スキルのエントリを生成
-  const autoEntries = useMemo<TimelineEntry[]>(() => {
-    const entries: TimelineEntry[] = [];
+  // 自動発動スキルをTimelineAction形式で生成
+  const autoActions = useMemo<(TimelineAction & { activationInfo?: string })[]>(() => {
+    const actions: (TimelineAction & { activationInfo?: string })[] = [];
 
     characters.forEach((char) => {
       // パッシブスキル（戦闘開始時）
       const passiveSkill = char.character.skills.passive;
       if (passiveSkill) {
-        const entryId = `auto_passive_${char.character.id}`;
+        const actionId = `auto_passive_${char.character.id}`;
         const baseTime = 0;
-        const actualTime = timeOverrides[entryId] ?? baseTime;
-        const duration = getBuffDuration(char, 'passive');
-        entries.push({
-          id: entryId,
+        const actualTime = timeOverrides[actionId] ?? baseTime;
+        actions.push({
+          id: actionId,
           time: actualTime,
           characterId: char.character.id,
-          characterName: char.character.name,
           skillType: 'passive',
-          skillName: passiveSkill.name,
           skillLevel: char.skillLevels.passive,
-          cost: null,
-          currentCost: 0,
-          isAuto: true,
-          isEditable: true,
-          buffDuration: duration,
-          buffEndTime: duration ? actualTime + duration : undefined,
           activationInfo: '戦闘開始時',
         });
       }
@@ -120,24 +130,15 @@ export function Timeline({
       // サブスキル（戦闘開始時）
       const subSkill = char.character.skills.sub;
       if (subSkill) {
-        const entryId = `auto_sub_${char.character.id}`;
+        const actionId = `auto_sub_${char.character.id}`;
         const baseTime = 0;
-        const actualTime = timeOverrides[entryId] ?? baseTime;
-        const duration = getBuffDuration(char, 'sub');
-        entries.push({
-          id: entryId,
+        const actualTime = timeOverrides[actionId] ?? baseTime;
+        actions.push({
+          id: actionId,
           time: actualTime,
           characterId: char.character.id,
-          characterName: char.character.name,
           skillType: 'sub',
-          skillName: subSkill.name,
           skillLevel: char.skillLevels.sub,
-          cost: null,
-          currentCost: 0,
-          isAuto: true,
-          isEditable: true,
-          buffDuration: duration,
-          buffEndTime: duration ? actualTime + duration : undefined,
           activationInfo: '戦闘開始時',
         });
       }
@@ -146,73 +147,114 @@ export function Timeline({
       const normalSkill = char.character.skills.normal;
       if (normalSkill) {
         const timing = normalSkill.activationTiming;
-        const duration = getBuffDuration(char, 'normal');
 
         if (timing === 'periodic' && normalSkill.activationInterval) {
-          // 周期発動（秒数ベース）
           const interval = normalSkill.activationInterval;
           for (let i = 0; i * interval <= simulationDuration; i++) {
-            const entryId = `auto_normal_${char.character.id}_${i}`;
+            const actionId = `auto_normal_${char.character.id}_${i}`;
             const baseTime = i * interval;
-            const actualTime = timeOverrides[entryId] ?? baseTime;
-            entries.push({
-              id: entryId,
+            const actualTime = timeOverrides[actionId] ?? baseTime;
+            actions.push({
+              id: actionId,
               time: actualTime,
               characterId: char.character.id,
-              characterName: char.character.name,
               skillType: 'normal',
-              skillName: normalSkill.name,
               skillLevel: char.skillLevels.normal,
-              cost: null,
-              currentCost: 0,
-              isAuto: true,
-              isEditable: true,
-              buffDuration: duration,
-              buffEndTime: duration ? actualTime + duration : undefined,
               activationInfo: `${interval}秒ごと`,
             });
           }
         } else if (timing === 'attackCount' && normalSkill.activationCount) {
-          // 通常攻撃回数ベース - デフォルトで1回目のみ生成（ユーザーが追加可能）
           const count = normalSkill.activationCount;
-          const entryId = `auto_normal_${char.character.id}_0`;
+          const actionId = `auto_normal_${char.character.id}_0`;
           const baseTime = 0;
-          const actualTime = timeOverrides[entryId] ?? baseTime;
-          entries.push({
-            id: entryId,
+          const actualTime = timeOverrides[actionId] ?? baseTime;
+          actions.push({
+            id: actionId,
             time: actualTime,
             characterId: char.character.id,
-            characterName: char.character.name,
             skillType: 'normal',
-            skillName: normalSkill.name,
             skillLevel: char.skillLevels.normal,
-            cost: null,
-            currentCost: 0,
-            isAuto: true,
-            isEditable: true,
-            buffDuration: duration,
-            buffEndTime: duration ? actualTime + duration : undefined,
             activationInfo: `通常攻撃${count}回ごと`,
           });
         }
       }
     });
 
-    return entries;
+    return actions;
   }, [characters, simulationDuration, timeOverrides]);
+
+  // 全アクション（自動 + 手動）を結合してシミュレーション実行
+  const allActionsSimulation = useMemo(() => {
+    if (!enemy || characters.length === 0) return null;
+
+    // 自動アクションと手動アクションを結合
+    const allActions: TimelineAction[] = [
+      ...autoActions.map(({ activationInfo, ...action }) => action),
+      ...actions,
+    ];
+
+    return runTimeline(
+      formation,
+      enemy,
+      phaseIndex,
+      allActions,
+      manualInitialCost
+    );
+  }, [enemy, phaseIndex, formation, autoActions, actions, manualInitialCost, characters.length]);
+
+  // ダメージログをIDでマップ化
+  const damageByActionKey = useMemo(() => {
+    const map = new Map<string, number>();
+    if (!allActionsSimulation) return map;
+
+    for (const entry of allActionsSimulation.damageLog) {
+      // 同じ時間・キャラ・スキルタイプの組み合わせでマッチング
+      const key = `${entry.time}_${entry.characterId}_${entry.skillType}`;
+      map.set(key, entry.damage.expectedDamage);
+    }
+    return map;
+  }, [allActionsSimulation]);
+
+  // 合計ダメージを再計算（自動スキル含む）
+  const calculatedTotalDamage = useMemo(() => {
+    return allActionsSimulation?.totalDamage ?? 0;
+  }, [allActionsSimulation]);
 
   // タイムラインエントリを構築
   const timelineEntries = useMemo<TimelineEntry[]>(() => {
+    // 自動アクションをTimelineEntry形式に変換
+    const autoEntries: TimelineEntry[] = autoActions.map((action) => {
+      const char = getCharacter(action.characterId);
+      const skill = char?.character.skills[action.skillType];
+      const damageKey = `${action.time}_${action.characterId}_${action.skillType}`;
+      const damage = damageByActionKey.get(damageKey);
+      const buffDuration = char ? getBuffDuration(char, action.skillType) : undefined;
+
+      return {
+        id: action.id,
+        time: action.time,
+        characterId: action.characterId,
+        characterName: char?.character.name || action.characterId,
+        skillType: action.skillType,
+        skillName: skill?.name || action.skillType,
+        skillLevel: action.skillLevel,
+        cost: null,
+        currentCost: 0,
+        isAuto: true,
+        isEditable: true,
+        damage,
+        buffDuration,
+        buffEndTime: buffDuration ? action.time + buffDuration : undefined,
+        activationInfo: action.activationInfo,
+      };
+    });
+
+    // 手動アクションをTimelineEntry形式に変換
     const manualEntries: TimelineEntry[] = actions.map((action) => {
       const char = getCharacter(action.characterId);
       const skill = char?.character.skills[action.skillType];
-      const damageEntry = damageLog.find(
-        (log) =>
-          log.time === action.time &&
-          log.characterId === action.characterId &&
-          log.skillType === action.skillType
-      );
-
+      const damageKey = `${action.time}_${action.characterId}_${action.skillType}`;
+      const damage = damageByActionKey.get(damageKey);
       const buffDuration = char ? getBuffDuration(char, action.skillType) : undefined;
 
       return {
@@ -227,7 +269,7 @@ export function Timeline({
         currentCost: 0,
         isAuto: false,
         isEditable: false,
-        damage: damageEntry?.damage.expectedDamage,
+        damage,
         buffDuration: buffDuration,
         buffEndTime: buffDuration ? action.time + buffDuration : undefined,
       };
@@ -260,7 +302,7 @@ export function Timeline({
       lastTime = entry.time;
       return { ...entry, currentCost };
     });
-  }, [actions, autoEntries, damageLog, manualInitialCost, costRecoveryRate, maxCost, costOverrides]);
+  }, [actions, autoActions, damageByActionKey, manualInitialCost, costRecoveryRate, maxCost, costOverrides, characters]);
 
   const handleAddAction = () => {
     if (!selectedCharacter) return;
@@ -334,6 +376,68 @@ export function Timeline({
           >
             クリア
           </button>
+        )}
+      </div>
+
+      {/* タイムライン用敵設定 */}
+      <div className="bg-yellow-50 rounded-lg p-3 mb-4 border border-yellow-200">
+        <div className="flex items-center gap-4 mb-2">
+          <label className="flex items-center gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={useSharedEnemy}
+              onChange={(e) => onUseSharedEnemyChange(e.target.checked)}
+              className="rounded border-gray-300"
+            />
+            <span className="text-gray-700">単発計算と同じ敵を使用</span>
+          </label>
+        </div>
+
+        {!useSharedEnemy && (
+          <div className="grid grid-cols-2 gap-2">
+            <div>
+              <label className="block text-xs text-gray-500 mb-1">タイムライン用敵</label>
+              <select
+                value={timelineEnemy?.id || ''}
+                onChange={(e) => {
+                  const enemy = enemies.find((en) => en.id === e.target.value) || null;
+                  onTimelineEnemyChange(enemy);
+                  onTimelinePhaseChange(0);
+                }}
+                className="w-full p-1.5 border border-gray-300 rounded text-sm"
+              >
+                <option value="">選択してください</option>
+                {enemies.map((en) => (
+                  <option key={en.id} value={en.id}>
+                    {en.name} ({en.difficulty})
+                  </option>
+                ))}
+              </select>
+            </div>
+            {timelineEnemy && timelineEnemy.phases.length > 1 && (
+              <div>
+                <label className="block text-xs text-gray-500 mb-1">フェーズ</label>
+                <select
+                  value={timelinePhase}
+                  onChange={(e) => onTimelinePhaseChange(parseInt(e.target.value))}
+                  className="w-full p-1.5 border border-gray-300 rounded text-sm"
+                >
+                  {timelineEnemy.phases.map((phase, idx) => (
+                    <option key={idx} value={idx}>
+                      {phase.name || `フェーズ${idx + 1}`}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* 現在の敵情報を表示 */}
+        {enemy && (
+          <div className="mt-2 text-xs text-gray-600">
+            <span className="font-medium">対象:</span> {enemy.name} - 防御力: {enemy.phases[phaseIndex]?.defense?.toLocaleString()}
+          </div>
         )}
       </div>
 
@@ -562,12 +666,12 @@ export function Timeline({
       </div>
 
       {/* 合計ダメージ */}
-      {totalDamage > 0 && (
+      {calculatedTotalDamage > 0 && (
         <div className="mt-4 pt-4 border-t border-gray-200">
           <div className="flex justify-between items-center">
             <span className="text-gray-600 font-medium">合計ダメージ</span>
             <span className="text-xl font-bold text-blue-600">
-              {Math.floor(totalDamage).toLocaleString()}
+              {Math.floor(calculatedTotalDamage).toLocaleString()}
             </span>
           </div>
         </div>
