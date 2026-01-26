@@ -394,8 +394,8 @@ async function main() {
   const students = Object.values(data)
     // 日本でリリース済みのキャラクターのみ
     .filter((s) => s.IsReleased[0])
-    // IDでソート
-    .sort((a, b) => a.Id - b.Id);
+    // 五十音順でソート
+    .sort((a, b) => a.Name.localeCompare(b.Name, 'ja'));
 
   console.log(`${students.length}人のキャラクターを処理中...`);
 
