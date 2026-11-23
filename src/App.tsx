@@ -152,7 +152,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* ヘッダー */}
-      <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg">
+      <header className="bg-linear-to-r from-blue-600 to-purple-600 text-white shadow-lg">
         <div className="container mx-auto px-4 py-4">
           <h1 className="text-2xl font-bold">
             ブルーアーカイブ タイムラインシミュレーター
@@ -192,7 +192,7 @@ function App() {
             />
 
             {/* 単発ダメージ計算 */}
-            <div className="bg-white rounded-lg shadow p-4">
+            <div className="bg-white rounded-lg shadow-sm p-4">
               <h3 className="text-sm font-medium text-gray-700 mb-3">
                 単発ダメージ計算
               </h3>
@@ -209,7 +209,7 @@ function App() {
                       );
                       setCalcCharacter(char || null);
                     }}
-                    className="w-full p-2 border border-gray-300 rounded text-sm"
+                    className="w-full p-2 border border-gray-300 rounded-sm text-sm"
                   >
                     <option value="">選択</option>
                     {allCharacters.map((char) => (
@@ -231,7 +231,7 @@ function App() {
                     onChange={(e) =>
                       setCalcSkillType(e.target.value as SkillType)
                     }
-                    className="w-full p-2 border border-gray-300 rounded text-sm"
+                    className="w-full p-2 border border-gray-300 rounded-sm text-sm"
                   >
                     <option value="ex">EXスキル</option>
                     <option value="normal">ノーマルスキル</option>

@@ -265,15 +265,6 @@ function convertBuffTarget(targets: string[]): BuffTarget {
   return 'self';
 }
 
-function parsePercentage(str: string): number {
-  // "274%" -> 2.74
-  const match = str.match(/([\d.]+)%?/);
-  if (match) {
-    return parseFloat(match[1]) / 100;
-  }
-  return 0;
-}
-
 function convertSkill(
   skill: SchaleDBSkill | undefined,
   skillType: 'ex' | 'normal' | 'passive' | 'sub',

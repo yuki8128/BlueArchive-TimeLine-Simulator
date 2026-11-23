@@ -1,6 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss" source(none);
+@source "../index.html";
+@source "./";
+
+@theme {
+  --color-ba-blue: #2196F3;
+  --color-ba-pink: #FF69B4;
+  --color-ba-yellow: #FFD700;
+}
+
+@layer base {
+  *, ::before, ::after, ::backdrop, ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 /* カスタムスタイル */
 body {

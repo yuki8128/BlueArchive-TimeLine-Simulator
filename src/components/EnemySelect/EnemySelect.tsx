@@ -53,7 +53,7 @@ export function EnemySelect({
   const currentPhase = selectedEnemy?.phases[selectedPhase];
 
   return (
-    <div className="bg-white rounded-lg shadow p-4">
+    <div className="bg-white rounded-lg shadow-sm p-4">
       <label className="block text-sm font-medium text-gray-700 mb-2">
         敵（ボス）選択
       </label>
@@ -75,16 +75,16 @@ export function EnemySelect({
           {/* 敵情報 */}
           <div className="flex items-center gap-2 flex-wrap">
             <span
-              className={`px-2 py-1 text-xs text-white rounded ${
+              className={`px-2 py-1 text-xs text-white rounded-sm ${
                 armorTypeColors[selectedEnemy.armorType]
               }`}
             >
               {armorTypeLabels[selectedEnemy.armorType]}
             </span>
-            <span className="px-2 py-1 text-xs bg-gray-200 rounded">
+            <span className="px-2 py-1 text-xs bg-gray-200 rounded-sm">
               {terrainLabels[selectedEnemy.terrain]}
             </span>
-            <span className="px-2 py-1 text-xs bg-gray-800 text-white rounded">
+            <span className="px-2 py-1 text-xs bg-gray-800 text-white rounded-sm">
               {selectedEnemy.difficulty}
             </span>
           </div>
@@ -143,7 +143,7 @@ export function EnemySelect({
 
           {/* ギミック情報 */}
           {selectedEnemy.gimmicks && selectedEnemy.gimmicks.length > 0 && (
-            <div className="bg-yellow-50 p-2 rounded">
+            <div className="bg-yellow-50 p-2 rounded-sm">
               <p className="text-sm font-medium text-yellow-800 mb-1">
                 ギミック
               </p>

@@ -99,7 +99,7 @@ function CharacterSlot({
       <select
         value={selected?.character.id || ''}
         onChange={(e) => handleChange(e.target.value)}
-        className="w-full p-2 border border-gray-300 rounded text-sm mb-2"
+        className="w-full p-2 border border-gray-300 rounded-sm text-sm mb-2"
       >
         <option value="">-- 未選択 --</option>
         {characters.map((char) => (
@@ -114,7 +114,7 @@ function CharacterSlot({
           {/* キャラクター情報 */}
           <div className="flex items-center gap-1 flex-wrap">
             <span
-              className={`px-1.5 py-0.5 text-xs text-white rounded ${
+              className={`px-1.5 py-0.5 text-xs text-white rounded-sm ${
                 attackTypeColors[selected.character.attackType]
               }`}
             >
@@ -147,7 +147,7 @@ function CharacterSlot({
                         parseInt(e.target.value) || 1
                       )
                     }
-                    className="w-12 p-1 text-xs border border-gray-300 rounded text-center"
+                    className="w-12 p-1 text-xs border border-gray-300 rounded-sm text-center"
                   />
                 </div>
               )
@@ -155,7 +155,7 @@ function CharacterSlot({
           </div>
 
           {/* EXスキル情報 */}
-          <div className="text-xs bg-gray-50 p-1.5 rounded">
+          <div className="text-xs bg-gray-50 p-1.5 rounded-sm">
             <span className="font-medium">{selected.character.skills.ex.name}</span>
             <span className="text-gray-500 ml-1">
               (Cost: {selected.character.skills.ex.cost})
@@ -191,7 +191,7 @@ export function FormationSetup({
       {/* ストライカー */}
       <div className="mb-4">
         <h3 className="text-sm font-medium text-gray-600 mb-2 flex items-center gap-2">
-          <span className="px-2 py-0.5 bg-blue-500 text-white text-xs rounded">STRIKER</span>
+          <span className="px-2 py-0.5 bg-blue-500 text-white text-xs rounded-sm">STRIKER</span>
           <span className="text-gray-400">(前衛4枠)</span>
         </h3>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
@@ -210,7 +210,7 @@ export function FormationSetup({
       {/* スペシャル */}
       <div>
         <h3 className="text-sm font-medium text-gray-600 mb-2 flex items-center gap-2">
-          <span className="px-2 py-0.5 bg-yellow-500 text-white text-xs rounded">SPECIAL</span>
+          <span className="px-2 py-0.5 bg-yellow-500 text-white text-xs rounded-sm">SPECIAL</span>
           <span className="text-gray-400">(後衛2枠)</span>
         </h3>
         <div className="grid grid-cols-2 gap-2">

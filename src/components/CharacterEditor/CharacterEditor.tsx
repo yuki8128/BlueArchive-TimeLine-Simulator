@@ -170,7 +170,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
   const currentSkill = character.character.skills[activeSkill];
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
       <div className="bg-white rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] overflow-hidden">
         {/* ヘッダー */}
         <div className="bg-gray-100 px-4 py-3 flex justify-between items-center border-b">
@@ -225,7 +225,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
                     onChange={(e) =>
                       onChange({ ...character, level: parseInt(e.target.value) || 90 })
                     }
-                    className="w-full p-2 border border-gray-300 rounded"
+                    className="w-full p-2 border border-gray-300 rounded-sm"
                   />
                 </div>
                 <div>
@@ -238,7 +238,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
                     onChange={(e) =>
                       onChange({ ...character, starLevel: parseInt(e.target.value) || 3 })
                     }
-                    className="w-full p-2 border border-gray-300 rounded"
+                    className="w-full p-2 border border-gray-300 rounded-sm"
                   />
                 </div>
                 <div>
@@ -251,7 +251,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
                     onChange={(e) =>
                       onChange({ ...character, bond: parseInt(e.target.value) || 50 })
                     }
-                    className="w-full p-2 border border-gray-300 rounded"
+                    className="w-full p-2 border border-gray-300 rounded-sm"
                   />
                 </div>
               </div>
@@ -272,7 +272,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
                       onChange={(e) =>
                         handleStatOverride(statKey, parseFloat(e.target.value) || 0)
                       }
-                      className="flex-1 p-1.5 text-sm border border-gray-300 rounded text-right"
+                      className="flex-1 p-1.5 text-sm border border-gray-300 rounded-sm text-right"
                     />
                     <span className="text-xs text-gray-400 w-16">
                       (基本: {character.character.baseStats[statKey]})
@@ -299,7 +299,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
                   <button
                     key={type}
                     onClick={() => setActiveSkill(type)}
-                    className={`px-3 py-1.5 text-xs rounded ${
+                    className={`px-3 py-1.5 text-xs rounded-sm ${
                       activeSkill === type
                         ? 'bg-blue-500 text-white'
                         : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -311,7 +311,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
               </div>
 
               {/* スキル情報 */}
-              <div className="bg-gray-50 rounded p-3">
+              <div className="bg-gray-50 rounded-sm p-3">
                 <h4 className="font-medium text-sm mb-1">{currentSkill.name}</h4>
                 <p className="text-xs text-gray-600 mb-2">{currentSkill.description}</p>
 
@@ -326,7 +326,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
                     onChange={(e) =>
                       handleSkillLevelChange(activeSkill, parseInt(e.target.value) || 1)
                     }
-                    className="w-16 p-1 text-sm border border-gray-300 rounded text-center"
+                    className="w-16 p-1 text-sm border border-gray-300 rounded-sm text-center"
                   />
                   {activeSkill === 'ex' && currentSkill.cost && (
                     <span className="text-xs text-gray-500">
@@ -353,7 +353,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
                             parseFloat(e.target.value) || 0
                           )
                         }
-                        className="w-full p-1.5 text-sm border border-gray-300 rounded"
+                        className="w-full p-1.5 text-sm border border-gray-300 rounded-sm"
                       />
                     </div>
                     <div>
@@ -371,7 +371,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
                             parseInt(e.target.value) || 1
                           )
                         }
-                        className="w-full p-1.5 text-sm border border-gray-300 rounded"
+                        className="w-full p-1.5 text-sm border border-gray-300 rounded-sm"
                       />
                     </div>
                   </div>
@@ -381,7 +381,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
                 <div className="space-y-2">
                   <h5 className="text-xs font-medium text-gray-700">バフ/デバフ効果</h5>
                   {getEffectiveBuffEffects(activeSkill).map((buff, index) => (
-                    <div key={index} className="grid grid-cols-4 gap-2 p-2 bg-white rounded border">
+                    <div key={index} className="grid grid-cols-4 gap-2 p-2 bg-white rounded-sm border">
                       <div>
                         <label className="block text-xs text-gray-500 mb-1">種類</label>
                         <select
@@ -394,7 +394,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
                               e.target.value as BuffType
                             )
                           }
-                          className="w-full p-1 text-xs border border-gray-300 rounded"
+                          className="w-full p-1 text-xs border border-gray-300 rounded-sm"
                         >
                           {Object.entries(BUFF_TYPE_LABELS).map(([key, label]) => (
                             <option key={key} value={key}>
@@ -417,7 +417,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
                               parseFloat(e.target.value) || 0
                             )
                           }
-                          className="w-full p-1 text-xs border border-gray-300 rounded"
+                          className="w-full p-1 text-xs border border-gray-300 rounded-sm"
                         />
                       </div>
                       <div>
@@ -433,7 +433,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
                               parseInt(e.target.value) || 0
                             )
                           }
-                          className="w-full p-1 text-xs border border-gray-300 rounded"
+                          className="w-full p-1 text-xs border border-gray-300 rounded-sm"
                         />
                       </div>
                       <div className="flex items-end">
@@ -453,7 +453,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
 
                 {/* 発動タイミング（ノーマル/パッシブ/サブ） */}
                 {activeSkill !== 'ex' && currentSkill.activationTiming && (
-                  <div className="mt-3 p-2 bg-blue-50 rounded text-xs">
+                  <div className="mt-3 p-2 bg-blue-50 rounded-sm text-xs">
                     <span className="font-medium">発動:</span>{' '}
                     {currentSkill.activationTiming === 'periodic'
                       ? `${currentSkill.activationInterval}秒ごと`
@@ -487,7 +487,7 @@ export function CharacterEditor({ character, onChange, onClose }: CharacterEdito
         <div className="bg-gray-50 px-4 py-3 flex justify-end border-t">
           <button
             onClick={onClose}
-            className="px-4 py-2 bg-blue-500 text-white rounded text-sm hover:bg-blue-600"
+            className="px-4 py-2 bg-blue-500 text-white rounded-sm text-sm hover:bg-blue-600"
           >
             閉じる
           </button>

@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
 import {
   TimelineAction,
   CharacterInFormation,
@@ -88,9 +88,9 @@ export function Timeline({
     }
   }, [initialCost]);
 
-  const getCharacter = (characterId: string) => {
+  const getCharacter = useCallback((characterId: string) => {
     return characters.find((c) => c.character.id === characterId);
-  };
+  }, [characters]);
 
   // スキルが単体味方バフを持つか確認
   const hasSingleAllyBuff = (characterId: string, skillType: SkillType): boolean => {
@@ -208,10 +208,7 @@ export function Timeline({
     if (!enemy || characters.length === 0) return null;
 
     // 自動アクションと手動アクションを結合
-    const allActions: TimelineAction[] = [
-      ...autoActions.map(({ activationInfo, ...action }) => action),
-      ...actions,
-    ];
+    const allActions: TimelineAction[] = [...autoActions, ...actions];
 
     return runTimeline(
       formation,
@@ -322,7 +319,7 @@ export function Timeline({
       lastTime = entry.time;
       return { ...entry, currentCost };
     });
-  }, [actions, autoActions, damageByActionKey, manualInitialCost, costRecoveryRate, maxCost, costOverrides, characters]);
+  }, [actions, autoActions, damageByActionKey, manualInitialCost, costRecoveryRate, maxCost, costOverrides, getCharacter]);
 
   const handleAddAction = () => {
     if (!selectedCharacter) return;
@@ -388,7 +385,7 @@ export function Timeline({
   };
 
   return (
-    <div className="bg-white rounded-lg shadow p-4">
+    <div className="bg-white rounded-lg shadow-sm p-4">
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-medium text-gray-700">タイムライン</h3>
         {actions.length > 0 && (
@@ -409,7 +406,7 @@ export function Timeline({
               type="checkbox"
               checked={useSharedEnemy}
               onChange={(e) => onUseSharedEnemyChange(e.target.checked)}
-              className="rounded border-gray-300"
+              className="rounded-sm border-gray-300"
             />
             <span className="text-gray-700">単発計算と同じ敵を使用</span>
           </label>
@@ -426,7 +423,7 @@ export function Timeline({
                   onTimelineEnemyChange(enemy);
                   onTimelinePhaseChange(0);
                 }}
-                className="w-full p-1.5 border border-gray-300 rounded text-sm"
+                className="w-full p-1.5 border border-gray-300 rounded-sm text-sm"
               >
                 <option value="">選択してください</option>
                 {enemies.map((en) => (
@@ -442,7 +439,7 @@ export function Timeline({
                 <select
                   value={timelinePhase}
                   onChange={(e) => onTimelinePhaseChange(parseInt(e.target.value))}
-                  className="w-full p-1.5 border border-gray-300 rounded text-sm"
+                  className="w-full p-1.5 border border-gray-300 rounded-sm text-sm"
                 >
                   {timelineEnemy.phases.map((phase, idx) => (
                     <option key={idx} value={idx}>
@@ -475,18 +472,18 @@ export function Timeline({
               step={0.5}
               value={manualInitialCost}
               onChange={(e) => handleInitialCostChange(parseFloat(e.target.value) || 0)}
-              className="w-full p-1.5 border border-gray-300 rounded text-sm"
+              className="w-full p-1.5 border border-gray-300 rounded-sm text-sm"
             />
           </div>
           <div>
             <label className="block text-xs text-gray-500 mb-1">最大コスト</label>
-            <div className="p-1.5 bg-gray-100 rounded text-sm font-medium">
+            <div className="p-1.5 bg-gray-100 rounded-sm text-sm font-medium">
               {maxCost.toFixed(1)}
             </div>
           </div>
           <div>
             <label className="block text-xs text-gray-500 mb-1">回復速度</label>
-            <div className="p-1.5 bg-gray-100 rounded text-sm">
+            <div className="p-1.5 bg-gray-100 rounded-sm text-sm">
               {costRecoveryRate.toFixed(3)}/秒
             </div>
           </div>
@@ -499,7 +496,7 @@ export function Timeline({
               step={30}
               value={simulationDuration}
               onChange={(e) => setSimulationDuration(parseInt(e.target.value) || SIMULATION_DURATION)}
-              className="w-full p-1.5 border border-gray-300 rounded text-sm"
+              className="w-full p-1.5 border border-gray-300 rounded-sm text-sm"
             />
           </div>
         </div>
@@ -515,7 +512,7 @@ export function Timeline({
             step={0.5}
             value={time}
             onChange={(e) => setTime(parseFloat(e.target.value) || 0)}
-            className="w-full p-2 border border-gray-300 rounded text-sm"
+            className="w-full p-2 border border-gray-300 rounded-sm text-sm"
           />
         </div>
         <div>
@@ -523,7 +520,7 @@ export function Timeline({
           <select
             value={selectedCharacter}
             onChange={(e) => setSelectedCharacter(e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded text-sm"
+            className="w-full p-2 border border-gray-300 rounded-sm text-sm"
           >
             <option value="">選択</option>
             {characters.map((char) => (
@@ -538,7 +535,7 @@ export function Timeline({
           <select
             value={selectedSkillType}
             onChange={(e) => setSelectedSkillType(e.target.value as SkillType)}
-            className="w-full p-2 border border-gray-300 rounded text-sm"
+            className="w-full p-2 border border-gray-300 rounded-sm text-sm"
           >
             <option value="ex">EX</option>
             <option value="normal">Normal</option>
@@ -548,7 +545,7 @@ export function Timeline({
           <button
             onClick={handleAddAction}
             disabled={!selectedCharacter}
-            className="w-full p-2 bg-blue-500 text-white rounded text-sm hover:bg-blue-600 disabled:bg-gray-300 disabled:cursor-not-allowed"
+            className="w-full p-2 bg-blue-500 text-white rounded-sm text-sm hover:bg-blue-600 disabled:bg-gray-300 disabled:cursor-not-allowed"
           >
             追加
           </button>
@@ -564,7 +561,7 @@ export function Timeline({
           <select
             value={buffTargetCharacter}
             onChange={(e) => setBuffTargetCharacter(e.target.value)}
-            className="w-full p-2 border border-purple-300 rounded text-sm"
+            className="w-full p-2 border border-purple-300 rounded-sm text-sm"
           >
             <option value="">全員に適用（デフォルト）</option>
             {characters
@@ -596,7 +593,7 @@ export function Timeline({
             return (
               <div
                 key={entry.id}
-                className={`flex items-center justify-between p-2 rounded border ${
+                className={`flex items-center justify-between p-2 rounded-sm border ${
                   isInsufficient
                     ? 'bg-red-50 border-red-300'
                     : skillTypeBgColors[entry.skillType]
@@ -613,7 +610,7 @@ export function Timeline({
                       onChange={(e) =>
                         handleTimeOverride(entry.id, parseFloat(e.target.value) || 0)
                       }
-                      className="w-14 p-0.5 text-sm font-mono text-gray-600 border border-gray-300 rounded text-center"
+                      className="w-14 p-0.5 text-sm font-mono text-gray-600 border border-gray-300 rounded-sm text-center"
                       title="発動時間を手動で変更"
                     />
                   ) : (
@@ -624,7 +621,7 @@ export function Timeline({
 
                   {/* スキルタイプバッジ */}
                   <span
-                    className={`px-1.5 py-0.5 text-xs rounded font-medium ${
+                    className={`px-1.5 py-0.5 text-xs rounded-sm font-medium ${
                       skillTypeColors[entry.skillType]
                     }`}
                   >
@@ -643,7 +640,7 @@ export function Timeline({
                         onChange={(e) =>
                           handleCostOverride(entry.id, parseFloat(e.target.value) || 0)
                         }
-                        className={`w-10 p-0.5 border rounded text-center ${
+                        className={`w-10 p-0.5 border rounded-sm text-center ${
                           isInsufficient
                             ? 'border-red-400 bg-red-50'
                             : 'border-gray-300'
@@ -670,21 +667,21 @@ export function Timeline({
 
                   {/* バフ持続時間表示 */}
                   {entry.buffDuration && (
-                    <span className="text-xs text-gray-400 bg-gray-100 px-1.5 py-0.5 rounded">
+                    <span className="text-xs text-gray-400 bg-gray-100 px-1.5 py-0.5 rounded-sm">
                       ~{formatTime(entry.buffEndTime!)} ({entry.buffDuration}秒)
                     </span>
                   )}
 
                   {/* 永続バフ表示 */}
                   {entry.skillType === 'passive' && !entry.buffDuration && (
-                    <span className="text-xs text-purple-400 bg-purple-100 px-1.5 py-0.5 rounded">
+                    <span className="text-xs text-purple-400 bg-purple-100 px-1.5 py-0.5 rounded-sm">
                       永続
                     </span>
                   )}
 
                   {/* 発動条件表示 */}
                   {entry.activationInfo && (
-                    <span className="text-xs text-gray-400 bg-gray-100 px-1.5 py-0.5 rounded">
+                    <span className="text-xs text-gray-400 bg-gray-100 px-1.5 py-0.5 rounded-sm">
                       {entry.activationInfo}
                     </span>
                   )}
