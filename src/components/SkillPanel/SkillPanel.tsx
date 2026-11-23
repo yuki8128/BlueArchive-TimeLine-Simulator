@@ -17,7 +17,7 @@ export function SkillPanel({
   const canUseEx = currentCost >= (exSkill.cost || 0);
 
   return (
-    <div className="bg-white rounded-lg shadow p-3">
+    <div className="bg-white rounded-lg shadow-sm p-3">
       <div className="flex items-center justify-between mb-2">
         <span className="font-medium text-gray-700">
           {character.character.name}
@@ -30,7 +30,7 @@ export function SkillPanel({
       <button
         onClick={() => onUseSkill('ex', currentTime)}
         disabled={!canUseEx}
-        className={`w-full p-2 rounded text-sm font-medium transition-colors ${
+        className={`w-full p-2 rounded-sm text-sm font-medium transition-colors ${
           canUseEx
             ? 'bg-blue-500 text-white hover:bg-blue-600'
             : 'bg-gray-200 text-gray-500 cursor-not-allowed'

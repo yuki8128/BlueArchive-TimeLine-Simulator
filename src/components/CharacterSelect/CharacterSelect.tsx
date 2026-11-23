@@ -64,7 +64,7 @@ export function CharacterSelect({
   };
 
   return (
-    <div className="bg-white rounded-lg shadow p-4">
+    <div className="bg-white rounded-lg shadow-sm p-4">
       <label className="block text-sm font-medium text-gray-700 mb-2">
         {label}
       </label>
@@ -86,7 +86,7 @@ export function CharacterSelect({
           {/* キャラクター情報 */}
           <div className="flex items-center gap-2">
             <span
-              className={`px-2 py-1 text-xs text-white rounded ${
+              className={`px-2 py-1 text-xs text-white rounded-sm ${
                 attackTypeColors[selectedCharacter.character.attackType]
               }`}
             >
@@ -156,7 +156,7 @@ export function CharacterSelect({
                           parseInt(e.target.value) || 1
                         )
                       }
-                      className="w-16 p-1 text-sm border border-gray-300 rounded"
+                      className="w-16 p-1 text-sm border border-gray-300 rounded-sm"
                     />
                   </div>
                 )
@@ -165,7 +165,7 @@ export function CharacterSelect({
           </div>
 
           {/* EXスキル情報 */}
-          <div className="bg-gray-50 p-2 rounded text-sm">
+          <div className="bg-gray-50 p-2 rounded-sm text-sm">
             <p className="font-medium text-gray-700">
               {selectedCharacter.character.skills.ex.name}
             </p>

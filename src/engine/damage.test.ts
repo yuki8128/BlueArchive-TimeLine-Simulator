@@ -9,12 +9,30 @@
  *   - 最終ダメージ ≒ 6250 × 1.2 × 2.0 = 15000
  */
 
+import { expect, test } from 'vitest';
 import {
   calculateDefenseMultiplier,
   calculateCritRate,
   calculateStabilityRange,
   getArmorMultiplier,
 } from './damage';
+
+test('applies defense, terrain and favorable armor to the damage example', () => {
+  const defenseMultiplier = calculateDefenseMultiplier(1000);
+  expect(defenseMultiplier).toBeCloseTo(1.6, 5);
+  expect(getArmorMultiplier('piercing', 'heavy')).toBe(2);
+  expect((10000 / defenseMultiplier) * 1.2 * getArmorMultiplier('piercing', 'heavy')).toBeCloseTo(15000, 1);
+});
+
+test('calculates critical rate, bounded between zero and 80 percent', () => {
+  expect(calculateCritRate(800, 100)).toBeCloseTo(0.5185, 4);
+  expect(calculateCritRate(100, 100)).toBe(0);
+  expect(calculateCritRate(3000, 100)).toBe(0.8);
+});
+
+test('calculates the stability range', () => {
+  expect(calculateStabilityRange(1000)).toEqual({ min: 0.7, max: 1 });
+});
 
 // テスト関数
 export function runDamageTests(): void {
